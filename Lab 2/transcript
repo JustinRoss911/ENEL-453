@@ -1,0 +1,132 @@
+vsim -gui work.tb_stored_value
+# vsim -gui work.tb_stored_value 
+# Start time: 13:08:45 on Oct 17,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+add wave -position end sim:/tb_stored_value/*
+add wave -position end sim:/tb_stored_value/UUT/*
+run
+run -all
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd failed with 1 errors.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd failed with 1 errors.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 1 failed with 1 error.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd failed with 5 errors.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 1 failed with 5 errors.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd failed with 5 errors.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 1 failed with 5 errors.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd failed with 3 errors.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 1 failed with 3 errors.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_stored_value
+# End time: 13:30:04 on Oct 17,2020, Elapsed time: 0:21:19
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_stored_value 
+# Start time: 13:30:04 on Oct 17,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+add wave -position end sim:/tb_stored_value/*
+add wave -position end sim:/tb_stored_value/UUT/*
+run -all
+run -all
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX2TO1.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX2TO1.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 12 compiles, 0 failed with no errors.
+vsim -gui work.tb_stored_value
+# End time: 13:34:15 on Oct 17,2020, Elapsed time: 0:04:11
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_stored_value 
+# Start time: 13:34:15 on Oct 17,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+add wave -position end sim:/tb_stored_value/*
+add wave -position end sim:/tb_stored_value/UUT/*
+run -all
+# End time: 13:40:56 on Oct 17,2020, Elapsed time: 0:06:41
+# Errors: 0, Warnings: 1

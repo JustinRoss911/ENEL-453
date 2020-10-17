@@ -9,6 +9,7 @@ use ieee.numeric_std.all;
 entity top_level is
     Port ( clk                           : in  STD_LOGIC;
            reset_n                       : in  STD_LOGIC;
+			  button 							  : in  STD_LOGIC;
 			  SW                            : in  STD_LOGIC_VECTOR (9 downto 0);
            LEDR                          : out STD_LOGIC_VECTOR (9 downto 0);
            HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out STD_LOGIC_VECTOR (7 downto 0)
@@ -25,8 +26,10 @@ Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : STD_LOGIC_VE
 Signal DP_in, Blank:  STD_LOGIC_VECTOR (5 downto 0);
 Signal switch_inputs: STD_LOGIC_VECTOR (12 downto 0);
 Signal bcd:           STD_LOGIC_VECTOR(15 DOWNTO 0);
-Signal in1, in2, mux_out: STD_LOGIC_VECTOR(15 DOWNTO 0);
-Signal s: STD_LOGIC;
+Signal in1, in2, in3, in4, mux_out: STD_LOGIC_VECTOR(15 DOWNTO 0);
+Signal s: STD_LOGIC_VECTOR(1 DOWNTO 0);
+Signal D, Q: STD_LOGIC_VECTOR (7 downto 0);
+Signal EN: STD_LOGIC; 
 
 -- Declarations --
 Component SevenSegment is
@@ -45,13 +48,23 @@ Component binary_bcd is
 		);           
 END Component;
 
-Component MUX2TO1 is 
+Component MUX4TO1 is 
    Port ( 
-		in1     : in  std_logic_vector(15 downto 0); -- bcd from binary_bcd
-      in2     : in  std_logic_vector(15 downto 0); -- binary from switch inputs 
-      s       : in  std_logic; 						  -- Input from toggle switch 
-      mux_out : out std_logic_vector(15 downto 0)  -- output of mux 
-		);
+		 in1     : in  std_logic_vector(15 downto 0); -- in1 = binary (hex)
+       in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal 
+		 in3     : in  std_logic_vector(15 downto 0); -- in3 = stored value 
+		 in4     : in  std_logic_vector(15 downto 0); -- in4 = 5A5A
+       s       : in  std_logic_vector(1  downto 0); -- Switches that toggles between mode
+       mux_out : out std_logic_vector(15 downto 0)	 -- output bits 
+		 );
+END Component;
+
+Component stored_value is 
+	Port ( 
+			D     				: in  std_logic_vector(7 downto 0); -- output of synchronizer 
+			EN, reset_n, clk    : in  std_logic;							-- EN is ouput of debounce 				  
+			Q     				: out std_logic_vector(7 downto 0)  -- input to mux 
+			);
 END Component;
 
 -- Operation ---
@@ -63,7 +76,9 @@ begin
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
-   Blank    <= "110000"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)             
+   Blank    <= "110000"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
+	in4 <= "0101101001011010"; -- in4 of mux will always be 5A5A 
+  	
        
 -- Instantiations --		 
 SevenSegment_ins: SevenSegment  
@@ -97,13 +112,31 @@ binary_bcd_ins: binary_bcd
       bcd      => bcd         
       );
 		
-MUX2TO1_ins: MUX2TO1
+in2 <= "000" & switch_inputs;
+s <= SW(9 downto 8); 
+in3 <= "00000000" & Q; -- Extend signal to 16 bits 
+
+MUX4TO1_ins: MUX4TO1
     
 	 PORT MAP (
 		in1 		=>  bcd,  
-		in2		=>  "000" & switch_inputs,
-		s 			=>  SW(9),
+		in2		=>  in2,
+		in3      =>  in3,
+		in4      =>  in4,
+		s 			=>  s,
 		mux_out  =>  mux_out
 		);
+
+D <= SW(7 downto 0);
+
+stored_value_ins: stored_value 
+
+	Port MAP ( 
+		 D  => D,
+		 EN => button, 
+		 reset_n => reset_n,
+		 clk => clk,    				  
+		 Q => Q    				
+		 );
 		
 end Behavioral;

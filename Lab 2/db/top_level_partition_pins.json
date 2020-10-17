@@ -196,11 +196,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "reset_n",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "reset_n",
+					"name" : "button",
 					"strict" : false
 				}
 			]

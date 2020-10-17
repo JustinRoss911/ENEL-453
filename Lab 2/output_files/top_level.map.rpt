@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Oct 10 12:03:34 2020
+Sat Oct 17 13:36:40 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -18,7 +18,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "MUX2TO1:MUX2TO1_ins"
+ 13. Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins"
  14. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
  15. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
  16. Post-Synthesis Netlist Statistics for Top Partition
@@ -50,16 +50,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 10 12:03:34 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 17 13:36:40 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 223                                         ;
-;     Total combinational functions  ; 202                                         ;
-;     Dedicated logic registers      ; 84                                          ;
-; Total registers                    ; 84                                          ;
-; Total pins                         ; 70                                          ;
+; Total logic elements               ; 235                                         ;
+;     Total combinational functions  ; 214                                         ;
+;     Dedicated logic registers      ; 92                                          ;
+; Total registers                    ; 92                                          ;
+; Total pins                         ; 71                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -172,49 +172,50 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                      ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path               ; Library ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
-; MUX2TO1.vhd                      ; yes             ; User VHDL File  ; C:/ENEL 453/Lab 1/MUX2TO1.vhd              ;         ;
-; top_level.vhd                    ; yes             ; User VHDL File  ; C:/ENEL 453/Lab 1/top_level.vhd            ;         ;
-; SevenSegment_decoder.vhd         ; yes             ; User VHDL File  ; C:/ENEL 453/Lab 1/SevenSegment_decoder.vhd ;         ;
-; SevenSegment.vhd                 ; yes             ; User VHDL File  ; C:/ENEL 453/Lab 1/SevenSegment.vhd         ;         ;
-; binary_bcd.vhd                   ; yes             ; User VHDL File  ; C:/ENEL 453/Lab 1/binary_bcd.vhd           ;         ;
-+----------------------------------+-----------------+-----------------+--------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                        ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
+; top_level.vhd                    ; yes             ; User VHDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd            ;         ;
+; SevenSegment_decoder.vhd         ; yes             ; User VHDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment_decoder.vhd ;         ;
+; SevenSegment.vhd                 ; yes             ; User VHDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd         ;         ;
+; binary_bcd.vhd                   ; yes             ; User VHDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/binary_bcd.vhd           ;         ;
+; MUX4To1.vhd                      ; yes             ; User VHDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX4To1.vhd              ;         ;
+; stored_value.vhd                 ; yes             ; Auto-Found VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd         ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 223       ;
-;                                             ;           ;
-; Total combinational functions               ; 202       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 69        ;
-;     -- 3 input functions                    ; 43        ;
-;     -- <=2 input functions                  ; 90        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 138       ;
-;     -- arithmetic mode                      ; 64        ;
-;                                             ;           ;
-; Total registers                             ; 84        ;
-;     -- Dedicated logic registers            ; 84        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 70        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 84        ;
-; Total fan-out                               ; 1039      ;
-; Average fan-out                             ; 2.44      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 235           ;
+;                                             ;               ;
+; Total combinational functions               ; 214           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 88            ;
+;     -- 3 input functions                    ; 37            ;
+;     -- <=2 input functions                  ; 89            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 150           ;
+;     -- arithmetic mode                      ; 64            ;
+;                                             ;               ;
+; Total registers                             ; 92            ;
+;     -- Dedicated logic registers            ; 92            ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 71            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; reset_n~input ;
+; Maximum fan-out                             ; 93            ;
+; Total fan-out                               ; 1120          ;
+; Average fan-out                             ; 2.50          ;
++---------------------------------------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -222,14 +223,15 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                    ; Entity Name          ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
-; |top_level                            ; 202 (0)             ; 84 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 70   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
-;    |MUX2TO1:MUX2TO1_ins|              ; 8 (8)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX2TO1:MUX2TO1_ins                                         ; MUX2TO1              ; work         ;
-;    |SevenSegment:SevenSegment_ins|    ; 42 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                               ; SevenSegment         ; work         ;
+; |top_level                            ; 214 (0)             ; 92 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
+;    |MUX4TO1:MUX4TO1_ins|              ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX4TO1:MUX4TO1_ins                                         ; MUX4TO1              ; work         ;
+;    |SevenSegment:SevenSegment_ins|    ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                               ; SevenSegment         ; work         ;
 ;       |SevenSegment_decoder:decoder0| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder1| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder1 ; SevenSegment_decoder ; work         ;
-;       |SevenSegment_decoder:decoder2| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder2 ; SevenSegment_decoder ; work         ;
-;       |SevenSegment_decoder:decoder3| ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3 ; SevenSegment_decoder ; work         ;
-;    |binary_bcd:binary_bcd_ins|        ; 152 (152)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
+;       |SevenSegment_decoder:decoder2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder2 ; SevenSegment_decoder ; work         ;
+;       |SevenSegment_decoder:decoder3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3 ; SevenSegment_decoder ; work         ;
+;    |binary_bcd:binary_bcd_ins|        ; 153 (153)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
+;    |stored_value:stored_value_ins|    ; 9 (9)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -287,12 +289,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 84    ;
+; Total registers                              ; 92    ;
 ; Number of registers using Synchronous Clear  ; 19    ;
 ; Number of registers using Synchronous Load   ; 4     ;
 ; Number of registers using Asynchronous Clear ; 77    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 79    ;
+; Number of registers using Clock Enable       ; 87    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -302,22 +304,39 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[9]  ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[4]  ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[13] ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[18] ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[22] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|stored_value:stored_value_ins|Q[7]       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[11] ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[7]  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[16] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[20] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[21] ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[28] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|MUX4TO1:MUX4TO1_ins|Mux6                 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_level|MUX4TO1:MUX4TO1_ins|Mux11                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
 +-------------------------------------------------+
-; Port Connectivity Checks: "MUX2TO1:MUX2TO1_ins" ;
-+------------+-------+----------+-----------------+
-; Port       ; Type  ; Severity ; Details         ;
-+------------+-------+----------+-----------------+
-; in2[15..8] ; Input ; Info     ; Stuck at GND    ;
-+------------+-------+----------+-----------------+
+; Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins" ;
++-------------+-------+----------+----------------+
+; Port        ; Type  ; Severity ; Details        ;
++-------------+-------+----------+----------------+
+; in2[15..8]  ; Input ; Info     ; Stuck at GND   ;
+; in3[15..8]  ; Input ; Info     ; Stuck at GND   ;
+; in4[12..11] ; Input ; Info     ; Stuck at VCC   ;
+; in4[4..3]   ; Input ; Info     ; Stuck at VCC   ;
+; in4[8..7]   ; Input ; Info     ; Stuck at GND   ;
+; in4[15]     ; Input ; Info     ; Stuck at GND   ;
+; in4[14]     ; Input ; Info     ; Stuck at VCC   ;
+; in4[13]     ; Input ; Info     ; Stuck at GND   ;
+; in4[10]     ; Input ; Info     ; Stuck at GND   ;
+; in4[9]      ; Input ; Info     ; Stuck at VCC   ;
+; in4[6]      ; Input ; Info     ; Stuck at VCC   ;
+; in4[5]      ; Input ; Info     ; Stuck at GND   ;
+; in4[2]      ; Input ; Info     ; Stuck at GND   ;
+; in4[1]      ; Input ; Info     ; Stuck at VCC   ;
+; in4[0]      ; Input ; Info     ; Stuck at GND   ;
++-------------+-------+----------+----------------+
 
 
 +-------------------------------------------------------+
@@ -347,25 +366,25 @@ Encoding Type:  One-Hot
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 70                          ;
-; cycloneiii_ff         ; 84                          ;
+; boundary_port         ; 71                          ;
+; cycloneiii_ff         ; 92                          ;
 ;     CLR               ; 5                           ;
-;     ENA               ; 7                           ;
+;     ENA               ; 15                          ;
 ;     ENA CLR           ; 53                          ;
 ;     ENA CLR SCLR      ; 15                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
-; cycloneiii_lcell_comb ; 207                         ;
+; cycloneiii_lcell_comb ; 219                         ;
 ;     arith             ; 64                          ;
 ;         2 data inputs ; 64                          ;
-;     normal            ; 143                         ;
+;     normal            ; 155                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 9                           ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 43                          ;
-;         4 data inputs ; 69                          ;
+;         2 data inputs ; 20                          ;
+;         3 data inputs ; 37                          ;
+;         4 data inputs ; 88                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 4.10                        ;
+; Average LUT depth     ; 4.19                        ;
 +-----------------------+-----------------------------+
 
 
@@ -384,66 +403,76 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 10 12:03:24 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_1 -c top_level
+    Info: Processing started: Sat Oct 17 13:36:31 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file tb_mux2to1.vhd
-    Info (12022): Found design unit 1: tb_MUX2TO1-behavior File: C:/ENEL 453/Lab 1/tb_MUX2TO1.vhd Line: 7
-    Info (12023): Found entity 1: tb_MUX2TO1 File: C:/ENEL 453/Lab 1/tb_MUX2TO1.vhd Line: 4
+    Info (12022): Found design unit 1: tb_MUX2TO1-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX2TO1.vhd Line: 7
+    Info (12023): Found entity 1: tb_MUX2TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX2TO1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file mux2to1.vhd
-    Info (12022): Found design unit 1: MUX2TO1-BEHAVIOR File: C:/ENEL 453/Lab 1/MUX2TO1.vhd Line: 18
-    Info (12023): Found entity 1: MUX2TO1 File: C:/ENEL 453/Lab 1/MUX2TO1.vhd Line: 8
+    Info (12022): Found design unit 1: MUX2TO1-BEHAVIOR File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX2TO1.vhd Line: 18
+    Info (12023): Found entity 1: MUX2TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX2TO1.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-Behavioral File: C:/ENEL 453/Lab 1/top_level.vhd Line: 21
-    Info (12023): Found entity 1: top_level File: C:/ENEL 453/Lab 1/top_level.vhd Line: 9
+    Info (12022): Found design unit 1: top_level-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 22
+    Info (12023): Found entity 1: top_level File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
-    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/ENEL 453/Lab 1/SevenSegment_decoder.vhd Line: 13
-    Info (12023): Found entity 1: SevenSegment_decoder File: C:/ENEL 453/Lab 1/SevenSegment_decoder.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment_decoder.vhd Line: 13
+    Info (12023): Found entity 1: SevenSegment_decoder File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment_decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/ENEL 453/Lab 1/SevenSegment.vhd Line: 11
-    Info (12023): Found entity 1: SevenSegment File: C:/ENEL 453/Lab 1/SevenSegment.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd Line: 11
+    Info (12023): Found entity 1: SevenSegment File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
-    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/ENEL 453/Lab 1/binary_bcd.vhd Line: 17
-    Info (12023): Found entity 1: binary_bcd File: C:/ENEL 453/Lab 1/binary_bcd.vhd Line: 8
+    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/binary_bcd.vhd Line: 17
+    Info (12023): Found entity 1: binary_bcd File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/binary_bcd.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file mux4to1.vhd
+    Info (12022): Found design unit 1: MUX4TO1-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX4To1.vhd Line: 20
+    Info (12023): Found entity 1: MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX4To1.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file tb_mux4to1.vhd
+    Info (12022): Found design unit 1: tb_MUX4TO1-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX4To1.vhd Line: 7
+    Info (12023): Found entity 1: tb_MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX4To1.vhd Line: 4
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/ENEL 453/Lab 1/top_level.vhd Line: 69
-Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/ENEL 453/Lab 1/SevenSegment.vhd Line: 24
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/ENEL 453/Lab 1/top_level.vhd Line: 91
-Info (12128): Elaborating entity "MUX2TO1" for hierarchy "MUX2TO1:MUX2TO1_ins" File: C:/ENEL 453/Lab 1/top_level.vhd Line: 100
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 84
+Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd Line: 24
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 106
+Info (12128): Elaborating entity "MUX4TO1" for hierarchy "MUX4TO1:MUX4TO1_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 119
+Warning (12125): Using design file stored_value.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: stored_value-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd Line: 22
+    Info (12023): Found entity 1: stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd Line: 13
+Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 132
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
-    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/ENEL 453/Lab 1/top_level.vhd Line: 14
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 293 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 12 input pins
+Info (21057): Implemented 306 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 223 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Sat Oct 10 12:03:34 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 235 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+    Info: Peak virtual memory: 4796 megabytes
+    Info: Processing ended: Sat Oct 17 13:36:40 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 

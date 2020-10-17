@@ -1,5 +1,5 @@
 Flow report for top_level
-Sat Oct 10 12:03:50 2020
+Sat Oct 17 13:36:57 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Oct 10 12:03:47 2020       ;
+; Flow Status                        ; Successful - Sat Oct 17 13:36:53 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 208 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 203 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 84 / 49,760 ( < 1 % )                       ;
-; Total registers                    ; 84                                          ;
-; Total pins                         ; 70 / 360 ( 19 % )                           ;
+; Total logic elements               ; 216 / 49,760 ( < 1 % )                      ;
+;     Total combinational functions  ; 215 / 49,760 ( < 1 % )                      ;
+;     Dedicated logic registers      ; 92 / 49,760 ( < 1 % )                       ;
+; Total registers                    ; 92                                          ;
+; Total pins                         ; 71 / 360 ( 20 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/10/2020 12:03:25 ;
+; Start date & time ; 10/17/2020 13:36:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_level           ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198375890629205.160235300406208        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 251682018038486.160296339208912        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -95,11 +95,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4795 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:08     ; 1.1                     ; 5654 MB             ; 00:00:12                           ;
-; Assembler            ; 00:00:03     ; 1.0                     ; 4697 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.1                     ; 4829 MB             ; 00:00:02                           ;
-; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:09     ; 1.0                     ; 4796 MB             ; 00:00:20                           ;
+; Fitter               ; 00:00:08     ; 1.1                     ; 5658 MB             ; 00:00:11                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4832 MB             ; 00:00:03                           ;
+; Total                ; 00:00:23     ; --                      ; --                  ; 00:00:37                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,20 +108,20 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
-quartus_map --read_settings_files=on --write_settings_files=off Lab_1 -c top_level
-quartus_fit --read_settings_files=off --write_settings_files=off Lab_1 -c top_level
-quartus_asm --read_settings_files=off --write_settings_files=off Lab_1 -c top_level
-quartus_sta Lab_1 -c top_level
+quartus_map --read_settings_files=on --write_settings_files=off Lab_2 -c top_level
+quartus_fit --read_settings_files=off --write_settings_files=off Lab_2 -c top_level
+quartus_asm --read_settings_files=off --write_settings_files=off Lab_2 -c top_level
+quartus_sta Lab_2 -c top_level
 
 
 
