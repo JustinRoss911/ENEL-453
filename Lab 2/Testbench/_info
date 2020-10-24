@@ -1,0 +1,663 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/github/ENEL 453/ENEL-453/Lab 2
+Ebinary_bcd
+Z1 w1602904458
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 239
+R0
+Z5 8C:/github/ENEL 453/ENEL-453/Lab 2/binary_bcd.vhd
+Z6 FC:/github/ENEL 453/ENEL-453/Lab 2/binary_bcd.vhd
+l0
+L8 1
+VhmBJ>_XZSTi>L;UD@g0=52
+!s100 gQzX;=HeN]3[lj0[@2mb]2
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1603492804
+!i10b 1
+Z9 !s108 1603492804.000000
+Z10 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/binary_bcd.vhd|
+Z11 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/binary_bcd.vhd|
+!i113 1
+Z12 o-work Testbench -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavior
+R2
+R3
+R4
+DEx4 work 10 binary_bcd 0 22 hmBJ>_XZSTi>L;UD@g0=52
+!i122 239
+l27
+L17 68
+V`djG]G?EoJJ]@<b[a_hX<3
+!s100 :^^564DjXHL3Y8gXOzS=f0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ccfg_tb_mux4to1
+etb_MUX4TO1
+atb
+Z14 DEx4 work 7 mux4to1 0 22 =Lz76zDZ53aAT[L0]lR0:2
+DAx4 work 10 tb_mux4to1 2 tb 22 R0]m6L[9?7IO@l6O<]jn>0
+R3
+R4
+Z15 DEx4 work 10 tb_mux4to1 0 22 [LOJ>fFBj@S5mNY@QnoM90
+!i122 249
+Z16 w1603492794
+R0
+Z17 8C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX4TO1.vhd
+Z18 FC:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX4TO1.vhd
+l0
+L109 1
+VL;b2IUnb3:RLL[Khz`4_B3
+!s100 YTiZ1zjReGL8fFV:I?G2e0
+R7
+32
+Z19 !s110 1603492807
+!i10b 0
+Z20 !s108 1603492807.000000
+Z21 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX4TO1.vhd|
+Z22 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX4TO1.vhd|
+!i113 1
+R12
+R13
+Ccfg_tb_synchronizer
+etb_synchronizer
+atb
+Z23 DEx4 work 12 synchronizer 0 22 hJQSeLSLC6eObbnC]`R@b1
+DAx4 work 15 tb_synchronizer 2 tb 22 U64g]PHzCLk;Kj;gCo87H0
+R3
+R4
+Z24 DEx4 work 15 tb_synchronizer 0 22 1GnQKMQ6dAMX3R_e;=Hha2
+!i122 251
+Z25 w1603490978
+R0
+Z26 8C:/github/ENEL 453/ENEL-453/Lab 2/tb_synchronizer.vhd
+Z27 FC:/github/ENEL 453/ENEL-453/Lab 2/tb_synchronizer.vhd
+l0
+L57 1
+VVWc?`1N7iKU7A3CmV?o[]3
+!s100 aG5JBB@3<T2C5@NKkFTzR0
+R7
+32
+Z28 !s110 1603492808
+!i10b 0
+Z29 !s108 1603492808.000000
+Z30 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/tb_synchronizer.vhd|
+Z31 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/tb_synchronizer.vhd|
+!i113 1
+R12
+R13
+Edebounce
+Z32 w1603478299
+R3
+R4
+!i122 240
+R0
+Z33 8C:/github/ENEL 453/ENEL-453/Lab 2/debounce.vhd
+Z34 FC:/github/ENEL 453/ENEL-453/Lab 2/debounce.vhd
+l0
+L29 1
+Vf1dO2G@W3bZcDY4dWbRVF2
+!s100 =Sd0WE3I`F6QZF9aMPj0e1
+R7
+32
+Z35 !s110 1603492805
+!i10b 1
+R9
+Z36 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/debounce.vhd|
+Z37 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/debounce.vhd|
+!i113 1
+R12
+R13
+Alogic
+R3
+R4
+DEx4 work 8 debounce 0 22 f1dO2G@W3bZcDY4dWbRVF2
+!i122 240
+l43
+L40 27
+VVOUgiYeU>C1Q3jKjkIBDP1
+!s100 n>S:eQmWnAWEzR4keYU>d2
+R7
+32
+R35
+!i10b 1
+R9
+R36
+R37
+!i113 1
+R12
+R13
+Emux2to1
+R1
+R3
+R4
+!i122 241
+R0
+Z38 8C:/github/ENEL 453/ENEL-453/Lab 2/MUX2TO1.vhd
+Z39 FC:/github/ENEL 453/ENEL-453/Lab 2/MUX2TO1.vhd
+l0
+L8 1
+VQmO7JOg4b6W9RE<mcOOKK1
+!s100 `W^ehc[RFTcVz5NQkiVbY3
+R7
+32
+R35
+!i10b 1
+Z40 !s108 1603492805.000000
+Z41 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/MUX2TO1.vhd|
+Z42 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/MUX2TO1.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 7 mux2to1 0 22 QmO7JOg4b6W9RE<mcOOKK1
+!i122 241
+l19
+L18 7
+V?cF0lVlPjd8oL_e=7V6R?0
+!s100 ATAIz3;Y7BfRYXDgPb6B72
+R7
+32
+R35
+!i10b 1
+R40
+R41
+R42
+!i113 1
+R12
+R13
+Emux4to1
+R32
+R3
+R4
+!i122 242
+R0
+Z43 8C:/github/ENEL 453/ENEL-453/Lab 2/MUX4To1.vhd
+Z44 FC:/github/ENEL 453/ENEL-453/Lab 2/MUX4To1.vhd
+l0
+L8 1
+V=Lz76zDZ53aAT[L0]lR0:2
+!s100 GiU:4VYU]f^bU1JEYR4KX3
+R7
+32
+R35
+!i10b 1
+R40
+Z45 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/MUX4To1.vhd|
+Z46 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/MUX4To1.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R3
+R4
+R14
+!i122 242
+l21
+L20 9
+VI0PdfFeeQjbC`PG9G1Y3`1
+!s100 ]E@]?]7X4b9QdI5]eV;TC2
+R7
+32
+R35
+!i10b 1
+R40
+R45
+R46
+!i113 1
+R12
+R13
+Esevensegment
+R1
+R3
+R4
+!i122 243
+R0
+Z47 8C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment.vhd
+Z48 FC:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment.vhd
+l0
+L5 1
+VO@RO_n3M1WDUC04g>5D9S3
+!s100 OmVSC`U@3RF?cbR0BYfoK3
+R7
+32
+Z49 !s110 1603492806
+!i10b 1
+R40
+Z50 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment.vhd|
+Z51 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 12 sevensegment 0 22 O@RO_n3M1WDUC04g>5D9S3
+!i122 243
+l20
+L11 50
+Vz6N?0H>N0fJBP211nWVCc2
+!s100 dcYihQ@U4TXj]105NfLck3
+R7
+32
+R49
+!i10b 1
+R40
+R50
+R51
+!i113 1
+R12
+R13
+Esevensegment_decoder
+R1
+R3
+R4
+!i122 244
+R0
+Z52 8C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment_decoder.vhd
+Z53 FC:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment_decoder.vhd
+l0
+L5 1
+V@3k30Id?cBP35fZYkJOW10
+!s100 5AALkiToOD1k>]CGcBo?e0
+R7
+32
+R49
+!i10b 1
+Z54 !s108 1603492806.000000
+Z55 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment_decoder.vhd|
+Z56 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/SevenSegment_decoder.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 20 sevensegment_decoder 0 22 @3k30Id?cBP35fZYkJOW10
+!i122 244
+l17
+L13 40
+VOb0`__32HW_B@^TdEi;5G3
+!s100 >ohV?96^:;QcZ7]dD6j[K3
+R7
+32
+R49
+!i10b 1
+R54
+R55
+R56
+!i113 1
+R12
+R13
+Estored_value
+R32
+R3
+R4
+!i122 245
+R0
+Z57 8C:/github/ENEL 453/ENEL-453/Lab 2/stored_value.vhd
+Z58 FC:/github/ENEL 453/ENEL-453/Lab 2/stored_value.vhd
+l0
+L13 1
+Vf8LflEFf;1UTaJLJ=k`Ri1
+!s100 >o996BjT[Vnm>VDMm71_H2
+R7
+32
+R49
+!i10b 1
+R54
+Z59 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/stored_value.vhd|
+Z60 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/stored_value.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R3
+R4
+DEx4 work 12 stored_value 0 22 f8LflEFf;1UTaJLJ=k`Ri1
+!i122 245
+l23
+L22 13
+VzM[]RM>o_XCR[[Ue6230J0
+!s100 JQ@67D=>MzDF=K>W_[_zH1
+R7
+32
+R49
+!i10b 1
+R54
+R59
+R60
+!i113 1
+R12
+R13
+Esynchronizer
+Z61 w1603479984
+R3
+R4
+!i122 246
+R0
+Z62 8C:/github/ENEL 453/ENEL-453/Lab 2/synchronizer.vhd
+Z63 FC:/github/ENEL 453/ENEL-453/Lab 2/synchronizer.vhd
+l0
+L8 1
+VhJQSeLSLC6eObbnC]`R@b1
+!s100 dY<nMTgOI3<cOIA8F;10>1
+R7
+32
+R49
+!i10b 1
+R54
+Z64 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/synchronizer.vhd|
+Z65 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/synchronizer.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R3
+R4
+R23
+!i122 246
+l19
+L17 11
+Vjd4DWFe6ODWQ^eUc_JOzZ1
+!s100 H:iHN19YI2Zf3mFz;cTXc1
+R7
+32
+R49
+!i10b 1
+R54
+R64
+R65
+!i113 1
+R12
+R13
+Etb_debounce
+R32
+R3
+R4
+!i122 247
+R0
+Z66 8C:/github/ENEL 453/ENEL-453/Lab 2/tb_debounce.vhd
+Z67 FC:/github/ENEL 453/ENEL-453/Lab 2/tb_debounce.vhd
+l0
+L10 1
+VSJj6MG>Tkbfg1>Q?CQ0KI2
+!s100 GoKCFGem1>AF?3<JI:R:30
+R7
+32
+R19
+!i10b 1
+R20
+Z68 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/tb_debounce.vhd|
+Z69 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/tb_debounce.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+DEx4 work 11 tb_debounce 0 22 SJj6MG>Tkbfg1>Q?CQ0KI2
+!i122 247
+l43
+L13 130
+V;KN0n;j;G_7fHcn9;][o43
+!s100 0^hW8DMEd1O;>o8en9a:l1
+R7
+32
+R19
+!i10b 1
+R20
+R68
+R69
+!i113 1
+R12
+R13
+Etb_mux2to1
+R1
+R3
+R4
+!i122 248
+R0
+Z70 8C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX2TO1.vhd
+Z71 FC:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX2TO1.vhd
+l0
+L4 1
+V@QPfXeXDeLDACUXCQIAY91
+!s100 MXTn`=C41mc0Pab1_8j`P0
+R7
+32
+R19
+!i10b 1
+R20
+Z72 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX2TO1.vhd|
+Z73 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/tb_MUX2TO1.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 10 tb_mux2to1 0 22 @QPfXeXDeLDACUXCQIAY91
+!i122 248
+l25
+L7 54
+Va?^=ff?^TC=4QhJb1^<B^3
+!s100 ]9bk9GUDkX04<nHdJ7_4O3
+R7
+32
+R19
+!i10b 1
+R20
+R72
+R73
+!i113 1
+R12
+R13
+Etb_mux4to1
+R16
+R3
+R4
+!i122 249
+R0
+R17
+R18
+l0
+L7 1
+V[LOJ>fFBj@S5mNY@QnoM90
+!s100 S^mE`diWzAnD^V;[cKjRk3
+R7
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Atb
+R3
+R4
+R15
+!i122 249
+l32
+L10 96
+VR0]m6L[9?7IO@l6O<]jn>0
+!s100 HZz]9f]Zad8RFQo>P_YQg3
+R7
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Abehavior
+R3
+R4
+DEx4 work 10 tb_mux4to1 0 22 DcYnTWJ[hjCTZK:SA=Tz50
+!i122 151
+l26
+L7 86
+VQ28PoCT853?LO7LHCEW5F2
+!s100 [D5H9BZM7n;FVOoUc8G>I2
+R7
+32
+!s110 1603490836
+!i10b 1
+!s108 1603490836.000000
+R21
+R22
+!i113 1
+R12
+R13
+R32
+Etb_stored_value
+R32
+R3
+R4
+!i122 250
+R0
+Z74 8C:/github/ENEL 453/ENEL-453/Lab 2/tb_stored_value.vhd
+Z75 FC:/github/ENEL 453/ENEL-453/Lab 2/tb_stored_value.vhd
+l0
+L6 1
+Vfk[2[;ob@nIRklT6X`cTR2
+!s100 kk_YQ]Wf@Y`a8^[TB]FA32
+R7
+32
+R28
+!i10b 1
+R20
+Z76 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/tb_stored_value.vhd|
+Z77 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/tb_stored_value.vhd|
+!i113 1
+R12
+R13
+Atb
+R3
+R4
+DEx4 work 15 tb_stored_value 0 22 fk[2[;ob@nIRklT6X`cTR2
+!i122 250
+l24
+L9 78
+Vez7QPn;IG[YZ@lYk0:E7j1
+!s100 o3j^[NU1oL=:mB@FLYCP71
+R7
+32
+R28
+!i10b 1
+R20
+R76
+R77
+!i113 1
+R12
+R13
+Etb_synchronizer
+R25
+R3
+R4
+!i122 251
+R0
+R26
+R27
+l0
+L4 1
+V1GnQKMQ6dAMX3R_e;=Hha2
+!s100 [^YM@Uh35X:n84>OQlcPB1
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R12
+R13
+Atb
+R3
+R4
+R24
+!i122 251
+l23
+L7 47
+VU64g]PHzCLk;Kj;gCo87H0
+!s100 C[J]3ZCE6LPX7EMc_hGhb1
+R7
+32
+R28
+!i10b 1
+R29
+R30
+R31
+!i113 1
+R12
+R13
+Etop_level
+Z78 w1603486949
+R2
+R3
+R4
+!i122 252
+R0
+Z79 8C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd
+Z80 FC:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd
+l0
+L9 1
+VY[91kCT>5]C6On]1@`Z`?2
+!s100 zYBoM_b;Yf^7YS?8FhCoQ0
+R7
+32
+R28
+!i10b 1
+R29
+Z81 !s90 -reportprogress|300|-work|Testbench|-2002|-explicit|-stats=none|C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd|
+Z82 !s107 C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+Z83 DEx4 work 9 top_level 0 22 Y[91kCT>5]C6On]1@`Z`?2
+!i122 252
+l82
+Z84 L22 138
+Z85 VEVNkK3O]UYLj@aQ;2l_W=3
+Z86 !s100 CBI7fN]jA47UR`MeGRa8U0
+R7
+32
+R28
+!i10b 1
+R29
+R81
+R82
+!i113 1
+R12
+R13
