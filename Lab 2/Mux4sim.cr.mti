@@ -1,45 +1,4 @@
-{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_stored_value.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_stored_value.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_stored_value
--- Compiling architecture tb of tb_stored_value
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX4To1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX4To1.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity MUX4TO1
--- Compiling architecture behaviour of MUX4TO1
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/debounce.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity debounce
--- Compiling architecture logic of debounce
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_debounce.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_debounce
--- Compiling architecture Behavioral of tb_debounce
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity top_level
--- Compiling architecture Behavioral of top_level
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd}
+{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/SevenSegment.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -56,14 +15,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity binary_bcd
 -- Compiling architecture behavior of binary_bcd
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity stored_value
--- Compiling architecture behaviour of stored_value
-
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX2TO1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX2TO1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -71,14 +22,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package std_logic_1164
 -- Compiling entity tb_MUX2TO1
 -- Compiling architecture behavior of tb_MUX2TO1
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX4TO1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_MUX4TO1.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_MUX4TO1
--- Compiling architecture behavior of tb_MUX4TO1
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX2TO1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/MUX2TO1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
