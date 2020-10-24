@@ -9,7 +9,7 @@ use ieee.numeric_std.all;
 entity top_level is
     Port ( clk                           : in  std_logic;
            reset_n                       : in  std_logic;
-			  button 							  : in  std_logic;
+			  button	 							  : in  std_logic;
 			  SW                            : in  std_logic_vector (9 downto 0);
            LEDR                          : out std_logic_vector (9 downto 0);
            HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out std_logic_vector (7 downto 0)
@@ -29,9 +29,11 @@ Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
 Signal bcd:					std_logic_vector(15 DOWNTO 0);
 
-Signal G:	std_logic_vector(9 downto 0);
-Signal Q:	std_logic_vector (7 downto 0);
-Signal EN:	std_logic; 
+
+Signal G, A:			std_logic_vector(9 downto 0);
+Signal Q, D:			std_logic_vector(7 downto 0);
+Signal result, EN:	std_logic;
+Signal s:				std_logic_vector(1 downto 0);
 
 
 -- Declarations --
@@ -77,7 +79,20 @@ Component synchronizer is
 			G:		out	std_logic_vector(9 downto 0)	-- synched swtich signals / output of synchronizer
 			);
 end component;
-			
+
+Component debounce is
+	GENERIC(
+		clk_freq    : INTEGER := 50_000_000;  --system clock frequency in Hz
+		stable_time : INTEGER := 30           --time button must remain stable in ms
+		);
+	PORT(
+		clk     : IN  STD_LOGIC;  --input clock
+		reset_n : IN  STD_LOGIC;  --asynchronous active low reset
+		button  : IN  STD_LOGIC;  --input signal to be debounced
+		result  : OUT STD_LOGIC   --debounced signal
+		);
+end component;
+
 -- Operation ---
 begin
    Num_Hex0 <= mux_out(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
@@ -112,7 +127,7 @@ SevenSegment_ins: SevenSegment
                                      
  
 LEDR(9 downto 0) <= SW(9 downto 0); -- gives visual display of the switch inputs to the LEDs on board
-switch_inputs 		<= "00000" & G(7 downto 0); -- switches that are associated with bits 
+switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 
 binary_bcd_ins: binary_bcd                       
    PORT MAP(
@@ -121,39 +136,54 @@ binary_bcd_ins: binary_bcd
       binary   => switch_inputs,    
       bcd      => bcd         
       );
-		
---s 		<= G(9 downto 8);
+
+in1	<= bcd;
+s 		<= G(9 downto 8);
 in2	<= "00000000" & G(7 downto 0);
 in3	<= "00000000" & Q; -- Extend signal to 16 bits 
 
 MUX4TO1_ins: MUX4TO1
 	 PORT MAP (
-		in1 		=>  bcd,  
+		in1 		=>  in1,  
 		in2		=>  in2,
 		in3      =>  in3,
 		in4      =>  in4,
-		s 			=>  G(9 downto 8),
+		s 			=>  s,
 		mux_out  =>  mux_out
 		);
 
---D <= G(7 downto 0);
+D <= G(7 downto 0);
 
 stored_value_ins: stored_value 
 	Port MAP ( 
-		 D  		=> G(7 downto 0),
-		 EN 		=> button, 
+		 D  		=> D,
+		 EN 		=> result, 
 		 reset_n => reset_n,
 		 clk		=> clk,    				  
 		 Q 		=> Q    				
 		 );
 		 
---A <= SW(9 downto 0);	
+A <= SW(9 downto 0);
 	
 synchronizer_ins: synchronizer
 	port map(
-			A 		=> SW(9 downto 0),
+			A 		=> A,
 			CLK 	=> clk,
 			G		=> G
 			);
-				
+
+--button <= KEY(0);
+
+debounce_ins : debounce
+   generic map(
+		clk_freq    => 50_000_000, -- change this value if different from default
+	   stable_time => 30          -- change this value if different from default
+		)
+	port map(
+	   clk     => clk,
+		button  => button,
+		reset_n => reset_n,
+		result  => result
+		);
+
 end Behavioral;
