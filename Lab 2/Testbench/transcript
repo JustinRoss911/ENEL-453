@@ -1,0 +1,821 @@
+# reading C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project Lab2Sim
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd failed with 11 errors.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 1 failed with 11 errors.
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd failed with 3 errors.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd failed with 3 errors.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 1 failed with 3 errors.
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 12:38:14 on Oct 24,2020
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/work.tb_top_level' has no architecture.
+# Error loading design
+# End time: 12:38:14 on Oct 24,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 14
+# Load canceled
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 12:39:56 on Oct 24,2020
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/work.tb_top_level' has no architecture.
+# Error loading design
+# End time: 12:39:57 on Oct 24,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+vsim -gui work.tb_mux4to1
+# vsim -gui work.tb_mux4to1 
+# Start time: 12:41:54 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mux4to1(behavior)
+# Loading work.mux4to1(behaviour)
+vsim -gui work.tb_stored_value
+# End time: 12:42:48 on Oct 24,2020, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_stored_value 
+# Start time: 12:42:48 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+vsim -gui work.tb_synchronizer
+# End time: 12:43:05 on Oct 24,2020, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_synchronizer 
+# Start time: 12:43:05 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_synchronizer(tb)
+# Loading work.synchronizer(behaviour)
+vsim -gui work.tb_top_level
+# End time: 12:43:26 on Oct 24,2020, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_top_level 
+# Start time: 12:43:26 on Oct 24,2020
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/work.tb_top_level' has no architecture.
+# Error loading design
+# End time: 12:43:26 on Oct 24,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 12:48:13 on Oct 24,2020
+# Loading std.standard
+# ** Error: (vsim-3173) Entity 'C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/work.tb_top_level' has no architecture.
+# Error loading design
+# End time: 12:48:13 on Oct 24,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 3
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 12:49:06 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:00:55 on Oct 24,2020, Elapsed time: 0:11:49
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_top_level 
+# Start time: 13:00:55 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/*
+run -continue
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+run -continue
+vsim -gui work.tb_top_level
+# End time: 13:15:12 on Oct 24,2020, Elapsed time: 0:14:17
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_top_level 
+# Start time: 13:15:12 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -continue
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:17:38 on Oct 24,2020, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_top_level 
+# Start time: 13:17:38 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:22:24 on Oct 24,2020, Elapsed time: 0:04:46
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:22:24 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:23:59 on Oct 24,2020, Elapsed time: 0:01:35
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:23:59 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:41:10 on Oct 24,2020, Elapsed time: 0:17:11
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:41:10 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:42:56 on Oct 24,2020, Elapsed time: 0:01:46
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:42:56 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 13:45:40 on Oct 24,2020, Elapsed time: 0:02:44
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:45:40 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd failed with 1 errors.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+vsim -gui work.tb_top_level
+# End time: 13:51:24 on Oct 24,2020, Elapsed time: 0:05:44
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 13:51:24 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd failed with 1 errors.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 1 failed with 1 error.
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:00:16 on Oct 24,2020, Elapsed time: 0:08:52
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_top_level 
+# Start time: 14:00:16 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:09:44 on Oct 24,2020, Elapsed time: 0:09:28
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:09:44 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:17:43 on Oct 24,2020, Elapsed time: 0:07:59
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:17:43 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of tb_top_level.vhd was successful.
+run -all
+vsim -gui work.tb_top_level
+# End time: 14:22:00 on Oct 24,2020, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:22:00 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:26:09 on Oct 24,2020, Elapsed time: 0:04:09
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:26:09 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:34:04 on Oct 24,2020, Elapsed time: 0:07:55
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:34:04 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+vsim -gui work.tb_synchronizer
+# End time: 14:36:33 on Oct 24,2020, Elapsed time: 0:02:29
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_synchronizer 
+# Start time: 14:36:33 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_synchronizer(tb)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_synchronizer/*
+add wave -position end sim:/tb_synchronizer/dut/*
+run -all
+# ** Error: Synchronizer testbench started
+#    Time: 0 ps  Iteration: 0  Instance: /tb_synchronizer
+vsim -gui work.tb_top_level
+# End time: 14:38:08 on Oct 24,2020, Elapsed time: 0:01:35
+# Errors: 1, Warnings: 1
+# vsim -gui work.tb_top_level 
+# Start time: 14:38:08 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:40:42 on Oct 24,2020, Elapsed time: 0:02:34
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:40:42 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:49:11 on Oct 24,2020, Elapsed time: 0:08:29
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:49:11 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:51:58 on Oct 24,2020, Elapsed time: 0:02:47
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:51:58 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 14:56:27 on Oct 24,2020, Elapsed time: 0:04:29
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 14:56:27 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 15:04:14 on Oct 24,2020, Elapsed time: 0:07:47
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 15:04:14 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of MUX4To1.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 8 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 15:18:03 on Oct 24,2020, Elapsed time: 0:13:49
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 15:18:03 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all

@@ -8,12 +8,12 @@ architecture tb of tb_synchronizer is
 
     component synchronizer
         port (A   : in std_logic_vector (9 downto 0);
-              CLK : in std_logic;
+              clk : in std_logic;
               G   : out std_logic_vector (9 downto 0));
     end component;
 
     signal A   : std_logic_vector (9 downto 0);
-    signal CLK : std_logic;
+    signal clk : std_logic;
     signal G   : std_logic_vector (9 downto 0);
 
     constant TbPeriod : time := 20 ps; -- EDIT Put right period here
@@ -24,14 +24,14 @@ begin
 
     dut : synchronizer
     port map (A   => A,
-              CLK => CLK,
+              clk => clk,
               G   => G);
 
     -- Clock generation
     TbClock <= not TbClock after TbPeriod/2 when TbSimEnded /= '1' else '0';
 
-    -- EDIT: Check that CLK is really your main clock signal
-    CLK <= TbClock;
+    -- EDIT: Check that clk is really your main clock signal
+    clk <= TbClock;
 
     stimuli : process
     begin

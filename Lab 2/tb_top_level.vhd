@@ -6,7 +6,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity tb_top_level is
 end tb_top_level;
 
-architecture tb of tb_stored_value is
+architecture tb of tb_top_level is
 	Component top_level is 
     Port ( clk                           : in  std_logic;
            reset_n                       : in  std_logic;
@@ -18,7 +18,8 @@ architecture tb of tb_stored_value is
 	END Component;
 	
 	Signal reset_n, button : std_logic;
-	Signal SW, LEDR: std_logic_vector(9 downto 0); 
+	Signal SW: std_logic_vector(9 downto 0); 
+
 	
 	Signal clk : std_logic := '0';
 	constant TbPeriod : time := 20 ns;
@@ -31,14 +32,7 @@ begin
     port map (clk     => clk,
               reset_n => reset_n,
               button  => button,
-				  SW      => SW,
-				  LEDR    => LEDR,
-				  HEX0    => HEX0,
-				  HEX1    => HEX1,
-				  HEX2    => HEX2,
-				  HEX3    => HEX3,
-				  HEX4    => HEX4,
-				  HEX5    => HEX5);
+				  SW      => SW);
 				  
 				  
 	 -- Clock generation
@@ -48,40 +42,48 @@ begin
     begin
 	  
 	 -- Initialization
-		  reset_n <= '1'; -- operating normaly
+			
+	 
+		  reset_n <= '0'; -- reset (put everything in a known state) 
 		  button <= '0';	-- do not store current value 
-		  SW <= "000000000"; -- binary mode, input 0 
+		  SW <= "0000000000"; -- binary mode, input 0 
 
-        wait for 2 * TbPeriod;
+        wait for 4*TbPeriod;
+		  
+		  reset_n <= '1';
+		  
+		  wait for 4*TbPeriod;
+		  
+		  --- let LEDs do inital program 
 		  
 		  -- Start tests 
 		  
 		  -- 1. binary operation 
 		  
-		  SW <= "001111111"; -- binary mode, expect 127 on LEDs 
+		  SW <= "0011111111"; -- binary mode, expect 255 on LEDs 
 		  -- Expecting....
-		  -- HEX0 = 0000110 (1)
-		  -- HEX1 = 1011011 (2)
-		  -- HEX2 = 0000111 (7) 
+		  -- HEX0 = 1011011 (2)
+		  -- HEX1 = 1101101 (5) 
+		  -- HEX2 = 1101101 (5)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  SW <= "011111111"; -- hex mode, expect 7F
+		  SW <= "0111111111"; -- hex mode, expect FF
 		  -- Expecting....
-		  -- HEX0 = 0000111 (7) 
+		  -- HEX0 = 1110001 (F)
 		  -- HEX1 = 1110001 (F)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  button <= 1; -- Store 7F
+		  button <= '1'; -- Store FF
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  button <=0;
+		  button <= '0';
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
 		  -- Expecting....
@@ -89,25 +91,38 @@ begin
 		  -- HEX1 = 0111001 (C)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  SW <= "1010101100"; -- display stored value 
+		  SW <= "1010101100"; -- display stored value while inputs show AC
 		  -- Expecting....
-		  -- HEX0 = 0000111 (7) 
+		  -- HEX0 = 1110001 (F)
 		  -- HEX1 = 1110001 (F)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  SW <= "1110101100"; -- display 5A5A
+		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  -- Expecting....
 		  -- HEX0 = 1101101 (5) 
 		  -- HEX1 = 1110111 (A)
 		  -- HEX2 = 1101101 (5) 
 		  -- HEX4 = 1110111 (A)
+		  -- Rest 0111111 (0) 
 		  
-		  wait for 2 * TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  reset_n <= '0'; -- reset 
+		  
+		  wait for 4*TbPeriod;
+		  
+		  -- Expecting all HEX outputs to be zero 0111111 
+		  
+		  -- Stop the clock and hence terminate the simulation
+        TbSimEnded <= '1';
+        wait;
+    end process;
+
+end tb;
+		  
 		  
 		  
