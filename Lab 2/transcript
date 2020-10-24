@@ -1,0 +1,368 @@
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 16:58:49 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+# Break key hit
+run -all
+vsim -gui work.tb_mux4to1
+# End time: 17:00:34 on Oct 24,2020, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 5
+# vsim -gui work.tb_mux4to1 
+# Start time: 17:00:34 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mux4to1(behavior)
+# Loading work.mux4to1(behaviour)
+add wave -position end sim:/tb_mux4to1/*
+add wave -position end sim:/tb_mux4to1/uut/*
+run -all
+# ** Error: MUX4TO1 testbench started
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mux4to1
+# ** Error: MUX2TO1 testbench completed
+#    Time: 440 ps  Iteration: 0  Instance: /tb_mux4to1
+vsim -gui work.tb_stored_value
+# End time: 17:02:18 on Oct 24,2020, Elapsed time: 0:01:44
+# Errors: 2, Warnings: 1
+# vsim -gui work.tb_stored_value 
+# Start time: 17:02:18 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+add wave -position end sim:/tb_stored_value/*
+add wave -position end sim:/tb_stored_value/UUT/*
+run -all
+vsim -gui work.tb_debounce
+# End time: 17:03:34 on Oct 24,2020, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_debounce 
+# Start time: 17:03:34 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_debounce(behavioral)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_debounce/*
+add wave -position end sim:/tb_debounce/debounce1/*
+run -all
+# ** Error: First test passed
+#    Time: 30000703 ns  Iteration: 0  Instance: /tb_debounce
+# Break key hit
+# Break in Process line__47 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/debounce.vhd line 47
+vsim -gui work.tb_debounce
+# End time: 17:05:44 on Oct 24,2020, Elapsed time: 0:02:10
+# Errors: 1, Warnings: 1
+# vsim -gui work.tb_debounce 
+# Start time: 17:05:44 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_debounce(behavioral)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_debounce/*
+add wave -position end sim:/tb_debounce/debounce1/*
+run -all
+# Break key hit
+# Break in Process clk_process at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_debounce.vhd line 59
+run -all
+# ** Error: First test passed
+#    Time: 30000703 ns  Iteration: 0  Instance: /tb_debounce
+# Break key hit
+# Break in Process clk_process at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_debounce.vhd line 59
+vsim -gui work.tb_synchronizer
+# End time: 17:08:36 on Oct 24,2020, Elapsed time: 0:02:52
+# Errors: 1, Warnings: 1
+# vsim -gui work.tb_synchronizer 
+# Start time: 17:08:36 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_synchronizer(tb)
+# Loading work.synchronizer(behaviour)
+# ** Fatal: (vsim-3817) Port "reset_n" of entity "synchronizer" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_synchronizer/dut File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:08:36 on Oct 24,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_synchronizer
+# vsim -gui work.tb_synchronizer 
+# Start time: 17:09:48 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_synchronizer(tb)
+# Loading work.synchronizer(behaviour)
+# ** Fatal: (vsim-3817) Port "reset_n" of entity "synchronizer" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_synchronizer/dut File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 17:09:48 on Oct 24,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_synchronizer
+# vsim -gui work.tb_synchronizer 
+# Start time: 17:11:39 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_synchronizer(tb)
+# Loading work.synchronizer(behaviour)
+add wave -position end sim:/tb_synchronizer/*
+add wave -position end sim:/tb_synchronizer/dut/*
+run -all
+# ** Error: Synchronizer testbench started
+#    Time: 0 ps  Iteration: 0  Instance: /tb_synchronizer
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 17:15:16 on Oct 24,2020, Elapsed time: 0:03:37
+# Errors: 1, Warnings: 3
+# vsim -gui work.tb_top_level 
+# Start time: 17:15:16 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+run -all
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+run -all
+run -continue
+run -all
+run -all
+run -continue
+vsim -gui work.tb_top_level
+# End time: 17:16:58 on Oct 24,2020, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_top_level 
+# Start time: 17:16:58 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 17:18:35 on Oct 24,2020, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 17:18:35 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 17:23:57 on Oct 24,2020, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 17:23:57 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of MUX4TO1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# 13 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 17:30:18 on Oct 24,2020, Elapsed time: 0:06:21
+# Errors: 0, Warnings: 2
+# vsim -gui work.tb_top_level 
+# Start time: 17:30:18 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_top_level/*
+add wave -position end sim:/tb_top_level/UUT/*
+run -all
+vsim -gui work.tb_mux4to1
+# End time: 17:43:32 on Oct 24,2020, Elapsed time: 0:13:14
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_mux4to1 
+# Start time: 17:43:32 on Oct 24,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mux4to1(behavior)
+# Loading work.mux4to1(behaviour)
+add wave -position end sim:/tb_mux4to1/*
+add wave -position end sim:/tb_mux4to1/uut/*
+run -all
+# ** Error: MUX4TO1 testbench started
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mux4to1
+# ** Error: MUX2TO1 testbench completed
+#    Time: 440 ps  Iteration: 0  Instance: /tb_mux4to1
+quit
+# End time: 17:44:58 on Oct 24,2020, Elapsed time: 0:01:26
+# Errors: 2, Warnings: 1

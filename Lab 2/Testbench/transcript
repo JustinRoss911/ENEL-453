@@ -819,3 +819,5 @@ vsim -gui work.tb_top_level
 add wave -position end sim:/tb_top_level/*
 add wave -position end sim:/tb_top_level/UUT/*
 run -all
+# End time: 15:46:18 on Oct 24,2020, Elapsed time: 0:28:15
+# Errors: 0, Warnings: 2

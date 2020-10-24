@@ -8,12 +8,12 @@ architecture tb of tb_synchronizer is
 
     component synchronizer
         port (A   : in std_logic_vector (9 downto 0);
-              clk : in std_logic;
+				  clk, reset_n : in std_logic;
               G   : out std_logic_vector (9 downto 0));
     end component;
 
     signal A   : std_logic_vector (9 downto 0);
-    signal clk : std_logic;
+    signal clk, reset_n : std_logic;
     signal G   : std_logic_vector (9 downto 0);
 
     constant TbPeriod : time := 20 ps; -- EDIT Put right period here
@@ -25,6 +25,7 @@ begin
     dut : synchronizer
     port map (A   => A,
               clk => clk,
+				  reset_n => reset_n,
               G   => G);
 
     -- Clock generation

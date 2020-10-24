@@ -28,6 +28,7 @@ Signal in1, in2, in3, in4, mux_out: std_logic_vector(15 DOWNTO 0);
 Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
 Signal bcd:					std_logic_vector(15 DOWNTO 0);
+Signal binary: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
@@ -75,7 +76,7 @@ END Component;
 Component synchronizer is
 	port	(
 			A: 	in		std_logic_vector(9 downto 0); -- switch signals
-			CLK:	in		std_logic;							--
+			CLK, reset_n:	in		std_logic;							--
 			G:		out	std_logic_vector(9 downto 0)	-- synched swtich signals / output of synchronizer
 			);
 end component;
@@ -128,12 +129,14 @@ SevenSegment_ins: SevenSegment
  
 LEDR(9 downto 0) <= SW(9 downto 0); -- gives visual display of the switch inputs to the LEDs on board
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
+binary <= switch_inputs;
+
 
 binary_bcd_ins: binary_bcd                       
    PORT MAP(
       clk      => clk,                          
       reset_n  => reset_n,                                 
-      binary   => switch_inputs,    
+      binary   => binary,    
       bcd      => bcd         
       );
 
@@ -153,11 +156,12 @@ MUX4TO1_ins: MUX4TO1
 		);
 
 D <= G(7 downto 0);
+EN <= result;
 
 stored_value_ins: stored_value 
 	Port MAP ( 
 		 D  		=> D,
-		 EN 		=> result, 
+		 EN 		=> EN, 
 		 reset_n => reset_n,
 		 clk		=> clk,    				  
 		 Q 		=> Q    				
@@ -168,11 +172,11 @@ A <= SW(9 downto 0);
 synchronizer_ins: synchronizer
 	port map(
 			A 		=> A,
-			CLK 	=> clk,
-			G		=> G
+			clk 	=> clk,
+			G		=> G,
+			reset_n => reset_n
 			);
-
---button <= KEY(0);
+			
 
 debounce_ins : debounce
    generic map(

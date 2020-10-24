@@ -18,9 +18,8 @@ architecture tb of tb_top_level is
 	END Component;
 	
 	Signal reset_n, button : std_logic;
-	Signal SW: std_logic_vector(9 downto 0); 
-
-	
+	Signal SW, LEDR: std_logic_vector(9 downto 0); 
+	Signal HEX0,HEX1,HEX2,HEX3,HEX4,HEX5: std_logic_vector (7 downto 0);
 	Signal clk : std_logic := '0';
 	constant TbPeriod : time := 20 ns;
    signal TbSimEnded : std_logic := '0';
@@ -32,7 +31,14 @@ begin
     port map (clk     => clk,
               reset_n => reset_n,
               button  => button,
-				  SW      => SW);
+				  SW      => SW,
+				  LEDR => LEDR,
+				  HEX0 => HEX0,
+				  HEX1 => HEX1,
+				  HEX2 => HEX2,
+				  HEX3 => HEX3,
+				  HEX4 => HEX4,
+				  HEX5 => HEX5);
 				  
 				  
 	 -- Clock generation
@@ -53,13 +59,7 @@ begin
 		  reset_n <= '1';
 		  
 		  wait for 4*TbPeriod;
-		  
-		  --- let LEDs do inital program 
-		  
-		  -- Start tests 
-		  
-		  -- 1. binary operation 
-		  
+
 		  SW <= "0011111111"; -- binary mode, expect 255 on LEDs 
 		  -- Expecting....
 		  -- HEX0 = 1011011 (2)

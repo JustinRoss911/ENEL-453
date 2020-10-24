@@ -20,10 +20,10 @@ end MUX4TO1;
 architecture behaviour of MUX4TO1 is
 	begin
 		with s select
-			mux_out <= in1 when "00", -- when s is 00, mux_out is in1 (binary)
-			           in2 when "01", -- when s is 01, mux_out is in2 (decimal)
-						  in3 when "10", -- when s is 10, mux_out is the stored value 
-						  in4 when others; -- when s is 11, mux_out is 5A5A
+			mux_out <= in1 when "00",
+			           in2 when "01",
+						  in3 when "10",
+						  in4 when others;
 
 end behaviour; 
 ----------------------------------------------------------------
