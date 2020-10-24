@@ -141,7 +141,7 @@ binary_bcd_ins: binary_bcd
       );
 
 in1	<= bcd;
-s 		<= SW(9 downto 8);
+s 		<= G(9 downto 8);
 in2	<= "00000000" & G(7 downto 0);
 in3	<= "00000000" & Q; -- Extend signal to 16 bits 
 

@@ -24,8 +24,10 @@ SW[6] => synchronizer:synchronizer_ins.A[6]
 SW[6] => LEDR[6].DATAIN
 SW[7] => synchronizer:synchronizer_ins.A[7]
 SW[7] => LEDR[7].DATAIN
+SW[8] => MUX4TO1:MUX4TO1_ins.s[0]
 SW[8] => synchronizer:synchronizer_ins.A[8]
 SW[8] => LEDR[8].DATAIN
+SW[9] => MUX4TO1:MUX4TO1_ins.s[1]
 SW[9] => synchronizer:synchronizer_ins.A[9]
 SW[9] => LEDR[9].DATAIN
 LEDR[0] << SW[0].DB_MAX_OUTPUT_PORT_TYPE
