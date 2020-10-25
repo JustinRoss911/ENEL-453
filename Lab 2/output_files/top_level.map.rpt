@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Oct 24 20:27:15 2020
+Sat Oct 24 21:25:04 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -51,15 +51,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 24 20:27:15 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 24 21:25:04 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 273                                         ;
-;     Total combinational functions  ; 240                                         ;
-;     Dedicated logic registers      ; 144                                         ;
-; Total registers                    ; 144                                         ;
+; Total logic elements               ; 259                                         ;
+;     Total combinational functions  ; 228                                         ;
+;     Dedicated logic registers      ; 120                                         ;
+; Total registers                    ; 120                                         ;
 ; Total pins                         ; 71                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -189,36 +189,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 273       ;
-;                                             ;           ;
-; Total combinational functions               ; 240       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 95        ;
-;     -- 3 input functions                    ; 31        ;
-;     -- <=2 input functions                  ; 114       ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 156       ;
-;     -- arithmetic mode                      ; 84        ;
-;                                             ;           ;
-; Total registers                             ; 144       ;
-;     -- Dedicated logic registers            ; 144       ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 71        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 144       ;
-; Total fan-out                               ; 1354      ;
-; Average fan-out                             ; 2.57      ;
-+---------------------------------------------+-----------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimated Total logic elements              ; 259           ;
+;                                             ;               ;
+; Total combinational functions               ; 228           ;
+; Logic element usage by number of LUT inputs ;               ;
+;     -- 4 input functions                    ; 95            ;
+;     -- 3 input functions                    ; 42            ;
+;     -- <=2 input functions                  ; 91            ;
+;                                             ;               ;
+; Logic elements by mode                      ;               ;
+;     -- normal mode                          ; 164           ;
+;     -- arithmetic mode                      ; 64            ;
+;                                             ;               ;
+; Total registers                             ; 120           ;
+;     -- Dedicated logic registers            ; 120           ;
+;     -- I/O registers                        ; 0             ;
+;                                             ;               ;
+; I/O pins                                    ; 71            ;
+;                                             ;               ;
+; Embedded Multiplier 9-bit elements          ; 0             ;
+;                                             ;               ;
+; Maximum fan-out node                        ; reset_n~input ;
+; Maximum fan-out                             ; 140           ;
+; Total fan-out                               ; 1267          ;
+; Average fan-out                             ; 2.59          ;
++---------------------------------------------+---------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -226,16 +226,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                    ; Entity Name          ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
-; |top_level                            ; 240 (0)             ; 144 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
+; |top_level                            ; 228 (0)             ; 120 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
+;    |MUX4TO1:MUX4TO1_ins|              ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX4TO1:MUX4TO1_ins                                         ; MUX4TO1              ; work         ;
 ;    |SevenSegment:SevenSegment_ins|    ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                               ; SevenSegment         ; work         ;
 ;       |SevenSegment_decoder:decoder0| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder1| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder1 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder2 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3 ; SevenSegment_decoder ; work         ;
 ;    |binary_bcd:binary_bcd_ins|        ; 153 (153)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
-;    |debounce:debounce_ins|            ; 31 (31)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|debounce:debounce_ins                                       ; debounce             ; work         ;
-;    |stored_value:stored_value_ins|    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
-;    |synchronizer:synchronizer_ins|    ; 10 (10)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
+;    |stored_value:stored_value_ins|    ; 1 (1)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
+;    |synchronizer:synchronizer_ins|    ; 30 (30)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -293,12 +293,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 144   ;
-; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 8     ;
-; Number of registers using Asynchronous Clear ; 80    ;
+; Total registers                              ; 120   ;
+; Number of registers using Synchronous Clear  ; 19    ;
+; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Asynchronous Clear ; 113   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 126   ;
+; Number of registers using Clock Enable       ; 95    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -308,14 +308,13 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_level|debounce:debounce_ins|count[17]          ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|stored_value:stored_value_ins|Q[11]      ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|stored_value:stored_value_ins|Q[1]       ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[8]  ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[1]  ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[16] ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[17] ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[21] ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top_level|stored_value:stored_value_ins|Q[11]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |top_level|stored_value:stored_value_ins|Q[4]       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[10] ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[7]  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[15] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[20] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[24] ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[28] ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
@@ -381,27 +380,24 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 71                          ;
-; cycloneiii_ff         ; 144                         ;
-;     CLR               ; 8                           ;
-;     ENA               ; 29                          ;
-;     ENA CLR           ; 53                          ;
+; cycloneiii_ff         ; 120                         ;
+;     CLR               ; 25                          ;
+;     ENA               ; 7                           ;
+;     ENA CLR           ; 69                          ;
 ;     ENA CLR SCLR      ; 15                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
-;     ENA SCLR          ; 21                          ;
-;     ENA SLD           ; 4                           ;
-;     plain             ; 10                          ;
-; cycloneiii_lcell_comb ; 245                         ;
-;     arith             ; 84                          ;
-;         2 data inputs ; 84                          ;
-;     normal            ; 161                         ;
+; cycloneiii_lcell_comb ; 233                         ;
+;     arith             ; 64                          ;
+;         2 data inputs ; 64                          ;
+;     normal            ; 169                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 24                          ;
-;         3 data inputs ; 31                          ;
+;         1 data inputs ; 9                           ;
+;         2 data inputs ; 22                          ;
+;         3 data inputs ; 42                          ;
 ;         4 data inputs ; 95                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.42                        ;
+; Average LUT depth     ; 3.50                        ;
 +-----------------------+-----------------------------+
 
 
@@ -420,7 +416,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 24 20:27:06 2020
+    Info: Processing started: Sat Oct 24 21:24:55 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -447,9 +443,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file tb_mux4
 Info (12021): Found 2 design units, including 1 entities, in source file synchronizer.vhd
     Info (12022): Found design unit 1: synchronizer-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 17
     Info (12023): Found entity 1: synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 8
-Info (12021): Found 3 design units, including 1 entities, in source file tb_synchronizer.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file tb_synchronizer.vhd
     Info (12022): Found design unit 1: tb_synchronizer-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_synchronizer.vhd Line: 7
-    Info (12022): Found design unit 2: cfg_tb_synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_synchronizer.vhd Line: 58
     Info (12023): Found entity 1: tb_synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_synchronizer.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_top_level.vhd
     Info (12022): Found design unit 1: tb_top_level-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/tb_top_level.vhd Line: 9
@@ -464,10 +459,22 @@ Warning (12125): Using design file stored_value.vhd, which is not specified as a
     Info (12023): Found entity 1: stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/stored_value.vhd Line: 13
 Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 161
 Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:synchronizer_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 172
+Warning (10492): VHDL Process Statement warning at synchronizer.vhd(24): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 24
 Warning (12125): Using design file debounce.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: debounce-logic File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/debounce.vhd Line: 40
     Info (12023): Found entity 1: debounce File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/debounce.vhd Line: 29
 Info (12128): Elaborating entity "debounce" for hierarchy "debounce:debounce_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 181
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[9]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[9]~_emulated" and latch "synchronizer:synchronizer_ins|G[9]~1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[0]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[0]~_emulated" and latch "synchronizer:synchronizer_ins|G[0]~5" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[8]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[8]~_emulated" and latch "synchronizer:synchronizer_ins|G[8]~9" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[1]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[1]~_emulated" and latch "synchronizer:synchronizer_ins|G[1]~13" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[2]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[2]~_emulated" and latch "synchronizer:synchronizer_ins|G[2]~17" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[3]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[3]~_emulated" and latch "synchronizer:synchronizer_ins|G[3]~21" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[4]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[4]~_emulated" and latch "synchronizer:synchronizer_ins|G[4]~25" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[5]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[5]~_emulated" and latch "synchronizer:synchronizer_ins|G[5]~29" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[6]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[6]~_emulated" and latch "synchronizer:synchronizer_ins|G[6]~33" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
+    Warning (13310): Register "synchronizer:synchronizer_ins|G[7]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[7]~_emulated" and latch "synchronizer:synchronizer_ins|G[7]~37" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/synchronizer.vhd Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
     Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 15
@@ -493,13 +500,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 344 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "button" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 12
+Info (21057): Implemented 330 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 273 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4794 megabytes
-    Info: Processing ended: Sat Oct 24 20:27:15 2020
+    Info (21061): Implemented 259 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 40 warnings
+    Info: Peak virtual memory: 4800 megabytes
+    Info: Processing ended: Sat Oct 24 21:25:04 2020
     Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:20
 

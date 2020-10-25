@@ -25,7 +25,7 @@ begin
     dut : synchronizer
     port map (A   => A,
               clk => clk,
-				  reset_n => reset_n,
+                  reset_n => reset_n,
               G   => G);
 
     -- Clock generation
@@ -36,26 +36,21 @@ begin
 
     stimuli : process
     begin
-	 assert false report "Synchronizer testbench started";
+     assert false report "Synchronizer testbench started";
         -- EDIT Adapt initialization as needed
         A <= "0000000000";
-		  
+          reset_n <= '0';
+
         -- EDIT Add stimuli here
         wait for TbPeriod;
-		  A <= "1010101010"; -- Arbitrary 0's and 1's showing which swtiches are on and off.
-		  wait for TbPeriod;
-		  A <= "0101010101";
-		  wait for 2*TbPeriod; -- period * 2 to ensure enough clock cycles have occured to copy over the most recent signal A.
+          A <= "1010101010"; -- Arbitrary 0's and 1's showing which swtiches are on and off.
+          wait for TbPeriod;
+          A <= "0101010101";
+          reset_n <= '1';
+          wait for 2*TbPeriod; -- period * 2 to ensure enough clock cycles have occured to copy over the most recent signal A.
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';
         wait;
     end process;
 
 end tb;
-
--- Configuration block below is required by some simulators. Usually no need to edit.
-
-configuration cfg_tb_synchronizer of tb_synchronizer is
-    for tb
-    end for;
-end cfg_tb_synchronizer;
