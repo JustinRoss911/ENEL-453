@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Oct 24 17:55:30 2020
+Sat Oct 24 20:27:15 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -19,13 +19,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
  13. Parameter Settings for User Entity Instance: debounce:debounce_ins
- 14. Port Connectivity Checks: "synchronizer:synchronizer_ins"
- 15. Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins"
- 16. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
- 17. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
- 18. Post-Synthesis Netlist Statistics for Top Partition
- 19. Elapsed Time Per Partition
- 20. Analysis & Synthesis Messages
+ 14. Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins"
+ 15. Port Connectivity Checks: "binary_bcd:binary_bcd_ins"
+ 16. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
+ 17. Post-Synthesis Netlist Statistics for Top Partition
+ 18. Elapsed Time Per Partition
+ 19. Analysis & Synthesis Messages
 
 
 
@@ -52,15 +51,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 24 17:55:30 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Oct 24 20:27:15 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 284                                         ;
-;     Total combinational functions  ; 253                                         ;
-;     Dedicated logic registers      ; 132                                         ;
-; Total registers                    ; 132                                         ;
+; Total logic elements               ; 273                                         ;
+;     Total combinational functions  ; 240                                         ;
+;     Dedicated logic registers      ; 144                                         ;
+; Total registers                    ; 144                                         ;
 ; Total pins                         ; 71                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -195,20 +194,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 284       ;
+; Estimated Total logic elements              ; 273       ;
 ;                                             ;           ;
-; Total combinational functions               ; 253       ;
+; Total combinational functions               ; 240       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 94        ;
-;     -- 3 input functions                    ; 39        ;
-;     -- <=2 input functions                  ; 120       ;
+;     -- 4 input functions                    ; 95        ;
+;     -- 3 input functions                    ; 31        ;
+;     -- <=2 input functions                  ; 114       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 169       ;
+;     -- normal mode                          ; 156       ;
 ;     -- arithmetic mode                      ; 84        ;
 ;                                             ;           ;
-; Total registers                             ; 132       ;
-;     -- Dedicated logic registers            ; 132       ;
+; Total registers                             ; 144       ;
+;     -- Dedicated logic registers            ; 144       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 71        ;
@@ -216,9 +215,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 132       ;
-; Total fan-out                               ; 1344      ;
-; Average fan-out                             ; 2.55      ;
+; Maximum fan-out                             ; 144       ;
+; Total fan-out                               ; 1354      ;
+; Average fan-out                             ; 2.57      ;
 +---------------------------------------------+-----------+
 
 
@@ -227,8 +226,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                    ; Entity Name          ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
-; |top_level                            ; 253 (0)             ; 132 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
-;    |MUX4TO1:MUX4TO1_ins|              ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX4TO1:MUX4TO1_ins                                         ; MUX4TO1              ; work         ;
+; |top_level                            ; 240 (0)             ; 144 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
 ;    |SevenSegment:SevenSegment_ins|    ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                               ; SevenSegment         ; work         ;
 ;       |SevenSegment_decoder:decoder0| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder1| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder1 ; SevenSegment_decoder ; work         ;
@@ -236,8 +234,8 @@ https://fpgasoftware.intel.com/eula.
 ;       |SevenSegment_decoder:decoder3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3 ; SevenSegment_decoder ; work         ;
 ;    |binary_bcd:binary_bcd_ins|        ; 153 (153)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
 ;    |debounce:debounce_ins|            ; 31 (31)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|debounce:debounce_ins                                       ; debounce             ; work         ;
-;    |stored_value:stored_value_ins|    ; 9 (9)               ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
-;    |synchronizer:synchronizer_ins|    ; 8 (8)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
+;    |stored_value:stored_value_ins|    ; 18 (18)             ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
+;    |synchronizer:synchronizer_ins|    ; 10 (10)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -295,12 +293,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 132   ;
+; Total registers                              ; 144   ;
 ; Number of registers using Synchronous Clear  ; 40    ;
-; Number of registers using Synchronous Load   ; 4     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 80    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 116   ;
+; Number of registers using Clock Enable       ; 126   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -310,16 +308,15 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|stored_value:stored_value_ins|Q[0]       ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_level|debounce:debounce_ins|count[5]           ;
-; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[12] ;
-; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[6]  ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[15] ;
-; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[20] ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[24] ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_level|debounce:debounce_ins|count[17]          ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|stored_value:stored_value_ins|Q[11]      ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|stored_value:stored_value_ins|Q[1]       ;
+; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[8]  ;
+; 5:1                ; 7 bits    ; 21 LEs        ; 14 LEs               ; 7 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[1]  ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[16] ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[17] ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[21] ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[28] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|MUX4TO1:MUX4TO1_ins|Mux4                 ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_level|MUX4TO1:MUX4TO1_ins|Mux15                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------+
 
 
@@ -334,22 +331,12 @@ Encoding Type:  One-Hot
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "synchronizer:synchronizer_ins"                                                         ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; Port    ; Type   ; Severity ; Details                                                                             ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-; g[9..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+---------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------+
 ; Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins" ;
 +-------------+-------+----------+----------------+
 ; Port        ; Type  ; Severity ; Details        ;
 +-------------+-------+----------+----------------+
 ; in2[15..8]  ; Input ; Info     ; Stuck at GND   ;
-; in3[15..8]  ; Input ; Info     ; Stuck at GND   ;
 ; in4[12..11] ; Input ; Info     ; Stuck at VCC   ;
 ; in4[4..3]   ; Input ; Info     ; Stuck at VCC   ;
 ; in4[8..7]   ; Input ; Info     ; Stuck at GND   ;
@@ -394,26 +381,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 71                          ;
-; cycloneiii_ff         ; 132                         ;
+; cycloneiii_ff         ; 144                         ;
 ;     CLR               ; 8                           ;
-;     ENA               ; 23                          ;
+;     ENA               ; 29                          ;
 ;     ENA CLR           ; 53                          ;
 ;     ENA CLR SCLR      ; 15                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
 ;     ENA SCLR          ; 21                          ;
-;     plain             ; 8                           ;
-; cycloneiii_lcell_comb ; 258                         ;
+;     ENA SLD           ; 4                           ;
+;     plain             ; 10                          ;
+; cycloneiii_lcell_comb ; 245                         ;
 ;     arith             ; 84                          ;
 ;         2 data inputs ; 84                          ;
-;     normal            ; 174                         ;
+;     normal            ; 161                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 10                          ;
-;         2 data inputs ; 30                          ;
-;         3 data inputs ; 39                          ;
-;         4 data inputs ; 94                          ;
+;         2 data inputs ; 24                          ;
+;         3 data inputs ; 31                          ;
+;         4 data inputs ; 95                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 8.00                        ;
-; Average LUT depth     ; 3.82                        ;
+; Average LUT depth     ; 3.42                        ;
 +-----------------------+-----------------------------+
 
 
@@ -432,7 +420,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Oct 24 17:55:20 2020
+    Info: Processing started: Sat Oct 24 20:27:06 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab_2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -505,14 +493,14 @@ Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 355 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 344 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 284 logic cells
+    Info (21061): Implemented 273 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4795 megabytes
-    Info: Processing ended: Sat Oct 24 17:55:30 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4794 megabytes
+    Info: Processing ended: Sat Oct 24 20:27:15 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -32,7 +32,7 @@ Signal binary: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D:			std_logic_vector(7 downto 0);
+Signal Q, D:			std_logic_vector(15 downto 0);
 Signal result, EN:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
@@ -67,9 +67,9 @@ END Component;
 
 Component stored_value is 
 	Port ( 
-			D     				: in  std_logic_vector(7 downto 0); -- output of synchronizer 
+			D     				: in  std_logic_vector(15 downto 0); -- output of synchronizer 
 			EN, reset_n, clk  : in  std_logic;							-- EN is ouput of debounce 				  
-			Q     				: out std_logic_vector(7 downto 0)  -- input to mux 
+			Q     				: out std_logic_vector(15 downto 0)  -- input to mux 
 			);
 END Component;
 
@@ -96,10 +96,10 @@ end component;
 
 -- Operation ---
 begin
-   Num_Hex0 <= mux_out(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex1 <= mux_out(7 downto 4);
-   Num_Hex2 <= mux_out(11 downto 8);
-   Num_Hex3 <= mux_out(15 downto 12);
+   Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex1 <= Q(7 downto 4);
+   Num_Hex2 <= Q(11 downto 8);
+   Num_Hex3 <= Q(15 downto 12);
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
@@ -141,9 +141,9 @@ binary_bcd_ins: binary_bcd
       );
 
 in1	<= bcd;
-s 		<= SW(9 downto 8);
 in2	<= "00000000" & G(7 downto 0);
-in3	<= "00000000" & Q; -- Extend signal to 16 bits 
+in3	<= Q; -- Extend signal to 16 bits 
+s 		<= G(9 downto 8); 
 
 MUX4TO1_ins: MUX4TO1
 	 PORT MAP (
@@ -155,7 +155,7 @@ MUX4TO1_ins: MUX4TO1
 		mux_out  =>  mux_out
 		);
 
-D <= G(7 downto 0);
+D <= mux_out;
 EN <= result;
 
 stored_value_ins: stored_value 

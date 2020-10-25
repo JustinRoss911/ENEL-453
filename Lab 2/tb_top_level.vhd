@@ -54,11 +54,11 @@ begin
 		  button <= '0';	-- do not store current value 
 		  SW <= "0000000000"; -- binary mode, input 0 
 
-        wait for 4*TbPeriod;
+        wait for 1000*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 
 		  SW <= "0011111111"; -- binary mode, expect 255 on LEDs 
 		  -- Expecting....
@@ -67,7 +67,7 @@ begin
 		  -- HEX2 = 1101101 (5)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  SW <= "0111111111"; -- hex mode, expect FF
 		  -- Expecting....
@@ -75,15 +75,15 @@ begin
 		  -- HEX1 = 1110001 (F)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  button <= '1'; -- Store FF
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  button <= '0';
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
 		  -- Expecting....
@@ -91,7 +91,7 @@ begin
 		  -- HEX1 = 0111001 (C)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  SW <= "1010101100"; -- display stored value while inputs show AC
 		  -- Expecting....
@@ -99,7 +99,7 @@ begin
 		  -- HEX1 = 1110001 (F)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  -- Expecting....
@@ -109,11 +109,11 @@ begin
 		  -- HEX4 = 1110111 (A)
 		  -- Rest 0111111 (0) 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  reset_n <= '0'; -- reset 
 		  
-		  wait for 4*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  -- Expecting all HEX outputs to be zero 0111111 
 		  
