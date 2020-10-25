@@ -1,5 +1,5 @@
 Fitter report for top_level
-Sun Oct 25 12:18:45 2020
+Sun Oct 25 12:31:15 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Sun Oct 25 12:18:45 2020       ;
+; Fitter Status                      ; Successful - Sun Oct 25 12:31:15 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -158,7 +158,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   2.2%      ;
+;     Processors 2-4         ;   2.4%      ;
 +----------------------------+-------------+
 
 
@@ -364,7 +364,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/output_files/top_level.pin.
+The pin-out file can be found in C:/github/ENEL 453/ENEL-453/Lab 2/output_files/top_level.pin.
 
 
 +----------------------------------------------------------------------+
@@ -1842,12 +1842,12 @@ Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
 Warning (335093): The Timing Analyzer is analyzing 10 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Info (332104): Reading SDC File: 'top_level.SDC'
-Warning (332174): Ignored filter at top_level.sdc(9): ADC_CLK_10 could not be matched with a port File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 9
-Warning (332049): Ignored create_clock at top_level.sdc(9): Argument <targets> is an empty collection File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 9
-    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 9
-Warning (332174): Ignored filter at top_level.sdc(11): MAX10_CLK2_50 could not be matched with a port File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 11
-Warning (332049): Ignored create_clock at top_level.sdc(11): Argument <targets> is an empty collection File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 11
-    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.sdc Line: 11
+Warning (332174): Ignored filter at top_level.sdc(9): ADC_CLK_10 could not be matched with a port File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 9
+Warning (332049): Ignored create_clock at top_level.sdc(9): Argument <targets> is an empty collection File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 9
+    Info (332050): create_clock -period "10.0 MHz" [get_ports ADC_CLK_10] File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 9
+Warning (332174): Ignored filter at top_level.sdc(11): MAX10_CLK2_50 could not be matched with a port File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 11
+Warning (332049): Ignored create_clock at top_level.sdc(11): Argument <targets> is an empty collection File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 11
+    Info (332050): create_clock -period "50.0 MHz" [get_ports MAX10_CLK2_50] File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.sdc Line: 11
 Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
 Warning (332060): Node: reset_n was determined to be a clock but was found without an associated clock assignment.
     Info (13166): Latch synchronizer:synchronizer_ins|G[7]~37 is being clocked by reset_n
@@ -1857,7 +1857,7 @@ Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):   20.000          clk
-Info (176353): Automatically promoted node clk~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 10
+Info (176353): Automatically promoted node clk~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 10
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
 Info (176233): Starting register packing
 Info (176235): Finished register packing
@@ -1941,7 +1941,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1955,40 +1955,40 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.10 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 13 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
-    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 13
-    Info (169178): Pin reset_n uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 11
-    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at P11 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 10
-    Info (169178): Pin button uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/top_level.vhd Line: 12
-Info (144001): Generated suppressed messages file C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/output_files/top_level.fit.smsg
+    Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[1] uses I/O standard 3.3-V LVTTL at C11 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[2] uses I/O standard 3.3-V LVTTL at D12 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[3] uses I/O standard 3.3-V LVTTL at C12 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[4] uses I/O standard 3.3-V LVTTL at A12 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[5] uses I/O standard 3.3-V LVTTL at B12 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[6] uses I/O standard 3.3-V LVTTL at A13 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[7] uses I/O standard 3.3-V LVTTL at A14 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[8] uses I/O standard 3.3-V LVTTL at B14 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin SW[9] uses I/O standard 3.3-V LVTTL at F15 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 13
+    Info (169178): Pin reset_n uses I/O standard 3.3 V Schmitt Trigger at A7 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 11
+    Info (169178): Pin clk uses I/O standard 3.3-V LVTTL at P11 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 10
+    Info (169178): Pin button uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/github/ENEL 453/ENEL-453/Lab 2/top_level.vhd Line: 12
+Info (144001): Generated suppressed messages file C:/github/ENEL 453/ENEL-453/Lab 2/output_files/top_level.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 92 warnings
     Info: Peak virtual memory: 5657 megabytes
-    Info: Processing ended: Sun Oct 25 12:18:46 2020
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Processing ended: Sun Oct 25 12:31:16 2020
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2/output_files/top_level.fit.smsg.
+The suppressed messages can be found in C:/github/ENEL 453/ENEL-453/Lab 2/output_files/top_level.fit.smsg.
 
 
