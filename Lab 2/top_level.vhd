@@ -36,6 +36,8 @@ Signal Q, D:			std_logic_vector(15 downto 0);
 Signal result, EN:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
+Signal clk_freq: INTEGER; --system clock frequency in Hz
+Signal stable_time: INTEGER;
 
 -- Declarations --
 Component SevenSegment is
@@ -83,8 +85,8 @@ end component;
 
 Component debounce is
 	GENERIC(
-		clk_freq    : INTEGER := 50_000_000;  --system clock frequency in Hz
-		stable_time : INTEGER := 30           --time button must remain stable in ms
+		   clk_freq    : INTEGER := 50_000_000;  --system clock frequency in Hz
+    stable_time : INTEGER := 30         --time button must remain stable in ms
 		);
 	PORT(
 		clk     : IN  STD_LOGIC;  --input clock
@@ -96,10 +98,10 @@ end component;
 
 -- Operation ---
 begin
-   Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex1 <= Q(7 downto 4);
-   Num_Hex2 <= Q(11 downto 8);
-   Num_Hex3 <= Q(15 downto 12);
+   Num_Hex0 <= mux_out(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex1 <= mux_out(7 downto 4);
+   Num_Hex2 <= mux_out(11 downto 8);
+   Num_Hex3 <= mux_out(15 downto 12);
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
@@ -177,6 +179,8 @@ synchronizer_ins: synchronizer
 			reset_n => reset_n
 			);
 			
+--clk_freq <= 50_000_000;
+--stable_time <= 30;
 
 debounce_ins : debounce
    generic map(

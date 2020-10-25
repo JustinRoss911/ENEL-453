@@ -19,7 +19,7 @@ signal E: std_logic_vector(9 downto 0);
 begin
     process(clk, reset_n)
         begin
-            if reset_n = '1' then
+            if reset_n = '0' then
                 E <= "0000000000";
                 G <= E;
             elsif rising_edge(clk) then

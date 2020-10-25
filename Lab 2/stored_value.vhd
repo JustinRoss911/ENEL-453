@@ -25,8 +25,10 @@ architecture behaviour of stored_value is
 			begin 
 				if reset_n = '0' then 		-- If reset=0, Q gets zero (synchronous reset)  
 					Q <= "0000000000000000";
-				elsif rising_edge(clk) then     -- If EN=1, Q gets D 
+				elsif rising_edge(clk) then
+					if (EN = '1') then 			-- If EN=1, Q gets D 
 						Q <= D; 
+					end if;
 				end if; 
 			end process;
 	end behaviour; 		
