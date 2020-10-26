@@ -34,11 +34,11 @@ signal Test_State : StateType; -- this creates a convenient and readable signal 
                                -- simulation, to know where in the testbench you are in the waveform
 signal error : STD_LOGIC := '0'; -- used to flag errors
 
-signal stable_time_tb :  time := 30 ms;
+signal stable_time_tb :  time := 70 ms;
 signal some_delay     :  time := 3 ns;
 
    -- Clock period definitions
-constant clk_period : time := 10 ns; -- this is a 100 MHz clock
+constant clk_period : time := 20 ns; -- this is a 100 MHz clock
 
 begin
   

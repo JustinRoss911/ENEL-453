@@ -38,45 +38,22 @@ begin
         -- Initialization
         D <= "0000000000000000";
 		  reset_n <= '1';
-        EN <= '0';
+        EN <= '1';
 
         wait for 2 * TbPeriod;
 		  
 		  -- Start tests 
 		  
 		  D <= "0000000010101010";
-		  wait for 2 * TbPeriod;
-		  
-		  
-		  D <= "0000000001010101";
-		  wait for 2 * TbPeriod;
-		  
-		  En <= '1';
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000011110000";
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000000001111";
-		  wait for 2 * TbPeriod;
-		  
-		  reset_n <= '0';
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000011001100";
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000000110011";
-		  wait for 2 * TbPeriod;
-		  
+		  wait for TbPeriod;
 		  EN <= '0';
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000011111111";
-		  wait for 2 * TbPeriod;
-		  
-		  D <= "0000000010101010";
-		  wait for 2 * TbPeriod;
+		  wait for TbPeriod;
+		  EN <= '1';
+		  wait for TbPeriod;
+		  D <= "0000000000001111";
+		  wait for TbPeriod;
+		  reset_n <= '0';
+		  wait for 2*TbPeriod;
  
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';

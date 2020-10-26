@@ -49,7 +49,7 @@ BEGIN
   BEGIN
     IF(reset_n = '0') THEN                        --reset
       flipflops(1 DOWNTO 0) <= "00";                 --clear input flipflops
-      result <= '0';                                 --clear result register
+      result <= '1';                                 --clear result register
     ELSIF(clk'EVENT and clk = '1') THEN           --rising clock edge
       flipflops(0) <= button;                        --store button value in 1st flipflop
       flipflops(1) <= flipflops(0);                  --store 1st flipflop value in 2nd flipflop

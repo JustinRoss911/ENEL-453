@@ -51,10 +51,10 @@ begin
 			
 	 
 		  reset_n <= '0'; -- reset (put everything in a known state) 
-		  button <= '0';	-- do not store current value 
+		  button <= '1';	-- do not store current value 
 		  SW <= "0000000000"; -- binary mode, input 0 
 
-        wait for 1000*TbPeriod;
+        wait for TbPeriod;
 		  
 		  reset_n <= '1';
 		  
@@ -77,13 +77,13 @@ begin
 		  
 		  wait for 1000*TbPeriod;
 		  
-		  button <= '1'; -- Store FF
+		  button <= '0'; -- Store FF
 		  
-		  wait for 1000*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
-		  button <= '0';
+		  button <= '1';
 		  
-		  wait for 1000*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
 		  -- Expecting....
