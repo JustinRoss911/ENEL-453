@@ -21,7 +21,7 @@ begin
         begin
             if reset_n = '0' then
                 E <= "0000000000";
-                G <= E;
+                G <= "0000000000";
             elsif rising_edge(clk) then
                 E <= A;
                 G <= E;

@@ -48,7 +48,7 @@ BEGIN
     VARIABLE count :  INTEGER RANGE 0 TO clk_freq*stable_time/1000;  --counter for timing
   BEGIN
     IF(reset_n = '0') THEN                        --reset
-      flipflops(1 DOWNTO 0) <= "00";                 --clear input flipflops
+      flipflops(1 DOWNTO 0) <= "11";                 --clear input flipflops
       result <= '1';                                 --clear result register
     ELSIF(clk'EVENT and clk = '1') THEN           --rising clock edge
       flipflops(0) <= button;                        --store button value in 1st flipflop

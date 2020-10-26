@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Mon Oct 26 10:17:58 2020
+Mon Oct 26 12:52:29 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -52,13 +52,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Oct 26 10:17:58 2020       ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 26 12:52:29 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 300                                         ;
-;     Total combinational functions  ; 267                                         ;
+; Total logic elements               ; 279                                         ;
+;     Total combinational functions  ; 237                                         ;
 ;     Dedicated logic registers      ; 144                                         ;
 ; Total registers                    ; 144                                         ;
 ; Total pins                         ; 71                                          ;
@@ -170,57 +170,56 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                               ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                        ; Library ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
-; stored_value.vhd                 ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/stored_value.vhd         ;         ;
-; debounce.vhd                     ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/debounce.vhd             ;         ;
-; top_level.vhd                    ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd            ;         ;
-; SevenSegment_decoder.vhd         ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd ;         ;
-; SevenSegment.vhd                 ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd         ;         ;
-; binary_bcd.vhd                   ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd           ;         ;
-; MUX4To1.vhd                      ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd              ;         ;
-; synchronizer.vhd                 ; yes             ; User VHDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd         ;         ;
-+----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; stored_value.vhd                 ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/stored_value.vhd         ;         ;
+; debounce.vhd                     ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/debounce.vhd             ;         ;
+; top_level.vhd                    ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd            ;         ;
+; SevenSegment_decoder.vhd         ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd ;         ;
+; SevenSegment.vhd                 ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd         ;         ;
+; binary_bcd.vhd                   ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd           ;         ;
+; MUX4To1.vhd                      ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd              ;         ;
+; synchronizer.vhd                 ; yes             ; User VHDL File  ; C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/synchronizer.vhd         ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                 ;
-+---------------------------------------------+---------------+
-; Resource                                    ; Usage         ;
-+---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 300           ;
-;                                             ;               ;
-; Total combinational functions               ; 267           ;
-; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 105           ;
-;     -- 3 input functions                    ; 49            ;
-;     -- <=2 input functions                  ; 113           ;
-;                                             ;               ;
-; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 183           ;
-;     -- arithmetic mode                      ; 84            ;
-;                                             ;               ;
-; Total registers                             ; 144           ;
-;     -- Dedicated logic registers            ; 144           ;
-;     -- I/O registers                        ; 0             ;
-;                                             ;               ;
-; I/O pins                                    ; 71            ;
-;                                             ;               ;
-; Embedded Multiplier 9-bit elements          ; 0             ;
-;                                             ;               ;
-; Maximum fan-out node                        ; reset_n~input ;
-; Maximum fan-out                             ; 144           ;
-; Total fan-out                               ; 1464          ;
-; Average fan-out                             ; 2.65          ;
-+---------------------------------------------+---------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 279       ;
+;                                             ;           ;
+; Total combinational functions               ; 237       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 102       ;
+;     -- 3 input functions                    ; 31        ;
+;     -- <=2 input functions                  ; 104       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 153       ;
+;     -- arithmetic mode                      ; 84        ;
+;                                             ;           ;
+; Total registers                             ; 144       ;
+;     -- Dedicated logic registers            ; 144       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 71        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 144       ;
+; Total fan-out                               ; 1379      ;
+; Average fan-out                             ; 2.64      ;
++---------------------------------------------+-----------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -228,17 +227,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 ; Compilation Hierarchy Node            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                    ; Entity Name          ; Library Name ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
-; |top_level                            ; 267 (0)             ; 144 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
+; |top_level                            ; 237 (0)             ; 144 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 71   ; 0            ; 0          ; |top_level                                                             ; top_level            ; work         ;
 ;    |MUX4TO1:MUX4TO1_ins|              ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX4TO1:MUX4TO1_ins                                         ; MUX4TO1              ; work         ;
 ;    |SevenSegment:SevenSegment_ins|    ; 28 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                               ; SevenSegment         ; work         ;
 ;       |SevenSegment_decoder:decoder2| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder2 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder3| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder4| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder4 ; SevenSegment_decoder ; work         ;
 ;       |SevenSegment_decoder:decoder5| ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder5 ; SevenSegment_decoder ; work         ;
-;    |binary_bcd:binary_bcd_ins|        ; 154 (154)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
-;    |debounce:debounce_ins|            ; 31 (31)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|debounce:debounce_ins                                       ; debounce             ; work         ;
+;    |binary_bcd:binary_bcd_ins|        ; 153 (153)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                   ; binary_bcd           ; work         ;
+;    |debounce:debounce_ins|            ; 32 (32)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|debounce:debounce_ins                                       ; debounce             ; work         ;
 ;    |stored_value:stored_value_ins|    ; 0 (0)               ; 16 (16)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                               ; stored_value         ; work         ;
-;    |synchronizer:synchronizer_ins|    ; 30 (30)             ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
+;    |synchronizer:synchronizer_ins|    ; 0 (0)               ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                               ; synchronizer         ; work         ;
 +---------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------+----------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -312,7 +311,9 @@ Encoding Type:  One-Hot
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
 ; debounce:debounce_ins|result           ; 17      ;
-; Total number of inverted registers = 1 ;         ;
+; debounce:debounce_ins|flipflops[1]     ; 3       ;
+; debounce:debounce_ins|flipflops[0]     ; 3       ;
+; Total number of inverted registers = 3 ;         ;
 +----------------------------------------+---------+
 
 
@@ -401,18 +402,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA CLR SCLR      ; 15                          ;
 ;     ENA CLR SCLR SLD  ; 4                           ;
 ;     ENA SCLR          ; 21                          ;
-; cycloneiii_lcell_comb ; 272                         ;
+; cycloneiii_lcell_comb ; 242                         ;
 ;     arith             ; 84                          ;
 ;         2 data inputs ; 84                          ;
-;     normal            ; 188                         ;
+;     normal            ; 158                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 10                          ;
-;         2 data inputs ; 23                          ;
-;         3 data inputs ; 49                          ;
-;         4 data inputs ; 105                         ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 31                          ;
+;         4 data inputs ; 102                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 3.82                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 3.81                        ;
 +-----------------------+-----------------------------+
 
 
@@ -431,106 +432,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Oct 26 10:17:47 2020
+    Info: Processing started: Mon Oct 26 12:52:20 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file tb_stored_value.vhd
-    Info (12022): Found design unit 1: tb_stored_value-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_stored_value.vhd Line: 9
-    Info (12023): Found entity 1: tb_stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_stored_value.vhd Line: 6
+    Info (12022): Found design unit 1: tb_stored_value-tb File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_stored_value.vhd Line: 9
+    Info (12023): Found entity 1: tb_stored_value File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_stored_value.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file stored_value.vhd
-    Info (12022): Found design unit 1: stored_value-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/stored_value.vhd Line: 22
-    Info (12023): Found entity 1: stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/stored_value.vhd Line: 13
+    Info (12022): Found design unit 1: stored_value-behaviour File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/stored_value.vhd Line: 22
+    Info (12023): Found entity 1: stored_value File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/stored_value.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file tb_debounce.vhd
-    Info (12022): Found design unit 1: tb_debounce-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd Line: 13
-    Info (12023): Found entity 1: tb_debounce File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd Line: 10
+    Info (12022): Found design unit 1: tb_debounce-Behavioral File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd Line: 13
+    Info (12023): Found entity 1: tb_debounce File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
-    Info (12022): Found design unit 1: debounce-logic File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 40
-    Info (12023): Found entity 1: debounce File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 29
+    Info (12022): Found design unit 1: debounce-logic File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 40
+    Info (12023): Found entity 1: debounce File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 29
 Warning (12019): Can't analyze file -- file tb_MUX2TO1.vhd is missing
 Warning (12019): Can't analyze file -- file MUX2TO1.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 22
-    Info (12023): Found entity 1: top_level File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 9
+    Info (12022): Found design unit 1: top_level-Behavioral File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 22
+    Info (12023): Found entity 1: top_level File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
-    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd Line: 13
-    Info (12023): Found entity 1: SevenSegment_decoder File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd Line: 13
+    Info (12023): Found entity 1: SevenSegment_decoder File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 11
-    Info (12023): Found entity 1: SevenSegment File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 11
+    Info (12023): Found entity 1: SevenSegment File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
-    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd Line: 17
-    Info (12023): Found entity 1: binary_bcd File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd Line: 8
+    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd Line: 17
+    Info (12023): Found entity 1: binary_bcd File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/binary_bcd.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file mux4to1.vhd
-    Info (12022): Found design unit 1: MUX4TO1-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd Line: 20
-    Info (12023): Found entity 1: MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd Line: 8
+    Info (12022): Found design unit 1: MUX4TO1-behaviour File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd Line: 20
+    Info (12023): Found entity 1: MUX4TO1 File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_mux4to1.vhd
-    Info (12022): Found design unit 1: tb_MUX4TO1-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_MUX4To1.vhd Line: 7
-    Info (12023): Found entity 1: tb_MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_MUX4To1.vhd Line: 4
+    Info (12022): Found design unit 1: tb_MUX4TO1-behavior File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_MUX4To1.vhd Line: 7
+    Info (12023): Found entity 1: tb_MUX4TO1 File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_MUX4To1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file synchronizer.vhd
-    Info (12022): Found design unit 1: synchronizer-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 17
-    Info (12023): Found entity 1: synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 8
+    Info (12022): Found design unit 1: synchronizer-behaviour File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 17
+    Info (12023): Found entity 1: synchronizer File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_synchronizer.vhd
-    Info (12022): Found design unit 1: tb_synchronizer-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd Line: 7
-    Info (12023): Found entity 1: tb_synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd Line: 4
+    Info (12022): Found design unit 1: tb_synchronizer-tb File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd Line: 7
+    Info (12023): Found entity 1: tb_synchronizer File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_top_level.vhd
-    Info (12022): Found design unit 1: tb_top_level-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd Line: 9
-    Info (12023): Found entity 1: tb_top_level File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd Line: 6
+    Info (12022): Found design unit 1: tb_top_level-tb File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd Line: 9
+    Info (12023): Found entity 1: tb_top_level File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd Line: 6
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 109
-Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 24
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 133
-Info (12128): Elaborating entity "MUX4TO1" for hierarchy "MUX4TO1:MUX4TO1_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 146
-Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 159
-Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:synchronizer_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 170
-Warning (10492): VHDL Process Statement warning at synchronizer.vhd(24): signal "E" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 24
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:debounce_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 181
-Info (13000): Registers with preset signals will power-up high File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 37
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 109
+Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd Line: 24
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 133
+Info (12128): Elaborating entity "MUX4TO1" for hierarchy "MUX4TO1:MUX4TO1_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 146
+Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 159
+Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:synchronizer_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 170
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:debounce_ins" File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 181
+Info (13000): Registers with preset signals will power-up high File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/debounce.vhd Line: 37
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
-Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[9]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[9]~_emulated" and latch "synchronizer:synchronizer_ins|G[9]~1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[8]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[8]~_emulated" and latch "synchronizer:synchronizer_ins|G[8]~5" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[0]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[0]~_emulated" and latch "synchronizer:synchronizer_ins|G[0]~9" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[1]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[1]~_emulated" and latch "synchronizer:synchronizer_ins|G[1]~13" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[2]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[2]~_emulated" and latch "synchronizer:synchronizer_ins|G[2]~17" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[3]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[3]~_emulated" and latch "synchronizer:synchronizer_ins|G[3]~21" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[4]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[4]~_emulated" and latch "synchronizer:synchronizer_ins|G[4]~25" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[5]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[5]~_emulated" and latch "synchronizer:synchronizer_ins|G[5]~29" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[6]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[6]~_emulated" and latch "synchronizer:synchronizer_ins|G[6]~33" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
-    Warning (13310): Register "synchronizer:synchronizer_ins|G[7]" is converted into an equivalent circuit using register "synchronizer:synchronizer_ins|G[7]~_emulated" and latch "synchronizer:synchronizer_ins|G[7]~37" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd Line: 22
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[0]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[1]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[2]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[3]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[4]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[5]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[6]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[0]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[1]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[2]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[3]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[4]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[5]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[6]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX2[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX3[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/github/ENEL 453/ENEL-453/Lab 2 working FPGA/top_level.vhd Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 7 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 387 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 366 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 58 output pins
-    Info (21061): Implemented 316 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 36 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Mon Oct 26 10:17:58 2020
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:21
+    Info (21061): Implemented 295 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
+    Info: Peak virtual memory: 4795 megabytes
+    Info: Processing ended: Mon Oct 26 12:52:29 2020
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:20
 
 
