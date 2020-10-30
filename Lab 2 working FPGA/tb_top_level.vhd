@@ -77,12 +77,17 @@ begin
 		  
 		  wait for 1_600_000*TbPeriod;
 		  
-		  button <= '0'; -- Store FF
+		  button <= '0'; -- Hold current input
 		  
 		  wait for 1_600_000*TbPeriod;
 		  
+		   SW <= "0100110011"; 
+		
+			wait for 1_600_000*TbPeriod;
+		  
 		  button <= '1';
 		  
+		  wait for 1_600_000*TbPeriod;
 		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC

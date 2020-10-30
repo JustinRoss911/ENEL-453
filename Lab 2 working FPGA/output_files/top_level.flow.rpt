@@ -1,5 +1,5 @@
 Flow report for top_level
-Mon Oct 26 12:52:45 2020
+Fri Oct 30 16:18:07 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,24 +41,24 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Oct 26 12:52:41 2020       ;
+; Flow Status                        ; Successful - Fri Oct 30 16:18:00 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50DAF484C6GES                            ;
 ; Timing Models                      ; Preliminary                                 ;
-; Total logic elements               ; 267 / 49,760 ( < 1 % )                      ;
-;     Total combinational functions  ; 238 / 49,760 ( < 1 % )                      ;
-;     Dedicated logic registers      ; 144 / 49,760 ( < 1 % )                      ;
-; Total registers                    ; 144                                         ;
+; Total logic elements               ; 6,364 / 49,760 ( 13 % )                     ;
+;     Total combinational functions  ; 4,979 / 49,760 ( 10 % )                     ;
+;     Dedicated logic registers      ; 3,318 / 49,760 ( 7 % )                      ;
+; Total registers                    ; 3318                                        ;
 ; Total pins                         ; 71 / 360 ( 20 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
+; Total PLLs                         ; 1 / 4 ( 25 % )                              ;
 ; UFM blocks                         ; 0 / 1 ( 0 % )                               ;
-; ADC blocks                         ; 0 / 2 ( 0 % )                               ;
+; ADC blocks                         ; 1 / 2 ( 50 % )                              ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -67,27 +67,33 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/26/2020 12:52:20 ;
+; Start date & time ; 10/30/2020 16:17:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; top_level           ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                        ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 198375890629205.160373834011184        ; --            ; --          ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --            ; --          ; --         ;
-+-------------------------------------+----------------------------------------+---------------+-------------+------------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                            ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                      ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 251682018038486.160409622613788                            ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                         ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; adc_qsys/synthesis/../adc_qsys.cmp                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; adc_qsys/synthesis/../../adc_qsys.qsys                     ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                     ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                     ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                     ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                        ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                      ; --            ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                               ; --            ; --          ; --         ;
+; SLD_FILE                            ; adc_qsys/synthesis/adc_qsys.debuginfo                      ; --            ; --          ; --         ;
+; SLD_INFO                            ; QSYS_NAME adc_qsys HAS_SOPCINFO 1 GENERATION_ID 1569444627 ; --            ; adc_qsys    ; --         ;
+; SOPCINFO_FILE                       ; adc_qsys/synthesis/../../adc_qsys.sopcinfo                 ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                         ; --            ; --          ; --         ;
++-------------------------------------+------------------------------------------------------------+---------------+-------------+------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -95,11 +101,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4795 MB             ; 00:00:20                           ;
-; Fitter               ; 00:00:07     ; 1.1                     ; 5662 MB             ; 00:00:10                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4700 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4832 MB             ; 00:00:03                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:36                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 4844 MB             ; 00:00:33                           ;
+; Fitter               ; 00:00:27     ; 1.5                     ; 5743 MB             ; 00:00:50                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4721 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:06     ; 2.2                     ; 4893 MB             ; 00:00:12                           ;
+; Total                ; 00:00:57     ; --                      ; --                  ; 00:01:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,10 +114,10 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-JKDBJ4T  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-C42H2QN  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

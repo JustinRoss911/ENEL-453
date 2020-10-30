@@ -36,6 +36,9 @@ Signal Q, D:			std_logic_vector(15 downto 0);
 Signal result, EN:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
+Signal voltage, distance : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
+Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
+
 --Signal clk_freq: INTEGER; --system clock frequency in Hz
 --Signal stable_time: INTEGER;
 
@@ -92,17 +95,28 @@ Component debounce is
 		);
 end component;
 
+Component ADC_Data is
+	PORT(clk      : in STD_LOGIC;
+	     reset_n  : in STD_LOGIC; -- active-low
+	     voltage  : out STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
+		  distance : out STD_LOGIC_VECTOR (12 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
+		  ADC_raw  : out STD_LOGIC_VECTOR (11 downto 0); -- the latest 12-bit ADC value
+        ADC_out  : out STD_LOGIC_VECTOR (11 downto 0)  -- moving average of ADC value, over 256 samples,
+         );                                              -- number of samples defined by the averager module
+End component;
+
 -- Operation ---
 begin
-   Num_Hex2 <= mux_out(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex3 <= mux_out(7 downto 4);
-   Num_Hex4 <= mux_out(11 downto 8);
-   Num_Hex5 <= mux_out(15 downto 12);
+   Num_Hex2 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex3 <= Q(7 downto 4);
+   Num_Hex4 <= Q(11 downto 8);
+   Num_Hex5 <= Q(15 downto 12);
    Num_Hex0 <= "0000"; -- leave unaltered 
    Num_Hex1 <= "0000";   
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
    Blank    <= "000011"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
 	in4 		<= "0101101001011010"; -- in4 of mux will always be 5A5A 
+	in3 		<= "1111111111111111"; -- temporary (use to test hold value)
   	
        
 -- instantiations --		 
@@ -127,7 +141,7 @@ SevenSegment_ins: SevenSegment
  
 LEDR(9 downto 0) <= SW(9 downto 0); -- gives visual display of the switch inputs to the LEDs on board
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
-binary <= switch_inputs;
+binary <= distance;
 
 
 binary_bcd_ins: binary_bcd                       
@@ -138,9 +152,8 @@ binary_bcd_ins: binary_bcd
       bcd      => bcd         
       );
 
-in1	<= bcd;
-in2	<= "00000000" & G(7 downto 0);
-in3	<= Q; -- Extend signal to 16 bits 
+in1	<= "00000000" & G(7 downto 0); -- Hex output
+in2 <= bcd; -- decimal distance 
 s 		<= G(9 downto 8); 
 
 MUX4TO1_ins: MUX4TO1
@@ -185,5 +198,15 @@ debounce_ins : debounce
 		reset_n => reset_n,
 		result  => result
 		);
+		
+ADC_Data_ins: ADC_Data
+	port map (
+		  clk    => clk,  
+	     reset_n => reset_n,
+	     voltage => voltage, 
+		  distance => distance,
+		  ADC_raw  => ADC_raw,
+        ADC_out  => ADC_out
+         );                                             
 
 end Behavioral;
