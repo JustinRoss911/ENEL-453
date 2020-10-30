@@ -1,0 +1,71 @@
+IP Upgrade report for top_level
+Fri Oct 30 14:16:10 2020
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Failed Upgrade IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Fri Oct 30 14:16:10 2020           ;
+; Quartus Prime Version        ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name                ; top_level                                   ;
+; Top-level Entity Name        ; top_level                                   ;
+; Family                       ; MAX 10                                      ;
++------------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Failed Upgrade IP Components                                                                                                                                               ;
++-------------+----------------+---------+---------------------------------+----------------------+-----------------+--------------------------------------------------------+
+; Entity Name ; Component Name ; Version ; Original Source File            ; Generation File Path ; New Source File ; Message                                                ;
++-------------+----------------+---------+---------------------------------+----------------------+-----------------+--------------------------------------------------------+
+; adc_qsys    ; Qsys           ; 18.1    ; adc_qsys/synthesis/adc_qsys.qip ; adc_qsys.qsys        ;                 ; Error upgrading Platform Designer file "adc_qsys.qsys" ;
++-------------+----------------+---------+---------------------------------+----------------------+-----------------+--------------------------------------------------------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "adc_qsys/synthesis/adc_qsys.v" to "adc_qsys.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "adc_qsys.qsys"
+Error: 2020.10.30.14:16:10 Error: Error opening C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 Code
+Error (14923): Error upgrading Platform Designer file "adc_qsys.qsys"
+Error (11890): Unable to automatically upgrade Platform Designer component. Please manually upgrade "adc_qsys.qsys" in Platform Designer
+Error (23031): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl unsuccessful
+Error: Quartus Prime Shell was unsuccessful. 4 errors, 0 warnings
+    Error: Peak virtual memory: 4859 megabytes
+    Error: Processing ended: Fri Oct 30 14:16:10 2020
+    Error: Elapsed time: 00:00:08
+    Error: Total CPU time (on all processors): 00:00:19
+
+
