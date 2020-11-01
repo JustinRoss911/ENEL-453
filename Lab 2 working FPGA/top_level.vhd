@@ -29,6 +29,8 @@ Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
 Signal bcd:					std_logic_vector(15 DOWNTO 0);
 Signal binary: std_logic_vector (12 downto 0);
+Signal bcd2:					std_logic_vector(15 DOWNTO 0);
+Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
@@ -115,8 +117,6 @@ begin
    Num_Hex1 <= "0000";   
    DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
    Blank    <= "000011"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
-	in4 		<= "0101101001011010"; -- in4 of mux will always be 5A5A 
-	in3 		<= "1111111111111111"; -- temporary (use to test hold value)
   	
        
 -- instantiations --		 
@@ -143,7 +143,6 @@ LEDR(9 downto 0) <= SW(9 downto 0); -- gives visual display of the switch inputs
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
-
 binary_bcd_ins: binary_bcd                       
    PORT MAP(
       clk      => clk,                          
@@ -151,17 +150,29 @@ binary_bcd_ins: binary_bcd
       binary   => binary,    
       bcd      => bcd         
       );
+	
+binary2 <= voltage;
 
-in1	<= "00000000" & G(7 downto 0); -- Hex output
+binary_bcd_ins2: binary_bcd                       
+   PORT MAP(
+      clk      => clk,                          
+      reset_n  => reset_n,                                 
+      binary   => binary2,    
+      bcd      => bcd2  
+	);
+
+in1 <= "00000000" & G(7 downto 0); -- Hex output
 in2 <= bcd; -- decimal distance 
-s 		<= G(9 downto 8); 
+in3 <= bcd2;
+in4 <= "0000" &  ADC_out;
+s 	<= G(9 downto 8); 
 
 MUX4TO1_ins: MUX4TO1
 	 PORT MAP (
-		in1 		=>  in1,  
-		in2		=>  in2,
-		in3      =>  in3,
-		in4      =>  in4,
+		in1 		=>  in1,  -- hex switch outputs
+		in2		=>  in2,	 -- decimal distance
+		in3      =>  in3,  -- decimal voltage
+		in4      =>  in4,  -- hex moving average 
 		s 			=>  s,
 		mux_out  =>  mux_out
 		);

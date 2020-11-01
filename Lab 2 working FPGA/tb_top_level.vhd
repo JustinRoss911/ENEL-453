@@ -1,5 +1,7 @@
 --testbench code for top level 
 
+-- not working right now ?
+
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
@@ -54,11 +56,11 @@ begin
 		  button <= '1';	-- do not store current value 
 		  SW <= "0000000000"; -- binary mode, input 0 
 
-        wait for 1_600_000*TbPeriod;
+        wait for 4*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 
 		  SW <= "0011111111"; -- binary mode, expect 255 on LEDs 
 		  -- Expecting....
@@ -67,7 +69,7 @@ begin
 		  -- HEX2 = 10010010 (5)
 		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  SW <= "0111111111"; -- hex mode, expect FF
 		  -- Expecting....
@@ -75,20 +77,19 @@ begin
 		  -- HEX1 = 10001110 (F)
 		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
-		  button <= '0'; -- Hold current input
+		  --button <= '0'; -- Hold current input
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
 		  
-		   SW <= "0100110011"; 
+		   --SW <= "0100110011"; 
 		
-			wait for 1_600_000*TbPeriod;
+			--wait for 1_600_000*TbPeriod;
 		  
-		  button <= '1';
+		 -- button <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
-		  wait for 1_600_000*TbPeriod;
+		 -- wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
 		  -- Expecting....
@@ -96,7 +97,7 @@ begin
 		  -- HEX1 = 11000110 (C)
 		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  SW <= "1010101100"; -- display stored value while inputs show AC
 		  -- Expecting....
@@ -104,7 +105,7 @@ begin
 		  -- HEX1 = 10001110 (F)
 		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  -- Expecting....
@@ -114,11 +115,11 @@ begin
 		  -- HEX4 = 10001000 (A)
 		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  reset_n <= '0'; -- reset 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 4*TbPeriod;
 		  
 		  -- Expecting all HEX outputs to be zero 11000000 
 		  

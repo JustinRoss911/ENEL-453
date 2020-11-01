@@ -6,10 +6,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- 2. Entity Declaration 
 ----------------------------------------------------------------
 entity MUX4TO1 is
-port ( in1     : in  std_logic_vector(15 downto 0); -- in1 = hex switch display
-       in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal distance output
-		 in3     : in  std_logic_vector(15 downto 0); -- in3 = decimal votlage output
-		 in4     : in  std_logic_vector(15 downto 0); -- in4 = hex moving average 
+port ( in1     : in  std_logic_vector(15 downto 0); -- in1 = binary (hex)
+       in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal 
+		 in3     : in  std_logic_vector(15 downto 0); -- in3 = stored value 
+		 in4     : in  std_logic_vector(15 downto 0); -- in4 = 5A5A
        s       : in  std_logic_vector(1 downto 0); -- Switches that toggles between mode
        mux_out : out std_logic_vector(15 downto 0)  -- output bits 
       );
