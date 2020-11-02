@@ -24,6 +24,7 @@ architecture Behavioral of top_level is
 -- intermediate Signals --
 Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : std_logic_vector (3 downto 0):= (others=>'0');   
 Signal in1, in2, in3, in4, mux_out: std_logic_vector(15 DOWNTO 0);
+Signal dp1, dp2, dp3, dp4, dp_out: std_logic_vector(5 DOWNTO 0);
 
 Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
@@ -34,7 +35,7 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D:			std_logic_vector(15 downto 0);
+Signal Q, D:			std_logic_vector(21 downto 0);
 Signal result, EN:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
@@ -74,9 +75,9 @@ END Component;
 
 Component stored_value is 
 	Port ( 
-			D     				: in  std_logic_vector(15 downto 0); -- output of synchronizer 
+			D     				: in  std_logic_vector(21 downto 0); -- output of synchronizer 
 			EN, reset_n, clk  : in  std_logic;							-- EN is ouput of debounce 				  
-			Q     				: out std_logic_vector(15 downto 0)  -- input to mux 
+			Q     				: out std_logic_vector(21 downto 0)  -- input to mux 
 			);
 END Component;
 
@@ -107,15 +108,25 @@ Component ADC_Data is
          );                                              -- number of samples defined by the averager module
 End component;
 
+Component DPmux is
+port ( dp1 	  : in  std_logic_vector(5 downto 0);
+		 dp2	  : in  std_logic_vector(5 downto 0);
+		 dp3	  : in  std_logic_vector(5 downto 0);
+		 dp4	  : in  std_logic_vector(5 downto 0);
+		 s      : in  std_logic_vector(1 downto 0); -- Switches that toggles between mode
+       dp_out : out std_logic_vector(5 downto 0)  -- output bits 
+      );
+End component;
+
 -- Operation ---
 begin
-   Num_Hex2 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex3 <= Q(7 downto 4);
-   Num_Hex4 <= Q(11 downto 8);
-   Num_Hex5 <= Q(15 downto 12);
-   Num_Hex0 <= "0000"; -- leave unaltered 
-   Num_Hex1 <= "0000";   
-   DP_in    <= "000000"; -- position of the decimal point in the display (1=LED on,0=LED off)
+   Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex1 <= Q(7 downto 4);
+   Num_Hex2 <= Q(11 downto 8);
+   Num_Hex3 <= Q(15 downto 12);
+   Num_Hex4 <= "0000"; -- leave unaltered 
+   Num_Hex5 <= "0000";   
+   DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
    Blank    <= "000011"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
   	
        
@@ -177,7 +188,7 @@ MUX4TO1_ins: MUX4TO1
 		mux_out  =>  mux_out
 		);
 
-D <= mux_out;
+D <= dp_out & mux_out;
 EN <= result;
 
 stored_value_ins: stored_value 
@@ -218,6 +229,21 @@ ADC_Data_ins: ADC_Data
 		  distance => distance,
 		  ADC_raw  => ADC_raw,
         ADC_out  => ADC_out
-         );                                             
+         );  
+			
+dp1 <= "000000";
+dp2 <= "000100";
+dp3 <= "001000";
+dp4 <= "000000";
+	
+DPmux_ins: DPmux
+	 PORT MAP (
+		dp1 		=>  dp1,  
+		dp2		=>  dp2,	 
+		dp3      =>  dp3,  
+		dp4      =>  dp4,  
+		s 			=>  s,
+		dp_out  =>  dp_out
+		);
 
 end Behavioral;

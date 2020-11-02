@@ -67,12 +67,12 @@ begin
 		    
         --wait for 100 * TbPeriod;
 		  
-		  --voltage <= "0100101100000"; -- 2400mv (2.4V)
+		  --voltage <= "0100101100000"; -- 2400mv (2.400V)
 		  -- distance <= 8.32cm  row = 2413
 		  
 		  --wait for 100 * TbPeriod; 
 		  
-		  --voltage <= "0100101100000"; -- 800mv (0.8V)
+		  --voltage <= "0100101100000"; -- 800mv (0.800V)
 		  -- distance <= 28.06cm
 		  
 		  --wait for 100 * TbPeriod; 

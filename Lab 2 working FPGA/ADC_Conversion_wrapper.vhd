@@ -90,7 +90,9 @@ ADC_out(11 downto 3) <= "100011000"; -- upper ADC bits stay the same
                
                End Case;
             end if;
-       End Process;
+				 
+		 
+		 End Process;
         
         
 
