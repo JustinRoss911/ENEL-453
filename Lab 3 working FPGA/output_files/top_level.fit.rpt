@@ -1,5 +1,5 @@
 Fitter report for top_level
-Wed Nov 04 10:42:27 2020
+Wed Nov 04 12:08:21 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -72,7 +72,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Nov 04 10:42:27 2020       ;
+; Fitter Status                      ; Successful - Wed Nov 04 12:08:21 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -158,14 +158,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.45        ;
+; Average used               ; 1.50        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;  15.3%      ;
-;     Processor 3            ;  15.0%      ;
-;     Processor 4            ;  14.8%      ;
+;     Processor 2            ;  16.9%      ;
+;     Processor 3            ;  16.6%      ;
+;     Processor 4            ;  16.4%      ;
 +----------------------------+-------------+
 
 
@@ -5248,7 +5248,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[2]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_R[3]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:05
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
@@ -5262,14 +5262,14 @@ Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:04
-Info (11888): Total time spent on timing analysis during the Fitter is 3.74 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 3.72 seconds.
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 10M50DAF484C6GES are preliminary
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:06
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:07
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169177): 13 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin SW[0] uses I/O standard 3.3-V LVTTL at C10 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd Line: 13
@@ -5287,10 +5287,10 @@ Warning (169177): 13 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 
     Info (169178): Pin button uses I/O standard 3.3 V Schmitt Trigger at B8 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd Line: 12
 Info (144001): Generated suppressed messages file C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/output_files/top_level.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 5740 megabytes
-    Info: Processing ended: Wed Nov 04 10:42:28 2020
+    Info: Peak virtual memory: 5745 megabytes
+    Info: Processing ended: Wed Nov 04 12:08:22 2020
     Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:01:10
+    Info: Total CPU time (on all processors): 00:01:12
 
 
 +----------------------------+

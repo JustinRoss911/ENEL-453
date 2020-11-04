@@ -22,27 +22,32 @@ end BlankZero;
 ----------------------------------------------------------------
 -- 3. Architecture 
 ----------------------------------------------------------------
-architecture behaviour of BlankZero is
-
-Signal tmp std_logic_vector(15 downto 0);
-	
-	if s 
-		
-	with s select tmp <= 
-			in1 when "00",
-			in2 when "01",
-			in3 when "10",
-			in4 when others;		
-	
-	  Blank <= "11000" -- default; 
-	  
-	  Loop1: for i in 3 to 0 loop 
-            if (or_reduce(tmp) != 0) -- only blank until first non-zero 
-					break; 		
-				else 
-				   Blank(i) = '1';
-	  end loop LoopA1;
-	
-
-end behaviour; 
+--architecture behaviour of BlankZero is
+--
+--Signal tmp: std_logic_vector(15 downto 0);
+--
+--begin 
+--	process 
+--		begin 
+--	
+--	   with s select tmp <= 
+--		in1 when "00",
+--		in2 when "01",
+--		in3 when "10",
+--		in4 when others;
+--
+--		 
+--		Blank <= "110000"; -- set to default 			 
+--					
+--		for i in 4 to 1 loop  
+--				  if (or_reduce(mux_out((4*i)-1 downto (4*i)-4)) = '1') then  -- or_reduce OR's the bits 
+--							exit; 		
+--				  else 
+--							Blank(i) <= '1';
+--				  end if;
+--		end loop;
+--
+--	end process;
+--	
+--end behaviour; 
 ----------------------------------------------------------------

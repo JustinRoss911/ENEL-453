@@ -56,43 +56,35 @@ begin
 		  button <= '1';	-- do not store current value 
 		  SW <= "0000000000"; -- binary mode, input 0 
 
-        --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+        wait for 1_600_000*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  --wait for 1_600_000*TbPeriod;
-			wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0011111111";  
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0111111111"; -- hex mode, expect FF
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  button <= '0'; -- Hold current input
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0100110011"; 
 		
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  button <= '1';
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  SW <= "1010101100"; -- display stored value while inputs show AC
 		  
@@ -101,13 +93,11 @@ begin
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
 		  reset_n <= '0'; -- reset 
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
 		  
         TbSimEnded <= '1';
         
