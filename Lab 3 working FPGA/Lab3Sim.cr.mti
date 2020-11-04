@@ -1,4 +1,36 @@
-{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_DPmux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_DPmux.vhd}
+{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_stored_value
+-- Compiling architecture tb of tb_stored_value
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MUX4TO1
+-- Compiling architecture behaviour of MUX4TO1
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_DPmux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_DPmux.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_DPmux
+-- Compiling architecture behavior of tb_DPmux
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_synchronizer
+-- Compiling architecture tb of tb_synchronizer
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,12 +46,33 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity debounce
 -- Compiling architecture logic of debounce
 
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity debounce
+-- Compiling architecture logic of debounce
+
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/LUT_pkg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/LUT_pkg.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling package LUT_pkg
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_ADC_Data
+-- Compiling architecture tb of tb_ADC_Data
+-- Compiling configuration cfg_tb_ADC_Data
+-- Loading entity tb_ADC_Data
+-- Loading architecture tb of tb_ADC_Data
+-- Loading package NUMERIC_STD
+-- Loading entity ADC_Data
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_top_level.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -39,6 +92,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity voltage2distance_array2
 -- Compiling architecture behavior of voltage2distance_array2
 
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_top_level
+-- Compiling architecture tb of tb_top_level
+
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/MUX4To1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -55,6 +116,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity tb_stored_value
 -- Compiling architecture tb of tb_stored_value
 
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity averager256
+-- Compiling architecture rtl of averager256
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_debounce
+-- Compiling architecture Behavioral of tb_debounce
+
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_synchronizer.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -64,6 +142,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture tb of tb_synchronizer
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SevenSegment
+-- Compiling architecture Behavioral of SevenSegment
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -98,21 +184,32 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity binary_bcd
 -- Compiling architecture behavior of binary_bcd
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/DPmux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/DPmux.vhd}
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity DPmux
--- Compiling architecture behaviour of DPmux
+-- Compiling entity stored_value
+-- Compiling architecture behaviour of stored_value
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd}
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity synchronizer
--- Compiling architecture behaviour of synchronizer
+-- Loading package NUMERIC_STD
+-- Compiling entity binary_bcd
+-- Compiling architecture behavior of binary_bcd
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADC_Conversion_wrapper
+-- Compiling architecture RTL of ADC_Conversion_wrapper
+-- Compiling architecture simulation of ADC_Conversion_wrapper
+-- Loading entity ADC_Conversion_wrapper
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_ADC_data.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_ADC_data.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -127,6 +224,37 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Loading entity ADC_Data
 
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/synchronizer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity synchronizer
+-- Compiling architecture behaviour of synchronizer
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/DPmux.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/DPmux.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DPmux
+-- Compiling architecture behaviour of DPmux
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity synchronizer
+-- Compiling architecture behaviour of synchronizer
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package LUT_pkg
+
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_MUX4TO1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_MUX4TO1.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -135,13 +263,23 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity tb_MUX4TO1
 -- Compiling architecture behavior of tb_MUX4TO1
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd}
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity SevenSegment_decoder
--- Compiling architecture Behavioral of SevenSegment_decoder
+-- Loading package NUMERIC_STD
+-- Loading package LUT_pkg
+-- Compiling entity voltage2distance_array2
+-- Compiling architecture behavior of voltage2distance_array2
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_MUX4TO1
+-- Compiling architecture behavior of tb_MUX4TO1
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/ADC_Data.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/ADC_Data.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -153,22 +291,21 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling architecture rtl of ADC_Data
 -- Loading entity ADC_Conversion_wrapper
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/averager256.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/averager256.vhd}
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/SevenSegment_decoder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity averager256
--- Compiling architecture rtl of averager256
+-- Compiling entity SevenSegment_decoder
+-- Compiling architecture Behavioral of SevenSegment_decoder
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd}
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity tb_debounce
--- Compiling architecture Behavioral of tb_debounce
+-- Compiling entity SevenSegment_decoder
+-- Compiling architecture Behavioral of SevenSegment_decoder
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/top_level.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -178,5 +315,22 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity top_level
 -- Compiling architecture Behavioral of top_level
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/tb_debounce.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_debounce
+-- Compiling architecture Behavioral of tb_debounce
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/averager256.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 2 working FPGA/averager256.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity averager256
+-- Compiling architecture rtl of averager256
 
 } {} {}}

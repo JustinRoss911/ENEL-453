@@ -59,33 +59,7 @@ begin
         wait for 100 ns;
         reset_n <= '1'; -- normal operation 
         wait for 100 ns;
-
-        -- Tests (using deafult look up table right now) 
-		  
-		  --voltage <= "0000000000101"; -- 5 mv (0.005V)
-		  -- distance <= 37.87cm
-		    
-        --wait for 100 * TbPeriod;
-		  
-		  --voltage <= "0100101100000"; -- 2400mv (2.400V)
-		  -- distance <= 8.32cm  row = 2413
-		  
-		  --wait for 100 * TbPeriod; 
-		  
-		  --voltage <= "0100101100000"; -- 800mv (0.800V)
-		  -- distance <= 28.06cm
-		  
-		  --wait for 100 * TbPeriod; 
-			
-		  --voltage <= "0101111101001"; -- 3049mV (3.049V)
-		  -- distance <= .31cm
-		  
-		  --wait for 100 * TbPeriod; 
-		  
-		  --voltage <= "0110100011101"; --3357mv (3.357V)
-		  --distance <= 0 beacuse out of range 
-		  
-		  
+  
         wait for 500 * 980 ns;
 
         -- Stop the clock and hence terminate the simulation

@@ -127,7 +127,7 @@ begin
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
-   Blank    <= "000011"; -- blank the 2 MSB 7-segment displays (1=7-seg display off, 0=7-seg display on)
+   Blank    <= "110000"; -- Need to change this to blank inactive LEDs for modes 3 and 4 
   	
        
 -- instantiations --		 

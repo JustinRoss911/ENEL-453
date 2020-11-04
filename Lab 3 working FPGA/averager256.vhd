@@ -25,52 +25,51 @@ entity averager256 is
                                                           -- so you get 12-bits plus 4-bits = 16-bits (is this real?)
 architecture rtl of averager256 is
 
-subtype REG is std_logic_vector(bits downto 0);
+-- Declaring new data types -----
+subtype REG is std_logic_vector(bits downto 0);  -- REG is vector of 12 bits
+type Register_Array is array (natural range <>) of REG; -- Register_Array is an array of infinite REG vectors. Data type is positive integers only. 
+type temporary is array(integer range <>) of integer; -- temporary is an array of integers with infinite length
 
-type Register_Array is array (natural range <>) of REG;
-
-signal REG_ARRAY : Register_Array(2**N downto 1);
-
-type temporary is array(integer range <>) of integer;
-signal tmp : temporary((2**N)-1 downto 1);
-
-signal tmplast : std_logic_vector(2**N-1 downto 0);
-constant Zeros : STD_LOGIC_VECTOR(11 downto 0) := (others => '0');
+-- Declaring signals -----
+signal REG_ARRAY : Register_Array(2**N downto 1); -- REG_ARRAY is a register array with 256 rows 
+signal tmp : temporary((2**N)-1 downto 1); -- tmp is an integer array with 255 rows
+signal tmplast : std_logic_vector(2**N-1 downto 0); -- tmplast is a vector with 255 bits 
+constant Zeros : STD_LOGIC_VECTOR(11 downto 0) := (others => '0'); -- vector of 12 zeros 
 
 begin
 
    shift_reg : process(clk, reset_n)
    begin
-      if(reset_n = '0') then
+      if(reset_n = '0') then -- active low
       
-         LoopA1: for i in 1 to 2**N loop
-            REG_ARRAY(i) <= Zeros;
+         LoopA1: for i in 1 to 2**N loop -- for i = 1:256
+            REG_ARRAY(i) <= Zeros; -- fill entire array with zeros 
          end loop LoopA1;
-         Q          <= (others => '0');
+         Q          <= (others => '0'); -- all ouput bits set to 0 
          -- Q_high_res <= (others => '0');
          
-      elsif rising_edge(clk) then
-         if EN = '1' then
+      elsif rising_edge(clk) then 
+         if EN = '1' then 
          
             REG_ARRAY(1) <= Din;
-            LoopA2: for i in 1 to 2**N-1 loop
-               REG_ARRAY(i+1) <= REG_ARRAY(i);
+            LoopA2: for i in 1 to 2**N-1 loop --for i = 1:255
+               REG_ARRAY(i+1) <= REG_ARRAY(i); -- assign Din to every row? 
             end loop LoopA2;
-            Q          <= tmplast(N+bits downto N); 
+            Q          <= tmplast(N+bits downto N); -- Q = tmplast(19 downto 8)
             -- Q_high_res <= tmplast(N+bits downto N-X);
             
          end if;
       end if;
    end process shift_reg;
    
-   LoopB1: for i in 1 to (2**N)/2 generate
-      tmp(i) <= to_integer(unsigned(REG_ARRAY((2*i)-1)))  + to_integer(unsigned(REG_ARRAY(2*i)));
+   LoopB1: for i in 1 to (2**N)/2 generate -- for i = 1:128
+      tmp(i) <= to_integer(unsigned(REG_ARRAY((2*i)-1)))  + to_integer(unsigned(REG_ARRAY(2*i))); -- add adjacent registers and store in temp array 
    end generate LoopB1;
    
-   LoopB2: for i in ((2**N)/2)+1 to (2**N)-1 generate
-      tmp(i) <= tmp(2*(i-(2**N)/2)-1) + tmp(2*(i-(2**N)/2));
+   LoopB2: for i in ((2**N)/2)+1 to (2**N)-1 generate -- for i = 129:255
+      tmp(i) <= tmp(2*(i-(2**N)/2)-1) + tmp(2*(i-(2**N)/2)); -- add adjacent vectors in tmp and store in lower half of tmp 
    end generate LoopB2;
    
-   tmplast <= std_logic_vector(to_unsigned(tmp((2**N)-1), tmplast'length));
+   tmplast <= std_logic_vector(to_unsigned(tmp((2**N)-1), tmplast'length)); -- choose last row of tmp 
       
 end rtl;

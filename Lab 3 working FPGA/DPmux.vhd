@@ -24,5 +24,24 @@ architecture behaviour of DPmux is
 			dp2 when "01",
 			dp3 when "10",
 			dp4 when others;
+			
+			
+-- Think we should include Blanking feature in here so it can be saved when button pressed 					
+--	with s select tmp <= 
+--			in1 when "00",
+--			in2 when "01",
+--			in3 when "10",
+--			in4 when others;		
+--	
+--	  Blank <= "11000" -- default; 
+--	  
+--	  Loop1: for i in 3 to 0 loop 
+--            if (or_reduce(tmp) != 0) -- only blank until first non-zero 
+--					break; 		
+--				else 
+--				   Blank(i) = '1';
+--	  end loop LoopA1;
+	
+			
 end behaviour; 
 ----------------------------------------------------------------

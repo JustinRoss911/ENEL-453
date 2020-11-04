@@ -56,76 +56,62 @@ begin
 		  button <= '1';	-- do not store current value 
 		  SW <= "0000000000"; -- binary mode, input 0 
 
-        wait for 1_600_000*TbPeriod;
+        --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
-
-		  SW <= "0011111111"; -- binary mode, expect 255 on LEDs 
-		  -- Expecting....
-		  -- HEX0 = 10100100 (2)
-		  -- HEX1 = 10010010 (5) 
-		  -- HEX2 = 10010010 (5)
-		  -- Rest 11000000 (0) 
+		  --wait for 1_600_000*TbPeriod;
+			wait for 500*TbPeriod;
 		  
-		  wait for 1_600_000*TbPeriod;
+		  SW <= "0011111111";  
+		  
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  SW <= "0111111111"; -- hex mode, expect FF
-		  -- Expecting....
-		  -- HEX0 = 10001110 (F)
-		  -- HEX1 = 10001110 (F)
-		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  button <= '0'; -- Hold current input
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  SW <= "0100110011"; 
 		
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  button <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  SW <= "0110101100"; -- hex mode, expect AC
-		  -- Expecting....
-		  -- HEX0 = 10001000 (A) 
-		  -- HEX1 = 11000110 (C)
-		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  SW <= "1010101100"; -- display stored value while inputs show AC
-		  -- Expecting....
-		  -- HEX0 = 10001110 (F)
-		  -- HEX1 = 10001110 (F)
-		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
-		  -- Expecting....
-		  -- HEX0 = 10010010 (5) 
-		  -- HEX1 = 10001000 (A)
-		  -- HEX2 = 10010010 (5) 
-		  -- HEX4 = 10001000 (A)
-		  -- Rest 11000000 (0) 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
 		  reset_n <= '0'; -- reset 
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
+		  wait for 500*TbPeriod;
 		  
-		  -- Expecting all HEX outputs to be zero 11000000 
-		  
-		  -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';
-        wait;
+        
+		  wait;
     
 	 end process;
 
