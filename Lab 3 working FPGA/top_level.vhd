@@ -118,6 +118,12 @@ port ( dp1 	  : in  std_logic_vector(5 downto 0);
       );
 End component;
 
+Component BlankZero is
+port ( Q      : in  std_logic_vector(15 downto 0);
+		 blank  : out std_logic_vector(5 downto 0)
+		);
+End component;
+
 -- Operation ---
 begin
    Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
@@ -127,10 +133,18 @@ begin
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
-   Blank    <= "110000"; -- Need to change this to blank inactive LEDs for modes 3 and 4 
+   Blank    <= blank(5 downto 0); -- Need to change this to blank inactive LEDs for modes 3 and 4 by
+		--Jade: by defult i think blank should be set to 1 unless the hex5 has a value other then 1
+		-- we do a if else statements for each hex display starting with hex 5 then hex4 then hex3 and so on
   	
        
--- instantiations --		 
+-- instantiations --	
+BlankZero_ins: BlankZero  
+	PORT MAP(
+		Q(15 downto 0) => Q(15 downto 0),
+		Blank => Blank
+		);
+		
 SevenSegment_ins: SevenSegment  
 	PORT MAP(
 		Num_Hex0 => Num_Hex0,
