@@ -119,7 +119,8 @@ port ( dp1 	  : in  std_logic_vector(5 downto 0);
 End component;
 
 Component BlankZero is
-port ( Q      : in  std_logic_vector(15 downto 0);
+port ( Q      : in  std_logic_vector(15 downto 0); --only needs this portion of the output of storedvalue
+		 s      : in  std_logic_vector(1 downto 0);
 		 blank  : out std_logic_vector(5 downto 0)
 		);
 End component;
@@ -141,8 +142,9 @@ begin
 -- instantiations --	
 BlankZero_ins: BlankZero  
 	PORT MAP(
-		Q(15 downto 0) => Q(15 downto 0),
-		Blank => Blank
+		s => s,	-- only activates BlankZero if in state 2 or 3
+		Q(15 downto 0) => Q(15 downto 0), -- we only care about the numbers going to be displayed
+		Blank => Blank -- will feed the new output to Sevensegment display
 		);
 		
 SevenSegment_ins: SevenSegment  
