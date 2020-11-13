@@ -39,47 +39,45 @@ ARCHITECTURE behavior OF tb_MUX4TO1 IS
       stim_process: process -- this process, in testbench/simulation code, is different than in design code
       begin
 		  assert false report "MUX4TO1 testbench started"; -- puts a note in the ModelSim transcript window (this line is just for convenience)
-		  wait for time_delay;
 		  in1 <= "0000000000000000"; 
 		  in2 <= "0000000000000000";
 		  in3 <= "0000000000000000";
 		  in4 <= "0101101001011010"; -- don't change to mimic code 
-        wait for time_delay;
 		  s <= "00"; 
-		  wait for time_delay;
+		  wait for 100*time_delay;
 		  in1 <= "0000000011110000"; 
 		  in2 <= "0000000000001111";
 		  in3 <= "0000000000111100"; 
-        wait for time_delay;
+        wait for 100*time_delay;
 		  in1 <= "0000000000001111"; 
 		  in2 <= "0000000011110000";
 		  in3 <= "0000000011000011"; 
-        wait for time_delay;
+        wait for 100*time_delay;
 		  s <= "01";
-		  wait for time_delay; 
+		  wait for 100*time_delay; 
 		  in1 <= "0000000010101010"; 
 		  in2 <= "0000000001010101";
 		  in3 <= "0000000011001100"; 
-        wait for time_delay;
+        wait for 100*time_delay;
 		  in1 <= "0000000001010101"; 
 		  in2 <= "0000000010101010";
 		  in3 <= "0000000000110011"; 
-        wait for time_delay;
+        wait for 100*time_delay;
 		  s <= "10"; 
-		  wait for time_delay;
+		  wait for 100*time_delay;
 		  in1 <= "0000000000011000"; 
 		  in2 <= "0000000011100111";
 		  in3 <= "0000000010000001"; 
-		  wait for time_delay;
+		  wait for 100*time_delay;
 		  in1 <= "0000000011100111"; 
 		  in2 <= "0000000000011000";
 		  in3 <= "0000000001111110"; 
 		  s <= "11"; 
-		  wait for time_delay;
+		  wait for 100*time_delay;
 		  in1 <= "0000000011011101"; 
 		  in2 <= "0000000000100010";
 		  in3 <= "0000000011111111"; 
-		  wait for time_delay;
+		  wait for 100*time_delay;
 		  in1 <= "0000000000100010"; 
 		  in2 <= "0000000011011101";
 		  in3 <= "0000000000000000"; 
