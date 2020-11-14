@@ -10,12 +10,12 @@ use IEEE.STD_LOGIC_1164.ALL;
 type array_1d is array (0 to 4095) of integer;
 constant v2d_LUT : array_1d := (
 
-(	5414	)	,
-(	5405	)	,
+(	5414	)	, -- array index 0 (voltage = "000000000000" or 0 mV), distance output 54.14 (54.14 cm)
+(	5405	)	, -- array index 1 (voltage = "000000000001" or 1 mV), distance output 54.05 (54.05 cm)
 (	5396	)	,
 (	5387	)	,
 (	5379	)	,
-(	5370	)	,
+(	5370	)	, -- array index 5 (voltage = "000000000101" or 5 mV), distance output 53.70 (53.70 cm)
 (	5361	)	,
 (	5353	)	,
 (	5344	)	,
@@ -4105,7 +4105,7 @@ constant v2d_LUT : array_1d := (
 (	6120	)	,
 (	6132	)	,
 (	6143	)	,
-(	6154	)		-- array index 4095 (voltage = "111111111111" or 4095 mV), distance output 3787 (37.87 cm)
+(	6154	)		-- array index 4095 (voltage = "111111111111" or 4095 mV), distance output 6154 (61.54 cm)
 
 );
 
