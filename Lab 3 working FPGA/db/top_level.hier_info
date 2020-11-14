@@ -93,26 +93,28 @@ HEX5[7] << SevenSegment:SevenSegment_ins.Hex5[7]
 
 
 |top_level|BlankZero:BlankZero_ins
-Q[0] => Equal5.IN3
-Q[1] => Equal5.IN2
-Q[2] => Equal5.IN1
-Q[3] => Equal5.IN0
-Q[4] => Equal4.IN3
-Q[5] => Equal4.IN2
-Q[6] => Equal4.IN1
-Q[7] => Equal4.IN0
-Q[8] => Equal3.IN3
-Q[9] => Equal3.IN2
-Q[10] => Equal3.IN1
-Q[11] => Equal3.IN0
-Q[12] => Equal2.IN3
-Q[13] => Equal2.IN2
-Q[14] => Equal2.IN1
-Q[15] => Equal2.IN0
+Q[0] => Equal6.IN3
+Q[1] => Equal6.IN2
+Q[2] => Equal6.IN1
+Q[3] => Equal6.IN0
+Q[4] => Equal5.IN3
+Q[5] => Equal5.IN2
+Q[6] => Equal5.IN1
+Q[7] => Equal5.IN0
+Q[8] => Equal4.IN3
+Q[9] => Equal4.IN2
+Q[10] => Equal4.IN1
+Q[11] => Equal4.IN0
+Q[12] => Equal3.IN3
+Q[13] => Equal3.IN2
+Q[14] => Equal3.IN1
+Q[15] => Equal3.IN0
 s[0] => Equal0.IN1
 s[0] => Equal1.IN0
+s[0] => Equal2.IN1
 s[1] => Equal0.IN0
 s[1] => Equal1.IN1
+s[1] => Equal2.IN0
 Blank[0] <= Blank.DB_MAX_OUTPUT_PORT_TYPE
 Blank[1] <= Blank.DB_MAX_OUTPUT_PORT_TYPE
 Blank[2] <= Blank.DB_MAX_OUTPUT_PORT_TYPE

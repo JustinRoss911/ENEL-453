@@ -24,7 +24,7 @@ architecture behaviour of BlankZero is
 begin
 	process (Q, s) -- only runs if s or Q changes, helps with efficiency
 		begin		-- !!! MODIFY THE BELOW LINE TO CHANGE THE STATES ACTIVATED DURING !!! --
-			if ((s(1 downto 0) = "11") or (s(1 downto 0) = "10") ) then --could probably make this look nicer
+			if ((s(1 downto 0) = "11") or (s(1 downto 0) = "10") or (s(1 downto 0) = "01")) then --could probably make this look nicer
 				
 				if (Q(15 downto 12) /= "0000") then --    /=    is not equal to 
 					Blank <= "110000";
