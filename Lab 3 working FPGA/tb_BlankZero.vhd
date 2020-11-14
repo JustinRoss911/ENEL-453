@@ -51,7 +51,7 @@ begin
 		Q <= "0000000000000101";
 	wait for 100*time_delay;
 		s <= "01"; -- mode 2
-		Q <= "0000100101001000";  -- should output blank = "111000"
+		Q <= "0000100101001000";  
 	wait for 100*time_delay;
 		Q <= "0010100101111000";  -- should output blank = "110000"
 	wait for 100*time_delay;
@@ -77,7 +77,7 @@ begin
 		Q <= "0000000000000101";
 	wait for 100*time_delay;
 		s <= "11"; -- mode 4
-		Q <= "0000100101001000";  
+		Q <= "0000100101001000";  -- should output blank = "111000"
 	wait for 100*time_delay;
 		Q <= "0010100101111000";
 	wait for 100*time_delay;
