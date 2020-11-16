@@ -88,8 +88,8 @@ begin
 		  
 		  SW <= "1010101100"; -- display stored value while inputs show AC
 		  
-		  --wait for 1_600_000*TbPeriod;
-		  wait for 500*TbPeriod;
+		  wait for 1_600_000*TbPeriod;
+		  --wait for 500*TbPeriod;
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  

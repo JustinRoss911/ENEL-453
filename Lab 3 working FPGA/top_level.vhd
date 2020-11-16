@@ -137,7 +137,7 @@ begin
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
-   Blank    <= blank; -- Need to change this to blank inactive LEDs for modes 3 and 4 by
+   --Blank    <= blank; -- Need to change this to blank inactive LEDs for modes 3 and 4 by
 		--Jade: by defult i think blank should be set to 1 unless the hex5 has a value other then 1
 		-- we do a if else statements for each hex display starting with hex 5 then hex4 then hex3 and so on
   	
@@ -146,7 +146,7 @@ begin
 BlankZero_ins: BlankZero  
 	PORT MAP(
 		s => s,	-- only activates BlankZero if in state 2 or 3
-		Q(15 downto 0) => Q(15 downto 0), -- we only care about the numbers going to be displayed
+		Q => Q(15 downto 0), -- we only care about the numbers going to be displayed
 		Blank => Blank -- will feed the new output to Sevensegment display
 		);
 		

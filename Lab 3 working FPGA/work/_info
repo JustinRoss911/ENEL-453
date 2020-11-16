@@ -13,7 +13,7 @@ Eadc_conversion_wrapper
 Z0 w1604338180
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 1335
+!i122 1381
 Z3 dC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA
 Z4 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd
 Z5 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd
@@ -23,9 +23,9 @@ VB?86R5UoX7S2lmRYIzIMS2
 !s100 KH;=f<oN;9WCTDm@QNBBJ1
 Z6 OV;C;2020.1;71
 32
-Z7 !s110 1605541883
+Z7 !s110 1605551827
 !i10b 1
-Z8 !s108 1605541883.000000
+Z8 !s108 1605551826.000000
 Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd|
 Z10 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd|
 !i113 1
@@ -35,7 +35,7 @@ Asimulation
 R1
 R2
 Z13 DEx4 work 22 adc_conversion_wrapper 0 22 B?86R5UoX7S2lmRYIzIMS2
-!i122 1335
+!i122 1381
 l32
 L29 71
 Vn8ahESID6[aVYn7f`a=J61
@@ -54,7 +54,7 @@ Artl
 R1
 R2
 R13
-!i122 1335
+!i122 1381
 l20
 L11 17
 V0hdTc:nn_LghWHZXNG^5S1
@@ -70,11 +70,11 @@ R10
 R11
 R12
 Eadc_data
-Z14 w1605541215
+Z14 w1605551783
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 1336
+!i122 1382
 R3
 Z16 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Data.vhd
 Z17 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Data.vhd
@@ -84,9 +84,9 @@ V3n4fooJXC0K:cdF`D0ON[0
 !s100 `G?]RH?bRVP9QLBH_afZI1
 R6
 32
-Z18 !s110 1605541884
+R7
 !i10b 1
-R8
+Z18 !s108 1605551827.000000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Data.vhd|
 Z20 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Data.vhd|
 !i113 1
@@ -98,27 +98,27 @@ R15
 R1
 R2
 Z21 DEx4 work 8 adc_data 0 22 3n4fooJXC0K:cdF`D0ON[0
-!i122 1336
+!i122 1382
 l62
 L15 91
 V4PJKQIG`Se:_:eSMWUG@W3
 !s100 ]N4X_z>Xc^_9oCnV?jCKi1
 R6
 32
-R18
+R7
 !i10b 1
-R8
+R18
 R19
 R20
 !i113 1
 R11
 R12
 Eaverager256
-Z22 w1605479756
+Z22 w1605551526
 R15
 R1
 R2
-!i122 1337
+!i122 1383
 R3
 Z23 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd
 Z24 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd
@@ -128,11 +128,11 @@ V_CUX^0>VNcl[Eh>P]8Za^3
 !s100 PTQlD5=WnNQ@eNmcPZ4:[2
 R6
 32
-R18
+R7
 !i10b 1
-Z26 !s108 1605541884.000000
-Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd|
-Z28 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd|
+R18
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd|
+Z27 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd|
 !i113 1
 R11
 R12
@@ -141,41 +141,41 @@ R15
 R1
 R2
 DEx4 work 11 averager256 0 22 _CUX^0>VNcl[Eh>P]8Za^3
-!i122 1337
+!i122 1383
 l39
-L26 50
-V[g^R1Sfh`^K<bIXiH?;bP3
-!s100 7Pag<EYXjz`dGhj:Cn4460
+L26 63
+V?7cLc^XKOg0TF2dI@>eQd1
+!s100 <6Dm^V1Y98eT:J84HKANG2
 R6
 32
-R18
+R7
 !i10b 1
+R18
 R26
 R27
-R28
 !i113 1
 R11
 R12
 Ebinary_bcd
-Z29 w1604089076
+Z28 w1604089076
 R15
 R1
 R2
-!i122 1338
+!i122 1384
 R3
-Z30 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd
-Z31 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd
+Z29 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd
+Z30 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd
 l0
 L8 1
 V0:9zdOIA`o`LF2cmkOC^P3
 !s100 gQzX;=HeN]3[lj0[@2mb]2
 R6
 32
-R18
+R7
 !i10b 1
-R26
-Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd|
-Z33 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd|
+R18
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd|
+Z32 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/binary_bcd.vhd|
 !i113 1
 R11
 R12
@@ -184,63 +184,63 @@ R15
 R1
 R2
 DEx4 work 10 binary_bcd 0 22 0:9zdOIA`o`LF2cmkOC^P3
-!i122 1338
+!i122 1384
 l27
 L17 68
 Vkk0@KWb1@9aV]WcFQb8d>1
 !s100 :^^564DjXHL3Y8gXOzS=f0
 R6
 32
-R18
+R7
 !i10b 1
-R26
+R18
+R31
 R32
-R33
 !i113 1
 R11
 R12
 Eblankzero
-Z34 w1605454421
-Z35 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
-Z36 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+Z33 w1605551819
+Z34 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z35 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
 R1
 R2
-!i122 1356
+!i122 1402
 R3
-Z37 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd
-Z38 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd
+Z36 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd
+Z37 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd
 l0
-Z39 L13 1
+Z38 L13 1
 V`T;ENY:adZd47O9m8nL7j0
 !s100 kaY=88IN<WEIao7[BWd[c1
 R6
 32
-Z40 !s110 1605541888
+Z39 !s110 1605551831
 !i10b 1
-Z41 !s108 1605541888.000000
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd|
-Z43 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd|
+Z40 !s108 1605551831.000000
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd|
+Z42 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/BlankZero.vhd|
 !i113 1
 R11
 R12
 Abehaviour
+R34
 R35
-R36
 R1
 R2
-Z44 DEx4 work 9 blankzero 0 22 `T;ENY:adZd47O9m8nL7j0
-!i122 1356
+Z43 DEx4 work 9 blankzero 0 22 `T;ENY:adZd47O9m8nL7j0
+!i122 1402
 l24
 L22 25
-Vlh:;l6kkB^o0YYKK_>bIO0
-!s100 3L6M<YW@RF_z<^K`[gE[U1
+VQEiiI63V:`EM:a?OF0ldL2
+!s100 7?395zbCmoLBBm1;C3oTR2
 R6
 32
-R40
+R39
 !i10b 1
+R40
 R41
 R42
-R43
 !i113 1
 R11
 R12
@@ -252,72 +252,72 @@ R21
 DAx4 work 11 tb_adc_data 2 tb 22 BH>??8<Wl@5mgC2Ol;Wh80
 R1
 R2
-Z45 DEx4 work 11 tb_adc_data 0 22 [?lm[l=lU]Mf^aJ=5DKVD1
-!i122 1347
-Z46 w1604510682
+Z44 DEx4 work 11 tb_adc_data 0 22 [?lm[l=lU]Mf^aJ=5DKVD1
+!i122 1393
+Z45 w1604510682
 R3
-Z47 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
-Z48 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
+Z46 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
+Z47 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
 l0
 L74 1
 VcXWF`bQSNBSC_?5accbVR3
 !s100 SkJeTb7zOX0INX:FJ;3Db2
 R6
 32
-Z49 !s110 1605541886
+Z48 !s110 1605551829
 !i10b 0
-Z50 !s108 1605541886.000000
-Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
-Z52 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
+Z49 !s108 1605551829.000000
+Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
+Z51 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
 !i113 1
 R11
 R12
 Ccfg_tb_blankzero
 etb_BlankZero
 atb
-R36
 R35
-R44
+R34
+R43
 DAx4 work 12 tb_blankzero 2 tb 22 jC^JG6Na]kI69NOl@hH@70
 R1
 R2
-Z53 DEx4 work 12 tb_blankzero 0 22 SiR0lCV<:PcLS5HNj9<B@1
-!i122 1357
-Z54 w1605454422
+Z52 DEx4 work 12 tb_blankzero 0 22 SiR0lCV<:PcLS5HNj9<B@1
+!i122 1403
+Z53 w1605454422
 R3
-Z55 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
-Z56 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
+Z54 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
+Z55 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
 l0
 L99 1
 Va_cV1Am6e]2G^l^?:N>3Q3
 !s100 IPFz8Z==lCMaKV7Wh=j:H2
 R6
 32
-R40
+R39
 !i10b 0
-R41
-Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
-Z58 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
+R40
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
+Z57 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
 !i113 1
 R11
 R12
 Edebounce
-R29
+R28
 R1
 R2
-!i122 1339
+!i122 1385
 R3
-Z59 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd
-Z60 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd
+Z58 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd
+Z59 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd
 l0
 L29 1
 VC1K_bhEbjZl4j5?gZI;fa1
 !s100 Z<ReW>jh`5lm4821a0i<Q1
 R6
 32
-R18
+Z60 !s110 1605551828
 !i10b 1
-R26
+R18
 Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd|
 Z62 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/debounce.vhd|
 !i113 1
@@ -327,16 +327,16 @@ Alogic
 R1
 R2
 DEx4 work 8 debounce 0 22 C1K_bhEbjZl4j5?gZI;fa1
-!i122 1339
+!i122 1385
 l43
 L40 27
 V4bmI1zgNiHJ<6Eam;lJDB0
 !s100 U_=NIG5<5]YjeA@K`1Ua;0
 R6
 32
-R18
+R60
 !i10b 1
-R26
+R18
 R61
 R62
 !i113 1
@@ -346,7 +346,7 @@ Edpmux
 Z63 w1604513747
 R1
 R2
-!i122 1340
+!i122 1386
 R3
 Z64 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd
 Z65 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd
@@ -356,11 +356,11 @@ Vb6Z]jDHR90mfe7N3n<nbF3
 !s100 j;i22007b;A[:SNDAU[Pi3
 R6
 32
-R18
+R60
 !i10b 1
-R26
-Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd|
-Z67 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd|
+Z66 !s108 1605551828.000000
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd|
+Z68 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/DPmux.vhd|
 !i113 1
 R11
 R12
@@ -368,26 +368,26 @@ Abehaviour
 R1
 R2
 DEx4 work 5 dpmux 0 22 b6Z]jDHR90mfe7N3n<nbF3
-!i122 1340
+!i122 1386
 l21
 L20 27
 VWSXiDOh=[jVK[IW25bDH_2
 !s100 P_91B[h91<8W7<195^H@<1
 R6
 32
-R18
+R60
 !i10b 1
-R26
 R66
 R67
+R68
 !i113 1
 R11
 R12
 Plut_pkg
 R1
 R2
-!i122 1341
-R34
+!i122 1387
+w1605454421
 R3
 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd
 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd
@@ -397,9 +397,9 @@ V72U?Hk;`BWLR^30^=QcRL1
 !s100 L37H9]6dPhOzb3;Qjk[K<3
 R6
 32
-Z68 !s110 1605541885
+R60
 !i10b 1
-R26
+R66
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd|
 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/LUT_pkg.vhd|
 !i113 1
@@ -409,7 +409,7 @@ Emux4to1
 Z69 w1604267070
 R1
 R2
-!i122 1342
+!i122 1388
 R3
 Z70 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd
 Z71 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd
@@ -419,11 +419,11 @@ V;Q6IV5_?P=W:oB3i:llGc3
 !s100 =4Oc:RBaEQU6oz>9TTobC2
 R6
 32
-R68
+R60
 !i10b 1
-Z72 !s108 1605541885.000000
-Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd|
-Z74 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd|
+R66
+Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd|
+Z73 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/MUX4To1.vhd|
 !i113 1
 R11
 R12
@@ -431,40 +431,40 @@ Abehaviour
 R1
 R2
 DEx4 work 7 mux4to1 0 22 ;Q6IV5_?P=W:oB3i:llGc3
-!i122 1342
+!i122 1388
 l21
 L20 9
 Vo_C6J6JN=k4Q7JCRf>FOj3
 !s100 P5XafJ6T7aOe67h@TmmZl0
 R6
 32
-R68
+R60
 !i10b 1
+R66
 R72
 R73
-R74
 !i113 1
 R11
 R12
 Esevensegment
-R54
+R53
 R1
 R2
-!i122 1343
+!i122 1389
 R3
-Z75 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd
-Z76 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd
+Z74 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd
+Z75 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd
 l0
 L5 1
 VXFgP>@o^JhgVk9:C8W>W?1
 !s100 ^0d:N;B_k0GJc@NmQlnlW0
 R6
 32
-R68
+R60
 !i10b 1
-R72
-Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd|
-Z78 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd|
+R66
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd|
+Z77 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment.vhd|
 !i113 1
 R11
 R12
@@ -472,40 +472,40 @@ Abehavioral
 R1
 R2
 DEx4 work 12 sevensegment 0 22 XFgP>@o^JhgVk9:C8W>W?1
-!i122 1343
+!i122 1389
 l24
 L11 56
 VRY`O:mI7ShNY=AIRHl:E`3
 !s100 1W]MD<WEj]lMgjj?HV7Yh3
 R6
 32
-R68
+R60
 !i10b 1
-R72
+R66
+R76
 R77
-R78
 !i113 1
 R11
 R12
 Esevensegment_decoder
-R29
+R28
 R1
 R2
-!i122 1344
+!i122 1390
 R3
-Z79 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd
-Z80 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd
+Z78 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd
+Z79 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd
 l0
 L5 1
 VKjE^A[JI58zIZ_l229BiF2
 !s100 5AALkiToOD1k>]CGcBo?e0
 R6
 32
-R68
+R48
 !i10b 1
-R72
-Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd|
-Z82 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd|
+R66
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd|
+Z81 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/SevenSegment_decoder.vhd|
 !i113 1
 R11
 R12
@@ -513,40 +513,40 @@ Abehavioral
 R1
 R2
 DEx4 work 20 sevensegment_decoder 0 22 KjE^A[JI58zIZ_l229BiF2
-!i122 1344
+!i122 1390
 l17
 L13 40
 VEk]l8L^gQGHfA6;cCT2j02
 !s100 >ohV?96^:;QcZ7]dD6j[K3
 R6
 32
-R68
+R48
 !i10b 1
-R72
+R66
+R80
 R81
-R82
 !i113 1
 R11
 R12
 Estored_value
-Z83 w1604338495
+Z82 w1604338495
 R1
 R2
-!i122 1345
+!i122 1391
 R3
-Z84 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd
-Z85 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd
+Z83 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd
+Z84 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd
 l0
-R39
+R38
 V;N^kdoN<h8I]4oBgC0B4J3
 !s100 2GClj5m^Z^79B9Gm>?c0;0
 R6
 32
-R68
+R48
 !i10b 1
-R72
-Z86 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd|
-Z87 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd|
+R49
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd|
+Z86 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd|
 !i113 1
 R11
 R12
@@ -554,40 +554,40 @@ Abehaviour
 R1
 R2
 DEx4 work 12 stored_value 0 22 ;N^kdoN<h8I]4oBgC0B4J3
-!i122 1345
+!i122 1391
 l23
 L22 13
 VN1^Vo@ZCKb:XK>7NhQD`n0
 !s100 KT_m>0<GG?]ha]Zf@dOQM3
 R6
 32
-R68
+R48
 !i10b 1
-R72
+R49
+R85
 R86
-R87
 !i113 1
 R11
 R12
 Esynchronizer
-R29
+R28
 R1
 R2
-!i122 1346
+!i122 1392
 R3
-Z88 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd
-Z89 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd
+Z87 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd
+Z88 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd
 l0
 L8 1
 VEdhGX_YKb7e8O`Y000I]L3
 !s100 F`gQL1VRCNFFdf3Nd8meb3
 R6
 32
-R49
+R48
 !i10b 1
-R72
-Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd|
-Z91 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd|
+R49
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd|
+Z90 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/synchronizer.vhd|
 !i113 1
 R11
 R12
@@ -595,122 +595,122 @@ Abehaviour
 R1
 R2
 DEx4 work 12 synchronizer 0 22 EdhGX_YKb7e8O`Y000I]L3
-!i122 1346
+!i122 1392
 l19
 L17 14
 VAMcZS>ORz:J`FWIXcd:SY1
 !s100 RNBSliQ9ibn@1bMQf0z0<1
 R6
 32
-R49
+R48
 !i10b 1
-R72
+R49
+R89
 R90
-R91
 !i113 1
 R11
 R12
 Etb_adc_data
-R46
+R45
 R1
 R2
-!i122 1347
+!i122 1393
 R3
+R46
 R47
-R48
 l0
 L8 1
 V[?lm[l=lU]Mf^aJ=5DKVD1
 !s100 L7OQmLjBP@S1i0=olKf6?2
 R6
 32
-R49
+R48
 !i10b 1
+R49
 R50
 R51
-R52
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-R45
-!i122 1347
+R44
+!i122 1393
 l36
 L11 60
 VBH>??8<Wl@5mgC2Ol;Wh80
 !s100 2zS8bI?FcW7D`P;b=D7DI2
 R6
 32
-R49
+R48
 !i10b 1
+R49
 R50
 R51
-R52
 !i113 1
 R11
 R12
 Etb_blankzero
-R54
+R53
 R1
 R2
-!i122 1357
+!i122 1403
 R3
+R54
 R55
-R56
 l0
 R25
 VSiR0lCV<:PcLS5HNj9<B@1
 !s100 ^l4OF58`4dXfWc9ie0AUS2
 R6
 32
-R40
+R39
 !i10b 1
-R41
+R40
+R56
 R57
-R58
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-R53
-!i122 1357
+R52
+!i122 1403
 l26
-Z92 L13 83
-Z93 VjC^JG6Na]kI69NOl@hH@70
-Z94 !s100 J`JXmNRfZ2bKHz@Eeih9=1
+Z91 L13 83
+Z92 VjC^JG6Na]kI69NOl@hH@70
+Z93 !s100 J`JXmNRfZ2bKHz@Eeih9=1
 R6
 32
-R40
+R39
 !i10b 1
-R41
+R40
+R56
 R57
-R58
 !i113 1
 R11
 R12
 Etb_debounce
-R29
+R28
 R1
 R2
-!i122 1348
+!i122 1394
 R3
-Z95 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
-Z96 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
+Z94 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
+Z95 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
 l0
 R25
 VfC6XFVHOhZjf4l8gcO63:1
 !s100 GoKCFGem1>AF?3<JI:R:30
 R6
 32
-R49
+R48
 !i10b 1
-R50
-Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
-Z98 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
+R49
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
+Z97 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
 !i113 1
 R11
 R12
@@ -718,38 +718,38 @@ Abehavioral
 R1
 R2
 DEx4 work 11 tb_debounce 0 22 fC6XFVHOhZjf4l8gcO63:1
-!i122 1348
+!i122 1394
 l43
 L13 130
 VKO?IBDhZVUVdVj0T_S[UM3
 !s100 0Jf@>Th_6[]<4eU@W;RoI2
 R6
 32
-R49
+R48
 !i10b 1
-R50
+R49
+R96
 R97
-R98
 !i113 1
 R11
 R12
 Etb_dpmux
-Z99 w1604340700
+Z98 w1604340700
 R1
 R2
-!i122 1349
+!i122 1395
 R3
-Z100 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
-Z101 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
+Z99 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
+Z100 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
 l0
 L4 1
 VQ;[BTKbFQDQMf3?cDc8J@0
 !s100 <dL=c7M=d1eCeSP;?OkSR1
 R6
 32
-R49
+Z101 !s110 1605551830
 !i10b 1
-R50
+R49
 Z102 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
 Z103 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
 !i113 1
@@ -759,26 +759,26 @@ Abehavior
 R1
 R2
 DEx4 work 8 tb_dpmux 0 22 Q;[BTKbFQDQMf3?cDc8J@0
-!i122 1349
+!i122 1395
 l27
 L7 74
 V9Nd1c]cdd6P6UR9VmJJ]73
 !s100 ahezGiK11AO?3M?gWHG0H1
 R6
 32
-R49
+R101
 !i10b 1
-R50
+R49
 R102
 R103
 !i113 1
 R11
 R12
 Etb_mux4to1
-R29
+R28
 R1
 R2
-!i122 1350
+!i122 1396
 R3
 Z104 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
 Z105 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
@@ -788,11 +788,11 @@ V5;TKZP2n8aSM:S9jgMf7R2
 !s100 T0lF]?HlJ7M1TgD:7@6872
 R6
 32
-R49
+R101
 !i10b 1
-R50
-Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
-Z107 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
+Z106 !s108 1605551830.000000
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
+Z108 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
 !i113 1
 R11
 R12
@@ -800,40 +800,40 @@ Abehavior
 R1
 R2
 DEx4 work 10 tb_mux4to1 0 22 5;TKZP2n8aSM:S9jgMf7R2
-!i122 1350
+!i122 1396
 l26
 L7 84
 V`;PhK?mgEM91=C3>TDG4R2
 !s100 ziihDz7^6DX?^HW:bcF1C0
 R6
 32
-R49
+R101
 !i10b 1
-R50
 R106
 R107
+R108
 !i113 1
 R11
 R12
 Etb_stored_value
-R29
+R28
 R1
 R2
-!i122 1351
+!i122 1397
 R3
-Z108 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
-Z109 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
+Z109 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
+Z110 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
 l0
 L6 1
 Vmi57MD@kHe3l;I[KEkXeA3
 !s100 kk_YQ]Wf@Y`a8^[TB]FA32
 R6
 32
-Z110 !s110 1605541887
+R101
 !i10b 1
-Z111 !s108 1605541887.000000
-Z112 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
-Z113 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
+R106
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
+Z112 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
 !i113 1
 R11
 R12
@@ -841,40 +841,40 @@ Atb
 R1
 R2
 DEx4 work 15 tb_stored_value 0 22 mi57MD@kHe3l;I[KEkXeA3
-!i122 1351
+!i122 1397
 l24
 L9 55
 VQ9LL`U<iRnnmO9f7VY5_E2
 !s100 jeQ75zjoVYRh:zlom];0T3
 R6
 32
-R110
+R101
 !i10b 1
+R106
 R111
 R112
-R113
 !i113 1
 R11
 R12
 Etb_synchronizer
-R29
+R28
 R1
 R2
-!i122 1352
+!i122 1398
 R3
-Z114 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
-Z115 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
+Z113 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
+Z114 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
 l0
 L4 1
 VMG:2W8mW?_zHn9Ik2O34K1
 !s100 [^YM@Uh35X:n84>OQlcPB1
 R6
 32
-R110
+R101
 !i10b 1
-R111
-Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
-Z117 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
+R106
+Z115 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
+Z116 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
 !i113 1
 R11
 R12
@@ -882,40 +882,40 @@ Atb
 R1
 R2
 DEx4 work 15 tb_synchronizer 0 22 MG:2W8mW?_zHn9Ik2O34K1
-!i122 1352
+!i122 1398
 l23
 L7 49
 V10lW0MAZYINm[k1n3AcZ>3
 !s100 jKQa9f2=KJZ]Rj1>Phg0O0
 R6
 32
-R110
+R101
 !i10b 1
-R111
+R106
+R115
 R116
-R117
 !i113 1
 R11
 R12
 Etb_top_level
-Z118 w1604516717
+Z117 w1605551710
 R1
 R2
-!i122 1353
+!i122 1399
 R3
-Z119 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd
-Z120 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd
+Z118 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd
+Z119 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd
 l0
 L8 1
 V3;PGc=2PlYOV6_DIdb<>a0
 !s100 Km2HO@VVHJ36i^cHiN6MP1
 R6
 32
-R110
+R101
 !i10b 1
-R111
-Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd|
-Z122 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd|
+R106
+Z120 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd|
+Z121 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_top_level.vhd|
 !i113 1
 R11
 R12
@@ -923,41 +923,41 @@ Atb
 R1
 R2
 DEx4 work 12 tb_top_level 0 22 3;PGc=2PlYOV6_DIdb<>a0
-!i122 1353
+!i122 1399
 l30
 L11 98
-V[zKlNZVjcL>4<6=X]NZgK1
-!s100 njN@R@RUcZ5F]Sl]F1^4=3
+V_:E9ZZ?36QLW`Mo^Ez;hP0
+!s100 c;9h;iz2h[S@bB0jZXR263
 R6
 32
-R110
+R101
 !i10b 1
-R111
+R106
+R120
 R121
-R122
 !i113 1
 R11
 R12
 Etop_level
-Z123 w1605541875
+Z122 w1605551646
 R15
 R1
 R2
-!i122 1354
+!i122 1400
 R3
-Z124 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd
-Z125 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd
+Z123 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd
+Z124 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd
 l0
 L9 1
 VSFbkFcbM2hU?KKN]5[NhI2
 !s100 JH@7Y>^o5DKR;4mR2MBfd3
 R6
 32
-R110
+R39
 !i10b 1
-R111
-Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd|
-Z127 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd|
+R106
+Z125 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd|
+Z126 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/top_level.vhd|
 !i113 1
 R11
 R12
@@ -966,63 +966,63 @@ R15
 R1
 R2
 DEx4 work 9 top_level 0 22 SFbkFcbM2hU?KKN]5[NhI2
-!i122 1354
+!i122 1400
 l132
 L22 248
-VRPcFC`5fLn:WU7B7_nYdO3
-!s100 VJ`MUQSYd97J=`=6Vk^MN1
+V;>4I@ZEHdfaF=2LTmh^mM1
+!s100 E3Jja`Hm4m9]00H9=G9312
 R6
 32
-R110
+R39
 !i10b 1
-R111
+R106
+R125
 R126
-R127
 !i113 1
 R11
 R12
 Evoltage2distance_array2
-Z128 w1604089276
-Z129 DPx4 work 7 lut_pkg 0 22 72U?Hk;`BWLR^30^=QcRL1
+Z127 w1604089276
+Z128 DPx4 work 7 lut_pkg 0 22 72U?Hk;`BWLR^30^=QcRL1
 R15
 R1
 R2
-!i122 1355
+!i122 1401
 R3
-Z130 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd
-Z131 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd
+Z129 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd
+Z130 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd
 l0
 L24 1
 V=NDCVZciz^K^bX6GaO`oT3
 !s100 `A`mdf8ondemfJ_=[hYQd1
 R6
 32
-R40
+R39
 !i10b 1
-R111
-Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd|
-Z133 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd|
+R40
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd|
+Z132 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/voltage2distance_array2.vhd|
 !i113 1
 R11
 R12
 Abehavior
-R129
+R128
 R15
 R1
 R2
 DEx4 work 23 voltage2distance_array2 0 22 =NDCVZciz^K^bX6GaO`oT3
-!i122 1355
+!i122 1401
 l35
 L32 11
 VEeH?6UUEXf92ElUkXFl4d3
 !s100 [6Lk_@eYiRP^?7Woz^lK[0
 R6
 32
-R40
+R39
 !i10b 1
-R111
+R40
+R131
 R132
-R133
 !i113 1
 R11
 R12
