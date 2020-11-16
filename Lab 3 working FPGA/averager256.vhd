@@ -62,13 +62,26 @@ begin
       end if;
    end process shift_reg;
    
-   LoopB1: for i in 1 to (2**N)/2 generate -- for i = 1:128
-      tmp(i) <= to_integer(unsigned(REG_ARRAY((2*i)-1)))  + to_integer(unsigned(REG_ARRAY(2*i))); -- add adjacent registers and store in temp array 
-   end generate LoopB1;
-   
-   LoopB2: for i in ((2**N)/2)+1 to (2**N)-1 generate -- for i = 129:255
-      tmp(i) <= tmp(2*(i-(2**N)/2)-1) + tmp(2*(i-(2**N)/2)); -- add adjacent vectors in tmp and store in lower half of tmp 
-   end generate LoopB2;
+
+add_reg : process(clk)
+	begin
+	LoopB1: for i in 1 to (2**N)/2 loop -- for i = 1:128
+		if EN = '1' then
+			if rising_edge(clk) then
+				tmp(i) <= to_integer(unsigned(REG_ARRAY((2*i)-1)))  + to_integer(unsigned(REG_ARRAY(2*i))); -- add adjacent registers and store in temp array
+			end if;
+		end if;
+	end loop LoopB1;
+
+
+	LoopB2: for i in ((2**N)/2)+1 to (2**N)-1 loop -- for i = 129:255
+		if EN = '1' then
+			if rising_edge(clk) then
+				tmp(i) <= tmp(2*(i-(2**N)/2)-1) + tmp(2*(i-(2**N)/2)); -- add adjacent vectors in tmp and store in lower half of tmp
+			end if;
+		end if;
+	end loop LoopB2;
+end process add_reg;
    
    tmplast <= std_logic_vector(to_unsigned(tmp((2**N)-1), tmplast'length)); -- choose last row of tmp 
       
