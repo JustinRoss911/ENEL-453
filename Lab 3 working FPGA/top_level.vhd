@@ -90,6 +90,9 @@ Component synchronizer is
 end component;
 
 Component debounce is
+GENERIC(
+    clk_freq    : INTEGER := 50_000_000;  --system clock frequency in Hz
+    stable_time : INTEGER := 30);  
 	PORT(
 		clk     : IN  STD_LOGIC;  --input clock
 		reset_n : IN  STD_LOGIC;  --asynchronous active low reset
@@ -123,7 +126,7 @@ port ( Q      : in  std_logic_vector(15 downto 0); --only needs this portion of 
 		 s      : in  std_logic_vector(1 downto 0);
 		 blank  : out std_logic_vector(5 downto 0)
 		);
-End component;
+End component; 
 
 -- Operation ---
 begin
@@ -230,6 +233,9 @@ synchronizer_ins: synchronizer
 --stable_time <= 30;
 
 debounce_ins : debounce
+   GENERIC map(
+    clk_freq    => 50_000_000,  --system clock frequency in Hz
+    stable_time => 30)
 	port map(
 	   clk     => clk,
 		button  => button,
@@ -237,7 +243,7 @@ debounce_ins : debounce
 		result  => result
 		);
 		
-ADC_Data_ins: ADC_Data
+ADC_Data_ins: ADC_Data 
 	port map (
 		  clk    => clk,  
 	     reset_n => reset_n,
@@ -261,5 +267,14 @@ DPmux_ins: DPmux
 		s 			=>  s,
 		dp_out  =>  dp_out
 		);
+		
+--avg_ins: avg 
+--	 PORT MAP ( 
+--	     clk  => clk,   
+--        EN   => EN,   
+--        reset_n => reset_n,
+--        Din   => Din,  
+--        Q  => Q
+--		  );
 
 end Behavioral;
