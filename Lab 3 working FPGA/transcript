@@ -84,3 +84,7 @@ run -all
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# Break key hit
+# Break in ForLoop LoopB2 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd line 77
+# End time: 11:39:33 on Nov 16,2020, Elapsed time: 0:01:58
+# Errors: 1, Warnings: 7
