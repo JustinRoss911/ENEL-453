@@ -90,12 +90,15 @@ Component synchronizer is
 end component;
 
 Component debounce is
-	PORT(
-		clk     : IN  STD_LOGIC;  --input clock
-		reset_n : IN  STD_LOGIC;  --asynchronous active low reset
-		button  : IN  STD_LOGIC;  --input signal to be debounced
-		result  : OUT STD_LOGIC   --debounced signal
-		);
+GENERIC(
+    clk_freq    : INTEGER := 50_000_000;  --system clock frequency in Hz
+    stable_time : INTEGER := 30);
+    PORT(
+        clk     : IN  STD_LOGIC;  --input clock
+        reset_n : IN  STD_LOGIC;  --asynchronous active low reset
+        button  : IN  STD_LOGIC;  --input signal to be debounced
+        result  : OUT STD_LOGIC   --debounced signal
+        );
 end component;
 
 Component ADC_Data is
@@ -134,7 +137,7 @@ begin
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
-   Blank    <= blank(5 downto 0); -- Need to change this to blank inactive LEDs for modes 3 and 4 by
+   Blank    <= blank; -- Need to change this to blank inactive LEDs for modes 3 and 4 by
 		--Jade: by defult i think blank should be set to 1 unless the hex5 has a value other then 1
 		-- we do a if else statements for each hex display starting with hex 5 then hex4 then hex3 and so on
   	
@@ -226,16 +229,17 @@ synchronizer_ins: synchronizer
 			reset_n => reset_n
 			);
 			
---clk_freq <= 50_000_000;
---stable_time <= 30;
 
 debounce_ins : debounce
-	port map(
-	   clk     => clk,
-		button  => button,
-		reset_n => reset_n,
-		result  => result
-		);
+   GENERIC map(
+    clk_freq    => 50_000_000,  --system clock frequency in Hz
+    stable_time => 30)
+    port map(
+       clk     => clk,
+        button  => button,
+        reset_n => reset_n,
+        result  => result
+        );
 		
 ADC_Data_ins: ADC_Data
 	port map (
