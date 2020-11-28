@@ -1,0 +1,90 @@
+# Compile of ADC_Conversion_wrapper.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of LUT_pkg.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_ADC_data.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_DPmux.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of BlankZero.vhd failed with 1 errors.
+# Compile of tb_BlankZero.vhd was successful.
+# 23 compiles, 1 failed with 1 error.
+# Compile of ADC_Conversion_wrapper.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of LUT_pkg.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of tb_ADC_data.vhd was successful.
+# Compile of tb_debounce.vhd was successful.
+# Compile of tb_DPmux.vhd was successful.
+# Compile of tb_MUX4TO1.vhd was successful.
+# Compile of tb_stored_value.vhd was successful.
+# Compile of tb_synchronizer.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of tb_BlankZero.vhd was successful.
+# 23 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 11:37:35 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft5zzh9t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5zzh9t
+run -all
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# Break key hit
+# Break in ForLoop LoopB2 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd line 77
+# End time: 11:39:33 on Nov 16,2020, Elapsed time: 0:01:58
+# Errors: 1, Warnings: 7
