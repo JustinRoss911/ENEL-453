@@ -19,36 +19,79 @@
 # Compile of tb_top_level.vhd was successful.
 # Compile of top_level.vhd was successful.
 # Compile of voltage2distance_array2.vhd was successful.
-# Compile of BlankZero.vhd failed with 1 errors.
-# Compile of tb_BlankZero.vhd was successful.
-# 23 compiles, 1 failed with 1 error.
-# Compile of ADC_Conversion_wrapper.vhd was successful.
-# Compile of ADC_Data.vhd was successful.
-# Compile of averager256.vhd was successful.
-# Compile of binary_bcd.vhd was successful.
-# Compile of debounce.vhd was successful.
-# Compile of DPmux.vhd was successful.
-# Compile of LUT_pkg.vhd was successful.
-# Compile of MUX4To1.vhd was successful.
-# Compile of SevenSegment.vhd was successful.
-# Compile of SevenSegment_decoder.vhd was successful.
-# Compile of stored_value.vhd was successful.
-# Compile of synchronizer.vhd was successful.
-# Compile of tb_ADC_data.vhd was successful.
-# Compile of tb_debounce.vhd was successful.
-# Compile of tb_DPmux.vhd was successful.
-# Compile of tb_MUX4TO1.vhd was successful.
-# Compile of tb_stored_value.vhd was successful.
-# Compile of tb_synchronizer.vhd was successful.
-# Compile of tb_top_level.vhd was successful.
-# Compile of top_level.vhd was successful.
-# Compile of voltage2distance_array2.vhd was successful.
 # Compile of BlankZero.vhd was successful.
 # Compile of tb_BlankZero.vhd was successful.
 # 23 compiles, 0 failed with no errors.
+vsim -gui work.tb_dpmux
+# vsim -gui work.tb_dpmux 
+# Start time: 11:43:22 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_dpmux(behavior)
+# Loading work.dpmux(behaviour)
+add wave -position end sim:/tb_dpmux/uut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfta0506y".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta0506y
+run -all
+vsim -gui work.tb_blankzero
+# End time: 11:44:58 on Nov 16,2020, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_blankzero 
+# Start time: 11:44:58 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_blankzero(tb)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+add wave -position end sim:/tb_blankzero/dut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftc0da11".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc0da11
+run -all
+vsim -gui work.tb_adc_data
+# End time: 11:48:40 on Nov 16,2020, Elapsed time: 0:03:42
+# Errors: 0, Warnings: 3
+# vsim -gui work.tb_adc_data 
+# Start time: 11:48:40 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_adc_data(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+add wave -position end sim:/tb_adc_data/dut/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft0cw6nc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0cw6nc
+run -all
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_adc_data/dut/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_adc_data/dut/voltage2distance_ins
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_adc_data/dut/voltage2distance_ins
+# ** Failure: Simulation ended
+#    Time: 490200 ns  Iteration: 0  Process: /tb_adc_data/stimuli File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
+# Break in Process stimuli at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd line 67
 vsim -gui work.tb_top_level
+# End time: 11:51:23 on Nov 16,2020, Elapsed time: 0:02:43
+# Errors: 2, Warnings: 5
 # vsim -gui work.tb_top_level 
-# Start time: 11:37:35 on Nov 16,2020
+# Start time: 11:51:23 on Nov 16,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -74,9 +117,9 @@ vsim -gui work.tb_top_level
 add wave -position end sim:/tb_top_level/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft5zzh9t".
+#           Attempting to use alternate WLF file "./wlfti7nkrc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5zzh9t
+#           Using alternate file: ./wlfti7nkrc
 run -all
 # ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
@@ -85,6 +128,81 @@ run -all
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
 # Break key hit
-# Break in ForLoop LoopB2 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd line 77
-# End time: 11:39:33 on Nov 16,2020, Elapsed time: 0:01:58
-# Errors: 1, Warnings: 7
+# Break in Process ADC_out_process at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd line 43
+vsim -gui work.tb_debounce
+# End time: 13:08:33 on Nov 16,2020, Elapsed time: 1:17:10
+# Errors: 1, Warnings: 5
+# vsim -gui work.tb_debounce 
+# Start time: 13:08:33 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_debounce(behavioral)
+# Loading work.debounce(logic)
+add wave -position end sim:/tb_debounce/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftbhv1wk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftbhv1wk
+run -all
+# ** Error: First test passed
+#    Time: 70000703 ns  Iteration: 0  Instance: /tb_debounce
+# ** Error: Second test passed
+#    Time: 140003106 ns  Iteration: 0  Instance: /tb_debounce
+# ** Failure: Simulation ended, test passed
+#    Time: 140005206 ns  Iteration: 0  Process: /tb_debounce/stim_proc File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
+# Break in Process stim_proc at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd line 138
+vsim -gui work.tb_mux4to1
+# End time: 13:10:21 on Nov 16,2020, Elapsed time: 0:01:48
+# Errors: 3, Warnings: 3
+# vsim -gui work.tb_mux4to1 
+# Start time: 13:10:21 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_mux4to1(behavior)
+# Loading work.mux4to1(behaviour)
+add wave -position end sim:/tb_mux4to1/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft2iaj7i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2iaj7i
+add wave -position end sim:/tb_mux4to1/uut/*
+run -all
+# ** Error: MUX4TO1 testbench started
+#    Time: 0 ps  Iteration: 0  Instance: /tb_mux4to1
+# ** Error: MUX2TO1 testbench completed
+#    Time: 20200 ps  Iteration: 0  Instance: /tb_mux4to1
+vsim -gui work.tb_stored_value
+# End time: 13:12:03 on Nov 16,2020, Elapsed time: 0:01:42
+# Errors: 2, Warnings: 3
+# vsim -gui work.tb_stored_value 
+# Start time: 13:12:03 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+# ** Fatal: (vsim-3348) Port length (22) does not match actual length (16) for port "/tb_stored_value/UUT/D".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_stored_value/UUT File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd Line: 14
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 13:12:03 on Nov 16,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+vsim -gui work.tb_stored_value
+# vsim -gui work.tb_stored_value 
+# Start time: 13:12:42 on Nov 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_stored_value(tb)
+# Loading work.stored_value(behaviour)
+# ** Fatal: (vsim-3348) Port length (22) does not match actual length (16) for port "/tb_stored_value/UUT/D".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_stored_value/UUT File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/stored_value.vhd Line: 14
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 13:12:42 on Nov 16,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# A time value could not be extracted from the current line
