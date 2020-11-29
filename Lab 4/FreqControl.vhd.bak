@@ -1,0 +1,28 @@
+-- FreqControl
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+----------------------------------------------------------------
+-- 2. Entity Declaration 
+----------------------------------------------------------------
+entity FreqControl is
+port ( input   		:in std_logic_vector(15 downto 0) -- in1 = hex switch display
+		 set_count		:out std_logic_vector(width-1 downto 0);
+      );
+end FreqControl;
+
+architecture behaviour of MUX4TO1 is
+	begin 
+	
+	if(unsigned(input) >= 4000)
+		set_count = "100000000";  -- set maximum value above counter limit (no flashing) 
+	else
+		-- update later. 
+		-- output a small set_count for a small distance 
+		set_count = "010000000"; 
+	end if; 
+	
+end Behavioral;
+	
+	
+	

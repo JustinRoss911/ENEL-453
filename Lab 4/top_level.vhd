@@ -23,8 +23,8 @@ architecture Behavioral of top_level is
 
 -- intermediate Signals --
 Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : std_logic_vector (3 downto 0):= (others=>'0');   
-Signal in1, in2, in3, in4, mux_out: std_logic_vector(15 DOWNTO 0);
-Signal dp1, dp2, dp3, dp4, dp_out: std_logic_vector(5 DOWNTO 0);
+Signal in1, in2, in3, mux_out: std_logic_vector(15 DOWNTO 0);
+Signal dp1, dp2, dp3, dp_out: std_logic_vector(5 DOWNTO 0);
 
 Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
@@ -35,13 +35,20 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D:			std_logic_vector(21 downto 0);
+Signal Q, D, D_temp:	std_logic_vector(21 downto 0);
 Signal result, EN:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
+Signal count_max: std_logic_vector (9 downto 0);
+Signal duty_cycle: std_logic_vector(8 downto 0);
+Signal enable, enab, zero: std_logic;
+Signal pwm_out: std_logic;
+Signal input:  std_logic_vector(12 downto 0);
+Signal set_count: std_logic_vector(9 downto 0);
+		
 --Signal clk_freq: INTEGER; --system clock frequency in Hz
 --Signal stable_time: INTEGER;
 
@@ -67,8 +74,7 @@ Component MUX4TO1 is
 		 in1     : in  std_logic_vector(15 downto 0); -- in1 = binary (hex)
        in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal 
 		 in3     : in  std_logic_vector(15 downto 0); -- in3 = stored value 
-		 in4     : in  std_logic_vector(15 downto 0); -- in4 = 5A5A
-       s       : in  std_logic_vector(1  downto 0); -- Switches that toggles between mode
+	    s       : in  std_logic_vector(1  downto 0); -- Switches that toggles between mode
        mux_out : out std_logic_vector(15 downto 0)	 -- output bits 
 		 );
 END Component;
@@ -115,7 +121,6 @@ Component DPmux is
 port ( dp1 	  : in  std_logic_vector(5 downto 0);
 		 dp2	  : in  std_logic_vector(5 downto 0);
 		 dp3	  : in  std_logic_vector(5 downto 0);
-		 dp4	  : in  std_logic_vector(5 downto 0);
 		 s      : in  std_logic_vector(1 downto 0); -- Switches that toggles between mode
        dp_out : out std_logic_vector(5 downto 0)  -- output bits 
       );
@@ -127,6 +132,36 @@ port ( Q      : in  std_logic_vector(15 downto 0); --only needs this portion of 
 		 blank  : out std_logic_vector(5 downto 0)
 		);
 End component;
+
+Component PWM_DAC is
+   Generic ( width : integer := 9);
+   Port    ( reset_n    : in  STD_LOGIC;
+             clk        : in  STD_LOGIC;
+				 count_max  : in  STD_LOGIC_VECTOR (width downto 0); -- maximum count value (1 bit greater than counter width) 
+             duty_cycle : in  STD_LOGIC_VECTOR (width-1 downto 0);
+				 enable 		: in  STD_LOGIC;
+             pwm_out    : out STD_LOGIC
+           );
+end component;
+
+Component FreqControl is
+Port ( reset_n    : in  STD_LOGIC;
+       clk        : in  STD_LOGIC;
+		 input   		:in std_logic_vector(12 downto 0); -- in1 = hex switch display
+		 set_count		:out std_logic_vector(9 downto 0)
+      );
+end component; 
+
+Component downcounter is
+    Generic ( period  : natural := 1000); -- number to count       
+    PORT    ( clk     : in  STD_LOGIC; -- clock to be divided
+              reset_n : in  STD_LOGIC; -- active-high reset
+              enab  : in  STD_LOGIC; -- active-high enable
+              zero    : out STD_LOGIC  -- creates a positive pulse every time current_count hits zero
+                                       -- useful to enable another device, like to slow down a counter
+              -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
+         );
+end component;
 
 -- Operation ---
 begin
@@ -191,10 +226,11 @@ binary_bcd_ins2: binary_bcd
       bcd      => bcd2  
 	);
 
-in1 <= "00000000" & G(7 downto 0); -- Hex output
-in2 <= bcd; -- decimal distance 
-in3 <= bcd2;
-in4 <= "0000" &  ADC_out;
+--in1 <= "00000000" & G(7 downto 0); -- Hex output
+in1 <= bcd; -- deciaml distance 
+in2 <= bcd2; -- decimal voltage
+in3 <= "0000" &  ADC_out; -- hex moving average 
+
 s 	<= G(9 downto 8); 
 
 MUX4TO1_ins: MUX4TO1
@@ -202,12 +238,13 @@ MUX4TO1_ins: MUX4TO1
 		in1 		=>  in1,  -- hex switch outputs
 		in2		=>  in2,	 -- decimal distance
 		in3      =>  in3,  -- decimal voltage
-		in4      =>  in4,  -- hex moving average 
-		s 			=>  s,
+	   s 			=>  s,
 		mux_out  =>  mux_out
 		);
 
-D <= dp_out & mux_out;
+D_temp <= dp_out & mux_out; 
+D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
+
 EN <= result;
 
 stored_value_ins: stored_value 
@@ -251,19 +288,47 @@ ADC_Data_ins: ADC_Data
         ADC_out  => ADC_out
          );  
 			
-dp1 <= "000000";
-dp2 <= "000100";
-dp3 <= "001000";
-dp4 <= "000000";
+dp1 <= "000100";
+dp2 <= "001000";
+dp3 <= "000000";
 	
 DPmux_ins: DPmux
 	 PORT MAP (
 		dp1 		=>  dp1,  
 		dp2		=>  dp2,	 
-		dp3      =>  dp3,  
-		dp4      =>  dp4,  
+		dp3      =>  dp3,   
 		s 			=>  s,
 		dp_out  =>  dp_out
 		);
 
+input <= distance; 
+			  
+FreqControl_ins: FreqControl
+Port Map (reset_n  => reset_n,
+          clk  => clk, 
+			input  => input, 
+		 set_count => set_count	
+      );
+		
+count_max <= set_count; 
+enable <= zero;
+		
+PWM_DAC_ins: PWM_DAC
+  Generic Map (width => 9)
+  Port Map    (reset_n  => reset_n,
+               clk      => clk, 
+				   count_max  => count_max,
+               duty_cycle  => duty_cycle, 
+				   enable 		=> enable, 
+               pwm_out  => pwm_out  
+           );
+	
+downcounter_ins: downcounter 	
+	Generic Map (period => 1000) -- number to count       
+   PORT Map  (clk     => clk, -- clock to be divided
+              reset_n => reset_n, -- active-high reset
+              enab  => enab, -- active-high enable
+              zero    => zero  -- creates a positive pulse every time current_count hits zero
+            );
+			  
 end Behavioral;
