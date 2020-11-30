@@ -68,6 +68,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX0[6]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX1[0]",
 					"strict" : false
 				},
@@ -89,6 +93,10 @@
 				},
 				{
 					"name" : "HEX1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX1[6]",
 					"strict" : false
 				},
 				{
@@ -116,6 +124,14 @@
 					"strict" : false
 				},
 				{
+					"name" : "HEX2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "HEX2[7]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX3[0]",
 					"strict" : false
 				},
@@ -140,35 +156,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[0]",
+					"name" : "HEX3[6]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[1]",
+					"name" : "HEX3[7]",
 					"strict" : false
 				},
 				{
-					"name" : "SW[2]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
+					"name" : "reset_n",
 					"strict" : false
 				},
 				{
@@ -180,11 +180,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
-					"name" : "reset_n",
+					"name" : "button",
 					"strict" : false
 				}
 			]

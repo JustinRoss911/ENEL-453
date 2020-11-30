@@ -6,7 +6,7 @@ entity PWM_DAC is
    Generic ( width : integer := 9);
    Port    ( reset_n    : in  STD_LOGIC;
              clk        : in  STD_LOGIC;
-				 count_max  : in  STD_LOGIC_VECTOR (width downto 0); -- maximum count value (1 bit greater than counter width) 
+				 count_max  : in  STD_LOGIC_VECTOR (width-1 downto 0); -- maximum count value (1 bit greater than counter width) 
              duty_cycle : in  STD_LOGIC_VECTOR (width-1 downto 0);
 				 enable 		: in  STD_LOGIC;
              pwm_out    : out STD_LOGIC

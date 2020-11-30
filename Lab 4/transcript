@@ -1,54 +1,155 @@
-# Compile of ADC_Conversion_wrapper.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
 # Compile of ADC_Data.vhd was successful.
 # Compile of averager256.vhd was successful.
 # Compile of binary_bcd.vhd was successful.
-# Compile of debounce.vhd was successful.
-# Compile of DPmux.vhd was successful.
-# Compile of LUT_pkg.vhd was successful.
-# Compile of MUX4To1.vhd was successful.
-# Compile of SevenSegment.vhd was successful.
-# Compile of SevenSegment_decoder.vhd was successful.
-# Compile of stored_value.vhd was successful.
-# Compile of synchronizer.vhd was successful.
-# Compile of tb_ADC_data.vhd was successful.
-# Compile of tb_debounce.vhd was successful.
-# Compile of tb_DPmux.vhd was successful.
-# Compile of tb_MUX4TO1.vhd was successful.
-# Compile of tb_stored_value.vhd was successful.
-# Compile of tb_synchronizer.vhd was successful.
-# Compile of tb_top_level.vhd was successful.
-# Compile of top_level.vhd was successful.
-# Compile of voltage2distance_array2.vhd was successful.
-# Compile of BlankZero.vhd failed with 1 errors.
-# Compile of tb_BlankZero.vhd was successful.
-# 23 compiles, 1 failed with 1 error.
-# Compile of ADC_Conversion_wrapper.vhd was successful.
-# Compile of ADC_Data.vhd was successful.
-# Compile of averager256.vhd was successful.
-# Compile of binary_bcd.vhd was successful.
-# Compile of debounce.vhd was successful.
-# Compile of DPmux.vhd was successful.
-# Compile of LUT_pkg.vhd was successful.
-# Compile of MUX4To1.vhd was successful.
-# Compile of SevenSegment.vhd was successful.
-# Compile of SevenSegment_decoder.vhd was successful.
-# Compile of stored_value.vhd was successful.
-# Compile of synchronizer.vhd was successful.
-# Compile of tb_ADC_data.vhd was successful.
-# Compile of tb_debounce.vhd was successful.
-# Compile of tb_DPmux.vhd was successful.
-# Compile of tb_MUX4TO1.vhd was successful.
-# Compile of tb_stored_value.vhd was successful.
-# Compile of tb_synchronizer.vhd was successful.
-# Compile of tb_top_level.vhd was successful.
-# Compile of top_level.vhd was successful.
-# Compile of voltage2distance_array2.vhd was successful.
 # Compile of BlankZero.vhd was successful.
-# Compile of tb_BlankZero.vhd was successful.
-# 23 compiles, 0 failed with no errors.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd failed with 9 errors.
+# 21 compiles, 1 failed with 9 errors.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd failed with 9 errors.
+# 21 compiles, 1 failed with 9 errors.
+# Compile of tb_PWM_DAC.vhd failed with 9 errors.
+# Compile of tb_PWM_DAC.vhd failed with 6 errors.
+# Compile of tb_PWM_DAC.vhd was successful.
+vsim -gui work.tb_pwm_dac
+# vsim -gui work.tb_pwm_dac 
+# Start time: 10:03:14 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pwm_dac(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_pwm_dac/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft7ax5be".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7ax5be
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pwm_dac/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_pwm_dac/UUT
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd failed with 2 errors.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# 21 compiles, 1 failed with 2 errors.
+# Compile of PWM_DAC.vhd was successful.
+vsim -gui work.tb_pwm_dac
+# End time: 10:06:40 on Nov 30,2020, Elapsed time: 0:03:26
+# Errors: 0, Warnings: 13
+# vsim -gui work.tb_pwm_dac 
+# Start time: 10:06:40 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pwm_dac(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.pwm_dac(behavioral)
+vsim -gui work.tb_pwm_dac
+# End time: 10:06:52 on Nov 30,2020, Elapsed time: 0:00:12
+# Errors: 0, Warnings: 1
+# vsim -gui work.tb_pwm_dac 
+# Start time: 10:06:52 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pwm_dac(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_pwm_dac/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftmfsd1d".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftmfsd1d
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pwm_dac/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_pwm_dac/UUT
+# Compile of PWM_DAC.vhd was successful.
+vsim -gui work.tb_pwm_dac
+# End time: 10:12:47 on Nov 30,2020, Elapsed time: 0:05:55
+# Errors: 0, Warnings: 6
+# vsim -gui work.tb_pwm_dac 
+# Start time: 10:12:47 on Nov 30,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_pwm_dac(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_pwm_dac/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftwehvtq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwehvtq
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pwm_dac/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_pwm_dac/UUT
+# Load canceled
 vsim -gui work.tb_top_level
+# End time: 10:16:04 on Nov 30,2020, Elapsed time: 0:03:17
+# Errors: 0, Warnings: 5
 # vsim -gui work.tb_top_level 
-# Start time: 11:37:35 on Nov 16,2020
+# Start time: 10:16:04 on Nov 30,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -71,20 +172,35 @@ vsim -gui work.tb_top_level
 # Loading work.adc_conversion_wrapper(simulation)
 # Loading work.averager256(rtl)
 # Loading work.dpmux(behaviour)
+# Loading work.freqcontrol(behaviour)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
 add wave -position end sim:/tb_top_level/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft5zzh9t".
+#           Attempting to use alternate WLF file "./wlft3ewzsc".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5zzh9t
+#           Using alternate file: ./wlft3ewzsc
 run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins1
 # ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
 #    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
-# Break key hit
-# Break in ForLoop LoopB2 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/averager256.vhd line 77
-# End time: 11:39:33 on Nov 16,2020, Elapsed time: 0:01:58
-# Errors: 1, Warnings: 7
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 32000010 ns  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins1
+# End time: 10:21:07 on Nov 30,2020, Elapsed time: 0:05:03
+# Errors: 1, Warnings: 10

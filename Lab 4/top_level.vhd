@@ -35,20 +35,24 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D, D_temp:	std_logic_vector(21 downto 0);
-Signal result, EN:	std_logic;
+Signal Q, D, in_1,in_2, out_sig:	std_logic_vector(21 downto 0);
+Signal result, EN, bool:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
-Signal voltage, distance : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
+Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
-Signal count_max: std_logic_vector (9 downto 0);
-Signal duty_cycle: std_logic_vector(8 downto 0);
+Signal count_max, count_max2: std_logic_vector (8 downto 0);
+Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
 Signal enable, enab, zero: std_logic;
-Signal pwm_out: std_logic;
-Signal input:  std_logic_vector(12 downto 0);
-Signal set_count: std_logic_vector(9 downto 0);
-		
+Signal pwm_out, control: std_logic;
+Signal input, input_dist:  std_logic_vector(12 downto 0);
+Signal set_count: std_logic_vector(8 downto 0);
+Signal set_duty_cycle: std_logic_vector(8 downto 0);
+Signal enable2, enab2, zero2: std_logic;
+Signal pwm_out2: std_logic;
+Signal set_duty: std_logic_vector(8 downto 0);
+
 --Signal clk_freq: INTEGER; --system clock frequency in Hz
 --Signal stable_time: INTEGER;
 
@@ -137,7 +141,7 @@ Component PWM_DAC is
    Generic ( width : integer := 9);
    Port    ( reset_n    : in  STD_LOGIC;
              clk        : in  STD_LOGIC;
-				 count_max  : in  STD_LOGIC_VECTOR (width downto 0); -- maximum count value (1 bit greater than counter width) 
+				 count_max  : in  STD_LOGIC_VECTOR (width-1 downto 0); -- maximum count value (1 bit greater than counter width) 
              duty_cycle : in  STD_LOGIC_VECTOR (width-1 downto 0);
 				 enable 		: in  STD_LOGIC;
              pwm_out    : out STD_LOGIC
@@ -147,10 +151,19 @@ end component;
 Component FreqControl is
 Port ( reset_n    : in  STD_LOGIC;
        clk        : in  STD_LOGIC;
-		 input   		:in std_logic_vector(12 downto 0); -- in1 = hex switch display
-		 set_count		:out std_logic_vector(9 downto 0)
+		 input   		:in std_logic_vector(12 downto 0); 
+		 set_duty_cycle :out std_logic_vector(8 downto 0); 
+		 set_count		:out std_logic_vector(8 downto 0)
       );
-end component; 
+end Component; 
+
+Component DutyControl is
+port ( reset_n    : in  STD_LOGIC;
+       clk        : in  STD_LOGIC;
+		 input_dist :in std_logic_vector(12 downto 0); 
+		 set_duty   :out std_logic_vector(8 downto 0)
+      );
+end Component;
 
 Component downcounter is
     Generic ( period  : natural := 1000); -- number to count       
@@ -162,6 +175,23 @@ Component downcounter is
               -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
          );
 end component;
+
+Component Comparator is
+port ( reset_n    : in  STD_LOGIC;
+       clk        : in  STD_LOGIC;
+		 dist_in   	:in std_logic_vector(12 downto 0); 
+		 bool       :out std_logic
+      );
+end Component;
+
+Component Mux2 is
+port ( in_1      	:in  std_logic_vector(21 downto 0); 
+		 in_2			:in  std_logic_vector(21 downto 0); 
+		 control    :in  std_logic;
+		 out_sig    :out  std_logic_vector(21 downto 0) 
+      );
+end Component;
+
 
 -- Operation ---
 begin
@@ -204,7 +234,7 @@ SevenSegment_ins: SevenSegment
 		);
                                      
  
-LEDR(9 downto 0) <= SW(9 downto 0); -- gives visual display of the switch inputs to the LEDs on board
+LEDR(9 downto 0) <= (others => pwm_out2);-- LED fed from pwm_out2 (this might need to be NOTed)
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -242,8 +272,10 @@ MUX4TO1_ins: MUX4TO1
 		mux_out  =>  mux_out
 		);
 
-D_temp <= dp_out & mux_out; 
-D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
+--D_temp <= dp_out & mux_out; 
+--D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
+D <= out_sig; 
+
 
 EN <= result;
 
@@ -303,17 +335,19 @@ DPmux_ins: DPmux
 
 input <= distance; 
 			  
-FreqControl_ins: FreqControl
+FreqControl_ins1: FreqControl
 Port Map (reset_n  => reset_n,
           clk  => clk, 
-			input  => input, 
-		 set_count => set_count	
-      );
+			 input  => input, 
+		    set_count => set_count,	
+			 set_duty_cycle => set_duty_cycle
+         );
 		
 count_max <= set_count; 
 enable <= zero;
+duty_cycle <= set_duty_cycle; 
 		
-PWM_DAC_ins: PWM_DAC
+PWM_DAC_ins1: PWM_DAC
   Generic Map (width => 9)
   Port Map    (reset_n  => reset_n,
                clk      => clk, 
@@ -322,13 +356,68 @@ PWM_DAC_ins: PWM_DAC
 				   enable 		=> enable, 
                pwm_out  => pwm_out  
            );
+
+enab <= bool; -- when distance is close turn no PWM module 
 	
-downcounter_ins: downcounter 	
+downcounter_ins1: downcounter 	
 	Generic Map (period => 1000) -- number to count       
    PORT Map  (clk     => clk, -- clock to be divided
               reset_n => reset_n, -- active-high reset
               enab  => enab, -- active-high enable
               zero    => zero  -- creates a positive pulse every time current_count hits zero
             );
+
+input_dist <= distance; 
+
+DutyControl_ins: DutyControl 
+port map( reset_n    => reset_n,
+       clk        => clk,
+		 input_dist => input_dist,
+		 set_duty   => set_duty
+      );
+		
+count_max2 <= "111111111"; 
+enable2 <= zero2;
+duty_cycle2 <= set_duty;
+		
+PWM_DAC_ins2: PWM_DAC
+  Generic Map (width => 9)
+  Port Map    (reset_n  => reset_n,
+               clk      => clk, 
+				   count_max  => count_max2,
+               duty_cycle  => duty_cycle2, 
+				   enable 		=> enable2, 
+               pwm_out  => pwm_out2  
+           );
+	
+enab2 <= bool;
+
+downcounter_ins2: downcounter 	
+	Generic Map (period => 1000) -- number to count       
+   PORT Map  (clk     => clk, -- clock to be divided
+              reset_n => reset_n, -- active-high reset
+              enab  => enab2, -- active-high enable
+              zero    => zero2  -- creates a positive pulse every time current_count hits zero
+            );
+
+dist_in <= distance;
+				
+Comparator_ins: Comparator 
+port map (reset_n   => reset_n,
+			 clk       => clk,
+			 dist_in   => dist_in,
+			 bool      => bool 
+      );
+		
+in_1 <= dp_out & mux_out;
+in_2 <= (others => '0'); -- all zeros vector 
+control <= pwm_out; 
+		
+Mux2_ins: Mux2
+port map ( in_1    => in_1,
+		 in_2		=> in_2,
+		 control => control, 
+		 out_sig => out_sig 
+      );
 			  
 end Behavioral;

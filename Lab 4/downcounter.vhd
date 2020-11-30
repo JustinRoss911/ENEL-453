@@ -8,7 +8,7 @@ entity downcounter is
     Generic ( period  : natural := 1000); -- number to count       
     PORT    ( clk     : in  STD_LOGIC; -- clock to be divided
               reset_n : in  STD_LOGIC; -- active-high reset
-              enab  : in  STD_LOGIC; -- active-high enable
+              enab  : in  STD_LOGIC; -- active-high enable (I don't know what the purpose of enable is in this module) 
               zero    : out STD_LOGIC  -- creates a positive pulse every time current_count hits zero
                                        -- useful to enable another device, like to slow down a counter
               -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
