@@ -36,16 +36,16 @@ SW[6] => synchronizer:synchronizer_ins.A[6]
 SW[7] => synchronizer:synchronizer_ins.A[7]
 SW[8] => synchronizer:synchronizer_ins.A[8]
 SW[9] => synchronizer:synchronizer_ins.A[9]
-LEDR[0] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[1] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[2] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[3] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[4] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[5] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[6] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[7] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[8] << PWM_DAC:PWM_DAC_ins2.pwm_out
-LEDR[9] << PWM_DAC:PWM_DAC_ins2.pwm_out
+LEDR[0] << Inverter:Inverter_ins.Y
+LEDR[1] << Inverter:Inverter_ins.Y
+LEDR[2] << Inverter:Inverter_ins.Y
+LEDR[3] << Inverter:Inverter_ins.Y
+LEDR[4] << Inverter:Inverter_ins.Y
+LEDR[5] << Inverter:Inverter_ins.Y
+LEDR[6] << Inverter:Inverter_ins.Y
+LEDR[7] << Inverter:Inverter_ins.Y
+LEDR[8] << Inverter:Inverter_ins.Y
+LEDR[9] << Inverter:Inverter_ins.Y
 HEX0[0] << SevenSegment:SevenSegment_ins.Hex0[0]
 HEX0[1] << SevenSegment:SevenSegment_ins.Hex0[1]
 HEX0[2] << SevenSegment:SevenSegment_ins.Hex0[2]
@@ -28241,15 +28241,15 @@ duty_cycle[5] => LessThan1.IN4
 duty_cycle[6] => LessThan1.IN3
 duty_cycle[7] => LessThan1.IN2
 duty_cycle[8] => LessThan1.IN1
-enable => counter[8].ENA
-enable => counter[7].ENA
-enable => counter[6].ENA
-enable => counter[5].ENA
-enable => counter[4].ENA
-enable => counter[3].ENA
-enable => counter[2].ENA
-enable => counter[1].ENA
-enable => counter[0].ENA
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
 pwm_out <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -28363,6 +28363,24 @@ reset_n => set_duty[5]~reg0.ACLR
 reset_n => set_duty[6]~reg0.ACLR
 reset_n => set_duty[7]~reg0.ACLR
 reset_n => set_duty[8]~reg0.ACLR
+reset_n => temp[0].ENA
+reset_n => temp[8].ENA
+reset_n => temp[7].ENA
+reset_n => temp[6].ENA
+reset_n => temp[5].ENA
+reset_n => temp[4].ENA
+reset_n => temp[3].ENA
+reset_n => temp[2].ENA
+reset_n => temp[1].ENA
+clk => temp[0].CLK
+clk => temp[1].CLK
+clk => temp[2].CLK
+clk => temp[3].CLK
+clk => temp[4].CLK
+clk => temp[5].CLK
+clk => temp[6].CLK
+clk => temp[7].CLK
+clk => temp[8].CLK
 clk => set_duty[0]~reg0.CLK
 clk => set_duty[1]~reg0.CLK
 clk => set_duty[2]~reg0.CLK
@@ -28372,19 +28390,19 @@ clk => set_duty[5]~reg0.CLK
 clk => set_duty[6]~reg0.CLK
 clk => set_duty[7]~reg0.CLK
 clk => set_duty[8]~reg0.CLK
-input_dist[0] => ~NO_FANOUT~
-input_dist[1] => ~NO_FANOUT~
-input_dist[2] => ~NO_FANOUT~
-input_dist[3] => ~NO_FANOUT~
-input_dist[4] => ~NO_FANOUT~
-input_dist[5] => ~NO_FANOUT~
-input_dist[6] => ~NO_FANOUT~
-input_dist[7] => ~NO_FANOUT~
-input_dist[8] => ~NO_FANOUT~
-input_dist[9] => ~NO_FANOUT~
-input_dist[10] => ~NO_FANOUT~
-input_dist[11] => ~NO_FANOUT~
-input_dist[12] => ~NO_FANOUT~
+input_dist[0] => Div0.IN25
+input_dist[1] => Div0.IN24
+input_dist[2] => Div0.IN23
+input_dist[3] => Div0.IN22
+input_dist[4] => Div0.IN21
+input_dist[5] => Div0.IN20
+input_dist[6] => Div0.IN19
+input_dist[7] => Div0.IN18
+input_dist[8] => Div0.IN17
+input_dist[9] => Div0.IN16
+input_dist[10] => Div0.IN15
+input_dist[11] => Div0.IN14
+input_dist[12] => Div0.IN13
 set_duty[0] <= set_duty[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 set_duty[1] <= set_duty[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 set_duty[2] <= set_duty[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -28433,15 +28451,15 @@ duty_cycle[5] => LessThan1.IN4
 duty_cycle[6] => LessThan1.IN3
 duty_cycle[7] => LessThan1.IN2
 duty_cycle[8] => LessThan1.IN1
-enable => counter[8].ENA
-enable => counter[7].ENA
-enable => counter[6].ENA
-enable => counter[5].ENA
-enable => counter[4].ENA
-enable => counter[3].ENA
-enable => counter[2].ENA
-enable => counter[1].ENA
-enable => counter[0].ENA
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
+enable => counter.OUTPUTSELECT
 pwm_out <= LessThan1.DB_MAX_OUTPUT_PORT_TYPE
 
 
@@ -28653,5 +28671,10 @@ out_sig[18] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[19] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[20] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[21] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_level|Inverter:Inverter_ins
+B => Y.DATAIN
+Y <= B.DB_MAX_OUTPUT_PORT_TYPE
 
 

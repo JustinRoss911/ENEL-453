@@ -21,7 +21,7 @@ begin
        if(reset_n = '0') then -- reset low
            bool <= '0';
        elsif (rising_edge(clk)) then  
-			 if (unsigned(dist_in) < 4000) then
+			 if (unsigned(dist_in) < 5414) then -- 5414 is our maximum value in LUT
 				bool <= '1';
 			else 
 				bool <= '0';

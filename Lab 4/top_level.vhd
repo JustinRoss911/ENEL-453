@@ -53,6 +53,8 @@ Signal enable2, enab2, zero2: std_logic;
 Signal pwm_out2: std_logic;
 Signal set_duty: std_logic_vector(8 downto 0);
 
+Signal B, Y: std_logic; -- For inverter 
+
 --Signal clk_freq: INTEGER; --system clock frequency in Hz
 --Signal stable_time: INTEGER;
 
@@ -192,6 +194,12 @@ port ( in_1      	:in  std_logic_vector(21 downto 0);
       );
 end Component;
 
+Component Inverter is
+port ( B : in std_logic;
+		 Y : out std_logic
+      );
+end Component;
+
 
 -- Operation ---
 begin
@@ -234,7 +242,7 @@ SevenSegment_ins: SevenSegment
 		);
                                      
  
-LEDR(9 downto 0) <= (others => pwm_out2);-- LED fed from pwm_out2 (this might need to be NOTed)
+LEDR(9 downto 0) <= (others => Y); 
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -419,5 +427,12 @@ port map ( in_1    => in_1,
 		 control => control, 
 		 out_sig => out_sig 
       );
+		
+B <= pwm_out2;
+
+Inverter_ins: Inverter
+port map ( B => B, 
+			  Y => Y
+         );
 			  
 end Behavioral;

@@ -59,6 +59,22 @@ begin
 		  
 		  enable <= '1';
 		  
+		  wait for 2585*TbPeriod;
+		  
+		  enable <= '0';
+		  
+		  Wait for 2600*TbPeriod;
+		  
+		  enable <= '1';
+		  
+		  wait for 26002*TbPeriod;
+		  
+		  enable <= '0';
+		  
+		  Wait for 26001*TbPeriod;
+		  
+		  enable <= '1';
+		  
 		  wait for 5000*TbPeriod;
 		  
 		  TbSimEnded <= '1';

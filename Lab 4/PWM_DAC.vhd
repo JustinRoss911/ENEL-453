@@ -28,6 +28,9 @@ begin
 				 else -- if counter is at max value set counter back to zero 
 					counter <= (others => '0');
 			    end if;
+			  else 
+					counter <= (others => '0');  -- if enable = 0 set counter to zero to force pwm_out to 1 (no flashing) 
+					-- This will start the period over again 
 			  end if;
        end if;
    end process;

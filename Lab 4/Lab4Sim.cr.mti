@@ -1,12 +1,4 @@
-{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity tb_PWM_DAC
--- Compiling architecture tb of tb_PWM_DAC
-
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd}
+{C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -14,6 +6,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity Comparator
 -- Compiling architecture behaviour of Comparator
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_PWM_DAC
+-- Compiling architecture tb of tb_PWM_DAC
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -60,6 +60,26 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity PWM_DAC
 -- Compiling architecture Behavioral of PWM_DAC
 
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_DutyControl
+-- Compiling architecture tb of tb_DutyControl
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd} {2 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_inverter
+-- Compiling architecture behavior of tb_inverter
+** Warning: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd(30): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd(34): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd(38): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+** Warning: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd(42): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -93,15 +113,6 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Compiling entity tb_top_level
 -- Compiling architecture tb of tb_top_level
 
-} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd}
-Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity DutyControl
--- Compiling architecture behaviour of DutyControl
-
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
 -- Loading package STANDARD
@@ -110,6 +121,16 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity FreqControl
 -- Compiling architecture behaviour of FreqControl
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity DutyControl
+-- Compiling architecture behaviour of DutyControl
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -129,6 +150,15 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package NUMERIC_STD
 -- Compiling entity averager256
 -- Compiling architecture rtl of averager256
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity top_level
+-- Compiling architecture Behavioral of top_level
 
 } {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd}
 Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
@@ -172,5 +202,14 @@ Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 
 -- Loading package LUT_pkg
 -- Compiling entity voltage2distance_array2
 -- Compiling architecture behavior of voltage2distance_array2
+
+} {} {}} {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Inverter
+-- Compiling architecture behaviour of Inverter
 
 } {} {}}
