@@ -35,8 +35,9 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D, in_1,in_2, out_sig:	std_logic_vector(21 downto 0);
-Signal result, EN, bool:	std_logic;
+Signal Q, D, in_1,in_2, out_sig, C, K:	std_logic_vector(21 downto 0);
+Signal in_12,in_22, out_sig2:	std_logic;
+Signal result, EN, bool, factor:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
@@ -45,7 +46,7 @@ Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm
 Signal count_max, count_max2: std_logic_vector (8 downto 0);
 Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
 Signal enable, enab, zero: std_logic;
-Signal pwm_out, control: std_logic;
+Signal pwm_out, control, control2: std_logic;
 Signal input, input_dist:  std_logic_vector(12 downto 0);
 Signal set_count: std_logic_vector(8 downto 0);
 Signal set_duty_cycle: std_logic_vector(8 downto 0);
@@ -204,6 +205,20 @@ port (  reset_n   : in  STD_LOGIC;
       );
 end Component;
 
+Component bitmux is
+port ( in_1      	:in  std_logic; 
+		 in_2			:in  std_logic; 
+		 control    :in  std_logic;
+		 out_sig    :out  std_logic
+      );
+end Component;
+
+Component ANDgate is
+port ( C    : in  STD_LOGIC_vector(21 downto 0);
+       factor : in  STD_LOGIC;
+		 K :out std_logic_vector(21 downto 0)
+      );
+end Component;
 
 -- Operation ---
 begin
@@ -246,7 +261,7 @@ SevenSegment_ins: SevenSegment
 		);
                                      
  
-LEDR(9 downto 0) <= (others => Y); 
+LEDR(9 downto 0) <= (others => out_sig2); 
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -372,7 +387,7 @@ PWM_DAC_ins1: PWM_DAC
                pwm_out  => pwm_out  
            );
 
-enab <= bool; -- when distance is close turn no PWM module 
+enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from pwm or 0 
 	
 downcounter_ins1: downcounter 	
 	Generic Map (period => 1000) -- number to count       
@@ -392,7 +407,7 @@ port map( reset_n    => reset_n,
       );
 		
 count_max2 <= "111111111"; 
-enable2 <= zero2;
+enable2 <= zero;
 duty_cycle2 <= set_duty;
 		
 PWM_DAC_ins2: PWM_DAC
@@ -404,35 +419,36 @@ PWM_DAC_ins2: PWM_DAC
 				   enable 		=> enable2, 
                pwm_out  => pwm_out2  
            );
-	
-enab2 <= bool;
 
-downcounter_ins2: downcounter 	
-	Generic Map (period => 1000) -- number to count       
-   PORT Map  (clk     => clk, -- clock to be divided
-              reset_n => reset_n, -- active-high reset
-              enab  => enab2, -- active-high enable
-              zero    => zero2  -- creates a positive pulse every time current_count hits zero
-            );
-
-dist_in <= distance;
-				
+dist_in <= distance;				
 Comparator_ins: Comparator 
 port map (reset_n   => reset_n,
 			 clk       => clk,
 			 dist_in   => dist_in,
 			 bool      => bool 
       );
+
 		
-in_1 <= dp_out & mux_out;
+in_1 <= K;
 in_2 <= (others => '0'); -- all zeros vector 
-control <= pwm_out; 
+control <= bool; 
 		
 Mux2_ins: Mux2
 port map ( in_1    => in_1,
 		 in_2		=> in_2,
 		 control => control, 
 		 out_sig => out_sig 
+      );
+		
+control2 <= bool;
+in_12 <= Y;		
+in_22 <= '0';
+
+bitmux_ins: bitmux 
+port map( in_1  => in_12,
+		 in_2		=> in_22,
+		 control  => control2, 
+		 out_sig  => out_sig2
       );
 		
 B <= pwm_out2;
@@ -443,5 +459,14 @@ port map ( reset_n => reset_n,
 			  B => B, 
 			  Y => Y
          );
+			
+factor <= pwm_out;
+C <= dp_out & mux_out;
+			
+ANDgate_ins: ANDgate
+port map( C  => C,
+       factor => factor,
+		 K => K
+      );
 			  
 end Behavioral;

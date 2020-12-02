@@ -33,14 +33,10 @@ begin
 	process(clk,reset_n)
 		begin
        if(reset_n = '0') then 
-			  set_duty <= (others => '0');
+			  set_duty <= "111111111";
        elsif (rising_edge(clk)) then  
 			  --set_duty <= ((std_logic_vector((unsigned(input_dist)-5414))) sll 1)/temp;
-			  --temp <= (511-(511*(unsigned(input_dist)/5414)));  
-			  --set_duty <= std_logic_vector(temp); --(8 downto 0);
-			  --set_duty <= std_logic_vector(unsigned(input_dist)*temp);
-			  --set_duty <= std_logic_vector(unsigned(input_dist)/5414);
-			  --set_duty <= std_logic_vector(388 - unsigned(input_dist(12 downto 4))); --388 is the maximum value if input_dist is 
+			  set_duty <= std_logic_vector(388 - unsigned(input_dist(12 downto 4))); --388 is the maximum value if input_dist is 
 		 end if; 
 	 end process; 	
 end behaviour;
