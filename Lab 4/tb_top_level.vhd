@@ -93,9 +93,9 @@ begin
 		  
 		  SW <= "1110101100"; -- display 5A5A while inputs show AC
 		  
-		  wait for 1_600_000*TbPeriod;
+		  --wait for 1_600_000*TbPeriod;
 		  
-		  reset_n <= '0'; -- reset 
+		  --reset_n <= '0'; -- reset 
 		  
 		  wait for 1_600_000*TbPeriod;
 		  

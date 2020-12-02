@@ -9,6 +9,7 @@ entity MUX4TO1 is
 port ( in1     : in  std_logic_vector(15 downto 0); -- in1 = hex switch display
        in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal distance output
 		 in3     : in  std_logic_vector(15 downto 0); -- in3 = decimal votlage output
+		 in4     : in  std_logic_vector(15 downto 0);
 	    s       : in  std_logic_vector(1 downto 0); -- Switches that toggles between mode
        mux_out : out std_logic_vector(15 downto 0)  -- output bits 
       );
@@ -21,7 +22,8 @@ architecture behaviour of MUX4TO1 is
 		with s select mux_out <= 
 			in1 when "00",
 			in2 when "01",
-			in3 when others;
+			in3 when "10", 
+			in4 when others;
 
 end behaviour; 
 ----------------------------------------------------------------

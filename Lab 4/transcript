@@ -1,25 +1,54 @@
-vsim -gui work.tb_dutycontrol
-# vsim -gui work.tb_dutycontrol 
-# Start time: 14:28:19 on Dec 01,2020
+vsim -gui work.tb_pwm_dac
+# vsim -gui work.tb_pwm_dac 
+# Start time: 20:44:56 on Dec 01,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_dutycontrol(tb)
+# Loading work.tb_pwm_dac(tb)
 # Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading work.dutycontrol(behaviour)
-add wave -position end sim:/tb_dutycontrol/UUT/*
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_pwm_dac/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftjxk8xh".
+#           Attempting to use alternate WLF file "./wlft86i35n".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftjxk8xh
+#           Using alternate file: ./wlft86i35n
 run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_pwm_dac/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_pwm_dac/UUT
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# 25 compiles, 0 failed with no errors.
 vsim -gui work.tb_top_level
-# End time: 14:32:38 on Dec 01,2020, Elapsed time: 0:04:19
-# Errors: 0, Warnings: 3
+# End time: 20:52:58 on Dec 01,2020, Elapsed time: 0:08:02
+# Errors: 0, Warnings: 6
 # vsim -gui work.tb_top_level 
-# Start time: 14:32:38 on Dec 01,2020
+# Start time: 20:52:58 on Dec 01,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -39,7 +68,9 @@ vsim -gui work.tb_top_level
 # Loading work.adc_data(rtl)
 # Loading work.lut_pkg
 # Loading work.voltage2distance_array2(behavior)
-# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.adc_conversion_wrapper(rtl)
+# ** Warning: (vsim-3473) Component instance "ADC_Conversion_ins : ADC_Conversion" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/ADC_ins File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/ADC_Conversion_wrapper.vhd
 # Loading work.averager256(rtl)
 # Loading work.dpmux(behaviour)
 # Loading work.freqcontrol(behaviour)
@@ -50,12 +81,18 @@ vsim -gui work.tb_top_level
 # Loading work.comparator(behaviour)
 # Loading work.mux2(behaviour)
 # Loading work.inverter(behaviour)
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top_level/UUT/ADC_Data_ins/ADC_ins/response_valid_out, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top_level/UUT/ADC_Data_ins/response_valid_out.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_top_level/UUT/ADC_Data_ins/ADC_ins/ADC_out, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_top_level/UUT/ADC_Data_ins/ADC_raw_temp.
 add wave -position end sim:/tb_top_level/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftvegnf8".
+#           Attempting to use alternate WLF file "./wlftmkvn39".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftvegnf8
+#           Using alternate file: ./wlftmkvn39
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins2
@@ -97,12 +134,188 @@ run -all
 # Compile of tb_Inverter.vhd was successful with warnings.
 # Compile of Inverter.vhd was successful.
 # Compile of tb_DutyControl.vhd was successful.
-# 24 compiles, 0 failed with no errors.
+# Compile of tb_Comparator.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
 vsim -gui work.tb_top_level
-# End time: 14:40:05 on Dec 01,2020, Elapsed time: 0:07:27
-# Errors: 1, Warnings: 11
+# End time: 21:00:55 on Dec 01,2020, Elapsed time: 0:07:57
+# Errors: 1, Warnings: 14
 # vsim -gui work.tb_top_level 
-# Start time: 14:40:05 on Dec 01,2020
+# Start time: 21:00:55 on Dec 01,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.freqcontrol(behaviour)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.inverter(behaviour)
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftthygb9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftthygb9
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins1
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 32000010 ns  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins1
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# End time: 21:15:03 on Dec 01,2020, Elapsed time: 0:14:08
+# Errors: 1, Warnings: 12
+# vsim -gui work.tb_top_level 
+# Start time: 21:15:03 on Dec 01,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.freqcontrol(behaviour)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.inverter(behaviour)
+# ** Fatal: (vsim-3817) Port "reset_n" of entity "inverter" is not in the component being instantiated.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/Inverter_ins File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd Line: 10
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 21:15:04 on Dec 01,2020, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# 25 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 21:17:02 on Dec 01,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -136,9 +349,9 @@ vsim -gui work.tb_top_level
 add wave -position end sim:/tb_top_level/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlfttetv6r".
+#           Attempting to use alternate WLF file "./wlft63b285".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttetv6r
+#           Using alternate file: ./wlft63b285
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/PWM_DAC_ins2
@@ -156,5 +369,5 @@ run -all
 #    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins2
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 32000010 ns  Iteration: 2  Instance: /tb_top_level/UUT/PWM_DAC_ins1
-# End time: 14:46:27 on Dec 01,2020, Elapsed time: 0:06:22
-# Errors: 1, Warnings: 10
+# End time: 21:21:52 on Dec 01,2020, Elapsed time: 0:04:50
+# Errors: 1, Warnings: 11

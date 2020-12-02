@@ -23,8 +23,8 @@ architecture Behavioral of top_level is
 
 -- intermediate Signals --
 Signal Num_Hex0, Num_Hex1, Num_Hex2, Num_Hex3, Num_Hex4, Num_Hex5 : std_logic_vector (3 downto 0):= (others=>'0');   
-Signal in1, in2, in3, mux_out: std_logic_vector(15 DOWNTO 0);
-Signal dp1, dp2, dp3, dp_out: std_logic_vector(5 DOWNTO 0);
+Signal in1, in2, in3, in4, mux_out: std_logic_vector(15 DOWNTO 0);
+Signal dp1, dp2, dp3, dp4, dp_out: std_logic_vector(5 DOWNTO 0);
 
 Signal DP_in, Blank:		std_logic_vector (5 downto 0);
 Signal switch_inputs:	std_logic_vector (12 downto 0);
@@ -80,6 +80,7 @@ Component MUX4TO1 is
 		 in1     : in  std_logic_vector(15 downto 0); -- in1 = binary (hex)
        in2     : in  std_logic_vector(15 downto 0); -- in2 = decimal 
 		 in3     : in  std_logic_vector(15 downto 0); -- in3 = stored value 
+		 in4     : in  std_logic_vector(15 downto 0); --
 	    s       : in  std_logic_vector(1  downto 0); -- Switches that toggles between mode
        mux_out : out std_logic_vector(15 downto 0)	 -- output bits 
 		 );
@@ -127,6 +128,7 @@ Component DPmux is
 port ( dp1 	  : in  std_logic_vector(5 downto 0);
 		 dp2	  : in  std_logic_vector(5 downto 0);
 		 dp3	  : in  std_logic_vector(5 downto 0);
+		 dp4	  : in  std_logic_vector(5 downto 0);
 		 s      : in  std_logic_vector(1 downto 0); -- Switches that toggles between mode
        dp_out : out std_logic_vector(5 downto 0)  -- output bits 
       );
@@ -195,7 +197,9 @@ port ( in_1      	:in  std_logic_vector(21 downto 0);
 end Component;
 
 Component Inverter is
-port ( B : in std_logic;
+port (  reset_n   : in  STD_LOGIC;
+       clk       : in  STD_LOGIC;
+			B : in std_logic;
 		 Y : out std_logic
       );
 end Component;
@@ -264,10 +268,10 @@ binary_bcd_ins2: binary_bcd
       bcd      => bcd2  
 	);
 
---in1 <= "00000000" & G(7 downto 0); -- Hex output
-in1 <= bcd; -- deciaml distance 
-in2 <= bcd2; -- decimal voltage
-in3 <= "0000" &  ADC_out; -- hex moving average 
+in1 <= "00000000" & G(7 downto 0); -- Hex output
+in2 <= bcd; -- deciaml distance 
+in3 <= bcd2; -- decimal voltage
+in4 <= "0000" &  ADC_out; -- hex moving average 
 
 s 	<= G(9 downto 8); 
 
@@ -275,7 +279,8 @@ MUX4TO1_ins: MUX4TO1
 	 PORT MAP (
 		in1 		=>  in1,  -- hex switch outputs
 		in2		=>  in2,	 -- decimal distance
-		in3      =>  in3,  -- decimal voltage
+		in3      =>  in3, 
+	   in4      =>  in4,	-- decimal voltage
 	   s 			=>  s,
 		mux_out  =>  mux_out
 		);
@@ -326,17 +331,19 @@ ADC_Data_ins: ADC_Data
 		  distance => distance,
 		  ADC_raw  => ADC_raw,
         ADC_out  => ADC_out
-         );  
+         ); 
 			
-dp1 <= "000100";
-dp2 <= "001000";
-dp3 <= "000000";
+dp1 <= "000000";			
+dp2 <= "000100";
+dp3 <= "001000";
+dp4 <= "000000";
 	
 DPmux_ins: DPmux
 	 PORT MAP (
 		dp1 		=>  dp1,  
 		dp2		=>  dp2,	 
 		dp3      =>  dp3,   
+		dp4      => dp4,
 		s 			=>  s,
 		dp_out  =>  dp_out
 		);
@@ -431,7 +438,9 @@ port map ( in_1    => in_1,
 B <= pwm_out2;
 
 Inverter_ins: Inverter
-port map ( B => B, 
+port map ( reset_n => reset_n,
+			 clk => clk,
+			  B => B, 
 			  Y => Y
          );
 			  
