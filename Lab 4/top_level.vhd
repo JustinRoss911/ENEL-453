@@ -441,8 +441,9 @@ port map ( in_1    => in_1,
       );
 		
 control2 <= bool;
-in_12 <= Y;		
-in_22 <= '0';
+--in_12 <= Y;	
+in_12 <= pwm_out2; -- If dist < 3000	
+in_22 <= '0';      -- If dist > 3000
 
 bitmux_ins: bitmux 
 port map( in_1  => in_12,
@@ -451,14 +452,14 @@ port map( in_1  => in_12,
 		 out_sig  => out_sig2
       );
 		
-B <= pwm_out2;
-
-Inverter_ins: Inverter
-port map ( reset_n => reset_n,
-			 clk => clk,
-			  B => B, 
-			  Y => Y
-         );
+--B <= pwm_out2;
+--
+--Inverter_ins: Inverter
+--port map ( reset_n => reset_n,
+--			 clk => clk,
+--			  B => B, 
+--			  Y => Y
+--         );
 			
 factor <= pwm_out;
 C <= dp_out & mux_out;
