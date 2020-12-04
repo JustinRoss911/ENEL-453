@@ -45,31 +45,31 @@ begin
 		  threshold <= '0';	-- do not store current value 
 		  dist <= "0111110100000"; -- binary mode, input 0 
 
-        wait for 1_600_000*TbPeriod;
+        wait for 5*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0101110110111";
 		  threshold <= '1';
 		  
 		  --dist <= "0111110100000";
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0100000010001";
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0000011010001";
 		  --threshold <= '1';
 		  
-		  wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0000000010001";
 		
-		  wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
 		  --dist <= "0001000010010";
 		  

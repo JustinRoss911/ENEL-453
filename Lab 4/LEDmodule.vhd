@@ -15,7 +15,7 @@ end LEDmodule;
 
 architecture Behavioral of LEDmodule is
 
-Signal enable, pwm_out, enab, zero: std_logic;
+Signal enable, pwm_out: std_logic;
 Signal input_dist: std_logic_vector(12 downto 0);
 Signal set_duty, count_max, duty_cycle: std_logic_vector(8 downto 0);
 
@@ -39,23 +39,13 @@ Component PWM_DAC is
            );
 end component;
 
-Component downcounter is
-    Generic ( period  : natural := 1000); -- number to count       
-    PORT    ( clk     : in  STD_LOGIC; -- clock to be divided
-              reset_n : in  STD_LOGIC; -- active-high reset
-              enab  : in  STD_LOGIC; -- active-high enable
-              zero    : out STD_LOGIC  -- creates a positive pulse every time current_count hits zero
-                                       -- useful to enable another device, like to slow down a counter
-              -- value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
-         );
-end component;
 
 begin 
 
 count_max <= "111111111";
 duty_cycle <= set_duty;
-enable <= zero;
---enable <= '1';
+--enable <= zero;
+enable <= '1';
 
 PWM_DAC_ins2: PWM_DAC
   Generic Map (width => 9)
@@ -67,15 +57,6 @@ PWM_DAC_ins2: PWM_DAC
                pwm_out  => pwm_out 
            );
 
-enab <= threshold; 
-			  
-downcounter_ins2: downcounter 	
-	Generic Map (period => 1000) -- number to count       
-   PORT Map  (clk     => clk, -- clock to be divided
-              reset_n => reset_n, -- active-high reset
-              enab  => enab, -- active-high enable
-              zero    => zero  -- creates a positive pulse every time current_count hits zero
-            );
 				
 input_dist <= dist; 
 

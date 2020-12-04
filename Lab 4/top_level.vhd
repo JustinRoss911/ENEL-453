@@ -261,7 +261,7 @@ SevenSegment_ins: SevenSegment
 		);
                                      
  
-LEDR(9 downto 0) <= (others => out_sig2); 
+LEDR(9 downto 0) <= (others => pwm_out2); 
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -397,7 +397,7 @@ downcounter_ins1: downcounter
               zero    => zero  -- creates a positive pulse every time current_count hits zero
             );
 
-input_dist <= distance; 
+input_dist <= voltage; -- use voltage because it's equivalent to distance and need less rows in LUT  
 
 DutyControl_ins: DutyControl 
 port map( reset_n    => reset_n,
@@ -407,7 +407,7 @@ port map( reset_n    => reset_n,
       );
 		
 count_max2 <= "111111111"; 
-enable2 <= zero;
+enable2 <= '1';
 duty_cycle2 <= set_duty;
 		
 PWM_DAC_ins2: PWM_DAC
@@ -440,17 +440,17 @@ port map ( in_1    => in_1,
 		 out_sig => out_sig 
       );
 		
-control2 <= bool;
+--control2 <= bool;
 --in_12 <= Y;	
-in_12 <= pwm_out2; -- If dist < 3000	
-in_22 <= '0';      -- If dist > 3000
+--in_12 <= pwm_out2; -- If dist < 3000	
+--in_22 <= '0';      -- If dist > 3000
 
-bitmux_ins: bitmux 
-port map( in_1  => in_12,
-		 in_2		=> in_22,
-		 control  => control2, 
-		 out_sig  => out_sig2
-      );
+--bitmux_ins: bitmux 
+--port map( in_1  => in_12,
+--		 in_2		=> in_22,
+--		 control  => control2, 
+--		 out_sig  => out_sig2
+--      );
 		
 --B <= pwm_out2;
 --

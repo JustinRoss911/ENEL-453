@@ -27,11 +27,11 @@
 # Compile of tb_LEDmodule.vhd was successful.
 # 27 compiles, 1 failed with 3 errors.
 # Compile of DutyControl.vhd failed with 3 errors.
-# Load canceled
+# Compile of LUT_LED_pkg.vhd was successful.
 # Compile of DutyControl.vhd was successful.
 vsim -gui work.tb_ledmodule
 # vsim -gui work.tb_ledmodule 
-# Start time: 15:23:47 on Dec 03,2020
+# Start time: 08:54:51 on Dec 04,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -40,18 +40,100 @@ vsim -gui work.tb_ledmodule
 # Loading work.ledmodule(behavioral)
 # Loading work.pwm_dac(behavioral)
 # Loading ieee.math_real(body)
-# Loading work.downcounter(behavioral)
+# Loading work.lut_led_pkg
 # Loading work.dutycontrol(behaviour)
 add wave -position end sim:/tb_ledmodule/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftivn1wk".
+#           Attempting to use alternate WLF file "./wlftee4zji".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftivn1wk
+#           Using alternate file: ./wlftee4zji
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
 #    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# End time: 15:26:01 on Dec 03,2020, Elapsed time: 0:02:14
-# Errors: 0, Warnings: 8
+# Compile of tb_LEDmodule.vhd was successful.
+vsim -gui work.tb_ledmodule
+# End time: 08:57:53 on Dec 04,2020, Elapsed time: 0:03:02
+# Errors: 0, Warnings: 11
+# vsim -gui work.tb_ledmodule 
+# Start time: 08:57:53 on Dec 04,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_ledmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.ledmodule(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+add wave -position end sim:/tb_ledmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft3d3533".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3d3533
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# Compile of LEDmodule.vhd was successful.
+# Compile of tb_LEDmodule.vhd was successful.
+vsim -gui work.tb_ledmodule
+# End time: 08:59:24 on Dec 04,2020, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_ledmodule 
+# Start time: 08:59:24 on Dec 04,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_ledmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.ledmodule(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+add wave -position end sim:/tb_ledmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfttb5c9z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttb5c9z
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# Compile of tb_LEDmodule.vhd was successful.
+vsim -gui work.tb_ledmodule
+# End time: 09:01:47 on Dec 04,2020, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 6
+# vsim -gui work.tb_ledmodule 
+# Start time: 09:01:47 on Dec 04,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_ledmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.ledmodule(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+add wave -position end sim:/tb_ledmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft976tcs".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft976tcs
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+# End time: 09:02:32 on Dec 04,2020, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 5
