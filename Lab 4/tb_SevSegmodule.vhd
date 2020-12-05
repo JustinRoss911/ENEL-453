@@ -42,47 +42,47 @@ begin
 		  --dist2 <= "0001111101000";
 		  dist2 <= "0000111110100";
 
-        wait for 1000*TbPeriod;
+        wait for 5*TbPeriod;
 		  
 		  reset_n <= '1';
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
 		  --dist2 <= "0101110110111";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
-		  --dist2 <= "0100000010001";
+		  dist2 <= "0100000010001";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
 		  --dist2 <= "0000011010001";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
-		  --dist2 <= "0000000010001";
+		  dist2 <= "0110101111100";
 		
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
 		  --dist2 <= "0001000010010";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
-		  --dist2 <= "0000100101100";
+		  dist2 <= "0111111010010";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
 		  --dist2 <= "0000110110110";
 		  
-		  --wait for 25_000_000*TbPeriod;
-		  wait for 1000*TbPeriod;
+		  wait for 25_000_000*TbPeriod;
+		  --wait for 1000*TbPeriod;
 		  
         TbSimEnded <= '1';
         

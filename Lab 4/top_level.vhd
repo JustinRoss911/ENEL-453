@@ -35,27 +35,28 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 
 Signal G, A:			std_logic_vector(9 downto 0);
-Signal Q, D, in_1,in_2, out_sig, C, K:	std_logic_vector(21 downto 0);
-Signal in_12,in_22, out_sig2:	std_logic;
-Signal result, EN, bool, factor:	std_logic;
+Signal Q, D, C, K:	std_logic_vector(21 downto 0);
+--Signal in_12,in_22, out_sig2:	std_logic;
+Signal result, EN, factor:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
-Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
+Signal voltage, distance : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
-Signal count_max, count_max2: std_logic_vector (8 downto 0);
-Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
-Signal enable, enab, zero: std_logic;
-Signal pwm_out, control, control2: std_logic;
-Signal input, input_dist:  std_logic_vector(12 downto 0);
-Signal set_count: std_logic_vector(8 downto 0);
-Signal set_duty_cycle: std_logic_vector(8 downto 0);
-Signal enable2, enab2, zero2: std_logic;
-Signal pwm_out2: std_logic;
-Signal set_duty: std_logic_vector(8 downto 0);
+--Signal count_max, count_max2: std_logic_vector (8 downto 0);
+--Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
+--Signal enable, enab, zero: std_logic;
+--Signal pwm_out, control2: std_logic;
+--Signal input, input_dist:  std_logic_vector(12 downto 0);
+--Signal set_count: std_logic_vector(8 downto 0);
+--Signal set_duty_cycle: std_logic_vector(8 downto 0);
+--Signal enable2, enab2, zero2: std_logic;
+--Signal pwm_out2: std_logic;
+--Signal set_duty: std_logic_vector(8 downto 0);
 Signal LEDout: std_logic;
 
-Signal B, Y, pwm: std_logic; -- For inverter 
+--Signal B, Y : std_logic; -- For inverter 
+Signal pwm: std_logic; 
 
 Signal dist, dist2	:std_logic_vector(12 downto 0); 
 
@@ -184,21 +185,21 @@ Component downcounter is
          );
 end component;
 
-Component Comparator is
-port ( reset_n    : in  STD_LOGIC;
-       clk        : in  STD_LOGIC;
-		 dist_in   	:in std_logic_vector(12 downto 0); 
-		 bool       :out std_logic
-      );
-end Component;
+--Component Comparator is
+--port ( reset_n    : in  STD_LOGIC;
+--       clk        : in  STD_LOGIC;
+--		 dist_in   	:in std_logic_vector(12 downto 0); 
+--		 bool       :out std_logic
+--      );
+--end Component;
 
-Component Mux2 is
-port ( in_1      	:in  std_logic_vector(21 downto 0); 
-		 in_2			:in  std_logic_vector(21 downto 0); 
-		 control    :in  std_logic;
-		 out_sig    :out  std_logic_vector(21 downto 0) 
-      );
-end Component;
+--Component Mux2 is
+--port ( in_1      	:in  std_logic_vector(21 downto 0); 
+--		 in_2			:in  std_logic_vector(21 downto 0); 
+--		 control    :in  std_logic;
+--		 out_sig    :out  std_logic_vector(21 downto 0) 
+--      );
+--end Component;
 
 --Component Inverter is
 --port (  reset_n   : in  STD_LOGIC;
@@ -322,7 +323,8 @@ MUX4TO1_ins: MUX4TO1
 
 --D_temp <= dp_out & mux_out; 
 --D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
-D <= out_sig; 
+--D <= out_sig; 
+D <= K;
 
 
 EN <= result;
@@ -457,25 +459,25 @@ port map ( clk => clk,
 --               pwm_out  => pwm_out2  
 --           );
 
-dist_in <= distance;				
-Comparator_ins: Comparator 
-port map (reset_n   => reset_n,
-			 clk       => clk,
-			 dist_in   => dist_in,
-			 bool      => bool 
-      );
+--dist_in <= distance;				
+--Comparator_ins: Comparator 
+--port map (reset_n   => reset_n,
+--			 clk       => clk,
+--			 dist_in   => dist_in,
+--			 bool      => bool 
+--      );
 
 		
-in_1 <= K;
-in_2 <= (others => '0'); -- all zeros vector 
-control <= bool; 
+--in_1 <= K;
+--in_2 <= (others => '0'); -- all zeros vector 
+--control <= bool; 
 		
-Mux2_ins: Mux2
-port map ( in_1    => in_1,
-		 in_2		=> in_2,
-		 control => control, 
-		 out_sig => out_sig 
-      );
+--Mux2_ins: Mux2
+--port map ( in_1    => in_1,
+--		 in_2		=> in_2,
+--		 control => control, 
+--		 out_sig => out_sig 
+--      );
 		
 --control2 <= bool;
 --in_12 <= Y;	
