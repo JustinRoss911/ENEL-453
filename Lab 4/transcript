@@ -1,139 +1,363 @@
-# Compile of tb_top_level.vhd was successful.
-# Compile of top_level.vhd was successful.
-# Compile of ADC_Data.vhd was successful.
-# Compile of averager256.vhd was successful.
-# Compile of binary_bcd.vhd was successful.
-# Compile of BlankZero.vhd was successful.
-# Compile of Comparator.vhd was successful.
-# Compile of debounce.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of tb_downcounter.vhd was successful.
 # Compile of downcounter.vhd was successful.
-# Compile of DPmux.vhd was successful.
-# Compile of DutyControl.vhd failed with 3 errors.
+vsim -gui work.tb_downcounter
+# vsim -gui work.tb_downcounter 
+# Start time: 10:54:55 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_downcounter(tb)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+add wave -position end sim:/tb_downcounter/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft7vg04q".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7vg04q
+run -all
+# Compile of tb_downcounter.vhd was successful.
+vsim -gui work.tb_downcounter
+# End time: 10:56:21 on Dec 05,2020, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_downcounter 
+# Start time: 10:56:21 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_downcounter(tb)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+add wave -position end sim:/tb_downcounter/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft7vd00i".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7vd00i
+run -all
 # Compile of FreqControl.vhd was successful.
-# Compile of Mux2.vhd was successful.
-# Compile of MUX4To1.vhd was successful.
-# Compile of PWM_DAC.vhd was successful.
-# Compile of SevenSegment.vhd was successful.
-# Compile of SevenSegment_decoder.vhd was successful.
-# Compile of stored_value.vhd was successful.
-# Compile of synchronizer.vhd was successful.
-# Compile of voltage2distance_array2.vhd was successful.
-# Compile of tb_PWM_DAC.vhd was successful.
-# Compile of tb_Inverter.vhd was successful with warnings.
-# Compile of Inverter.vhd was successful.
-# Compile of tb_DutyControl.vhd was successful.
-# Compile of tb_Comparator.vhd was successful.
-# Compile of LEDmodule.vhd was successful.
-# Compile of tb_LEDmodule.vhd was successful.
-# 27 compiles, 1 failed with 3 errors.
-# Compile of DutyControl.vhd failed with 3 errors.
-# Compile of LUT_LED_pkg.vhd was successful.
-# Compile of DutyControl.vhd was successful.
-vsim -gui work.tb_ledmodule
-# vsim -gui work.tb_ledmodule 
-# Start time: 08:54:51 on Dec 04,2020
+vsim -gui work.tb_sevsegmodule
+# End time: 10:59:01 on Dec 05,2020, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 10:59:01 on Dec 05,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_ledmodule(tb)
+# Loading work.tb_sevsegmodule(tb)
 # Loading ieee.numeric_std(body)
-# Loading work.ledmodule(behavioral)
-# Loading work.pwm_dac(behavioral)
+# Loading work.sevsegmodule(behavioral)
 # Loading ieee.math_real(body)
-# Loading work.lut_led_pkg
-# Loading work.dutycontrol(behaviour)
-add wave -position end sim:/tb_ledmodule/UUT/*
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftee4zji".
+#           Attempting to use alternate WLF file "./wlftgcraiq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftee4zji
+#           Using alternate file: ./wlftgcraiq
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# Compile of tb_LEDmodule.vhd was successful.
-vsim -gui work.tb_ledmodule
-# End time: 08:57:53 on Dec 04,2020, Elapsed time: 0:03:02
-# Errors: 0, Warnings: 11
-# vsim -gui work.tb_ledmodule 
-# Start time: 08:57:53 on Dec 04,2020
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Load canceled
+# Compile of FreqControl.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:07:38 on Dec 05,2020, Elapsed time: 0:08:37
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:07:38 on Dec 05,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_ledmodule(tb)
+# Loading work.tb_sevsegmodule(tb)
 # Loading ieee.numeric_std(body)
-# Loading work.ledmodule(behavioral)
-# Loading work.pwm_dac(behavioral)
+# Loading work.sevsegmodule(behavioral)
 # Loading ieee.math_real(body)
-# Loading work.lut_led_pkg
-# Loading work.dutycontrol(behaviour)
-add wave -position end sim:/tb_ledmodule/UUT/*
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft3d3533".
+#           Attempting to use alternate WLF file "./wlftagcz58".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft3d3533
+#           Using alternate file: ./wlftagcz58
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# Compile of LEDmodule.vhd was successful.
-# Compile of tb_LEDmodule.vhd was successful.
-vsim -gui work.tb_ledmodule
-# End time: 08:59:24 on Dec 04,2020, Elapsed time: 0:01:31
-# Errors: 0, Warnings: 7
-# vsim -gui work.tb_ledmodule 
-# Start time: 08:59:24 on Dec 04,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_ledmodule(tb)
-# Loading ieee.numeric_std(body)
-# Loading work.ledmodule(behavioral)
-# Loading work.pwm_dac(behavioral)
-# Loading ieee.math_real(body)
-# Loading work.lut_led_pkg
-# Loading work.dutycontrol(behaviour)
-add wave -position end sim:/tb_ledmodule/UUT/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlfttb5c9z".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttb5c9z
-run -all
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# Compile of tb_LEDmodule.vhd was successful.
-vsim -gui work.tb_ledmodule
-# End time: 09:01:47 on Dec 04,2020, Elapsed time: 0:02:23
-# Errors: 0, Warnings: 6
-# vsim -gui work.tb_ledmodule 
-# Start time: 09:01:47 on Dec 04,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_ledmodule(tb)
-# Loading ieee.numeric_std(body)
-# Loading work.ledmodule(behavioral)
-# Loading work.pwm_dac(behavioral)
-# Loading ieee.math_real(body)
-# Loading work.lut_led_pkg
-# Loading work.dutycontrol(behaviour)
-add wave -position end sim:/tb_ledmodule/UUT/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft976tcs".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft976tcs
-run -all
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 2  Instance: /tb_ledmodule/UUT/PWM_DAC_ins2
-# End time: 09:02:32 on Dec 04,2020, Elapsed time: 0:00:45
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+vsim -gui work.tb_downcounter
+# End time: 11:09:07 on Dec 05,2020, Elapsed time: 0:01:29
 # Errors: 0, Warnings: 5
+# vsim -gui work.tb_downcounter 
+# Start time: 11:09:07 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_downcounter(tb)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+add wave -position end sim:/tb_downcounter/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfta0gfd6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta0gfd6
+run -all
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:11:11 on Dec 05,2020, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 4
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:11:11 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfta7qmic".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta7qmic
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:12:56 on Dec 05,2020, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:12:57 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft4b10zm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4b10zm
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:14:19 on Dec 05,2020, Elapsed time: 0:01:22
+# Errors: 0, Warnings: 6
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:14:19 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftvszqh5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvszqh5
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of FreqControl.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:19:26 on Dec 05,2020, Elapsed time: 0:05:07
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:19:26 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfte2ysdb".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte2ysdb
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:23:20 on Dec 05,2020, Elapsed time: 0:03:54
+# Errors: 0, Warnings: 7
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:23:20 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.lut_sevseg_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftkd7i4x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkd7i4x
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of FreqControl.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:28:40 on Dec 05,2020, Elapsed time: 0:05:20
+# Errors: 0, Warnings: 9
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:28:40 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.lut_sevseg_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftik98hq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftik98hq
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:30:12 on Dec 05,2020, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 6
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:30:12 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.lut_sevseg_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfth1j2nd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfth1j2nd
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 20010 ns  Iteration: 0  Instance: /tb_sevsegmodule/UUT/downcounter_ins1
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 11:31:21 on Dec 05,2020, Elapsed time: 0:01:09
+# Errors: 0, Warnings: 8
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 11:31:21 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.lut_sevseg_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.freqcontrol(behaviour)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftdtqs0r".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdtqs0r
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+run -all
+# End time: 11:32:03 on Dec 05,2020, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 6

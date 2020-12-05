@@ -384,7 +384,8 @@ DPmux_ins: DPmux
 		);
 
 --input <= distance; 
-dist2 <= distance; 	
+--dist2 <= distance; 
+dist2 <= voltage; 	
 
 SevSegmodule_ins: SevSegmodule 
  Port map ( clk    => clk, 
