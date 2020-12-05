@@ -9,14 +9,13 @@ architecture tb of tb_LEDmodule is
 	Component LEDmodule is 
     Port ( clk                           : in std_logic;
            reset_n                       : in std_logic;
-			  threshold							  : in std_logic;
 			  dist	 							  : in std_logic_vector(12 downto 0); 
-           LEDR                          : out std_logic_vector (9 downto 0)
+           LEDR                          : out std_logic
           );
 	END Component;
 	
-	Signal reset_n, threshold: std_logic;
-	Signal LEDR: std_logic_vector(9 downto 0); 
+	Signal reset_n: std_logic;
+	Signal LEDR: std_logic; 
 	Signal dist: std_logic_vector(12 downto 0);
 	Signal clk : std_logic := '0';
 	constant TbPeriod : time := 20 ns;
@@ -28,7 +27,6 @@ begin
     UUT : LEDmodule
     port map (clk     => clk,
               reset_n => reset_n,
-              threshold  => threshold,
 				  dist     => dist,
 				  LEDR => LEDR);
 				  		  
@@ -42,8 +40,7 @@ begin
 			
 	 
 		  reset_n <= '0'; -- reset (put everything in a known state) 
-		  threshold <= '0';	-- do not store current value 
-		  dist <= "0111110100000"; -- binary mode, input 0 
+		  dist <= "0111110100000";
 
         wait for 5*TbPeriod;
 		  
@@ -52,9 +49,6 @@ begin
 		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0101110110111";
-		  threshold <= '1';
-		  
-		  --dist <= "0111110100000";
 		  
 		  wait for 1000*TbPeriod;
 		  
@@ -63,7 +57,6 @@ begin
 		  wait for 1000*TbPeriod;
 		  
 		  dist <= "0000011010001";
-		  --threshold <= '1';
 		  
 		  wait for 1000*TbPeriod;
 		  
@@ -71,17 +64,17 @@ begin
 		
 		  wait for 1000*TbPeriod;
 		  
-		  --dist <= "0001000010010";
+		  dist <= "0001000010010";
 		  
-		  --wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
-		  --dist <= "0000100101100";
+		  dist <= "0000100101100";
 		  
-		  --wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
-		  --dist <= "0000110110110";
+		  dist <= "0000110110110";
 		  
-		  --wait for 1_600_000*TbPeriod;
+		  wait for 1000*TbPeriod;
 		  
         TbSimEnded <= '1';
         

@@ -6,9 +6,8 @@ use ieee.numeric_std.all;
 entity LEDmodule is
     Port ( clk                           : in std_logic;
            reset_n                       : in std_logic;
-			  threshold							  : in std_logic;
 			  dist	 							  : in std_logic_vector(12 downto 0); 
-           LEDR                          : out std_logic_vector (9 downto 0)
+           LEDout                        : out std_logic
           );
            
 end LEDmodule;
@@ -44,30 +43,30 @@ begin
 
 count_max <= "111111111";
 duty_cycle <= set_duty;
---enable <= zero;
 enable <= '1';
 
 PWM_DAC_ins2: PWM_DAC
-  Generic Map (width => 9)
-  Port Map    (reset_n  => reset_n,
-               clk      => clk, 
-				   count_max  => count_max,
-               duty_cycle  => duty_cycle, 
-				   enable 		=> enable, 
-               pwm_out  => pwm_out 
+Generic Map (width => 9)
+Port Map    (reset_n  => reset_n,
+             clk      => clk, 
+				 count_max  => count_max,
+             duty_cycle  => duty_cycle, 
+				 enable 		=> enable, 
+             pwm_out  => pwm_out 
            );
 
 				
 input_dist <= dist; 
 
 DutyControl_ins: DutyControl 
-port map( reset_n    => reset_n,
+port map( 
+		 reset_n    => reset_n,
        clk        => clk,
 		 input_dist => input_dist,
 		 set_duty   => set_duty
       );
 		
-LEDR(9 downto 0) <= (others => not(pwm_out));
+LEDout <= pwm_out; -- set LEDs to pwm_out
 			  
 end Behavioral;
 			  

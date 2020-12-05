@@ -53,8 +53,11 @@ Signal set_duty_cycle: std_logic_vector(8 downto 0);
 Signal enable2, enab2, zero2: std_logic;
 Signal pwm_out2: std_logic;
 Signal set_duty: std_logic_vector(8 downto 0);
+Signal LEDout: std_logic;
 
-Signal B, Y: std_logic; -- For inverter 
+Signal B, Y, pwm: std_logic; -- For inverter 
+
+Signal dist, dist2	:std_logic_vector(12 downto 0); 
 
 --Signal clk_freq: INTEGER; --system clock frequency in Hz
 --Signal stable_time: INTEGER;
@@ -197,27 +200,43 @@ port ( in_1      	:in  std_logic_vector(21 downto 0);
       );
 end Component;
 
-Component Inverter is
-port (  reset_n   : in  STD_LOGIC;
-       clk       : in  STD_LOGIC;
-			B : in std_logic;
-		 Y : out std_logic
-      );
-end Component;
+--Component Inverter is
+--port (  reset_n   : in  STD_LOGIC;
+--       clk       : in  STD_LOGIC;
+--			B : in std_logic;
+--		 Y : out std_logic
+--      );
+--end Component;
 
-Component bitmux is
-port ( in_1      	:in  std_logic; 
-		 in_2			:in  std_logic; 
-		 control    :in  std_logic;
-		 out_sig    :out  std_logic
-      );
-end Component;
+--Component bitmux is
+--port ( in_1      	:in  std_logic; 
+--		 in_2			:in  std_logic; 
+--		 control    :in  std_logic;
+--		 out_sig    :out  std_logic
+--      );
+--end Component;
 
 Component ANDgate is
 port ( C    : in  STD_LOGIC_vector(21 downto 0);
        factor : in  STD_LOGIC;
 		 K :out std_logic_vector(21 downto 0)
       );
+end Component;
+
+Component LEDmodule is
+Port ( clk                           : in std_logic;
+       reset_n                       : in std_logic;
+   	  dist	 							  : in std_logic_vector(12 downto 0); 
+        LEDout                          : out std_logic
+          );
+end Component;
+
+Component SevSegmodule is
+    Port ( clk                           : in std_logic;
+           reset_n                       : in std_logic;
+			  dist2	 							  : in std_logic_vector(12 downto 0); 
+           pwm                           : out std_logic
+          );
 end Component;
 
 -- Operation ---
@@ -261,7 +280,8 @@ SevenSegment_ins: SevenSegment
 		);
                                      
  
-LEDR(9 downto 0) <= (others => pwm_out2); 
+--LEDR(9 downto 0) <= (others => pwm_out2); 
+LEDR(9 downto 0) <= (others => LEDout); 
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -363,62 +383,78 @@ DPmux_ins: DPmux
 		dp_out  =>  dp_out
 		);
 
-input <= distance; 
-			  
-FreqControl_ins1: FreqControl
-Port Map (reset_n  => reset_n,
-          clk  => clk, 
-			 input  => input, 
-		    set_count => set_count,	
-			 set_duty_cycle => set_duty_cycle
-         );
-		
-count_max <= set_count; 
-enable <= zero;
-duty_cycle <= set_duty_cycle; 
-		
-PWM_DAC_ins1: PWM_DAC
-  Generic Map (width => 9)
-  Port Map    (reset_n  => reset_n,
-               clk      => clk, 
-				   count_max  => count_max,
-               duty_cycle  => duty_cycle, 
-				   enable 		=> enable, 
-               pwm_out  => pwm_out  
-           );
+--input <= distance; 
+dist2 <= distance; 	
 
-enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from pwm or 0 
+SevSegmodule_ins: SevSegmodule 
+ Port map ( clk    => clk, 
+           reset_n  => reset_n, 
+			  dist2	 => dist2, 
+           pwm    => pwm
+          );
 	
-downcounter_ins1: downcounter 	
-	Generic Map (period => 1000) -- number to count       
-   PORT Map  (clk     => clk, -- clock to be divided
-              reset_n => reset_n, -- active-high reset
-              enab  => enab, -- active-high enable
-              zero    => zero  -- creates a positive pulse every time current_count hits zero
-            );
+--FreqControl_ins1: FreqControl
+--Port Map (reset_n  => reset_n,
+--          clk  => clk, 
+--			 input  => input, 
+--		    set_count => set_count,	
+--			 set_duty_cycle => set_duty_cycle
+--         );
+--		
+--count_max <= set_count; 
+--enable <= zero;
+--duty_cycle <= set_duty_cycle; 
+--		
+--PWM_DAC_ins1: PWM_DAC
+--  Generic Map (width => 9)
+--  Port Map    (reset_n  => reset_n,
+--               clk      => clk, 
+--				   count_max  => count_max,
+--               duty_cycle  => duty_cycle, 
+--				   enable 		=> enable, 
+--               pwm_out  => pwm_out  
+--           );
+--
+--enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from pwm or 0 
+--	
+--downcounter_ins1: downcounter 	
+--	Generic Map (period => 1000) -- number to count       
+--   PORT Map  (clk     => clk, -- clock to be divided
+--              reset_n => reset_n, -- active-high reset
+--              enab  => enab, -- active-high enable
+--              zero    => zero  -- creates a positive pulse every time current_count hits zero
+--            );
 
-input_dist <= voltage; -- use voltage because it's equivalent to distance and need less rows in LUT  
+--input_dist <= voltage; -- use voltage because it's equivalent to distance and need less rows in LUT  
+dist <= voltage;
 
-DutyControl_ins: DutyControl 
-port map( reset_n    => reset_n,
-       clk        => clk,
-		 input_dist => input_dist,
-		 set_duty   => set_duty
-      );
-		
-count_max2 <= "111111111"; 
-enable2 <= '1';
-duty_cycle2 <= set_duty;
-		
-PWM_DAC_ins2: PWM_DAC
-  Generic Map (width => 9)
-  Port Map    (reset_n  => reset_n,
-               clk      => clk, 
-				   count_max  => count_max2,
-               duty_cycle  => duty_cycle2, 
-				   enable 		=> enable2, 
-               pwm_out  => pwm_out2  
-           );
+LEDmodule_ins: LEDmodule 
+port map ( clk => clk,
+			  reset_n => reset_n,
+			  dist => dist,
+			  LEDout => LEDout
+			  );
+
+--DutyControl_ins: DutyControl 
+--port map( reset_n    => reset_n,
+--       clk        => clk,
+--		 input_dist => input_dist,
+--		 set_duty   => set_duty
+--      );
+--		
+--count_max2 <= "111111111"; 
+--enable2 <= '1';
+--duty_cycle2 <= set_duty;
+--		
+--PWM_DAC_ins2: PWM_DAC
+--  Generic Map (width => 9)
+--  Port Map    (reset_n  => reset_n,
+--               clk      => clk, 
+--				   count_max  => count_max2,
+--               duty_cycle  => duty_cycle2, 
+--				   enable 		=> enable2, 
+--               pwm_out  => pwm_out2  
+--           );
 
 dist_in <= distance;				
 Comparator_ins: Comparator 
@@ -461,7 +497,8 @@ port map ( in_1    => in_1,
 --			  Y => Y
 --         );
 			
-factor <= pwm_out;
+--factor <= pwm_out;
+factor <= pwm;
 C <= dp_out & mux_out;
 			
 ANDgate_ins: ANDgate
