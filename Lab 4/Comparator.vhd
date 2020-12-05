@@ -21,7 +21,7 @@ begin
        if(reset_n = '0') then -- reset low
            bool <= '0';
        elsif (rising_edge(clk)) then  
-			 if (unsigned(dist_in) < 5414) then -- 5414 is our maximum value in LUT
+			 if (unsigned(dist_in) < 10) then -- voltage < 10 
 				bool <= '1';
 			else 
 				bool <= '0';

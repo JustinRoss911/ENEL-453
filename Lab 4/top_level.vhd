@@ -12,7 +12,8 @@ entity top_level is
 			  button	 							  : in  std_logic;
 			  SW                            : in  std_logic_vector (9 downto 0);
            LEDR                          : out std_logic_vector (9 downto 0);
-           HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out std_logic_vector (7 downto 0)
+           HEX0,HEX1,HEX2,HEX3,HEX4,HEX5 : out std_logic_vector (7 downto 0);
+			  buzzer								  : out std_logic
           );
            
 end top_level;
@@ -36,11 +37,13 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 Signal G, A:			std_logic_vector(9 downto 0);
 Signal Q, D, C, K:	std_logic_vector(21 downto 0);
---Signal in_12,in_22, out_sig2:	std_logic;
-Signal result, EN, factor:	std_logic;
+Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
+Signal in_12,in_22, out_sig2:	std_logic;
+Signal in_13,in_23, out_sig3:	std_logic;
+Signal result, EN, factor, bool, control, control2, control3:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
-Signal voltage, distance : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
+Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
 --Signal count_max, count_max2: std_logic_vector (8 downto 0);
@@ -185,21 +188,21 @@ Component downcounter is
          );
 end component;
 
---Component Comparator is
---port ( reset_n    : in  STD_LOGIC;
---       clk        : in  STD_LOGIC;
---		 dist_in   	:in std_logic_vector(12 downto 0); 
---		 bool       :out std_logic
---      );
---end Component;
+Component Comparator is
+port ( reset_n    : in  STD_LOGIC;
+       clk        : in  STD_LOGIC;
+		 dist_in   	:in std_logic_vector(12 downto 0); 
+		 bool       :out std_logic
+    );
+end Component;
 
---Component Mux2 is
---port ( in_1      	:in  std_logic_vector(21 downto 0); 
---		 in_2			:in  std_logic_vector(21 downto 0); 
---		 control    :in  std_logic;
---		 out_sig    :out  std_logic_vector(21 downto 0) 
---      );
---end Component;
+Component Mux2 is
+port ( in_1      	:in  std_logic_vector(21 downto 0); 
+		 in_2			:in  std_logic_vector(21 downto 0); 
+		 control    :in  std_logic;
+		 out_sig    :out  std_logic_vector(21 downto 0) 
+      );
+end Component;
 
 --Component Inverter is
 --port (  reset_n   : in  STD_LOGIC;
@@ -209,13 +212,13 @@ end component;
 --      );
 --end Component;
 
---Component bitmux is
---port ( in_1      	:in  std_logic; 
---		 in_2			:in  std_logic; 
---		 control    :in  std_logic;
---		 out_sig    :out  std_logic
---      );
---end Component;
+Component bitmux is
+port ( in_1      	:in  std_logic; 
+		 in_2			:in  std_logic; 
+		 control    :in  std_logic;
+		 out_sig    :out  std_logic
+      );
+end Component;
 
 Component ANDgate is
 port ( C    : in  STD_LOGIC_vector(21 downto 0);
@@ -282,7 +285,8 @@ SevenSegment_ins: SevenSegment
                                      
  
 --LEDR(9 downto 0) <= (others => pwm_out2); 
-LEDR(9 downto 0) <= (others => LEDout); 
+--LEDR(9 downto 0) <= (others => LEDout); 
+LEDR(9 downto 0) <= (others => out_sig2);
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -323,8 +327,8 @@ MUX4TO1_ins: MUX4TO1
 
 --D_temp <= dp_out & mux_out; 
 --D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
---D <= out_sig; 
-D <= K;
+D <= out_sig; 
+--D <= K;
 
 
 EN <= result;
@@ -459,37 +463,48 @@ port map ( clk => clk,
 --               pwm_out  => pwm_out2  
 --           );
 
---dist_in <= distance;				
---Comparator_ins: Comparator 
---port map (reset_n   => reset_n,
---			 clk       => clk,
---			 dist_in   => dist_in,
---			 bool      => bool 
---      );
+dist_in <= voltage;				
+Comparator_ins: Comparator 
+port map (reset_n   => reset_n,
+			 clk       => clk,
+			 dist_in   => dist_in,
+			 bool      => bool 
+      );
 
 		
---in_1 <= K;
---in_2 <= (others => '0'); -- all zeros vector 
---control <= bool; 
+in_1 <= K;
+in_2 <= (others => '0'); -- all zeros vector 
+control <= bool; 
 		
---Mux2_ins: Mux2
---port map ( in_1    => in_1,
---		 in_2		=> in_2,
---		 control => control, 
---		 out_sig => out_sig 
---      );
+Mux2_ins: Mux2
+port map ( in_1    => in_1,
+		 in_2		=> in_2,
+		 control => control, 
+		 out_sig => out_sig 
+      );
 		
---control2 <= bool;
---in_12 <= Y;	
+control2 <= bool;
+in_12 <= LEDout;	
 --in_12 <= pwm_out2; -- If dist < 3000	
---in_22 <= '0';      -- If dist > 3000
+in_22 <= '0';      -- If dist > 3000
 
---bitmux_ins: bitmux 
---port map( in_1  => in_12,
---		 in_2		=> in_22,
---		 control  => control2, 
---		 out_sig  => out_sig2
---      );
+bitmux_ins: bitmux 
+port map( in_1  => in_12,
+		 in_2		=> in_22,
+		 control  => control2, 
+		 out_sig  => out_sig2
+      );
+		
+control3 <= bool;
+in_13 <= pwm;
+in_23 <= '0';
+		
+bitmux_ins2: bitmux 
+port map( in_1  => in_13,
+		 in_2		=> in_23,
+		 control  => control3, 
+		 out_sig  => out_sig3
+      );
 		
 --B <= pwm_out2;
 --
@@ -509,5 +524,8 @@ port map( C  => C,
        factor => factor,
 		 K => K
       );
+		
+		
+buzzer <= out_sig3;
 			  
 end Behavioral;
