@@ -27,8 +27,15 @@ begin
        if(reset_n = '0') then -- reset low
            set_count <= (others => '0');
        elsif (rising_edge(clk)) then 
-			  set_count <= "111111111";  -- set maximum value above counter limit (no flashing) 
-			  temp <= "111111111";
+			  --set_count <= "111111111";
+			  --temp <= "111111111";
+			  
+			  -- distance FAR: Max counter is 510 = duty cycle 255
+			  -- distance CLOSE: Min counter is 4 = duty cycle 2
+			  -- (0, 510), (4095, 4) 
+			  
+			  set_count <= std_logic_vector(to_unsigned(d2count_LUT(to_integer(unsigned(input))),set_count'length));-- set maximum value above counter limit (no flashing) 
+			  temp <= std_logic_vector(to_unsigned(d2count_LUT(to_integer(unsigned(input))),temp'length));
 			  set_duty_cycle <= std_logic_vector(unsigned(temp)/2); -- set duty cycle to half maximum counter so Ton=Toff
 		 end if; 
 	 end process; 	

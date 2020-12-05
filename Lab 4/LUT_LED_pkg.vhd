@@ -10,7 +10,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 type array_1d is array (0 to 4095) of integer;
 constant d2duty_LUT : array_1d := (
 
-(	0	)	,
+(	0	)	,  
 (	0	)	,
 (	0	)	,
 (	0	)	,
