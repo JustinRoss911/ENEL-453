@@ -55,6 +55,8 @@ Signal pwm_out2: std_logic;
 Signal set_duty: std_logic_vector(8 downto 0);
 Signal LEDout: std_logic;
 
+Signal PWM_seven_seg: std_logic;
+
 Signal B, Y, pwm: std_logic; -- For inverter 
 
 Signal dist, dist2	:std_logic_vector(12 downto 0); 
@@ -141,6 +143,7 @@ End component;
 Component BlankZero is
 port ( Q      : in  std_logic_vector(15 downto 0); --only needs this portion of the output of storedvalue
 		 s      : in  std_logic_vector(1 downto 0);
+		 EN	  : in  std_logic;
 		 blank  : out std_logic_vector(5 downto 0)
 		);
 End component;
@@ -254,10 +257,13 @@ begin
   	
        
 -- instantiations --	
+
+
 BlankZero_ins: BlankZero  
 	PORT MAP(
 		s => s,	-- only activates BlankZero if in state 2 or 3
 		Q => Q(15 downto 0), -- we only care about the numbers going to be displayed
+		EN => '1', -- PWM_seven_seg is what would be used after testing
 		Blank => Blank -- will feed the new output to Sevensegment display
 		);
 		
