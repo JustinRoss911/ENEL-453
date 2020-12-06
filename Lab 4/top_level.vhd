@@ -229,7 +229,7 @@ Component SevSegmodule is
 end Component;
 
 Component BuzzerModule is
-    Port ( clk                           : in std_logic;
+    Port ( clk_in                           : in std_logic;
            reset_n                       : in std_logic;
 			  dist3	 							  : in std_logic_vector(12 downto 0); 
            buzz                           : out std_logic
@@ -522,7 +522,7 @@ port map( C  => C,
 dist3 <= distance; 
 
 BuzzerModule_ins: BuzzerModule
-    Port map ( clk   => clk, 
+    Port map ( clk_in   => clk, 
            reset_n => reset_n, 
 			  dist3	 => dist3,
            buzz  =>  buzz
