@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Dec 05 19:17:28 2020
+Sat Dec 05 19:46:10 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -106,7 +106,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 05 19:17:28 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 05 19:46:10 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
@@ -235,83 +235,83 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+----------+
 ; File Name with User-Entered Path                                       ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                         ; Library  ;
 +------------------------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+----------+
-; PWM_DAC.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd                                                            ;          ;
-; downcounter.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd                                                        ;          ;
-; adc_qsys/synthesis/adc_qsys.v                                          ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v                                          ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v                ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; adc_qsys ;
-; adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; adc_qsys ;
-; adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; adc_qsys ;
-; adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; adc_qsys ;
-; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; adc_qsys ;
-; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; adc_qsys ;
-; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; adc_qsys ;
-; LUT_pkg.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_pkg.vhd                                                            ;          ;
-; voltage2distance_array2.vhd                                            ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd                                            ;          ;
-; ADC_Data.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd                                                           ;          ;
-; stored_value.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd                                                       ;          ;
-; debounce.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd                                                           ;          ;
-; top_level.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd                                                          ;          ;
-; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd                                               ;          ;
-; SevenSegment.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd                                                       ;          ;
-; binary_bcd.vhd                                                         ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd                                                         ;          ;
-; MUX4To1.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd                                                            ;          ;
-; synchronizer.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd                                                       ;          ;
-; averager256.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd                                                        ;          ;
-; ADC_Conversion_wrapper.vhd                                             ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd                                             ;          ;
-; DPmux.vhd                                                              ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd                                                              ;          ;
-; BlankZero.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd                                                          ;          ;
-; Comparator.vhd                                                         ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd                                                         ;          ;
-; Mux2.vhd                                                               ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd                                                               ;          ;
-; DutyControl.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd                                                        ;          ;
-; LEDmodule.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd                                                          ;          ;
-; bitmux.vhd                                                             ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd                                                             ;          ;
-; ANDgate.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd                                                            ;          ;
-; LUT_LED_pkg.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd                                                        ;          ;
-; LUT_SevSeg_pkg.vhd                                                     ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_SevSeg_pkg.vhd                                                     ;          ;
-; SevSegmodule.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd                                                       ;          ;
-; LUT_flashing_pkg.vhd                                                   ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd                                                   ;          ;
-; buzzer_downcounter.vhd                                                 ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd                                                 ;          ;
-; LUT_buzzer_pkg.vhd                                                     ; yes             ; User VHDL File               ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzer_pkg.vhd                                                     ;          ;
-; adc_conversion.v                                                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v                                                       ;          ;
-; altera_std_synchronizer.v                                              ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/altera_std_synchronizer.v                ;          ;
-; scfifo.tdf                                                             ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/scfifo.tdf                               ;          ;
-; a_regfifo.inc                                                          ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/a_regfifo.inc                            ;          ;
-; a_dpfifo.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/a_dpfifo.inc                             ;          ;
-; a_i2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/a_i2fifo.inc                             ;          ;
-; a_fffifo.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/a_fffifo.inc                             ;          ;
-; a_f2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/a_f2fifo.inc                             ;          ;
-; aglobal201.inc                                                         ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/aglobal201.inc                           ;          ;
-; db/scfifo_ds61.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf                                                     ;          ;
-; db/a_dpfifo_3o41.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf                                                   ;          ;
-; db/a_fefifo_c6e.tdf                                                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf                                                    ;          ;
-; db/cntr_337.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/cntr_337.tdf                                                        ;          ;
-; db/altsyncram_rqn1.tdf                                                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf                                                 ;          ;
-; db/cntr_n2b.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/cntr_n2b.tdf                                                        ;          ;
-; lpm_mult.tdf                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/lpm_mult.tdf                             ;          ;
-; lpm_add_sub.inc                                                        ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/lpm_add_sub.inc                          ;          ;
-; multcore.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/multcore.inc                             ;          ;
-; bypassff.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/bypassff.inc                             ;          ;
-; altshift.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/altshift.inc                             ;          ;
-; multcore.tdf                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/multcore.tdf                             ;          ;
-; csa_add.inc                                                            ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/csa_add.inc                              ;          ;
-; mpar_add.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mpar_add.inc                             ;          ;
-; muleabz.inc                                                            ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/muleabz.inc                              ;          ;
-; mul_lfrg.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mul_lfrg.inc                             ;          ;
-; mul_boothc.inc                                                         ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mul_boothc.inc                           ;          ;
-; alt_ded_mult.inc                                                       ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/alt_ded_mult.inc                         ;          ;
-; alt_ded_mult_y.inc                                                     ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/alt_ded_mult_y.inc                       ;          ;
-; dffpipe.inc                                                            ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/dffpipe.inc                              ;          ;
-; mpar_add.tdf                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mpar_add.tdf                             ;          ;
-; lpm_add_sub.tdf                                                        ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/lpm_add_sub.tdf                          ;          ;
-; addcore.inc                                                            ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/addcore.inc                              ;          ;
-; look_add.inc                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/look_add.inc                             ;          ;
-; alt_stratix_add_sub.inc                                                ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                  ;          ;
-; db/add_sub_frg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_frg.tdf                                                     ;          ;
-; db/add_sub_arg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_arg.tdf                                                     ;          ;
-; altshift.tdf                                                           ; yes             ; Megafunction                 ; c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/altshift.tdf                             ;          ;
+; PWM_DAC.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd                                                            ;          ;
+; downcounter.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd                                                        ;          ;
+; adc_qsys/synthesis/adc_qsys.v                                          ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v                                          ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_reset_controller.v                ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v                ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v              ; adc_qsys ;
+; adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v                 ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v             ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v   ; adc_qsys ;
+; adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v         ; adc_qsys ;
+; adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v          ; adc_qsys ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v ; adc_qsys ;
+; adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v       ; adc_qsys ;
+; adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; yes             ; User Verilog HDL File        ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v                    ; adc_qsys ;
+; LUT_pkg.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_pkg.vhd                                                            ;          ;
+; voltage2distance_array2.vhd                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd                                            ;          ;
+; ADC_Data.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd                                                           ;          ;
+; stored_value.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd                                                       ;          ;
+; debounce.vhd                                                           ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd                                                           ;          ;
+; top_level.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd                                                          ;          ;
+; SevenSegment_decoder.vhd                                               ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd                                               ;          ;
+; SevenSegment.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd                                                       ;          ;
+; binary_bcd.vhd                                                         ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd                                                         ;          ;
+; MUX4To1.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd                                                            ;          ;
+; synchronizer.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd                                                       ;          ;
+; averager256.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd                                                        ;          ;
+; ADC_Conversion_wrapper.vhd                                             ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd                                             ;          ;
+; DPmux.vhd                                                              ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd                                                              ;          ;
+; BlankZero.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd                                                          ;          ;
+; Comparator.vhd                                                         ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd                                                         ;          ;
+; Mux2.vhd                                                               ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd                                                               ;          ;
+; DutyControl.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd                                                        ;          ;
+; LEDmodule.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd                                                          ;          ;
+; bitmux.vhd                                                             ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd                                                             ;          ;
+; ANDgate.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd                                                            ;          ;
+; LUT_LED_pkg.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd                                                        ;          ;
+; LUT_SevSeg_pkg.vhd                                                     ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_SevSeg_pkg.vhd                                                     ;          ;
+; SevSegmodule.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd                                                       ;          ;
+; LUT_flashing_pkg.vhd                                                   ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd                                                   ;          ;
+; buzzer_downcounter.vhd                                                 ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd                                                 ;          ;
+; LUT_buzzer_pkg.vhd                                                     ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzer_pkg.vhd                                                     ;          ;
+; adc_conversion.v                                                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v                                                       ;          ;
+; altera_std_synchronizer.v                                              ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_std_synchronizer.v                                     ;          ;
+; scfifo.tdf                                                             ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf                                                    ;          ;
+; a_regfifo.inc                                                          ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_regfifo.inc                                                 ;          ;
+; a_dpfifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_dpfifo.inc                                                  ;          ;
+; a_i2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_i2fifo.inc                                                  ;          ;
+; a_fffifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_fffifo.inc                                                  ;          ;
+; a_f2fifo.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_f2fifo.inc                                                  ;          ;
+; aglobal201.inc                                                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                ;          ;
+; db/scfifo_ds61.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf                                                     ;          ;
+; db/a_dpfifo_3o41.tdf                                                   ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf                                                   ;          ;
+; db/a_fefifo_c6e.tdf                                                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf                                                    ;          ;
+; db/cntr_337.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/cntr_337.tdf                                                        ;          ;
+; db/altsyncram_rqn1.tdf                                                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf                                                 ;          ;
+; db/cntr_n2b.tdf                                                        ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/cntr_n2b.tdf                                                        ;          ;
+; lpm_mult.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf                                                  ;          ;
+; lpm_add_sub.inc                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                               ;          ;
+; multcore.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.inc                                                  ;          ;
+; bypassff.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/bypassff.inc                                                  ;          ;
+; altshift.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.inc                                                  ;          ;
+; multcore.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.tdf                                                  ;          ;
+; csa_add.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/csa_add.inc                                                   ;          ;
+; mpar_add.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.inc                                                  ;          ;
+; muleabz.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/muleabz.inc                                                   ;          ;
+; mul_lfrg.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mul_lfrg.inc                                                  ;          ;
+; mul_boothc.inc                                                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mul_boothc.inc                                                ;          ;
+; alt_ded_mult.inc                                                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_ded_mult.inc                                              ;          ;
+; alt_ded_mult_y.inc                                                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc                                            ;          ;
+; dffpipe.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/dffpipe.inc                                                   ;          ;
+; mpar_add.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf                                                  ;          ;
+; lpm_add_sub.tdf                                                        ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_add_sub.tdf                                               ;          ;
+; addcore.inc                                                            ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/addcore.inc                                                   ;          ;
+; look_add.inc                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/look_add.inc                                                  ;          ;
+; alt_stratix_add_sub.inc                                                ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/alt_stratix_add_sub.inc                                       ;          ;
+; db/add_sub_frg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_frg.tdf                                                     ;          ;
+; db/add_sub_arg.tdf                                                     ; yes             ; Auto-Generated Megafunction  ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_arg.tdf                                                     ;          ;
+; altshift.tdf                                                           ; yes             ; Megafunction                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altshift.tdf                                                  ;          ;
 +------------------------------------------------------------------------+-----------------+------------------------------+----------------------------------------------------------------------------------------------------------------------+----------+
 
 
@@ -6858,7 +6858,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:01:00     ;
+; Top            ; 00:00:54     ;
 +----------------+--------------+
 
 
@@ -6868,216 +6868,216 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 05 19:16:14 2020
+    Info: Processing started: Sat Dec 05 19:45:05 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file pwm_dac.vhd
-    Info (12022): Found design unit 1: PWM_DAC-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd Line: 16
-    Info (12023): Found entity 1: PWM_DAC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd Line: 5
+    Info (12022): Found design unit 1: PWM_DAC-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd Line: 16
+    Info (12023): Found entity 1: PWM_DAC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file downcounter.vhd
-    Info (12022): Found design unit 1: downcounter-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 17
-    Info (12023): Found entity 1: downcounter File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 7
+    Info (12022): Found design unit 1: downcounter-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 17
+    Info (12023): Found entity 1: downcounter File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 7
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/adc_qsys.v
-    Info (12023): Found entity 1: adc_qsys File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 6
+    Info (12023): Found entity 1: adc_qsys File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_controller.v
-    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
+    Info (12023): Found entity 1: altera_reset_controller File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_reset_synchronizer.v
-    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
+    Info (12023): Found entity 1: altera_reset_synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_synchronizer.v Line: 24
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v
-    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
+    Info (12023): Found entity 1: adc_qsys_modular_adc_0 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control.v
-    Info (12023): Found entity 1: altera_modular_adc_control File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v
-    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
+    Info (12023): Found entity 1: altera_modular_adc_control_avrg_fifo File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 53
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v
-    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
+    Info (12023): Found entity 1: altera_modular_adc_control_fsm File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 18
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v
-    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
+    Info (12023): Found entity 1: chsel_code_converter_sw_to_hw File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/chsel_code_converter_sw_to_hw.v Line: 32
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_primitive_wrapper File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
-    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
+    Info (12023): Found entity 1: fiftyfivenm_adcblock_top_wrapper File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 31
 Info (12021): Found 4 design units, including 4 entities, in source file adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v
-    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
-    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
-    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
-    Info (12023): Found entity 4: adc_qsys_altpll_sys File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
+    Info (12023): Found entity 1: adc_qsys_altpll_sys_dffpipe_l2c File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 37
+    Info (12023): Found entity 2: adc_qsys_altpll_sys_stdsync_sv6 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 98
+    Info (12023): Found entity 3: adc_qsys_altpll_sys_altpll_oc92 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 130
+    Info (12023): Found entity 4: adc_qsys_altpll_sys File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 217
 Info (12021): Found 1 design units, including 0 entities, in source file lut_pkg.vhd
-    Info (12022): Found design unit 1: LUT_pkg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_pkg.vhd Line: 4
+    Info (12022): Found design unit 1: LUT_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_pkg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file voltage2distance_array2.vhd
-    Info (12022): Found design unit 1: voltage2distance_array2-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd Line: 32
-    Info (12023): Found entity 1: voltage2distance_array2 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd Line: 24
+    Info (12022): Found design unit 1: voltage2distance_array2-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd Line: 32
+    Info (12023): Found entity 1: voltage2distance_array2 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd Line: 24
 Info (12021): Found 3 design units, including 1 entities, in source file tb_adc_data.vhd
-    Info (12022): Found design unit 1: tb_ADC_Data-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 11
-    Info (12022): Found design unit 2: cfg_tb_ADC_Data File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 74
-    Info (12023): Found entity 1: tb_ADC_Data File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 8
+    Info (12022): Found design unit 1: tb_ADC_Data-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 11
+    Info (12022): Found design unit 2: cfg_tb_ADC_Data File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 74
+    Info (12023): Found entity 1: tb_ADC_Data File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ADC_data.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file adc_data.vhd
-    Info (12022): Found design unit 1: ADC_Data-rtl File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 15
-    Info (12023): Found entity 1: ADC_Data File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 5
+    Info (12022): Found design unit 1: ADC_Data-rtl File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 15
+    Info (12023): Found entity 1: ADC_Data File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file tb_stored_value.vhd
-    Info (12022): Found design unit 1: tb_stored_value-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_stored_value.vhd Line: 9
-    Info (12023): Found entity 1: tb_stored_value File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_stored_value.vhd Line: 6
+    Info (12022): Found design unit 1: tb_stored_value-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_stored_value.vhd Line: 9
+    Info (12023): Found entity 1: tb_stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_stored_value.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file stored_value.vhd
-    Info (12022): Found design unit 1: stored_value-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd Line: 22
-    Info (12023): Found entity 1: stored_value File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd Line: 13
+    Info (12022): Found design unit 1: stored_value-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd Line: 22
+    Info (12023): Found entity 1: stored_value File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file tb_debounce.vhd
-    Info (12022): Found design unit 1: tb_debounce-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_debounce.vhd Line: 13
-    Info (12023): Found entity 1: tb_debounce File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_debounce.vhd Line: 10
+    Info (12022): Found design unit 1: tb_debounce-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_debounce.vhd Line: 13
+    Info (12023): Found entity 1: tb_debounce File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_debounce.vhd Line: 10
 Info (12021): Found 2 design units, including 1 entities, in source file debounce.vhd
-    Info (12022): Found design unit 1: debounce-logic File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd Line: 40
-    Info (12023): Found entity 1: debounce File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd Line: 29
+    Info (12022): Found design unit 1: debounce-logic File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd Line: 40
+    Info (12023): Found entity 1: debounce File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd Line: 29
 Warning (12019): Can't analyze file -- file tb_MUX2TO1.vhd is missing
 Warning (12019): Can't analyze file -- file MUX2TO1.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file top_level.vhd
-    Info (12022): Found design unit 1: top_level-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 23
-    Info (12023): Found entity 1: top_level File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 9
+    Info (12022): Found design unit 1: top_level-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 23
+    Info (12023): Found entity 1: top_level File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment_decoder.vhd
-    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd Line: 13
-    Info (12023): Found entity 1: SevenSegment_decoder File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment_decoder-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd Line: 13
+    Info (12023): Found entity 1: SevenSegment_decoder File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file sevensegment.vhd
-    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 11
-    Info (12023): Found entity 1: SevenSegment File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 5
+    Info (12022): Found design unit 1: SevenSegment-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 11
+    Info (12023): Found entity 1: SevenSegment File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file binary_bcd.vhd
-    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd Line: 17
-    Info (12023): Found entity 1: binary_bcd File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd Line: 8
+    Info (12022): Found design unit 1: binary_bcd-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd Line: 17
+    Info (12023): Found entity 1: binary_bcd File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file mux4to1.vhd
-    Info (12022): Found design unit 1: MUX4TO1-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd Line: 20
-    Info (12023): Found entity 1: MUX4TO1 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd Line: 8
+    Info (12022): Found design unit 1: MUX4TO1-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd Line: 20
+    Info (12023): Found entity 1: MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_mux4to1.vhd
-    Info (12022): Found design unit 1: tb_MUX4TO1-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_MUX4To1.vhd Line: 7
-    Info (12023): Found entity 1: tb_MUX4TO1 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_MUX4To1.vhd Line: 4
+    Info (12022): Found design unit 1: tb_MUX4TO1-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_MUX4To1.vhd Line: 7
+    Info (12023): Found entity 1: tb_MUX4TO1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_MUX4To1.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file synchronizer.vhd
-    Info (12022): Found design unit 1: synchronizer-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd Line: 17
-    Info (12023): Found entity 1: synchronizer File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd Line: 8
+    Info (12022): Found design unit 1: synchronizer-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd Line: 17
+    Info (12023): Found entity 1: synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_synchronizer.vhd
-    Info (12022): Found design unit 1: tb_synchronizer-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_synchronizer.vhd Line: 7
-    Info (12023): Found entity 1: tb_synchronizer File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_synchronizer.vhd Line: 4
+    Info (12022): Found design unit 1: tb_synchronizer-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_synchronizer.vhd Line: 7
+    Info (12023): Found entity 1: tb_synchronizer File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_synchronizer.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_top_level.vhd
-    Info (12022): Found design unit 1: tb_top_level-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd Line: 11
-    Info (12023): Found entity 1: tb_top_level File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd Line: 8
+    Info (12022): Found design unit 1: tb_top_level-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd Line: 11
+    Info (12023): Found entity 1: tb_top_level File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file averager256.vhd
-    Info (12022): Found design unit 1: averager256-rtl File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd Line: 26
-    Info (12023): Found entity 1: averager256 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd Line: 10
+    Info (12022): Found design unit 1: averager256-rtl File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd Line: 26
+    Info (12023): Found entity 1: averager256 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd Line: 10
 Info (12021): Found 3 design units, including 1 entities, in source file adc_conversion_wrapper.vhd
-    Info (12022): Found design unit 1: ADC_Conversion_wrapper-RTL File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 11
-    Info (12022): Found design unit 2: ADC_Conversion_wrapper-simulation File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 29
-    Info (12023): Found entity 1: ADC_Conversion_wrapper File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 4
+    Info (12022): Found design unit 1: ADC_Conversion_wrapper-RTL File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 11
+    Info (12022): Found design unit 2: ADC_Conversion_wrapper-simulation File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 29
+    Info (12023): Found entity 1: ADC_Conversion_wrapper File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file dpmux.vhd
-    Info (12022): Found design unit 1: DPmux-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd Line: 20
-    Info (12023): Found entity 1: DPmux File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd Line: 8
+    Info (12022): Found design unit 1: DPmux-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd Line: 20
+    Info (12023): Found entity 1: DPmux File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd Line: 8
 Info (12021): Found 2 design units, including 1 entities, in source file tb_dpmux.vhd
-    Info (12022): Found design unit 1: tb_DPmux-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_DPmux.vhd Line: 7
-    Info (12023): Found entity 1: tb_DPmux File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_DPmux.vhd Line: 4
+    Info (12022): Found design unit 1: tb_DPmux-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DPmux.vhd Line: 7
+    Info (12023): Found entity 1: tb_DPmux File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DPmux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file blankzero.vhd
-    Info (12022): Found design unit 1: BlankZero-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd Line: 22
-    Info (12023): Found entity 1: BlankZero File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd Line: 13
+    Info (12022): Found design unit 1: BlankZero-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd Line: 22
+    Info (12023): Found entity 1: BlankZero File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd Line: 13
 Info (12021): Found 2 design units, including 1 entities, in source file freqcontrol.vhd
-    Info (12022): Found design unit 1: FreqControl-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd Line: 23
-    Info (12023): Found entity 1: FreqControl File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd Line: 15
+    Info (12022): Found design unit 1: FreqControl-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd Line: 23
+    Info (12023): Found entity 1: FreqControl File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd Line: 15
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: Comparator-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd Line: 17
-    Info (12023): Found entity 1: Comparator File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd Line: 9
+    Info (12022): Found design unit 1: Comparator-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd Line: 17
+    Info (12023): Found entity 1: Comparator File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file mux2.vhd
-    Info (12022): Found design unit 1: Mux2-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd Line: 15
-    Info (12023): Found entity 1: Mux2 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd Line: 7
+    Info (12022): Found design unit 1: Mux2-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd Line: 15
+    Info (12023): Found entity 1: Mux2 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file dutycontrol.vhd
-    Info (12022): Found design unit 1: DutyControl-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 24
-    Info (12023): Found entity 1: DutyControl File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 16
+    Info (12022): Found design unit 1: DutyControl-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 24
+    Info (12023): Found entity 1: DutyControl File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 16
 Info (12021): Found 2 design units, including 1 entities, in source file tb_pwm_dac.vhd
-    Info (12022): Found design unit 1: tb_PWM_DAC-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd Line: 7
-    Info (12023): Found entity 1: tb_PWM_DAC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd Line: 4
+    Info (12022): Found design unit 1: tb_PWM_DAC-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd Line: 7
+    Info (12023): Found entity 1: tb_PWM_DAC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file inverter.vhd
-    Info (12022): Found design unit 1: Inverter-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd Line: 17
-    Info (12023): Found entity 1: Inverter File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd Line: 9
+    Info (12022): Found design unit 1: Inverter-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd Line: 17
+    Info (12023): Found entity 1: Inverter File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd Line: 9
 Info (12021): Found 2 design units, including 1 entities, in source file tb_inverter.vhd
-    Info (12022): Found design unit 1: tb_inverter-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd Line: 7
-    Info (12023): Found entity 1: tb_inverter File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd Line: 4
+    Info (12022): Found design unit 1: tb_inverter-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd Line: 7
+    Info (12023): Found entity 1: tb_inverter File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_dutycontrol.vhd
-    Info (12022): Found design unit 1: tb_DutyControl-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd Line: 7
-    Info (12023): Found entity 1: tb_DutyControl File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd Line: 4
+    Info (12022): Found design unit 1: tb_DutyControl-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd Line: 7
+    Info (12023): Found entity 1: tb_DutyControl File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_comparator.vhd
-    Info (12022): Found design unit 1: tb_Comparator-behavior File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd Line: 7
-    Info (12023): Found entity 1: tb_Comparator File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd Line: 4
+    Info (12022): Found design unit 1: tb_Comparator-behavior File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd Line: 7
+    Info (12023): Found entity 1: tb_Comparator File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd Line: 4
 Warning (12019): Can't analyze file -- file tb_pwm_down.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file ledmodule.vhd
-    Info (12022): Found design unit 1: LEDmodule-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 15
-    Info (12023): Found entity 1: LEDmodule File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 6
+    Info (12022): Found design unit 1: LEDmodule-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 15
+    Info (12023): Found entity 1: LEDmodule File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file tb_ledmodule.vhd
-    Info (12022): Found design unit 1: tb_LEDmodule-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd Line: 8
-    Info (12023): Found entity 1: tb_LEDmodule File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd Line: 5
+    Info (12022): Found design unit 1: tb_LEDmodule-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd Line: 8
+    Info (12023): Found entity 1: tb_LEDmodule File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file bitmux.vhd
-    Info (12022): Found design unit 1: bitmux-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd Line: 15
-    Info (12023): Found entity 1: bitmux File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd Line: 7
+    Info (12022): Found design unit 1: bitmux-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd Line: 15
+    Info (12023): Found entity 1: bitmux File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file andgate.vhd
-    Info (12022): Found design unit 1: ANDgate-behaviour File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd Line: 13
-    Info (12023): Found entity 1: ANDgate File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd Line: 6
+    Info (12022): Found design unit 1: ANDgate-behaviour File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd Line: 13
+    Info (12023): Found entity 1: ANDgate File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd Line: 6
 Warning (12019): Can't analyze file -- file LUT2_pkg.vhd is missing
 Info (12021): Found 1 design units, including 0 entities, in source file lut_led_pkg.vhd
-    Info (12022): Found design unit 1: LUT_LED_pkg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd Line: 4
+    Info (12022): Found design unit 1: LUT_LED_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd Line: 4
 Info (12021): Found 1 design units, including 0 entities, in source file lut_sevseg_pkg.vhd
-    Info (12022): Found design unit 1: LUT_SevSeg_pkg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_SevSeg_pkg.vhd Line: 4
+    Info (12022): Found design unit 1: LUT_SevSeg_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_SevSeg_pkg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file sevsegmodule.vhd
-    Info (12022): Found design unit 1: SevSegmodule-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 16
-    Info (12023): Found entity 1: SevSegmodule File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 7
+    Info (12022): Found design unit 1: SevSegmodule-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 16
+    Info (12023): Found entity 1: SevSegmodule File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 7
 Info (12021): Found 1 design units, including 0 entities, in source file lut_flashing_pkg.vhd
-    Info (12022): Found design unit 1: LUT_flashing_pkg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd Line: 4
+    Info (12022): Found design unit 1: LUT_flashing_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_sevsegmodule.vhd
-    Info (12022): Found design unit 1: tb_SevSegmodule-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd Line: 7
-    Info (12023): Found entity 1: tb_SevSegmodule File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd Line: 4
+    Info (12022): Found design unit 1: tb_SevSegmodule-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd Line: 7
+    Info (12023): Found entity 1: tb_SevSegmodule File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_downcounter.vhd
-    Info (12022): Found design unit 1: tb_downcounter-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd Line: 7
-    Info (12023): Found entity 1: tb_downcounter File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd Line: 4
+    Info (12022): Found design unit 1: tb_downcounter-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd Line: 7
+    Info (12023): Found entity 1: tb_downcounter File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tb_andgate.vhd
-    Info (12022): Found design unit 1: tb_ANDgate-tb File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd Line: 7
-    Info (12023): Found entity 1: tb_ANDgate File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd Line: 4
+    Info (12022): Found design unit 1: tb_ANDgate-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd Line: 7
+    Info (12023): Found entity 1: tb_ANDgate File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file buzzer_downcounter.vhd
-    Info (12022): Found design unit 1: buzzer_downcounter-Behavioral File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd Line: 19
-    Info (12023): Found entity 1: buzzer_downcounter File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd Line: 8
+    Info (12022): Found design unit 1: buzzer_downcounter-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd Line: 19
+    Info (12023): Found entity 1: buzzer_downcounter File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/buzzer_downcounter.vhd Line: 8
 Info (12021): Found 1 design units, including 0 entities, in source file lut_buzzer_pkg.vhd
-    Info (12022): Found design unit 1: LUT_buzzer_pkg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzer_pkg.vhd Line: 4
+    Info (12022): Found design unit 1: LUT_buzzer_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzer_pkg.vhd Line: 4
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(31): object "switch_inputs" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 31
-Warning (10541): VHDL Signal Declaration warning at top_level.vhd(34): used implicit default value for signal "bcd2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 34
-Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(42): object "in_13" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 42
-Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(42): object "in_23" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 42
-Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(43): object "control3" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 43
-Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(47): object "ADC_raw" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 47
-Info (12128): Elaborating entity "buzzer_downcounter" for hierarchy "buzzer_downcounter:buzzer_downcounter_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 273
-Info (12128): Elaborating entity "BlankZero" for hierarchy "BlankZero:BlankZero_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 282
-Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 289
-Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 30
-Info (12128): Elaborating entity "PWM_DAC" for hierarchy "PWM_DAC:PWM_DAC_ins1" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 309
-Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 327
-Info (12128): Elaborating entity "MUX4TO1" for hierarchy "MUX4TO1:MUX4TO1_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 352
-Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 370
-Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:synchronizer_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 381
-Info (12128): Elaborating entity "debounce" for hierarchy "debounce:debounce_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 390
-Info (12128): Elaborating entity "ADC_Data" for hierarchy "ADC_Data:ADC_Data_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 401
-Info (12128): Elaborating entity "voltage2distance_array2" for hierarchy "ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 64
-Info (12129): Elaborating entity "ADC_Conversion_wrapper" using architecture "A:rtl" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 72
+Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(31): object "switch_inputs" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 31
+Warning (10541): VHDL Signal Declaration warning at top_level.vhd(34): used implicit default value for signal "bcd2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 34
+Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(42): object "in_13" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 42
+Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(42): object "in_23" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 42
+Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(43): object "control3" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 43
+Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(47): object "ADC_raw" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 47
+Info (12128): Elaborating entity "buzzer_downcounter" for hierarchy "buzzer_downcounter:buzzer_downcounter_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 273
+Info (12128): Elaborating entity "BlankZero" for hierarchy "BlankZero:BlankZero_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 282
+Info (12128): Elaborating entity "SevenSegment" for hierarchy "SevenSegment:SevenSegment_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 289
+Info (12128): Elaborating entity "SevenSegment_decoder" for hierarchy "SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder0" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd Line: 30
+Info (12128): Elaborating entity "PWM_DAC" for hierarchy "PWM_DAC:PWM_DAC_ins1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 309
+Info (12128): Elaborating entity "binary_bcd" for hierarchy "binary_bcd:binary_bcd_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 327
+Info (12128): Elaborating entity "MUX4TO1" for hierarchy "MUX4TO1:MUX4TO1_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 352
+Info (12128): Elaborating entity "stored_value" for hierarchy "stored_value:stored_value_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 370
+Info (12128): Elaborating entity "synchronizer" for hierarchy "synchronizer:synchronizer_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 381
+Info (12128): Elaborating entity "debounce" for hierarchy "debounce:debounce_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 390
+Info (12128): Elaborating entity "ADC_Data" for hierarchy "ADC_Data:ADC_Data_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 401
+Info (12128): Elaborating entity "voltage2distance_array2" for hierarchy "ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 64
+Info (12129): Elaborating entity "ADC_Conversion_wrapper" using architecture "A:rtl" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 72
 Warning (12125): Using design file adc_conversion.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ADC_Conversion File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 34
-Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 21
-Warning (10036): Verilog HDL or VHDL warning at adc_conversion.v(98): object "cur_adc_ch" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 98
-Warning (10036): Verilog HDL or VHDL warning at adc_conversion.v(99): object "adc_sample_data" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 99
-Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 75
-Info (12128): Elaborating entity "adc_qsys_altpll_sys" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 52
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_stdsync_sv6" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 288
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_dffpipe_l2c" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 116
-Info (12128): Elaborating entity "adc_qsys_altpll_sys_altpll_oc92" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 294
-Info (12128): Elaborating entity "adc_qsys_modular_adc_0" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 71
-Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 92
-Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 108
-Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
-Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
-Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+    Info (12023): Found entity 1: ADC_Conversion File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 34
+Info (12128): Elaborating entity "ADC_Conversion" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Conversion_wrapper.vhd Line: 21
+Warning (10036): Verilog HDL or VHDL warning at adc_conversion.v(98): object "cur_adc_ch" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 98
+Warning (10036): Verilog HDL or VHDL warning at adc_conversion.v(99): object "adc_sample_data" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 99
+Info (12128): Elaborating entity "adc_qsys" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 75
+Info (12128): Elaborating entity "adc_qsys_altpll_sys" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 52
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_stdsync_sv6" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 288
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_dffpipe_l2c" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_stdsync_sv6:stdsync2|adc_qsys_altpll_sys_dffpipe_l2c:dffpipe3" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 116
+Info (12128): Elaborating entity "adc_qsys_altpll_sys_altpll_oc92" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_altpll_sys.v Line: 294
+Info (12128): Elaborating entity "adc_qsys_modular_adc_0" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 71
+Info (12128): Elaborating entity "altera_modular_adc_control" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/adc_qsys_modular_adc_0.v Line: 92
+Info (12128): Elaborating entity "altera_modular_adc_control_fsm" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 108
+Warning (10036): Verilog HDL or VHDL warning at altera_modular_adc_control_fsm.v(70): object "sync_ctrl_state_nxt" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 70
+Info (12128): Elaborating entity "altera_std_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
+Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_std_synchronizer:u_clk_dft_synchronizer" with the following parameter: File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 156
     Info (12134): Parameter "depth" = "2"
-Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
-Info (12128): Elaborating entity "scfifo" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
-Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12128): Elaborating entity "altera_modular_adc_control_avrg_fifo" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_fsm.v Line: 955
+Info (12128): Elaborating entity "scfifo" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
+Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component" with the following parameter: File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control_avrg_fifo.v Line: 91
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "MAX 10"
     Info (12134): Parameter "lpm_hint" = "RAM_BLOCK_TYPE=M9K"
@@ -7090,57 +7090,57 @@ Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|ADC_Conversion_wr
     Info (12134): Parameter "underflow_checking" = "ON"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_ds61.tdf
-    Info (12023): Found entity 1: scfifo_ds61 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+    Info (12023): Found entity 1: scfifo_ds61 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf Line: 25
+Info (12128): Elaborating entity "scfifo_ds61" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_3o41.tdf
-    Info (12023): Found entity 1: a_dpfifo_3o41 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 29
-Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf Line: 37
+    Info (12023): Found entity 1: a_dpfifo_3o41 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 29
+Info (12128): Elaborating entity "a_dpfifo_3o41" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/scfifo_ds61.tdf Line: 37
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_fefifo_c6e.tdf
-    Info (12023): Found entity 1: a_fefifo_c6e File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf Line: 25
-Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 41
+    Info (12023): Found entity 1: a_fefifo_c6e File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf Line: 25
+Info (12128): Elaborating entity "a_fefifo_c6e" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 41
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_337.tdf
-    Info (12023): Found entity 1: cntr_337 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/cntr_337.tdf Line: 26
-Info (12128): Elaborating entity "cntr_337" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf Line: 38
+    Info (12023): Found entity 1: cntr_337 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/cntr_337.tdf Line: 26
+Info (12128): Elaborating entity "cntr_337" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|a_fefifo_c6e:fifo_state|cntr_337:count_usedw" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_fefifo_c6e.tdf Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_rqn1.tdf
-    Info (12023): Found entity 1: altsyncram_rqn1 File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 42
+    Info (12023): Found entity 1: altsyncram_rqn1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_rqn1" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 42
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_n2b.tdf
-    Info (12023): Found entity 1: cntr_n2b File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/cntr_n2b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_n2b" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 43
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 152
-Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
-Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
-Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 134
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
-Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
-Info (12128): Elaborating entity "averager256" for hierarchy "ADC_Data:ADC_Data_ins|averager256:averager" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 78
-Info (12128): Elaborating entity "DPmux" for hierarchy "DPmux:DPmux_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 416
-Info (12128): Elaborating entity "SevSegmodule" for hierarchy "SevSegmodule:SevSegmodule_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 430
-Info (12128): Elaborating entity "downcounter" for hierarchy "SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 64
-Info (12128): Elaborating entity "LEDmodule" for hierarchy "LEDmodule:LEDmodule_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 472
-Info (12128): Elaborating entity "DutyControl" for hierarchy "LEDmodule:LEDmodule_ins|DutyControl:DutyControl_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 61
-Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 501
-Info (12128): Elaborating entity "Mux2" for hierarchy "Mux2:Mux2_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 513
-Info (12128): Elaborating entity "bitmux" for hierarchy "bitmux:bitmux_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 525
-Info (12128): Elaborating entity "ANDgate" for hierarchy "ANDgate:ANDgate_ins" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 551
+    Info (12023): Found entity 1: cntr_n2b File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/cntr_n2b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_n2b" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|cntr_n2b:rd_ptr_count" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/a_dpfifo_3o41.tdf Line: 43
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_top_wrapper" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_modular_adc_control.v Line: 152
+Info (12128): Elaborating entity "chsel_code_converter_sw_to_hw" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|chsel_code_converter_sw_to_hw:decoder" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 173
+Info (12128): Elaborating entity "fiftyfivenm_adcblock_primitive_wrapper" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|fiftyfivenm_adcblock_top_wrapper:adc_inst|fiftyfivenm_adcblock_primitive_wrapper:adcblock_instance" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v Line: 191
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/adc_qsys.v Line: 134
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 208
+Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_qsys/synthesis/submodules/altera_reset_controller.v Line: 220
+Info (12128): Elaborating entity "averager256" for hierarchy "ADC_Data:ADC_Data_ins|averager256:averager" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd Line: 78
+Info (12128): Elaborating entity "DPmux" for hierarchy "DPmux:DPmux_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 416
+Info (12128): Elaborating entity "SevSegmodule" for hierarchy "SevSegmodule:SevSegmodule_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 430
+Info (12128): Elaborating entity "downcounter" for hierarchy "SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd Line: 64
+Info (12128): Elaborating entity "LEDmodule" for hierarchy "LEDmodule:LEDmodule_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 472
+Info (12128): Elaborating entity "DutyControl" for hierarchy "LEDmodule:LEDmodule_ins|DutyControl:DutyControl_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 61
+Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 501
+Info (12128): Elaborating entity "Mux2" for hierarchy "Mux2:Mux2_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 513
+Info (12128): Elaborating entity "bitmux" for hierarchy "bitmux:bitmux_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 525
+Info (12128): Elaborating entity "ANDgate" for hierarchy "ANDgate:ANDgate_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 551
 Warning (14284): Synthesized away the following node(s):
     Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 40
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 70
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 100
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 130
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 160
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 190
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 220
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 250
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 280
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 310
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 340
-        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 370
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[0]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 40
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[1]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 70
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[2]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 100
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[3]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 130
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[4]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 160
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[5]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 190
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[6]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 220
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[7]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 250
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[8]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 280
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[9]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 310
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[10]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 340
+        Warning (14320): Synthesized away node "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo|scfifo:scfifo_component|scfifo_ds61:auto_generated|a_dpfifo_3o41:dpfifo|altsyncram_rqn1:FIFOram|q_b[11]" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/altsyncram_rqn1.tdf Line: 370
 Info (278001): Inferred 1 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ADC_Data:ADC_Data_ins|Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
-Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
-Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" with the following parameter: File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "ADC_Data:ADC_Data_ins|Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+Info (12130): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
+Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" with the following parameter: File: c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/1993/numeric_std_vhdl1993.vhd Line: 1402
     Info (12134): Parameter "LPM_WIDTHA" = "12"
     Info (12134): Parameter "LPM_WIDTHB" = "12"
     Info (12134): Parameter "LPM_WIDTHP" = "24"
@@ -7150,46 +7150,46 @@ Info (12133): Instantiated megafunction "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" w
     Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
     Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
     Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/multcore.tdf Line: 229
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_frg.tdf
-    Info (12023): Found entity 1: add_sub_frg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_frg.tdf Line: 23
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+    Info (12023): Found entity 1: add_sub_frg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_frg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 138
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_arg.tdf
-    Info (12023): Found entity 1: add_sub_arg File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_arg.tdf Line: 23
-Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/users/jade/documents/453softwaremodelsim/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+    Info (12023): Found entity 1: add_sub_arg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/db/add_sub_arg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "ADC_Data:ADC_Data_ins|lpm_mult:Mult0" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (13000): Registers with preset signals will power-up high File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 29
+Info (13000): Registers with preset signals will power-up high File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd Line: 29
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
-    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX0[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX1[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX4[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[0]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[1]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[2]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[3]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[4]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[5]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[6]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
+    Warning (13410): Pin "HEX5[7]" is stuck at VCC File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 15
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1|current_count[31] will power up to Low File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 23
-    Critical Warning (18010): Register SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1|current_count[0] will power up to Low File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 23
+    Critical Warning (18010): Register SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1|current_count[31] will power up to Low File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 23
+    Critical Warning (18010): Register SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1|current_count[0] will power up to Low File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 23
 Info (17049): 1699 registers lost all their fanouts during netlist optimizations.
 Info (17016): Found the following redundant logic cells in design
-    Info (17048): Logic cell "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|response_valid" File: C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 94
-Info (144001): Generated suppressed messages file C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/output_files/top_level.map.smsg
+    Info (17048): Logic cell "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|response_valid" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/adc_conversion.v Line: 94
+Info (144001): Generated suppressed messages file C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/output_files/top_level.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 13253 device resources after synthesis - the final resource count might be different
@@ -7198,15 +7198,15 @@ Info (21057): Implemented 13253 device resources after synthesis - the final res
     Info (21061): Implemented 13179 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 4907 megabytes
-    Info: Processing ended: Sat Dec 05 19:17:28 2020
-    Info: Elapsed time: 00:01:14
-    Info: Total CPU time (on all processors): 00:01:29
+    Info: Peak virtual memory: 4903 megabytes
+    Info: Processing ended: Sat Dec 05 19:46:10 2020
+    Info: Elapsed time: 00:01:05
+    Info: Total CPU time (on all processors): 00:01:17
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Jade/Documents/GitHub/ENEL-453/Lab 4/output_files/top_level.map.smsg.
+The suppressed messages can be found in C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/output_files/top_level.map.smsg.
 
 
