@@ -30,16 +30,16 @@ SW[6] => synchronizer:synchronizer_ins.A[6]
 SW[7] => synchronizer:synchronizer_ins.A[7]
 SW[8] => synchronizer:synchronizer_ins.A[8]
 SW[9] => synchronizer:synchronizer_ins.A[9]
-LEDR[0] << bitmux:bitmux_ins.out_sig
-LEDR[1] << bitmux:bitmux_ins.out_sig
-LEDR[2] << bitmux:bitmux_ins.out_sig
-LEDR[3] << bitmux:bitmux_ins.out_sig
-LEDR[4] << bitmux:bitmux_ins.out_sig
-LEDR[5] << bitmux:bitmux_ins.out_sig
-LEDR[6] << bitmux:bitmux_ins.out_sig
-LEDR[7] << bitmux:bitmux_ins.out_sig
-LEDR[8] << bitmux:bitmux_ins.out_sig
-LEDR[9] << bitmux:bitmux_ins.out_sig
+LEDR[0] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[1] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[2] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[3] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[4] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[5] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[6] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[7] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[8] << LEDmodule:LEDmodule_ins.LEDout
+LEDR[9] << LEDmodule:LEDmodule_ins.LEDout
 HEX0[0] << SevenSegment:SevenSegment_ins.Hex0[0]
 HEX0[1] << SevenSegment:SevenSegment_ins.Hex0[1]
 HEX0[2] << SevenSegment:SevenSegment_ins.Hex0[2]
@@ -28556,8 +28556,6 @@ clk => set_duty[5]~reg0.CLK
 clk => set_duty[6]~reg0.CLK
 clk => set_duty[7]~reg0.CLK
 clk => set_duty[8]~reg0.CLK
-input_dist[0] => Mux0.IN4107
-input_dist[0] => Mux1.IN4107
 input_dist[0] => Mux2.IN4107
 input_dist[0] => Mux3.IN4107
 input_dist[0] => Mux4.IN4107
@@ -28565,8 +28563,6 @@ input_dist[0] => Mux5.IN4107
 input_dist[0] => Mux6.IN4107
 input_dist[0] => Mux7.IN4107
 input_dist[0] => Mux8.IN4107
-input_dist[1] => Mux0.IN4106
-input_dist[1] => Mux1.IN4106
 input_dist[1] => Mux2.IN4106
 input_dist[1] => Mux3.IN4106
 input_dist[1] => Mux4.IN4106
@@ -28574,8 +28570,7 @@ input_dist[1] => Mux5.IN4106
 input_dist[1] => Mux6.IN4106
 input_dist[1] => Mux7.IN4106
 input_dist[1] => Mux8.IN4106
-input_dist[2] => Mux0.IN4105
-input_dist[2] => Mux1.IN4105
+input_dist[2] => Mux1.IN1033
 input_dist[2] => Mux2.IN4105
 input_dist[2] => Mux3.IN4105
 input_dist[2] => Mux4.IN4105
@@ -28583,8 +28578,7 @@ input_dist[2] => Mux5.IN4105
 input_dist[2] => Mux6.IN4105
 input_dist[2] => Mux7.IN4105
 input_dist[2] => Mux8.IN4105
-input_dist[3] => Mux0.IN4104
-input_dist[3] => Mux1.IN4104
+input_dist[3] => Mux1.IN1032
 input_dist[3] => Mux2.IN4104
 input_dist[3] => Mux3.IN4104
 input_dist[3] => Mux4.IN4104
@@ -28592,8 +28586,8 @@ input_dist[3] => Mux5.IN4104
 input_dist[3] => Mux6.IN4104
 input_dist[3] => Mux7.IN4104
 input_dist[3] => Mux8.IN4104
-input_dist[4] => Mux0.IN4103
-input_dist[4] => Mux1.IN4103
+input_dist[4] => Mux0.IN263
+input_dist[4] => Mux1.IN1031
 input_dist[4] => Mux2.IN4103
 input_dist[4] => Mux3.IN4103
 input_dist[4] => Mux4.IN4103
@@ -28601,8 +28595,8 @@ input_dist[4] => Mux5.IN4103
 input_dist[4] => Mux6.IN4103
 input_dist[4] => Mux7.IN4103
 input_dist[4] => Mux8.IN4103
-input_dist[5] => Mux0.IN4102
-input_dist[5] => Mux1.IN4102
+input_dist[5] => Mux0.IN262
+input_dist[5] => Mux1.IN1030
 input_dist[5] => Mux2.IN4102
 input_dist[5] => Mux3.IN4102
 input_dist[5] => Mux4.IN4102
@@ -28610,8 +28604,8 @@ input_dist[5] => Mux5.IN4102
 input_dist[5] => Mux6.IN4102
 input_dist[5] => Mux7.IN4102
 input_dist[5] => Mux8.IN4102
-input_dist[6] => Mux0.IN4101
-input_dist[6] => Mux1.IN4101
+input_dist[6] => Mux0.IN261
+input_dist[6] => Mux1.IN1029
 input_dist[6] => Mux2.IN4101
 input_dist[6] => Mux3.IN4101
 input_dist[6] => Mux4.IN4101
@@ -28619,8 +28613,8 @@ input_dist[6] => Mux5.IN4101
 input_dist[6] => Mux6.IN4101
 input_dist[6] => Mux7.IN4101
 input_dist[6] => Mux8.IN4101
-input_dist[7] => Mux0.IN4100
-input_dist[7] => Mux1.IN4100
+input_dist[7] => Mux0.IN260
+input_dist[7] => Mux1.IN1028
 input_dist[7] => Mux2.IN4100
 input_dist[7] => Mux3.IN4100
 input_dist[7] => Mux4.IN4100
@@ -28628,8 +28622,8 @@ input_dist[7] => Mux5.IN4100
 input_dist[7] => Mux6.IN4100
 input_dist[7] => Mux7.IN4100
 input_dist[7] => Mux8.IN4100
-input_dist[8] => Mux0.IN4099
-input_dist[8] => Mux1.IN4099
+input_dist[8] => Mux0.IN259
+input_dist[8] => Mux1.IN1027
 input_dist[8] => Mux2.IN4099
 input_dist[8] => Mux3.IN4099
 input_dist[8] => Mux4.IN4099
@@ -28637,8 +28631,8 @@ input_dist[8] => Mux5.IN4099
 input_dist[8] => Mux6.IN4099
 input_dist[8] => Mux7.IN4099
 input_dist[8] => Mux8.IN4099
-input_dist[9] => Mux0.IN4098
-input_dist[9] => Mux1.IN4098
+input_dist[9] => Mux0.IN258
+input_dist[9] => Mux1.IN1026
 input_dist[9] => Mux2.IN4098
 input_dist[9] => Mux3.IN4098
 input_dist[9] => Mux4.IN4098
@@ -28646,8 +28640,8 @@ input_dist[9] => Mux5.IN4098
 input_dist[9] => Mux6.IN4098
 input_dist[9] => Mux7.IN4098
 input_dist[9] => Mux8.IN4098
-input_dist[10] => Mux0.IN4097
-input_dist[10] => Mux1.IN4097
+input_dist[10] => Mux0.IN257
+input_dist[10] => Mux1.IN1025
 input_dist[10] => Mux2.IN4097
 input_dist[10] => Mux3.IN4097
 input_dist[10] => Mux4.IN4097
@@ -28655,8 +28649,8 @@ input_dist[10] => Mux5.IN4097
 input_dist[10] => Mux6.IN4097
 input_dist[10] => Mux7.IN4097
 input_dist[10] => Mux8.IN4097
-input_dist[11] => Mux0.IN4096
-input_dist[11] => Mux1.IN4096
+input_dist[11] => Mux0.IN256
+input_dist[11] => Mux1.IN1024
 input_dist[11] => Mux2.IN4096
 input_dist[11] => Mux3.IN4096
 input_dist[11] => Mux4.IN4096
@@ -28784,13 +28778,6 @@ out_sig[18] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[19] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[20] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[21] <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|top_level|bitmux:bitmux_ins
-in_1 => out_sig.DATAB
-in_2 => out_sig.DATAA
-control => out_sig.OUTPUTSELECT
-out_sig <= out_sig.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_level|ANDgate:ANDgate_ins
