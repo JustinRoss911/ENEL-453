@@ -15,6 +15,6 @@ end Mux2;
 architecture behaviour of Mux2 is	
 	begin
 		with control select out_sig <= 
-			in_1 when '0',
+			in_1 when '1',
 			in_2 when others;
 end behaviour; 
