@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use ieee.numeric_std.all;
---use work.LUT_flashing_pkg.all;
+use work.LUT_buzzing_pkg.all;
 --use work.LUT_SevSeg_pkg.all;
 
 entity BuzzerModule is
@@ -42,8 +42,8 @@ end component;
 begin
 
 enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from buzz or 0 
---period <= std_logic_vector(to_unsigned(d2buzz_LUT(to_integer(unsigned(dist2))),period'length)); -- adjust for buzzer
-period <= "1111111111111111";
+period <= std_logic_vector(to_unsigned(d2buzz_LUT(to_integer(unsigned(dist3))),period'length)); -- adjust for buzzer
+--period <= "1111111111111111";
 
 downcounter_ins1: downcounter 	     
    PORT Map  (clk     => clk, -- clock to be divided
@@ -53,11 +53,11 @@ downcounter_ins1: downcounter
 				  period => period  -- creates a positive pulse every time current_count hits zero
             );
 				
-count_max <= "111111111"; 
---count_max <= "000001000"; 
+--count_max <= "111111111"; 
+count_max <= "000100000"; --32 
 enable <= zero;
-duty_cycle <= "011111111"; 
---duty_cycle <= "000000100"; 
+--duty_cycle <= "011111111"; 
+duty_cycle <= "000010000"; --16 
 		
 PWM_DAC_ins1: PWM_DAC
   Generic Map (width => 9)
