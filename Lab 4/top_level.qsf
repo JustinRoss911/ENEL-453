@@ -415,4 +415,5 @@ set_global_assignment -name VHDL_FILE LUT_flashing_pkg.vhd
 set_global_assignment -name VHDL_FILE tb_SevSegmodule.vhd
 set_global_assignment -name VHDL_FILE tb_downcounter.vhd
 set_global_assignment -name VHDL_FILE tb_ANDgate.vhd
+set_global_assignment -name VHDL_FILE LUT_buzzing_pkg.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

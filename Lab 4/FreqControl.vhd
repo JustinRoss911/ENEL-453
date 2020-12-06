@@ -7,7 +7,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 use work.LUT_flashing_pkg.all;
-use work.LUT_SevSeg_pkg.all;
+--use work.LUT_SevSeg_pkg.all;
 
 ----------------------------------------------------------------
 -- 2. Entity Declaration 
@@ -44,7 +44,7 @@ begin
 			  
 			  --set_period <= std_logic_vector(to_unsigned(d2freq_LUT(to_integer(unsigned(input))),set_period'length));
 			  --set_period <= "0000000000000101";
-			  set_period <= std_logic_vector(to_unsigned(d2count_LUT(to_integer(unsigned(input))),set_period'length));
+			  --set_period <= std_logic_vector(to_unsigned(d2count_LUT(to_integer(unsigned(input))),set_period'length));
 		 end if; 
 	 end process; 	
 end behaviour;

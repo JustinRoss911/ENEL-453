@@ -39,32 +39,17 @@ Signal G, A:			std_logic_vector(9 downto 0);
 Signal Q, D, C, K:	std_logic_vector(21 downto 0);
 Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
 Signal in_12,in_22, out_sig2:	std_logic;
-Signal in_13,in_23, out_sig3:	std_logic;
+--Signal in_13,in_23, out_sig3:	std_logic;
 Signal result, EN, factor, bool, control, control2, control3:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
---Signal count_max, count_max2: std_logic_vector (8 downto 0);
---Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
---Signal enable, enab, zero: std_logic;
---Signal pwm_out, control2: std_logic;
---Signal input, input_dist:  std_logic_vector(12 downto 0);
---Signal set_count: std_logic_vector(8 downto 0);
---Signal set_duty_cycle: std_logic_vector(8 downto 0);
---Signal enable2, enab2, zero2: std_logic;
---Signal pwm_out2: std_logic;
---Signal set_duty: std_logic_vector(8 downto 0);
-Signal LEDout: std_logic;
-
 --Signal B, Y : std_logic; -- For inverter 
-Signal pwm: std_logic; 
+Signal pwm, buzz, LEDout: std_logic; 
 
-Signal dist, dist2	:std_logic_vector(12 downto 0); 
-
---Signal clk_freq: INTEGER; --system clock frequency in Hz
---Signal stable_time: INTEGER;
+Signal dist, dist2, dist3:std_logic_vector(12 downto 0); 
 
 -- Declarations --
 Component SevenSegment is
@@ -243,6 +228,14 @@ Component SevSegmodule is
           );
 end Component;
 
+Component BuzzerModule is
+    Port ( clk                           : in std_logic;
+           reset_n                       : in std_logic;
+			  dist3	 							  : in std_logic_vector(12 downto 0); 
+           buzz                           : out std_logic
+          );    
+end Component;
+
 -- Operation ---
 begin
    Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
@@ -285,8 +278,8 @@ SevenSegment_ins: SevenSegment
                                      
  
 --LEDR(9 downto 0) <= (others => pwm_out2); 
---LEDR(9 downto 0) <= (others => LEDout); 
-LEDR(9 downto 0) <= (others => out_sig2);
+LEDR(9 downto 0) <= (others => LEDout); 
+--LEDR(9 downto 0) <= (others => out_sig2);
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -390,8 +383,8 @@ DPmux_ins: DPmux
 		);
 
 --input <= distance; 
---dist2 <= distance; 
-dist2 <= voltage; 	
+dist2 <= distance; 
+--dist2 <= voltage; 	
 
 SevSegmodule_ins: SevSegmodule 
  Port map ( clk    => clk, 
@@ -433,7 +426,7 @@ SevSegmodule_ins: SevSegmodule
 --            );
 
 --input_dist <= voltage; -- use voltage because it's equivalent to distance and need less rows in LUT  
-dist <= voltage;
+dist <= distance;
 
 LEDmodule_ins: LEDmodule 
 port map ( clk => clk,
@@ -463,7 +456,7 @@ port map ( clk => clk,
 --               pwm_out  => pwm_out2  
 --           );
 
-dist_in <= voltage;				
+dist_in <= distance;				
 Comparator_ins: Comparator 
 port map (reset_n   => reset_n,
 			 clk       => clk,
@@ -472,8 +465,9 @@ port map (reset_n   => reset_n,
       );
 
 		
-in_1 <= K;
-in_2 <= (others => '0'); -- all zeros vector 
+in_1 <= K; -- flashing
+in_2 <= dp_out & mux_out; --stable 
+--in_2 <= (others => '0'); -- all zeros vector 
 control <= bool; 
 		
 Mux2_ins: Mux2
@@ -483,29 +477,29 @@ port map ( in_1    => in_1,
 		 out_sig => out_sig 
       );
 		
-control2 <= bool;
-in_12 <= LEDout;	
+--control2 <= bool;
+--in_12 <= LEDout;	
 --in_12 <= pwm_out2; -- If dist < 3000	
-in_22 <= '0';      -- If dist > 3000
+--in_22 <= '0';      -- If dist > 3000
 
-bitmux_ins: bitmux 
-port map( in_1  => in_12,
-		 in_2		=> in_22,
-		 control  => control2, 
-		 out_sig  => out_sig2
-      );
+--bitmux_ins: bitmux 
+--port map( in_1  => in_12,
+--		 in_2		=> in_22,
+--		 control  => control2, 
+--		 out_sig  => out_sig2
+--      );
 		
-control3 <= bool;
-in_13 <= pwm;
-in_23 <= '0';
-		
-bitmux_ins2: bitmux 
-port map( in_1  => in_13,
-		 in_2		=> in_23,
-		 control  => control3, 
-		 out_sig  => out_sig3
-      );
-		
+--control3 <= bool;
+--in_13 <= pwm;
+--in_23 <= '0';
+--		
+--bitmux_ins2: bitmux 
+--port map( in_1  => in_13,
+--		 in_2		=> in_23,
+--		 control  => control3, 
+--		 out_sig  => out_sig3
+--      );
+--		
 --B <= pwm_out2;
 --
 --Inverter_ins: Inverter
@@ -525,7 +519,16 @@ port map( C  => C,
 		 K => K
       );
 		
+dist3 <= distance; 
+
+BuzzerModule_ins: BuzzerModule
+    Port map ( clk   => clk, 
+           reset_n => reset_n, 
+			  dist3	 => dist3,
+           buzz  =>  buzz
+          );    
 		
-buzzer <= out_sig3;
+		
+buzzer <= buzz;
 			  
 end Behavioral;

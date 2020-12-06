@@ -1,43 +1,30 @@
 library IEEE;
 use IEEE.std_logic_1164.ALL;
 use ieee.numeric_std.all;
-use work.LUT_flashing_pkg.all;
+--use work.LUT_flashing_pkg.all;
+--use work.LUT_SevSeg_pkg.all;
 
-entity SevSegmodule is
+entity BuzzerModule is
     Port ( clk                           : in std_logic;
            reset_n                       : in std_logic;
-			  dist2	 							  : in std_logic_vector(12 downto 0); 
-           pwm                           : out std_logic
+			  dist3	 							  : in std_logic_vector(12 downto 0); 
+           buzz                           : out std_logic
           );
            
-end SevSegmodule;
+end BuzzerModule;
 
-architecture Behavioral of SevSegmodule is
+architecture Behavioral of BuzzerModule is
 
---Signal clk, reset_n : std_logic;
---Signal input   	:std_logic_vector(12 downto 0); 
---Signal set_period :std_logic_vector(15 downto 0);
 Signal period :std_logic_vector(15 downto 0);
 Signal count_max, duty_cycle :std_logic_vector(8 downto 0);
 Signal enab, zero, enable, pwm_out: std_logic;
 
-
---Component FreqControl is
---port ( reset_n    : in  STD_LOGIC;
---       clk        : in  STD_LOGIC;
---		 input   	:in std_logic_vector(12 downto 0); 
---		 --set_duty_cycle :out std_logic_vector(8 downto 0); 
---		 set_period	:out std_logic_vector(15 downto 0)
---      );
---end Component;
-
-Component downcounter is
- --Generic ( period  : natural := 1000); -- number to count       
+Component downcounter is      
  PORT    ( clk     : in  STD_LOGIC; -- clock to be divided
-              reset_n : in  STD_LOGIC; -- active-high reset
-              enab  : in  STD_LOGIC; -- active-high enable (I don't know what the purpose of enable is in this module) 
-              zero    : out STD_LOGIC;  
-				  period :in std_logic_vector(15 downto 0)    -- creates a positive pulse every time current_count hits zero
+           reset_n : in  STD_LOGIC; -- active-high reset
+           enab  : in  STD_LOGIC; -- active-high enable (I don't know what the purpose of enable is in this module) 
+           zero    : out STD_LOGIC;  
+			  period :in std_logic_vector(15 downto 0)    -- creates a positive pulse every time current_count hits zero
            );
 end Component;
 
@@ -54,11 +41,10 @@ end component;
 
 begin
 
-enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from pwm or 0 
+enab <= '1'; -- Always leave downcounter on. A mux will choose when output is from buzz or 0 
+--period <= std_logic_vector(to_unsigned(d2buzz_LUT(to_integer(unsigned(dist2))),period'length)); -- adjust for buzzer
+period <= "1111111111111111";
 
---period <= set_period;
-period <= std_logic_vector(to_unsigned(d2freq_LUT(to_integer(unsigned(dist2))),period'length)); --
-	
 downcounter_ins1: downcounter 	     
    PORT Map  (clk     => clk, -- clock to be divided
               reset_n => reset_n, -- active-high reset
@@ -83,15 +69,7 @@ PWM_DAC_ins1: PWM_DAC
                pwm_out  => pwm_out  
            );
 			  
---input <= dist2; 
---			  
---FreqControl_ins1: FreqControl
---Port Map (reset_n  => reset_n,
---          clk  => clk, 
---			 input  => input, 
---		    set_period => set_period
---         );
 			
-pwm <= pwm_out;
+buzz <= pwm_out;
 
 end Behavioral; 
