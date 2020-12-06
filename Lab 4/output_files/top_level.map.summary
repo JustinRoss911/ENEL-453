@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sun Dec 06 11:23:58 2020
+Analysis & Synthesis Status : Successful - Sun Dec 06 12:10:22 2020
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : top_level
 Top-level Entity Name : top_level
 Family : MAX 10
-Total logic elements : 13,543
-    Total combinational functions : 10,349
+Total logic elements : 13,215
+    Total combinational functions : 10,021
     Dedicated logic registers : 7,021
 Total registers : 7021
 Total pins : 72

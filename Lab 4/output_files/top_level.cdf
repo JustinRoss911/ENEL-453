@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50DAF484ES) Path("C:/github/ENEL 453/ENEL-453/Lab 3 working FPGA/output_files/") File("top_level.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50DAF484ES) Path("C:/github/ENEL 453/ENEL-453/Lab 4/output_files/") File("top_level.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
