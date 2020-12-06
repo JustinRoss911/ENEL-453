@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_level
-Sat Dec 05 18:35:45 2020
+Sat Dec 05 19:40:36 2020
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -60,27 +60,28 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  52. lpm_mult Parameter Settings by Entity Instance
  53. Port Connectivity Checks: "BuzzerModule:BuzzerModule_ins|PWM_DAC:PWM_DAC_ins1"
  54. Port Connectivity Checks: "BuzzerModule:BuzzerModule_ins|downcounter:downcounter_ins1"
- 55. Port Connectivity Checks: "LEDmodule:LEDmodule_ins|PWM_DAC:PWM_DAC_ins2"
- 56. Port Connectivity Checks: "SevSegmodule:SevSegmodule_ins|PWM_DAC:PWM_DAC_ins1"
- 57. Port Connectivity Checks: "SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1"
- 58. Port Connectivity Checks: "DPmux:DPmux_ins"
- 59. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
- 60. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
- 61. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
- 62. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
- 63. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
- 64. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
- 65. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
- 66. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
- 67. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins"
- 68. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins"
- 69. Port Connectivity Checks: "ADC_Data:ADC_Data_ins"
- 70. Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins"
- 71. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
- 72. Post-Synthesis Netlist Statistics for Top Partition
- 73. Elapsed Time Per Partition
- 74. Analysis & Synthesis Messages
- 75. Analysis & Synthesis Suppressed Messages
+ 55. Port Connectivity Checks: "bitmux:bitmux_ins"
+ 56. Port Connectivity Checks: "LEDmodule:LEDmodule_ins|PWM_DAC:PWM_DAC_ins2"
+ 57. Port Connectivity Checks: "SevSegmodule:SevSegmodule_ins|PWM_DAC:PWM_DAC_ins1"
+ 58. Port Connectivity Checks: "SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1"
+ 59. Port Connectivity Checks: "DPmux:DPmux_ins"
+ 60. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller_001"
+ 61. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+ 62. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|altera_reset_controller:rst_controller"
+ 63. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|altera_modular_adc_control_avrg_fifo:ts_avrg_fifo"
+ 64. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal"
+ 65. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys|adc_qsys_altpll_sys_altpll_oc92:sd1"
+ 66. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_altpll_sys:altpll_sys"
+ 67. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0"
+ 68. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins"
+ 69. Port Connectivity Checks: "ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins"
+ 70. Port Connectivity Checks: "ADC_Data:ADC_Data_ins"
+ 71. Port Connectivity Checks: "MUX4TO1:MUX4TO1_ins"
+ 72. Port Connectivity Checks: "SevenSegment:SevenSegment_ins"
+ 73. Post-Synthesis Netlist Statistics for Top Partition
+ 74. Elapsed Time Per Partition
+ 75. Analysis & Synthesis Messages
+ 76. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -107,13 +108,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Dec 05 18:35:44 2020       ;
+; Analysis & Synthesis Status        ; Successful - Sat Dec 05 19:40:36 2020       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; top_level                                   ;
 ; Top-level Entity Name              ; top_level                                   ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 13,767                                      ;
-;     Total combinational functions  ; 10,573                                      ;
+; Total logic elements               ; 15,155                                      ;
+;     Total combinational functions  ; 11,961                                      ;
 ;     Dedicated logic registers      ; 7,022                                       ;
 ; Total registers                    ; 7022                                        ;
 ; Total pins                         ; 72                                          ;
@@ -225,7 +226,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 ;     Processor 3            ;   0.0%      ;
 ;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
@@ -268,6 +269,7 @@ https://fpgasoftware.intel.com/eula.
 ; Mux2.vhd                                                               ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd                                                               ;          ;
 ; DutyControl.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd                                                        ;          ;
 ; LEDmodule.vhd                                                          ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd                                                          ;          ;
+; bitmux.vhd                                                             ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/bitmux.vhd                                                             ;          ;
 ; ANDgate.vhd                                                            ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd                                                            ;          ;
 ; LUT_LED_pkg.vhd                                                        ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd                                                        ;          ;
 ; SevSegmodule.vhd                                                       ; yes             ; User VHDL File               ; C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd                                                       ;          ;
@@ -319,17 +321,17 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 13,767    ;
+; Estimated Total logic elements              ; 15,155    ;
 ;                                             ;           ;
-; Total combinational functions               ; 10573     ;
+; Total combinational functions               ; 11961     ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 5615      ;
-;     -- 3 input functions                    ; 4025      ;
-;     -- <=2 input functions                  ; 933       ;
+;     -- 4 input functions                    ; 6804      ;
+;     -- 3 input functions                    ; 4189      ;
+;     -- <=2 input functions                  ; 968       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 7007      ;
-;     -- arithmetic mode                      ; 3566      ;
+;     -- normal mode                          ; 8381      ;
+;     -- arithmetic mode                      ; 3580      ;
 ;                                             ;           ;
 ; Total registers                             ; 7022      ;
 ;     -- Dedicated logic registers            ; 7022      ;
@@ -344,8 +346,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 6933      ;
-; Total fan-out                               ; 60159     ;
-; Average fan-out                             ; 3.39      ;
+; Total fan-out                               ; 65473     ;
+; Average fan-out                             ; 3.42      ;
 +---------------------------------------------+-----------+
 
 
@@ -354,8 +356,8 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
 ; Compilation Hierarchy Node                                                         ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                                                                                                                                               ; Entity Name                            ; Library Name ;
 +------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------+--------------+
-; |top_level                                                                         ; 10573 (1)           ; 7022 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 72   ; 0            ; 0          ; |top_level                                                                                                                                                                                                                                                                                        ; top_level                              ; work         ;
-;    |ADC_Data:ADC_Data_ins|                                                         ; 6390 (0)            ; 6728 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins                                                                                                                                                                                                                                                                  ; ADC_Data                               ; work         ;
+; |top_level                                                                         ; 11961 (1)           ; 7022 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 72   ; 0            ; 0          ; |top_level                                                                                                                                                                                                                                                                                        ; top_level                              ; work         ;
+;    |ADC_Data:ADC_Data_ins|                                                         ; 5915 (0)            ; 6728 (0)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins                                                                                                                                                                                                                                                                  ; ADC_Data                               ; work         ;
 ;       |ADC_Conversion_wrapper:ADC_ins|                                             ; 54 (0)              ; 90 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins                                                                                                                                                                                                                                   ; ADC_Conversion_wrapper                 ; work         ;
 ;          |ADC_Conversion:ADC_Conversion_ins|                                       ; 54 (5)              ; 90 (29)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins                                                                                                                                                                                                 ; ADC_Conversion                         ; work         ;
 ;             |adc_qsys:u0|                                                          ; 49 (0)              ; 61 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0                                                                                                                                                                                     ; adc_qsys                               ; adc_qsys     ;
@@ -380,18 +382,18 @@ https://fpgasoftware.intel.com/eula.
 ;                |mpar_add:sub_par_add|                                              ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add                                                                                                                                                                                           ; mpar_add                               ; work         ;
 ;                   |lpm_add_sub:adder[0]|                                           ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]                                                                                                                                                                      ; lpm_add_sub                            ; work         ;
 ;                      |add_sub_arg:auto_generated|                                  ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]|add_sub_arg:auto_generated                                                                                                                                           ; add_sub_arg                            ; work         ;
-;       |voltage2distance_array2:voltage2distance_ins|                               ; 2466 (2466)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins                                                                                                                                                                                                                     ; voltage2distance_array2                ; work         ;
+;       |voltage2distance_array2:voltage2distance_ins|                               ; 1991 (1991)         ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|ADC_Data:ADC_Data_ins|voltage2distance_array2:voltage2distance_ins                                                                                                                                                                                                                     ; voltage2distance_array2                ; work         ;
 ;    |BlankZero:BlankZero_ins|                                                       ; 5 (5)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BlankZero:BlankZero_ins                                                                                                                                                                                                                                                                ; BlankZero                              ; work         ;
-;    |BuzzerModule:BuzzerModule_ins|                                                 ; 120 (32)            ; 42 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins                                                                                                                                                                                                                                                          ; BuzzerModule                           ; work         ;
-;       |PWM_DAC:PWM_DAC_ins1|                                                       ; 11 (11)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins|PWM_DAC:PWM_DAC_ins1                                                                                                                                                                                                                                     ; PWM_DAC                                ; work         ;
-;       |downcounter:downcounter_ins1|                                               ; 77 (77)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins|downcounter:downcounter_ins1                                                                                                                                                                                                                             ; downcounter                            ; work         ;
-;    |Comparator:Comparator_ins|                                                     ; 3 (3)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|Comparator:Comparator_ins                                                                                                                                                                                                                                                              ; Comparator                             ; work         ;
-;    |LEDmodule:LEDmodule_ins|                                                       ; 955 (0)             ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|LEDmodule:LEDmodule_ins                                                                                                                                                                                                                                                                ; LEDmodule                              ; work         ;
-;       |DutyControl:DutyControl_ins|                                                ; 934 (934)           ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|LEDmodule:LEDmodule_ins|DutyControl:DutyControl_ins                                                                                                                                                                                                                                    ; DutyControl                            ; work         ;
+;    |BuzzerModule:BuzzerModule_ins|                                                 ; 1999 (1897)         ; 42 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins                                                                                                                                                                                                                                                          ; BuzzerModule                           ; work         ;
+;       |PWM_DAC:PWM_DAC_ins1|                                                       ; 12 (12)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins|PWM_DAC:PWM_DAC_ins1                                                                                                                                                                                                                                     ; PWM_DAC                                ; work         ;
+;       |downcounter:downcounter_ins1|                                               ; 90 (90)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|BuzzerModule:BuzzerModule_ins|downcounter:downcounter_ins1                                                                                                                                                                                                                             ; downcounter                            ; work         ;
+;    |Comparator:Comparator_ins|                                                     ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|Comparator:Comparator_ins                                                                                                                                                                                                                                                              ; Comparator                             ; work         ;
+;    |LEDmodule:LEDmodule_ins|                                                       ; 950 (0)             ; 18 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|LEDmodule:LEDmodule_ins                                                                                                                                                                                                                                                                ; LEDmodule                              ; work         ;
+;       |DutyControl:DutyControl_ins|                                                ; 929 (929)           ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|LEDmodule:LEDmodule_ins|DutyControl:DutyControl_ins                                                                                                                                                                                                                                    ; DutyControl                            ; work         ;
 ;       |PWM_DAC:PWM_DAC_ins2|                                                       ; 21 (21)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|LEDmodule:LEDmodule_ins|PWM_DAC:PWM_DAC_ins2                                                                                                                                                                                                                                           ; PWM_DAC                                ; work         ;
 ;    |MUX4TO1:MUX4TO1_ins|                                                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|MUX4TO1:MUX4TO1_ins                                                                                                                                                                                                                                                                    ; MUX4TO1                                ; work         ;
 ;    |Mux2:Mux2_ins|                                                                 ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|Mux2:Mux2_ins                                                                                                                                                                                                                                                                          ; Mux2                                   ; work         ;
-;    |SevSegmodule:SevSegmodule_ins|                                                 ; 2731 (2627)         ; 42 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevSegmodule:SevSegmodule_ins                                                                                                                                                                                                                                                          ; SevSegmodule                           ; work         ;
+;    |SevSegmodule:SevSegmodule_ins|                                                 ; 2721 (2617)         ; 42 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevSegmodule:SevSegmodule_ins                                                                                                                                                                                                                                                          ; SevSegmodule                           ; work         ;
 ;       |PWM_DAC:PWM_DAC_ins1|                                                       ; 12 (12)             ; 9 (9)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevSegmodule:SevSegmodule_ins|PWM_DAC:PWM_DAC_ins1                                                                                                                                                                                                                                     ; PWM_DAC                                ; work         ;
 ;       |downcounter:downcounter_ins1|                                               ; 92 (92)             ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevSegmodule:SevSegmodule_ins|downcounter:downcounter_ins1                                                                                                                                                                                                                             ; downcounter                            ; work         ;
 ;    |SevenSegment:SevenSegment_ins|                                                 ; 56 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins                                                                                                                                                                                                                                                          ; SevenSegment                           ; work         ;
@@ -399,8 +401,9 @@ https://fpgasoftware.intel.com/eula.
 ;       |SevenSegment_decoder:decoder1|                                              ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder1                                                                                                                                                                                                                            ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:decoder2|                                              ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder2                                                                                                                                                                                                                            ; SevenSegment_decoder                   ; work         ;
 ;       |SevenSegment_decoder:decoder3|                                              ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|SevenSegment:SevenSegment_ins|SevenSegment_decoder:decoder3                                                                                                                                                                                                                            ; SevenSegment_decoder                   ; work         ;
-;    |binary_bcd:binary_bcd_ins2|                                                    ; 132 (132)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins2                                                                                                                                                                                                                                                             ; binary_bcd                             ; work         ;
-;    |binary_bcd:binary_bcd_ins|                                                     ; 108 (108)           ; 45 (45)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                                                                                                                                                                                                                                              ; binary_bcd                             ; work         ;
+;    |binary_bcd:binary_bcd_ins2|                                                    ; 131 (131)           ; 84 (84)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins2                                                                                                                                                                                                                                                             ; binary_bcd                             ; work         ;
+;    |binary_bcd:binary_bcd_ins|                                                     ; 109 (109)           ; 45 (45)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|binary_bcd:binary_bcd_ins                                                                                                                                                                                                                                                              ; binary_bcd                             ; work         ;
+;    |bitmux:bitmux_ins|                                                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|bitmux:bitmux_ins                                                                                                                                                                                                                                                                      ; bitmux                                 ; work         ;
 ;    |debounce:debounce_ins|                                                         ; 31 (31)             ; 24 (24)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|debounce:debounce_ins                                                                                                                                                                                                                                                                  ; debounce                               ; work         ;
 ;    |stored_value:stored_value_ins|                                                 ; 0 (0)               ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|stored_value:stored_value_ins                                                                                                                                                                                                                                                          ; stored_value                           ; work         ;
 ;    |synchronizer:synchronizer_ins|                                                 ; 0 (0)               ; 20 (20)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_level|synchronizer:synchronizer_ins                                                                                                                                                                                                                                                          ; synchronizer                           ; work         ;
@@ -5887,7 +5890,7 @@ Encoding Type:  One-Hot
 ; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 3408  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 6863  ;
+; Number of registers using Clock Enable       ; 6862  ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -6007,16 +6010,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[7] ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|ADC_Data:ADC_Data_ins|ADC_Conversion_wrapper:ADC_ins|ADC_Conversion:ADC_Conversion_ins|adc_qsys:u0|adc_qsys_modular_adc_0:modular_adc_0|altera_modular_adc_control:control_internal|altera_modular_adc_control_fsm:u_control_fsm|int_timer[6] ;
 ; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |top_level|debounce:debounce_ins|count[3]                                                                                                                                                                                                                ;
 ; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[11]                                                                                                                                                                                                     ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[3]                                                                                                                                                                                                       ;
+; 5:1                ; 11 bits   ; 33 LEs        ; 22 LEs               ; 11 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[8]                                                                                                                                                                                                       ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[15]                                                                                                                                                                                                     ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[16]                                                                                                                                                                                                      ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[15]                                                                                                                                                                                                      ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[18]                                                                                                                                                                                                     ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 8 LEs                ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[17]                                                                                                                                                                                                      ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[23]                                                                                                                                                                                                     ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[23]                                                                                                                                                                                                      ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[21]                                                                                                                                                                                                     ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[21]                                                                                                                                                                                                      ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins2|bcd_signal[26]                                                                                                                                                                                                     ;
 ; 12:1               ; 4 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_level|binary_bcd:binary_bcd_ins|bcd_signal[25]                                                                                                                                                                                                      ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |top_level|MUX4TO1:MUX4TO1_ins|Mux3                                                                                                                                                                                                                      ;
@@ -6623,23 +6626,32 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------+-------+----------+------------------------------------------+
 ; Port             ; Type  ; Severity ; Details                                  ;
 +------------------+-------+----------+------------------------------------------+
-; count_max[8..6]  ; Input ; Info     ; Stuck at GND                             ;
-; count_max[4..0]  ; Input ; Info     ; Stuck at GND                             ;
-; count_max[5]     ; Input ; Info     ; Stuck at VCC                             ;
-; duty_cycle[8..5] ; Input ; Info     ; Stuck at GND                             ;
-; duty_cycle[3..0] ; Input ; Info     ; Stuck at GND                             ;
-; duty_cycle[4]    ; Input ; Info     ; Stuck at VCC                             ;
+; count_max[8..4]  ; Input ; Info     ; Stuck at GND                             ;
+; count_max[2..0]  ; Input ; Info     ; Stuck at GND                             ;
+; count_max[3]     ; Input ; Info     ; Stuck at VCC                             ;
+; duty_cycle[8..3] ; Input ; Info     ; Stuck at GND                             ;
+; duty_cycle[1..0] ; Input ; Info     ; Stuck at GND                             ;
+; duty_cycle[2]    ; Input ; Info     ; Stuck at VCC                             ;
 +------------------+-------+----------+------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "BuzzerModule:BuzzerModule_ins|downcounter:downcounter_ins1" ;
-+---------------+-------+----------+-----------------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                             ;
-+---------------+-------+----------+-----------------------------------------------------+
-; enab          ; Input ; Info     ; Stuck at VCC                                        ;
-; period[15..5] ; Input ; Info     ; Stuck at GND                                        ;
-+---------------+-------+----------+-----------------------------------------------------+
++----------------+-------+----------+----------------------------------------------------+
+; Port           ; Type  ; Severity ; Details                                            ;
++----------------+-------+----------+----------------------------------------------------+
+; enab           ; Input ; Info     ; Stuck at VCC                                       ;
+; period[15..13] ; Input ; Info     ; Stuck at GND                                       ;
++----------------+-------+----------+----------------------------------------------------+
+
+
++-----------------------------------------------+
+; Port Connectivity Checks: "bitmux:bitmux_ins" ;
++------+-------+----------+---------------------+
+; Port ; Type  ; Severity ; Details             ;
++------+-------+----------+---------------------+
+; in_2 ; Input ; Info     ; Stuck at GND        ;
++------+-------+----------+---------------------+
 
 
 +--------------------------------------------------------------------------+
@@ -6905,28 +6917,29 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; boundary_port         ; 72                          ;
 ; cycloneiii_ff         ; 7022                        ;
 ;     CLR               ; 147                         ;
-;     CLR SCLR          ; 9                           ;
+;     CLR SCLR          ; 10                          ;
 ;     ENA               ; 3590                        ;
 ;     ENA CLR           ; 3179                        ;
-;     ENA CLR SCLR      ; 65                          ;
+;     ENA CLR SCLR      ; 64                          ;
 ;     ENA CLR SCLR SLD  ; 8                           ;
 ;     ENA SCLR          ; 21                          ;
 ;     plain             ; 3                           ;
-; cycloneiii_lcell_comb ; 10581                       ;
-;     arith             ; 3566                        ;
-;         2 data inputs ; 231                         ;
-;         3 data inputs ; 3335                        ;
-;     normal            ; 7015                        ;
-;         0 data inputs ; 262                         ;
+; cycloneiii_lcell_comb ; 11969                       ;
+;     arith             ; 3580                        ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 242                         ;
+;         3 data inputs ; 3337                        ;
+;     normal            ; 8389                        ;
+;         0 data inputs ; 263                         ;
 ;         1 data inputs ; 281                         ;
-;         2 data inputs ; 167                         ;
-;         3 data inputs ; 690                         ;
-;         4 data inputs ; 5615                        ;
+;         2 data inputs ; 189                         ;
+;         3 data inputs ; 852                         ;
+;         4 data inputs ; 6804                        ;
 ; cycloneiii_pll        ; 1                           ;
 ; fiftyfivenm_adcblock  ; 1                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 27.60                       ;
-; Average LUT depth     ; 8.41                        ;
+; Max LUT depth         ; 26.00                       ;
+; Average LUT depth     ; 9.28                        ;
 +-----------------------+-----------------------------+
 
 
@@ -6935,7 +6948,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:02:15     ;
+; Top            ; 00:02:58     ;
 +----------------+--------------+
 
 
@@ -6945,7 +6958,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Sat Dec 05 18:33:17 2020
+    Info: Processing started: Sat Dec 05 19:37:26 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Lab2 -c top_level
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -7109,6 +7122,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file tb_andg
     Info (12023): Found entity 1: tb_ANDgate File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd Line: 4
 Info (12021): Found 1 design units, including 0 entities, in source file lut_buzzing_pkg.vhd
     Info (12022): Found design unit 1: LUT_buzzing_pkg File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzing_pkg.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file tb_buzzermodules.vhd
+    Info (12022): Found design unit 1: tb_Buzzermodules-tb File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd Line: 7
+    Info (12023): Found entity 1: tb_Buzzermodules File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd Line: 4
 Info (12127): Elaborating entity "top_level" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(31): object "switch_inputs" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 31
 Warning (10036): Verilog HDL or VHDL warning at top_level.vhd(47): object "ADC_raw" assigned a value but never read File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 47
@@ -7189,6 +7205,7 @@ Info (12128): Elaborating entity "LEDmodule" for hierarchy "LEDmodule:LEDmodule_
 Info (12128): Elaborating entity "DutyControl" for hierarchy "LEDmodule:LEDmodule_ins|DutyControl:DutyControl_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd Line: 61
 Info (12128): Elaborating entity "Comparator" for hierarchy "Comparator:Comparator_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 460
 Info (12128): Elaborating entity "Mux2" for hierarchy "Mux2:Mux2_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 473
+Info (12128): Elaborating entity "bitmux" for hierarchy "bitmux:bitmux_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 485
 Info (12128): Elaborating entity "ANDgate" for hierarchy "ANDgate:ANDgate_ins" File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd Line: 516
 Warning (12125): Using design file buzzermodule.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: BuzzerModule-Behavioral File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/buzzermodule.vhd Line: 16
@@ -7265,16 +7282,16 @@ Info (17016): Found the following redundant logic cells in design
 Info (144001): Generated suppressed messages file C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/output_files/top_level.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 13850 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 15238 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 59 output pins
-    Info (21061): Implemented 13776 logic cells
+    Info (21061): Implemented 15164 logic cells
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
-    Info: Peak virtual memory: 4901 megabytes
-    Info: Processing ended: Sat Dec 05 18:35:45 2020
-    Info: Elapsed time: 00:02:28
-    Info: Total CPU time (on all processors): 00:02:39
+    Info: Peak virtual memory: 4919 megabytes
+    Info: Processing ended: Sat Dec 05 19:40:36 2020
+    Info: Elapsed time: 00:03:10
+    Info: Total CPU time (on all processors): 00:03:21
 
 
 +------------------------------------------+

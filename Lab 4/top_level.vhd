@@ -39,7 +39,7 @@ Signal G, A:			std_logic_vector(9 downto 0);
 Signal Q, D, C, K:	std_logic_vector(21 downto 0);
 Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
 Signal in_12,in_22, out_sig2:	std_logic;
---Signal in_13,in_23, out_sig3:	std_logic;
+Signal in_13,in_23, out_sig3:	std_logic;
 Signal result, EN, factor, bool, control, control2, control3:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
@@ -278,8 +278,8 @@ SevenSegment_ins: SevenSegment
                                      
  
 --LEDR(9 downto 0) <= (others => pwm_out2); 
-LEDR(9 downto 0) <= (others => LEDout); 
---LEDR(9 downto 0) <= (others => out_sig2);
+--LEDR(9 downto 0) <= (others => LEDout); 
+LEDR(9 downto 0) <= (others => out_sig2);
 switch_inputs 	  <= "00000" & G(7 downto 0); -- switches that are associated with bits 
 binary <= distance;
 
@@ -477,17 +477,17 @@ port map ( in_1    => in_1,
 		 out_sig => out_sig 
       );
 		
---control2 <= bool;
---in_12 <= LEDout;	
+control2 <= bool;
+in_12 <= LEDout;	
 --in_12 <= pwm_out2; -- If dist < 3000	
---in_22 <= '0';      -- If dist > 3000
+in_22 <= '0';      -- If dist > 3000
 
---bitmux_ins: bitmux 
---port map( in_1  => in_12,
---		 in_2		=> in_22,
---		 control  => control2, 
---		 out_sig  => out_sig2
---      );
+bitmux_ins: bitmux 
+port map( in_1  => in_12,
+		 in_2		=> in_22,
+		 control  => control2, 
+		 out_sig  => out_sig2
+      );
 		
 --control3 <= bool;
 --in_13 <= pwm;

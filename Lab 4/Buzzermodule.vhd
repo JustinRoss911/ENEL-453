@@ -54,10 +54,10 @@ downcounter_ins1: downcounter
             );
 				
 --count_max <= "111111111"; 
-count_max <= "000100000"; --32 
+count_max <= "000001000"; -- 8 
 enable <= zero;
 --duty_cycle <= "011111111"; 
-duty_cycle <= "000010000"; --16 
+duty_cycle <= "000000100"; -- 4 
 		
 PWM_DAC_ins1: PWM_DAC
   Generic Map (width => 9)

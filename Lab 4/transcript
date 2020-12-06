@@ -1,84 +1,179 @@
-# Compile of ANDgate.vhd was successful.
-vsim -gui work.tb_andgate
-# vsim -gui work.tb_andgate 
-# Start time: 13:35:29 on Dec 05,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_andgate(tb)
-# Loading ieee.numeric_std(body)
-# Loading ieee.math_real(body)
-# Loading work.andgate(behaviour)
-# Load canceled
-add wave -position end sim:/tb_andgate/UUT/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftydj5rj".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftydj5rj
-run -all
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
 # Compile of ADC_Data.vhd was successful.
-vsim -gui work.tb_top_level
-# End time: 13:36:41 on Dec 05,2020, Elapsed time: 0:01:12
-# Errors: 0, Warnings: 6
-# vsim -gui work.tb_top_level 
-# Start time: 13:36:41 on Dec 05,2020
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# Compile of LEDmodule.vhd was successful.
+# Compile of tb_LEDmodule.vhd was successful.
+# Compile of LUT_LED_pkg.vhd was successful.
+# Compile of tb_SevSegmodule.vhd was successful.
+# Compile of LUT_flashing_pkg.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of tb_downcounter.vhd was successful.
+# Compile of tb_ANDgate.vhd was successful with warnings.
+# Compile of ANDgate.vhd was successful.
+# Compile of Buzzermodule.vhd failed with 3 errors.
+# Compile of LUT_buzzing_pkg.vhd was successful.
+# Compile of tb_Buzzermodules.vhd was successful.
+# 37 compiles, 2 failed with 3 errors.
+# Compile of Buzzermodule.vhd was successful.
+vsim -gui work.tb_buzzermodules
+# vsim -gui work.tb_buzzermodules 
+# Start time: 19:16:57 on Dec 05,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_top_level(tb)
+# Loading work.tb_buzzermodules(tb)
 # Loading ieee.numeric_std(body)
-# Loading work.top_level(behavioral)
-# Loading synopsys.attributes
-# Loading ieee.std_logic_misc(body)
-# Loading work.blankzero(behaviour)
-# Loading work.sevensegment(behavioral)
-# Loading work.sevensegment_decoder(behavioral)
-# Loading work.binary_bcd(behavior)
-# Loading work.mux4to1(behaviour)
-# Loading work.stored_value(behaviour)
-# Loading work.synchronizer(behaviour)
-# Loading work.debounce(logic)
-# Loading work.adc_data(rtl)
-# Loading work.lut_pkg
-# Loading work.voltage2distance_array2(behavior)
-# Loading work.adc_conversion_wrapper(simulation)
-# Loading work.averager256(rtl)
-# Loading work.dpmux(behaviour)
-# Loading work.lut_flashing_pkg
-# Loading work.lut_sevseg_pkg
-# Loading work.sevsegmodule(behavioral)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
 # Loading ieee.math_real(body)
 # Loading work.downcounter(behavioral)
 # Loading work.pwm_dac(behavioral)
-# Loading work.ledmodule(behavioral)
-# Loading work.lut_led_pkg
-# Loading work.dutycontrol(behaviour)
-# Loading work.andgate(behaviour)
-add wave -position end sim:/tb_top_level/UUT/*
+add wave -position end sim:/tb_buzzermodules/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft4agg8n".
+#           Attempting to use alternate WLF file "./wlft9ys0a4".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft4agg8n
+#           Using alternate file: ./wlft9ys0a4
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
-# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
+# Compile of LUT_buzzing_pkg.vhd was successful.
+vsim -gui work.tb_buzzermodules
+# End time: 19:23:09 on Dec 05,2020, Elapsed time: 0:06:12
+# Errors: 0, Warnings: 11
+# vsim -gui work.tb_buzzermodules 
+# Start time: 19:23:09 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_buzzermodules(tb)
+# ** Error: (vsim-13) Recompile work.buzzermodule because work.lut_buzzing_pkg has changed.
+# ** Error (suppressible): (vsim-12) Recompile work.buzzermodule(behavioral) after work.buzzermodule is recompiled.
+# ** Error: (vsim-13) Recompile work.buzzermodule(behavioral) because work.lut_buzzing_pkg has changed.
+# Load interrupted
+# Error loading design
+# End time: 19:23:10 on Dec 05,2020, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 1
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# Compile of LEDmodule.vhd was successful.
+# Compile of tb_LEDmodule.vhd was successful.
+# Compile of LUT_LED_pkg.vhd was successful.
+# Compile of tb_SevSegmodule.vhd was successful.
+# Compile of LUT_flashing_pkg.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of tb_downcounter.vhd was successful.
+# Compile of tb_ANDgate.vhd was successful with warnings.
+# Compile of ANDgate.vhd was successful.
+# Compile of Buzzermodule.vhd was successful.
+# Compile of LUT_buzzing_pkg.vhd was successful.
+# Compile of tb_Buzzermodules.vhd was successful.
+# 37 compiles, 0 failed with no errors.
+vsim -gui work.tb_buzzermodules
+# vsim -gui work.tb_buzzermodules 
+# Start time: 19:24:56 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_buzzermodules(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_buzzermodules/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft2fn5v8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft2fn5v8
+run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
+# Compile of LUT_buzzing_pkg.vhd was successful.
+# Compile of Buzzermodule.vhd was successful.
+# Compile of tb_Buzzermodules.vhd was successful.
+vsim -gui work.tb_buzzermodules
+# End time: 19:35:06 on Dec 05,2020, Elapsed time: 0:10:10
+# Errors: 0, Warnings: 10
+# vsim -gui work.tb_buzzermodules 
+# Start time: 19:35:06 on Dec 05,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_buzzermodules(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_buzzermodules/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftem2sm7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftem2sm7
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 3  Instance: /tb_top_level/UUT/SevSegmodule_ins
-# End time: 13:49:55 on Dec 05,2020, Elapsed time: 0:13:14
-# Errors: 1, Warnings: 11
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
+# End time: 19:38:13 on Dec 05,2020, Elapsed time: 0:03:07
+# Errors: 0, Warnings: 6

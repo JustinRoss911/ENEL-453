@@ -70,11 +70,11 @@ R10
 R11
 R12
 Eadc_data
-Z14 w1607200578
+Z14 w1607201169
 Z15 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
 R1
 R2
-!i122 2207
+!i122 2248
 Z16 dC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4
 Z17 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd
 Z18 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd
@@ -84,9 +84,9 @@ V3n4fooJXC0K:cdF`D0ON[0
 !s100 `G?]RH?bRVP9QLBH_afZI1
 R6
 32
-Z19 !s110 1607200585
+Z19 !s110 1607221430
 !i10b 1
-Z20 !s108 1607200585.000000
+Z20 !s108 1607221429.000000
 Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd|
 Z22 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ADC_Data.vhd|
 !i113 1
@@ -98,11 +98,11 @@ R15
 R1
 R2
 Z23 DEx4 work 8 adc_data 0 22 3n4fooJXC0K:cdF`D0ON[0
-!i122 2207
+!i122 2248
 l62
-Z24 L15 91
-Z25 V4PJKQIG`Se:_:eSMWUG@W3
-Z26 !s100 ]N4X_z>Xc^_9oCnV?jCKi1
+L15 91
+VO^R5<P`?U50`l00_YID>@3
+!s100 3<XZ>^IcmMPjM<^nk9F[V0
 R6
 32
 R19
@@ -114,70 +114,70 @@ R22
 R11
 R12
 Eandgate
-Z27 w1606952345
-Z28 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
+Z24 w1606952345
+Z25 DPx4 ieee 9 math_real 0 22 gNk<PdFJ<XNPcfef`f?Z81
 R15
 R1
 R2
-!i122 2206
+!i122 2279
 R16
-Z29 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd
-Z30 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd
+Z26 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd
+Z27 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd
 l0
 L6 1
 VI=I4OR9@M<b@Xh<zI[?PN0
 !s100 >ig:RY[34c1Mo7F;WzVg=1
 R6
 32
-Z31 !s110 1607200517
+Z28 !s110 1607221439
 !i10b 1
-Z32 !s108 1607200517.000000
-Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd|
-Z34 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd|
+Z29 !s108 1607221439.000000
+Z30 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd|
+Z31 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/ANDgate.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R28
+R25
 R15
 R1
 R2
 DEx4 work 7 andgate 0 22 I=I4OR9@M<b@Xh<zI[?PN0
-!i122 2206
+!i122 2279
 l16
 L13 7
 V0O?zBmlQXGjMUbm^VH^e53
 !s100 CX@9ED8=Q6kd43BVEXefO0
 R6
 32
-R31
+R28
 !i10b 1
-R32
-R33
-R34
+R29
+R30
+R31
 !i113 1
 R11
 R12
 Eaverager256
-Z35 w1606684062
+Z32 w1606684062
 R15
 R1
 R2
-!i122 2141
+!i122 2249
 R16
-Z36 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd
-Z37 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd
+Z33 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd
+Z34 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd
 l0
-Z38 L10 1
+Z35 L10 1
 V_CUX^0>VNcl[Eh>P]8Za^3
 !s100 PTQlD5=WnNQ@eNmcPZ4:[2
 R6
 32
-Z39 !s110 1607189905
+R19
 !i10b 1
-Z40 !s108 1607189905.000000
-Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd|
-Z42 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd|
+Z36 !s108 1607221430.000000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd|
+Z38 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd|
 !i113 1
 R11
 R12
@@ -186,41 +186,41 @@ R15
 R1
 R2
 DEx4 work 11 averager256 0 22 _CUX^0>VNcl[Eh>P]8Za^3
-!i122 2141
+!i122 2249
 l39
 L26 63
 VMAV`H8^Z82AhEoojkAUbn3
 !s100 inmE;jmFYY4VDW>]DIZn43
 R6
 32
-R39
+R19
 !i10b 1
-R40
-R41
-R42
+R36
+R37
+R38
 !i113 1
 R11
 R12
 Ebinary_bcd
-R35
+R32
 R15
 R1
 R2
-!i122 2142
+!i122 2250
 R16
-Z43 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd
-Z44 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd
+Z39 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd
+Z40 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd
 l0
 L8 1
 V0:9zdOIA`o`LF2cmkOC^P3
 !s100 gQzX;=HeN]3[lj0[@2mb]2
 R6
 32
-R39
+R19
 !i10b 1
-R40
-Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd|
-Z46 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd|
+R36
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd|
+Z42 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/binary_bcd.vhd|
 !i113 1
 R11
 R12
@@ -229,63 +229,108 @@ R15
 R1
 R2
 DEx4 work 10 binary_bcd 0 22 0:9zdOIA`o`LF2cmkOC^P3
-!i122 2142
+!i122 2250
 l27
 L17 68
 Vkk0@KWb1@9aV]WcFQb8d>1
 !s100 :^^564DjXHL3Y8gXOzS=f0
 R6
 32
-R39
+R19
 !i10b 1
-R40
-R45
-R46
+R36
+R41
+R42
 !i113 1
 R11
 R12
 Eblankzero
-Z47 w1606684061
-Z48 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
-Z49 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
+Z43 w1606684061
+Z44 DPx8 synopsys 10 attributes 0 22 dc>JdEHRM@6GGENe5bZ?D1
+Z45 DPx4 ieee 14 std_logic_misc 0 22 dN]HY6l5ohPcZ:TaC@B;53
 R1
 R2
-!i122 2143
+!i122 2251
 R16
-Z50 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd
-Z51 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd
+Z46 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd
+Z47 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd
 l0
-Z52 L13 1
+Z48 L13 1
 V`T;ENY:adZd47O9m8nL7j0
 !s100 kaY=88IN<WEIao7[BWd[c1
 R6
 32
-Z53 !s110 1607189906
+R19
 !i10b 1
-Z54 !s108 1607189906.000000
-Z55 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd|
-Z56 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd|
+R36
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd|
+Z50 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/BlankZero.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R48
-R49
+R44
+R45
 R1
 R2
-Z57 DEx4 work 9 blankzero 0 22 `T;ENY:adZd47O9m8nL7j0
-!i122 2143
+Z51 DEx4 work 9 blankzero 0 22 `T;ENY:adZd47O9m8nL7j0
+!i122 2251
 l24
 L22 25
 VQEiiI63V:`EM:a?OF0ldL2
 !s100 7?395zbCmoLBBm1;C3oTR2
 R6
 32
-R53
+R19
 !i10b 1
-R54
-R55
+R36
+R49
+R50
+!i113 1
+R11
+R12
+Ebuzzermodule
+Z52 w1607220895
+Z53 DPx4 work 15 lut_buzzing_pkg 0 22 UbbL2ZeQfa2b;FzfK`fEH0
+R15
+R1
+R2
+!i122 2284
+R16
+Z54 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Buzzermodule.vhd
+Z55 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Buzzermodule.vhd
+l0
+L7 1
+VSd8=;K;>V[f;0BH4K67jA1
+!s100 3][@?=S>NanSaSKRQY:[20
+R6
+32
+Z56 !s110 1607222091
+!i10b 1
+Z57 !s108 1607222090.000000
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Buzzermodule.vhd|
+Z59 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Buzzermodule.vhd|
+!i113 1
+R11
+R12
+Abehavioral
+R53
+R15
+R1
+R2
+DEx4 work 12 buzzermodule 0 22 Sd8=;K;>V[f;0BH4K67jA1
+!i122 2284
+l42
+L16 60
+VfU?n]Wo_5lBBTZCm9R[IQ1
+!s100 gLoc?Z=`?S92KO6N6^@kz2
+R6
+32
 R56
+!i10b 1
+R57
+R58
+R59
 !i113 1
 R11
 R12
@@ -297,75 +342,75 @@ R23
 DAx4 work 11 tb_adc_data 2 tb 22 BH>??8<Wl@5mgC2Ol;Wh80
 R1
 R2
-Z58 DEx4 work 11 tb_adc_data 0 22 [?lm[l=lU]Mf^aJ=5DKVD1
+Z60 DEx4 work 11 tb_adc_data 0 22 [?lm[l=lU]Mf^aJ=5DKVD1
 !i122 1393
-Z59 w1604510682
+Z61 w1604510682
 R3
-Z60 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
-Z61 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
+Z62 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
+Z63 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd
 l0
 L74 1
 VcXWF`bQSNBSC_?5accbVR3
 !s100 SkJeTb7zOX0INX:FJ;3Db2
 R6
 32
-Z62 !s110 1605551829
+Z64 !s110 1605551829
 !i10b 0
-Z63 !s108 1605551829.000000
-Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
-Z65 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
+Z65 !s108 1605551829.000000
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
+Z67 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_ADC_data.vhd|
 !i113 1
 R11
 R12
 Ccfg_tb_blankzero
 etb_BlankZero
 atb
-R49
-R48
-R57
+R45
+R44
+R51
 DAx4 work 12 tb_blankzero 2 tb 22 jC^JG6Na]kI69NOl@hH@70
 R1
 R2
-Z66 DEx4 work 12 tb_blankzero 0 22 SiR0lCV<:PcLS5HNj9<B@1
+Z68 DEx4 work 12 tb_blankzero 0 22 SiR0lCV<:PcLS5HNj9<B@1
 !i122 1403
-Z67 w1605454422
+Z69 w1605454422
 R3
-Z68 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
-Z69 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
+Z70 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
+Z71 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd
 l0
 L99 1
 Va_cV1Am6e]2G^l^?:N>3Q3
 !s100 IPFz8Z==lCMaKV7Wh=j:H2
 R6
 32
-Z70 !s110 1605551831
+Z72 !s110 1605551831
 !i10b 0
-Z71 !s108 1605551831.000000
-Z72 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
-Z73 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
+Z73 !s108 1605551831.000000
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
+Z75 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_BlankZero.vhd|
 !i113 1
 R11
 R12
 Ecomparator
-Z74 w1607096779
+Z76 w1607215226
 R15
 R1
 R2
-!i122 2144
+!i122 2252
 R16
-Z75 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd
-Z76 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd
+Z77 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd
+Z78 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd
 l0
 L9 1
 V_Y8_i>XgYC;JdPBf4bb1F2
 !s100 G_MH6J5B^5gV^=K[:D82Q1
 R6
 32
-R53
+Z79 !s110 1607221431
 !i10b 1
-R54
-Z77 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd|
-Z78 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd|
+Z80 !s108 1607221431.000000
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd|
+Z82 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Comparator.vhd|
 !i113 1
 R11
 R12
@@ -374,40 +419,40 @@ R15
 R1
 R2
 DEx4 work 10 comparator 0 22 _Y8_i>XgYC;JdPBf4bb1F2
-!i122 2144
+!i122 2252
 l18
 L17 15
-V__ShfnQYAh@Eo^ace^li=0
-!s100 bLoBLj_dZEEjYzQ[>K5Cm3
+V8J;02LG=m`WZBGJgjAWLX3
+!s100 abjdmE:CaBRA14>3IF;YH1
 R6
 32
-R53
+R79
 !i10b 1
-R54
-R77
-R78
+R80
+R81
+R82
 !i113 1
 R11
 R12
 Edebounce
-R35
+R32
 R1
 R2
-!i122 2145
+!i122 2253
 R16
-Z79 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd
-Z80 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd
+Z83 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd
+Z84 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd
 l0
 L29 1
 VC1K_bhEbjZl4j5?gZI;fa1
 !s100 Z<ReW>jh`5lm4821a0i<Q1
 R6
 32
-Z81 !s110 1607189907
+R79
 !i10b 1
-Z82 !s108 1607189907.000000
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd|
-Z84 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd|
+R80
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd|
+Z86 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/debounce.vhd|
 !i113 1
 R11
 R12
@@ -415,61 +460,61 @@ Alogic
 R1
 R2
 DEx4 work 8 debounce 0 22 C1K_bhEbjZl4j5?gZI;fa1
-!i122 2145
+!i122 2253
 l43
 L40 27
 V4bmI1zgNiHJ<6Eam;lJDB0
 !s100 U_=NIG5<5]YjeA@K`1Ua;0
 R6
 32
-R81
+R79
 !i10b 1
-R82
-R83
-R84
+R80
+R85
+R86
 !i113 1
 R11
 R12
 Edowncounter
-Z85 w1607190582
-R28
+Z87 w1607190582
+R25
 R15
 R1
 R2
-!i122 2175
+!i122 2254
 R16
-Z86 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd
-Z87 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd
+Z88 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd
+Z89 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd
 l0
 L7 1
 V0[_6WAn?13zXS_AaCBoEe1
 !s100 oflR5kz3;2L0g=aOn1<921
 R6
 32
-Z88 !s110 1607190875
+R79
 !i10b 1
-Z89 !s108 1607190875.000000
+R80
 Z90 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd|
 Z91 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd|
 !i113 1
 R11
 R12
 Abehavioral
-R28
+R25
 R15
 R1
 R2
 DEx4 work 11 downcounter 0 22 0[_6WAn?13zXS_AaCBoEe1
-!i122 2175
+!i122 2254
 l20
 L17 27
 VPfg8:HYGH[`ae4U84Z>8Z2
 !s100 [El1RAnNdkMX?Q`A@3iAS1
 R6
 32
-R88
+R79
 !i10b 1
-R89
+R80
 R90
 R91
 !i113 1
@@ -479,7 +524,7 @@ Edpmux
 Z92 w1606926064
 R1
 R2
-!i122 2147
+!i122 2255
 R16
 Z93 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd
 Z94 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd
@@ -489,11 +534,11 @@ Vb6Z]jDHR90mfe7N3n<nbF3
 !s100 j;i22007b;A[:SNDAU[Pi3
 R6
 32
-Z95 !s110 1607189908
+Z95 !s110 1607221432
 !i10b 1
-Z96 !s108 1607189908.000000
-Z97 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd|
-Z98 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd|
+R80
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd|
+Z97 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DPmux.vhd|
 !i113 1
 R11
 R12
@@ -501,32 +546,32 @@ Abehaviour
 R1
 R2
 DEx4 work 5 dpmux 0 22 b6Z]jDHR90mfe7N3n<nbF3
-!i122 2147
+!i122 2255
 l21
-Z99 L20 9
+Z98 L20 9
 V]Qad_6XML>gACa3CQ=1oB3
 !s100 H<nhUn_Z?^ce?k1Q80dl40
 R6
 32
 R95
 !i10b 1
+R80
 R96
 R97
-R98
 !i113 1
 R11
 R12
 Edutycontrol
-Z100 w1607095266
-Z101 DPx4 work 11 lut_led_pkg 0 22 Sd5zDcQQbRGfa8jm=hFTj2
-R28
+Z99 w1607095266
+Z100 DPx4 work 11 lut_led_pkg 0 22 ZmiGYG:bfYC0d0mH2mFR]1
+R25
 R15
 R1
 R2
-!i122 2148
+!i122 2256
 R16
-Z102 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd
-Z103 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd
+Z101 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd
+Z102 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd
 l0
 L16 1
 V]05lWWKIQzB;?8FzBT5jR2
@@ -535,20 +580,20 @@ R6
 32
 R95
 !i10b 1
-R96
+Z103 !s108 1607221432.000000
 Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd|
 Z105 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/DutyControl.vhd|
 !i113 1
 R11
 R12
 Abehaviour
-R101
-R28
+R100
+R25
 R15
 R1
 R2
 DEx4 work 11 dutycontrol 0 22 ]05lWWKIQzB;?8FzBT5jR2
-!i122 2148
+!i122 2256
 l26
 L24 14
 VXIWi:X1`GQV_z@1CGikJ=2
@@ -557,56 +602,54 @@ R6
 32
 R95
 !i10b 1
-R96
+R103
 R104
 R105
 !i113 1
 R11
 R12
 Efreqcontrol
-Z106 w1607192891
-Z107 DPx4 work 14 lut_sevseg_pkg 0 22 G[0RXJ7Ek]J9T@dZ?=W:J2
-Z108 DPx4 work 16 lut_flashing_pkg 0 22 OEOVe=04S88fY4zRQ3W5Z0
+Z106 w1607214511
+Z107 DPx4 work 16 lut_flashing_pkg 0 22 GAn>h:5DeS1TDCb@A89<31
 R15
 R1
 R2
-!i122 2190
+!i122 2257
 R16
-Z109 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd
-Z110 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd
+Z108 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd
+Z109 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd
 l0
 L15 1
-ViY;Dl5kUPY8=f`U>ULOcm1
-!s100 dO9MVWa65l]l_BbB26WGV2
+VJ<LX0NWJ4<Za=@bc2BT_01
+!s100 WSanHkK=@<kj:a3jdW>CL1
 R6
 32
-Z111 !s110 1607192900
+R95
 !i10b 1
-Z112 !s108 1607192900.000000
-Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd|
-Z114 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd|
+R103
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd|
+Z111 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/FreqControl.vhd|
 !i113 1
 R11
 R12
 Abehaviour
 R107
-R108
 R15
 R1
 R2
-DEx4 work 11 freqcontrol 0 22 iY;Dl5kUPY8=f`U>ULOcm1
-!i122 2190
+DEx4 work 11 freqcontrol 0 22 J<LX0NWJ4<Za=@bc2BT_01
+!i122 2257
 l26
 L23 28
-VgZVYh2PEUC5no_NRGZ5PI2
-!s100 l^dL0`6WQa[kX7Fj8P1MX2
+V`MAI8I^d?Sn_Z89U[AG]X3
+!s100 1mSL0:<@[GY`FJDe5J_V?3
 R6
 32
-R111
+R95
 !i10b 1
-R112
-R113
-R114
+R103
+R110
+R111
 !i113 1
 R11
 R12
@@ -615,21 +658,21 @@ R92
 R15
 R1
 R2
-!i122 2160
+!i122 2268
 R16
-Z115 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd
-Z116 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd
+Z112 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd
+Z113 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd
 l0
 L9 1
 VFAhKgPZ5zRQGM^Ub=8zz<3
 !s100 BmYY6LG1jCIfA;d3_44S;3
 R6
 32
-Z117 !s110 1607189915
+Z114 !s110 1607221435
 !i10b 1
-Z118 !s108 1607189914.000000
-Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd|
-Z120 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd|
+Z115 !s108 1607221435.000000
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd|
+Z117 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Inverter.vhd|
 !i113 1
 R11
 R12
@@ -638,41 +681,41 @@ R15
 R1
 R2
 DEx4 work 8 inverter 0 22 FAhKgPZ5zRQGM^Ub=8zz<3
-!i122 2160
+!i122 2268
 l18
 L17 11
 VO_B9C3dJO7]A[@lHAc1Uz0
 !s100 :Y9Ro9dX2GUENO];nCHF52
 R6
 32
-R117
+R114
 !i10b 1
-R118
-R119
-R120
+R115
+R116
+R117
 !i113 1
 R11
 R12
 Eledmodule
-Z121 w1607147234
+Z118 w1607147234
 R15
 R1
 R2
-!i122 2163
+!i122 2271
 R16
-Z122 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd
-Z123 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd
+Z119 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd
+Z120 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd
 l0
 L6 1
 Va;B;bnDdnlolKCJ=DVcMf2
 !s100 z;AEQSUPG521dnGWh:Le11
 R6
 32
-Z124 !s110 1607189916
+Z121 !s110 1607221436
 !i10b 1
-Z125 !s108 1607189916.000000
-Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd|
-Z127 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd|
+Z122 !s108 1607221436.000000
+Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd|
+Z124 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LEDmodule.vhd|
 !i113 1
 R11
 R12
@@ -681,38 +724,60 @@ R15
 R1
 R2
 DEx4 work 9 ledmodule 0 22 a;B;bnDdnlolKCJ=DVcMf2
-!i122 2163
+!i122 2271
 l42
 L15 57
 VE6@>@l9CQzjhh`kKMBkQW2
 !s100 278b9IgjPRF9`S0djzF:G1
 R6
 32
-R124
+R121
 !i10b 1
-R125
-R126
-R127
+R122
+R123
+R124
+!i113 1
+R11
+R12
+Plut_buzzing_pkg
+R1
+R2
+!i122 2283
+w1607222072
+R16
+8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzing_pkg.vhd
+FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzing_pkg.vhd
+l0
+L4 1
+VUbbL2ZeQfa2b;FzfK`fEH0
+!s100 O8RJ^0J39@_dVaXokOP653
+R6
+32
+!s110 1607222083
+!i10b 1
+!s108 1607222083.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzing_pkg.vhd|
+!s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_buzzing_pkg.vhd|
 !i113 1
 R11
 R12
 Plut_flashing_pkg
 R1
 R2
-!i122 2199
-w1607196193
+!i122 2275
+w1607214035
 R16
 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd
 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd
 l0
 L4 1
-VY@fKOT7m_1Y8oc4:C=[jT3
-!s100 <McmEQ9aNi_6bL]2zEe1O1
+VGAn>h:5DeS1TDCb@A89<31
+!s100 HbmT4S>_K4z_F`c[hkWG82
 R6
 32
-!s110 1607196316
+Z125 !s110 1607221438
 !i10b 1
-!s108 1607196316.000000
+Z126 !s108 1607221437.000000
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd|
 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_flashing_pkg.vhd|
 !i113 1
@@ -721,20 +786,20 @@ R12
 Plut_led_pkg
 R1
 R2
-!i122 2165
-w1607144933
+!i122 2273
+w1607218313
 R16
 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd
 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd
 l0
 L4 1
-VSd5zDcQQbRGfa8jm=hFTj2
-!s100 DM^P5d5LR3AgX^<a?B8bZ1
+VZmiGYG:bfYC0d0mH2mFR]1
+!s100 `Z48k`eJgB^4C;1FlAgZW0
 R6
 32
-Z128 !s110 1607189917
+Z127 !s110 1607221437
 !i10b 1
-Z129 !s108 1607189917.000000
+R126
 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd|
 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/LUT_LED_pkg.vhd|
 !i113 1
@@ -785,25 +850,25 @@ R6
 R11
 R12
 Emux2
-Z130 w1606756943
+Z128 w1607215223
 R15
 R1
 R2
-!i122 2150
+!i122 2258
 R16
-Z131 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd
-Z132 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd
+Z129 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd
+Z130 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd
 l0
 L7 1
 VKFe0MH>FD[<mVJBL1`i9R3
 !s100 H]hK[FAi9=90zPgSB2XL=3
 R6
 32
-Z133 !s110 1607189909
+Z131 !s110 1607221433
 !i10b 1
-Z134 !s108 1607189909.000000
-Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd|
-Z136 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd|
+R103
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd|
+Z133 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/Mux2.vhd|
 !i113 1
 R11
 R12
@@ -812,18 +877,18 @@ R15
 R1
 R2
 DEx4 work 4 mux2 0 22 KFe0MH>FD[<mVJBL1`i9R3
-!i122 2150
+!i122 2258
 l16
 L15 6
-V0Z<FL]_99^SQ<YIV18Hfj0
-!s100 JFNk66AL;Z6AC5;@Zm=l=1
+Va48deA;S:;aJ1A4iK]=4S3
+!s100 hR6B6?H?oZ1SH98<cfWEA3
 R6
 32
-R133
+R131
 !i10b 1
-R134
-R135
-R136
+R103
+R132
+R133
 !i113 1
 R11
 R12
@@ -831,21 +896,21 @@ Emux4to1
 R92
 R1
 R2
-!i122 2151
+!i122 2259
 R16
-Z137 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd
-Z138 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd
+Z134 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd
+Z135 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd
 l0
 L8 1
 Vm=^H<`:CSg^O0VOec8eU?2
 !s100 RDRj3WiJf@Tdj=n;h=VK;0
 R6
 32
-Z139 !s110 1607189910
+R131
 !i10b 1
-Z140 !s108 1607189910.000000
-Z141 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd|
-Z142 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd|
+Z136 !s108 1607221433.000000
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd|
+Z138 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/MUX4To1.vhd|
 !i113 1
 R11
 R12
@@ -853,41 +918,41 @@ Abehaviour
 R1
 R2
 DEx4 work 7 mux4to1 0 22 m=^H<`:CSg^O0VOec8eU?2
-!i122 2151
+!i122 2259
 l21
-R99
+R98
 Vo_C6J6JN=k4Q7JCRf>FOj3
 !s100 P5XafJ6T7aOe67h@TmmZl0
 R6
 32
-R139
+R131
 !i10b 1
-R140
-R141
-R142
+R136
+R137
+R138
 !i113 1
 R11
 R12
 Epwm_dac
-Z143 w1606950136
+Z139 w1606950136
 R15
 R1
 R2
-!i122 2152
+!i122 2260
 R16
-Z144 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd
-Z145 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd
+Z140 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd
+Z141 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd
 l0
 L5 1
 VTB0b9:_dQUQYGiGi=U3`a3
 !s100 8oKk>=inBQSRQZ>c2<SLj0
 R6
 32
-Z146 !s110 1607189911
+R131
 !i10b 1
-R140
-Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd|
-Z148 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd|
+R136
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd|
+Z143 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/PWM_DAC.vhd|
 !i113 1
 R11
 R12
@@ -896,40 +961,40 @@ R15
 R1
 R2
 DEx4 work 7 pwm_dac 0 22 TB0b9:_dQUQYGiGi=U3`a3
-!i122 2152
+!i122 2260
 l19
 L16 29
 Vg1O]>7OcJQU:8<zRF2A6_2
 !s100 70Ufnc^iYKYS_zLKP09i92
 R6
 32
-R146
+R131
 !i10b 1
-R140
-R147
-R148
+R136
+R142
+R143
 !i113 1
 R11
 R12
 Esevensegment
-R35
+R32
 R1
 R2
-!i122 2153
+!i122 2261
 R16
-Z149 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd
-Z150 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd
+Z144 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd
+Z145 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd
 l0
 L5 1
 VXFgP>@o^JhgVk9:C8W>W?1
 !s100 ^0d:N;B_k0GJc@NmQlnlW0
 R6
 32
-R146
+R131
 !i10b 1
-Z151 !s108 1607189911.000000
-Z152 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd|
-Z153 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd|
+R136
+Z146 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd|
+Z147 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment.vhd|
 !i113 1
 R11
 R12
@@ -937,40 +1002,40 @@ Abehavioral
 R1
 R2
 DEx4 work 12 sevensegment 0 22 XFgP>@o^JhgVk9:C8W>W?1
-!i122 2153
+!i122 2261
 l24
 L11 56
 VRY`O:mI7ShNY=AIRHl:E`3
 !s100 1W]MD<WEj]lMgjj?HV7Yh3
 R6
 32
-R146
+R131
 !i10b 1
-R151
-R152
-R153
+R136
+R146
+R147
 !i113 1
 R11
 R12
 Esevensegment_decoder
-R35
+R32
 R1
 R2
-!i122 2154
+!i122 2262
 R16
-Z154 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd
-Z155 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd
+Z148 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd
+Z149 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd
 l0
 L5 1
 VKjE^A[JI58zIZ_l229BiF2
 !s100 5AALkiToOD1k>]CGcBo?e0
 R6
 32
-Z156 !s110 1607189912
+Z150 !s110 1607221434
 !i10b 1
-R151
-Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd|
-Z158 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd|
+R136
+Z151 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd|
+Z152 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevenSegment_decoder.vhd|
 !i113 1
 R11
 R12
@@ -978,87 +1043,85 @@ Abehavioral
 R1
 R2
 DEx4 work 20 sevensegment_decoder 0 22 KjE^A[JI58zIZ_l229BiF2
-!i122 2154
+!i122 2262
 l17
 L13 40
 VEk]l8L^gQGHfA6;cCT2j02
 !s100 >ohV?96^:;QcZ7]dD6j[K3
 R6
 32
-R156
+R150
 !i10b 1
+R136
 R151
-R157
-R158
+R152
 !i113 1
 R11
 R12
 Esevsegmodule
-Z159 w1607196346
+Z153 w1607211704
 R107
-Z160 DPx4 work 16 lut_flashing_pkg 0 22 Y@fKOT7m_1Y8oc4:C=[jT3
 R15
 R1
 R2
-!i122 2200
+!i122 2276
 R16
-Z161 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd
-Z162 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd
+Z154 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd
+Z155 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd
 l0
-L7 1
-V7K?j>=f?=7WJIe[QIH1LA3
-!s100 ]dB]dbeeobS;8Wzh_b;AT0
+L6 1
+VF6Z7`0^S6dZaO]K9=kTlk3
+!s100 L<Lc?29XP1VF`W2FKBA`b0
 R6
 32
-Z163 !s110 1607196358
+R125
 !i10b 1
-Z164 !s108 1607196358.000000
-Z165 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd|
-Z166 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd|
+Z156 !s108 1607221438.000000
+Z157 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd|
+Z158 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/SevSegmodule.vhd|
 !i113 1
 R11
 R12
 Abehavioral
 R107
-R160
 R15
 R1
 R2
-DEx4 work 12 sevsegmodule 0 22 7K?j>=f?=7WJIe[QIH1LA3
-!i122 2200
-l56
-L16 84
-Vec3Fag4A<4Q^R@Q2He75f2
-!s100 MAH^BbPM^`;nS?`dPlVm71
+DEx4 work 12 sevsegmodule 0 22 F6Z7`0^S6dZaO]K9=kTlk3
+!i122 2276
+l55
+L15 83
+VTkT6<_RUidTjnk1QUZ]4d2
+!s100 m@Hi_DEe0K[S1_kP901i=3
 R6
 32
-R163
+R125
 !i10b 1
-R164
-R165
-R166
+R156
+R157
+R158
 !i113 1
 R11
 R12
 Estored_value
-R35
+R32
 R1
 R2
-!i122 2155
+!i122 2263
 R16
-Z167 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd
-Z168 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd
+Z159 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd
+Z160 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd
 l0
-R52
+R48
 V;N^kdoN<h8I]4oBgC0B4J3
 !s100 2GClj5m^Z^79B9Gm>?c0;0
 R6
 32
-R156
+R150
 !i10b 1
-Z169 !s108 1607189912.000000
-Z170 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd|
-Z171 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd|
+Z161 !s108 1607221434.000000
+Z162 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd|
+Z163 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/stored_value.vhd|
 !i113 1
 R11
 R12
@@ -1066,40 +1129,40 @@ Abehaviour
 R1
 R2
 DEx4 work 12 stored_value 0 22 ;N^kdoN<h8I]4oBgC0B4J3
-!i122 2155
+!i122 2263
 l23
 L22 13
 VN1^Vo@ZCKb:XK>7NhQD`n0
 !s100 KT_m>0<GG?]ha]Zf@dOQM3
 R6
 32
-R156
+R150
 !i10b 1
-R169
-R170
-R171
+R161
+R162
+R163
 !i113 1
 R11
 R12
 Esynchronizer
-R35
+R32
 R1
 R2
-!i122 2156
+!i122 2264
 R16
-Z172 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd
-Z173 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd
+Z164 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd
+Z165 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd
 l0
 L8 1
 VEdhGX_YKb7e8O`Y000I]L3
 !s100 F`gQL1VRCNFFdf3Nd8meb3
 R6
 32
-Z174 !s110 1607189913
+R150
 !i10b 1
-R169
-Z175 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd|
-Z176 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd|
+R161
+Z166 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd|
+Z167 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/synchronizer.vhd|
 !i113 1
 R11
 R12
@@ -1107,47 +1170,47 @@ Abehaviour
 R1
 R2
 DEx4 work 12 synchronizer 0 22 EdhGX_YKb7e8O`Y000I]L3
-!i122 2156
+!i122 2264
 l19
 L17 14
 VAMcZS>ORz:J`FWIXcd:SY1
 !s100 RNBSliQ9ibn@1bMQf0z0<1
 R6
 32
-R174
+R150
 !i10b 1
-R169
-R175
-R176
+R161
+R166
+R167
 !i113 1
 R11
 R12
 Etb_adc_data
-R59
+R61
 R1
 R2
 !i122 1393
 R3
-R60
-R61
+R62
+R63
 l0
 L8 1
 V[?lm[l=lU]Mf^aJ=5DKVD1
 !s100 L7OQmLjBP@S1i0=olKf6?2
 R6
 32
-R62
-!i10b 1
-R63
 R64
+!i10b 1
 R65
+R66
+R67
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-R58
+R60
 !i122 1393
 l36
 L11 60
@@ -1155,33 +1218,33 @@ VBH>??8<Wl@5mgC2Ol;Wh80
 !s100 2zS8bI?FcW7D`P;b=D7DI2
 R6
 32
-R62
-!i10b 1
-R63
 R64
+!i10b 1
 R65
+R66
+R67
 !i113 1
 R11
 R12
 Etb_andgate
-Z177 w1607200299
+Z168 w1607200299
 R1
 R2
-!i122 2205
+!i122 2278
 R16
-Z178 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd
-Z179 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd
+Z169 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd
+Z170 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd
 l0
 L4 1
 V5hI0Hf`ScG:6gmUh?S>B10
 !s100 fih4jZ0SdYXWQSodo^:TJ0
 R6
 32
-Z180 !s110 1607200432
+R28
 !i10b 1
-Z181 !s108 1607200432.000000
-Z182 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd|
-Z183 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd|
+R156
+Z171 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd|
+Z172 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_ANDgate.vhd|
 !i113 1
 R11
 R12
@@ -1189,47 +1252,47 @@ Atb
 R1
 R2
 DEx4 work 10 tb_andgate 0 22 5hI0Hf`ScG:6gmUh?S>B10
-!i122 2205
+!i122 2278
 l18
 L7 44
 Vz<Y5=HlAnoKERJ:iGeJDc3
 !s100 eA5nn81nP:oJGhaheeZgn2
 R6
 32
-R180
+R28
 !i10b 1
-R181
-R182
-R183
+R156
+R171
+R172
 !i113 1
 R11
 R12
 Etb_blankzero
-R67
+R69
 R1
 R2
 !i122 1403
 R3
-R68
-R69
+R70
+R71
 l0
-R38
+R35
 VSiR0lCV<:PcLS5HNj9<B@1
 !s100 ^l4OF58`4dXfWc9ie0AUS2
 R6
 32
-R70
-!i10b 1
-R71
 R72
+!i10b 1
 R73
+R74
+R75
 !i113 1
 R11
 R12
 Atb
 R1
 R2
-R66
+R68
 !i122 1403
 l26
 L13 83
@@ -1237,11 +1300,52 @@ VjC^JG6Na]kI69NOl@hH@70
 !s100 J`JXmNRfZ2bKHz@Eeih9=1
 R6
 32
-R70
-!i10b 1
-R71
 R72
+!i10b 1
 R73
+R74
+R75
+!i113 1
+R11
+R12
+Etb_buzzermodules
+Z173 w1607220833
+R1
+R2
+!i122 2285
+R16
+Z174 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd
+Z175 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd
+l0
+L4 1
+V2@mC=a;ah=<;kaDR<:=F02
+!s100 mM9AIFI11];;5OzUJ?0hJ1
+R6
+32
+Z176 !s110 1607222094
+!i10b 1
+Z177 !s108 1607222094.000000
+Z178 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd|
+Z179 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Buzzermodules.vhd|
+!i113 1
+R11
+R12
+Atb
+R1
+R2
+Z180 DEx4 work 16 tb_buzzermodules 0 22 2@mC=a;ah=<;kaDR<:=F02
+!i122 2285
+l24
+Z181 L7 87
+Z182 VkNX9gmgcfV0i`FN`kkU8h0
+Z183 !s100 <Rj[O9GiYTI<6cX]=5Mje1
+R6
+32
+R176
+!i10b 1
+R177
+R178
+R179
 !i113 1
 R11
 R12
@@ -1249,7 +1353,7 @@ Etb_comparator
 R92
 R1
 R2
-!i122 2162
+!i122 2270
 R16
 Z184 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd
 Z185 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd
@@ -1259,11 +1363,11 @@ Vd0EKWVACC9oPiDC6b0;5X2
 !s100 leJOe06V8=@NUj@k9BFQn0
 R6
 32
-R124
+R121
 !i10b 1
-Z186 !s108 1607189915.000000
-Z187 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd|
-Z188 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd|
+R122
+Z186 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd|
+Z187 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Comparator.vhd|
 !i113 1
 R11
 R12
@@ -1271,40 +1375,40 @@ Abehavior
 R1
 R2
 DEx4 work 13 tb_comparator 0 22 d0EKWVACC9oPiDC6b0;5X2
-!i122 2162
+!i122 2270
 l23
 L7 62
 V;`J;EMh^8Xj1RKk^gg<=L3
 !s100 jo<oC6j9LJ;<KfZmB8N[61
 R6
 32
-R124
+R121
 !i10b 1
+R122
 R186
 R187
-R188
 !i113 1
 R11
 R12
 Etb_debounce
-Z189 w1604089076
+Z188 w1604089076
 R1
 R2
 !i122 1394
 R3
-Z190 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
-Z191 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
+Z189 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
+Z190 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd
 l0
-R38
+R35
 VfC6XFVHOhZjf4l8gcO63:1
 !s100 GoKCFGem1>AF?3<JI:R:30
 R6
 32
-R62
+R64
 !i10b 1
-R63
-Z192 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
-Z193 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
+R65
+Z191 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
+Z192 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_debounce.vhd|
 !i113 1
 R11
 R12
@@ -1319,33 +1423,33 @@ VKO?IBDhZVUVdVj0T_S[UM3
 !s100 0Jf@>Th_6[]<4eU@W;RoI2
 R6
 32
-R62
+R64
 !i10b 1
-R63
+R65
+R191
 R192
-R193
 !i113 1
 R11
 R12
 Etb_downcounter
-Z194 w1607190945
+Z193 w1607190945
 R1
 R2
-!i122 2176
+!i122 2277
 R16
-Z195 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd
-Z196 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd
+Z194 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd
+Z195 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd
 l0
 L4 1
 VPzV2kRdEi0ccF753gG<[d2
 !s100 HUESh;WEATAh[X7hRcNf10
 R6
 32
-Z197 !s110 1607190956
+R125
 !i10b 1
-Z198 !s108 1607190956.000000
-Z199 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd|
-Z200 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd|
+R156
+Z196 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd|
+Z197 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_downcounter.vhd|
 !i113 1
 R11
 R12
@@ -1353,40 +1457,40 @@ Atb
 R1
 R2
 DEx4 work 14 tb_downcounter 0 22 PzV2kRdEi0ccF753gG<[d2
-!i122 2176
+!i122 2277
 l25
 L7 89
 V0HOBdk;;QX=BMEb?acGM?0
 !s100 2zzWNcOjiB_V1eiE_IRJR1
 R6
 32
-R197
+R125
 !i10b 1
-R198
-R199
-R200
+R156
+R196
+R197
 !i113 1
 R11
 R12
 Etb_dpmux
-Z201 w1604340700
+Z198 w1604340700
 R1
 R2
 !i122 1395
 R3
-Z202 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
-Z203 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
+Z199 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
+Z200 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd
 l0
 L4 1
 VQ;[BTKbFQDQMf3?cDc8J@0
 !s100 <dL=c7M=d1eCeSP;?OkSR1
 R6
 32
-Z204 !s110 1605551830
+Z201 !s110 1605551830
 !i10b 1
-R63
-Z205 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
-Z206 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
+R65
+Z202 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
+Z203 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_DPmux.vhd|
 !i113 1
 R11
 R12
@@ -1401,11 +1505,11 @@ V9Nd1c]cdd6P6UR9VmJJ]73
 !s100 ahezGiK11AO?3M?gWHG0H1
 R6
 32
-R204
+R201
 !i10b 1
-R63
-R205
-R206
+R65
+R202
+R203
 !i113 1
 R11
 R12
@@ -1413,21 +1517,21 @@ Etb_dutycontrol
 R92
 R1
 R2
-!i122 2161
+!i122 2269
 R16
-Z207 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd
-Z208 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd
+Z204 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd
+Z205 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd
 l0
 L4 1
 VMSfb@K9i`>:G5GWJDbJYZ2
 !s100 BCjOPDXf^JiTn@WoD^U=A3
 R6
 32
-R117
+R121
 !i10b 1
-R186
-Z209 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd|
-Z210 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd|
+R122
+Z206 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd|
+Z207 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_DutyControl.vhd|
 !i113 1
 R11
 R12
@@ -1435,18 +1539,18 @@ Atb
 R1
 R2
 DEx4 work 14 tb_dutycontrol 0 22 MSfb@K9i`>:G5GWJDbJYZ2
-!i122 2161
+!i122 2269
 l24
 L7 68
 VnGH8j4HdcBBf4NNa?TMoK0
 !s100 O65ee2Ih@B=cSI5GalRY[2
 R6
 32
-R117
+R121
 !i10b 1
-R186
-R209
-R210
+R122
+R206
+R207
 !i113 1
 R11
 R12
@@ -1454,21 +1558,21 @@ Etb_inverter
 R92
 R1
 R2
-!i122 2159
+!i122 2267
 R16
-Z211 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd
-Z212 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd
+Z208 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd
+Z209 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd
 l0
 L4 1
 VGL5NfPQ;LZD1^I50:Hn?b3
 !s100 z58XBKf7MWf?HGU1PWkU[1
 R6
 32
-Z213 !s110 1607189914
+R114
 !i10b 1
-R118
-Z214 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd|
-Z215 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd|
+R115
+Z210 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd|
+Z211 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_Inverter.vhd|
 !i113 1
 R11
 R12
@@ -1476,40 +1580,40 @@ Abehavior
 R1
 R2
 DEx4 work 11 tb_inverter 0 22 GL5NfPQ;LZD1^I50:Hn?b3
-!i122 2159
+!i122 2267
 l18
 L7 42
 VP7aZhj:W6;n[[<2IX=lja0
 !s100 nY0KMkFD?7n_AI;7;02f23
 R6
 32
-R213
+R114
 !i10b 1
-R118
-R214
-R215
+R115
+R210
+R211
 !i113 1
 R11
 R12
 Etb_ledmodule
-Z216 w1607148099
+Z212 w1607148099
 R1
 R2
-!i122 2164
+!i122 2272
 R16
-Z217 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd
-Z218 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd
+Z213 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd
+Z214 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd
 l0
 L5 1
 VXi<^QJLU2=4eokW8h5G=o2
 !s100 5ak8Ni[BP3a2T_RGan1a`1
 R6
 32
-R128
+R127
 !i10b 1
-R129
-Z219 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd|
-Z220 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd|
+R122
+Z215 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd|
+Z216 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_LEDmodule.vhd|
 !i113 1
 R11
 R12
@@ -1517,40 +1621,40 @@ Atb
 R1
 R2
 DEx4 work 12 tb_ledmodule 0 22 Xi<^QJLU2=4eokW8h5G=o2
-!i122 2164
+!i122 2272
 l25
 L8 78
 VF4oLM;DiPK]O8e:[?O]GF2
 !s100 cXJ1]3KPPg^;Uggg@k[`H1
 R6
 32
-R128
+R127
 !i10b 1
-R129
-R219
-R220
+R122
+R215
+R216
 !i113 1
 R11
 R12
 Etb_mux4to1
-R189
+R188
 R1
 R2
 !i122 1396
 R3
-Z221 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
-Z222 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
+Z217 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
+Z218 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd
 l0
 L4 1
 V5;TKZP2n8aSM:S9jgMf7R2
 !s100 T0lF]?HlJ7M1TgD:7@6872
 R6
 32
-R204
+R201
 !i10b 1
-Z223 !s108 1605551830.000000
-Z224 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
-Z225 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
+Z219 !s108 1605551830.000000
+Z220 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
+Z221 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_MUX4TO1.vhd|
 !i113 1
 R11
 R12
@@ -1565,11 +1669,11 @@ V`;PhK?mgEM91=C3>TDG4R2
 !s100 ziihDz7^6DX?^HW:bcF1C0
 R6
 32
-R204
+R201
 !i10b 1
-R223
-R224
-R225
+R219
+R220
+R221
 !i113 1
 R11
 R12
@@ -1577,21 +1681,21 @@ Etb_pwm_dac
 R92
 R1
 R2
-!i122 2158
+!i122 2266
 R16
-Z226 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd
-Z227 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd
+Z222 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd
+Z223 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd
 l0
 L4 1
 V1cJOa2oBf`gcjRL8fk:<U0
 !s100 [hIKi_bZ7z@EK^?M6?iYa1
 R6
 32
-R213
+R114
 !i10b 1
-Z228 !s108 1607189913.000000
-Z229 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd|
-Z230 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd|
+R115
+Z224 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd|
+Z225 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_PWM_DAC.vhd|
 !i113 1
 R11
 R12
@@ -1599,40 +1703,40 @@ Atb
 R1
 R2
 DEx4 work 10 tb_pwm_dac 0 22 1cJOa2oBf`gcjRL8fk:<U0
-!i122 2158
+!i122 2266
 l27
 L7 80
 VhCB9GKB0i;B5lc;Rz]IEP3
 !s100 V0b@XMmg:bhO[H08OPajW2
 R6
 32
-R213
+R114
 !i10b 1
-R228
-R229
-R230
+R115
+R224
+R225
 !i113 1
 R11
 R12
 Etb_sevsegmodule
-Z231 w1607197241
+Z226 w1607197241
 R1
 R2
-!i122 2201
+!i122 2274
 R16
-Z232 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd
-Z233 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd
+Z227 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd
+Z228 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd
 l0
 L4 1
 V]>h6SkAAG@?mgTQX@1fWn1
 !s100 KjDH_S3d]1[J1nFi0kn<21
 R6
 32
-Z234 !s110 1607197267
+R127
 !i10b 1
-Z235 !s108 1607197267.000000
-Z236 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd|
-Z237 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd|
+R126
+Z229 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd|
+Z230 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_SevSegmodule.vhd|
 !i113 1
 R11
 R12
@@ -1640,40 +1744,40 @@ Atb
 R1
 R2
 DEx4 work 15 tb_sevsegmodule 0 22 ]>h6SkAAG@?mgTQX@1fWn1
-!i122 2201
+!i122 2274
 l24
-L7 87
+R181
 V]M@bP=GL@Sf1[UJ9`EQLi0
 !s100 aHbMKPP[3;1fU=hRacozO2
 R6
 32
-R234
+R127
 !i10b 1
-R235
-R236
-R237
+R126
+R229
+R230
 !i113 1
 R11
 R12
 Etb_stored_value
-R189
+R188
 R1
 R2
 !i122 1397
 R3
-Z238 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
-Z239 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
+Z231 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
+Z232 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd
 l0
 L6 1
 Vmi57MD@kHe3l;I[KEkXeA3
 !s100 kk_YQ]Wf@Y`a8^[TB]FA32
 R6
 32
-R204
+R201
 !i10b 1
-R223
-Z240 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
-Z241 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
+R219
+Z233 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
+Z234 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_stored_value.vhd|
 !i113 1
 R11
 R12
@@ -1688,33 +1792,33 @@ VQ9LL`U<iRnnmO9f7VY5_E2
 !s100 jeQ75zjoVYRh:zlom];0T3
 R6
 32
-R204
+R201
 !i10b 1
-R223
-R240
-R241
+R219
+R233
+R234
 !i113 1
 R11
 R12
 Etb_synchronizer
-R189
+R188
 R1
 R2
 !i122 1398
 R3
-Z242 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
-Z243 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
+Z235 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
+Z236 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd
 l0
 L4 1
 VMG:2W8mW?_zHn9Ik2O34K1
 !s100 [^YM@Uh35X:n84>OQlcPB1
 R6
 32
-R204
+R201
 !i10b 1
-R223
-Z244 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
-Z245 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
+R219
+Z237 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
+Z238 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 3 working FPGA/tb_synchronizer.vhd|
 !i113 1
 R11
 R12
@@ -1729,11 +1833,11 @@ V10lW0MAZYINm[k1n3AcZ>3
 !s100 jKQa9f2=KJZ]Rj1>Phg0O0
 R6
 32
-R204
+R201
 !i10b 1
-R223
-R244
-R245
+R219
+R237
+R238
 !i113 1
 R11
 R12
@@ -1741,21 +1845,21 @@ Etb_top_level
 R92
 R1
 R2
-!i122 2138
+!i122 2246
 R16
-Z246 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd
-Z247 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd
+Z239 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd
+Z240 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd
 l0
 L8 1
 V3;PGc=2PlYOV6_DIdb<>a0
 !s100 Km2HO@VVHJ36i^cHiN6MP1
 R6
 32
-Z248 !s110 1607189903
+Z241 !s110 1607221429
 !i10b 1
-Z249 !s108 1607189903.000000
-Z250 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd|
-Z251 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd|
+R20
+Z242 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd|
+Z243 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/tb_top_level.vhd|
 !i113 1
 R11
 R12
@@ -1763,41 +1867,41 @@ Atb
 R1
 R2
 DEx4 work 12 tb_top_level 0 22 3;PGc=2PlYOV6_DIdb<>a0
-!i122 2138
+!i122 2246
 l30
 L11 98
 VP:B1Dc@OfzCN:=86UWoL]2
 !s100 Ek4k3nHeJA375Y0=@;BWQ3
 R6
 32
-R248
+R241
 !i10b 1
-R249
-R250
-R251
+R20
+R242
+R243
 !i113 1
 R11
 R12
 Etop_level
-Z252 w1607200365
+Z244 w1607219946
 R15
 R1
 R2
-!i122 2204
+!i122 2247
 R16
-Z253 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd
-Z254 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd
+Z245 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd
+Z246 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd
 l0
 L9 1
-VSFbkFcbM2hU?KKN]5[NhI2
-!s100 JH@7Y>^o5DKR;4mR2MBfd3
+VaIba:C1mY9fLHM;V3M3j:0
+!s100 =hO;AB^<Z?o?FHd<SPO[=1
 R6
 32
-Z255 !s110 1607200429
+R241
 !i10b 1
-Z256 !s108 1607200429.000000
-Z257 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd|
-Z258 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd|
+R20
+Z247 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd|
+Z248 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/top_level.vhd|
 !i113 1
 R11
 R12
@@ -1805,64 +1909,64 @@ Abehavioral
 R15
 R1
 R2
-DEx4 work 9 top_level 0 22 SFbkFcbM2hU?KKN]5[NhI2
-!i122 2204
-l244
-L22 492
-VGV4`0QT00TS8PHkBQ@>YU0
-!s100 B6NMXC[@8kP=6AIVadcWR2
+DEx4 work 9 top_level 0 22 aIba:C1mY9fLHM;V3M3j:0
+!i122 2247
+l240
+L23 512
+V6b0XFj1[k@7_MhIGi>g7<2
+!s100 WW7NacDiMl?niA8oVlId[1
 R6
 32
-R255
+R241
 !i10b 1
-R256
-R257
-R258
+R20
+R247
+R248
 !i113 1
 R11
 R12
 Evoltage2distance_array2
-R35
-Z259 DPx4 work 7 lut_pkg 0 22 72U?Hk;`BWLR^30^=QcRL1
+R32
+Z249 DPx4 work 7 lut_pkg 0 22 72U?Hk;`BWLR^30^=QcRL1
 R15
 R1
 R2
-!i122 2157
+!i122 2265
 R16
-Z260 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd
-Z261 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd
+Z250 8C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd
+Z251 FC:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd
 l0
 L24 1
 V=NDCVZciz^K^bX6GaO`oT3
 !s100 `A`mdf8ondemfJ_=[hYQd1
 R6
 32
-R174
+R114
 !i10b 1
-R228
-Z262 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd|
-Z263 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd|
+R161
+Z252 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd|
+Z253 !s107 C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/voltage2distance_array2.vhd|
 !i113 1
 R11
 R12
 Abehavior
-R259
+R249
 R15
 R1
 R2
 DEx4 work 23 voltage2distance_array2 0 22 =NDCVZciz^K^bX6GaO`oT3
-!i122 2157
+!i122 2265
 l35
 L32 11
 VEeH?6UUEXf92ElUkXFl4d3
 !s100 [6Lk_@eYiRP^?7Woz^lK[0
 R6
 32
-R174
+R114
 !i10b 1
-R228
-R262
-R263
+R161
+R252
+R253
 !i113 1
 R11
 R12
