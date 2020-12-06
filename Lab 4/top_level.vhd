@@ -46,6 +46,8 @@ Signal s:				std_logic_vector(1 downto 0);
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
 Signal ADC_raw, ADC_out: STD_LOGIC_VECTOR (11 downto 0); -- distance in 10^-4 cm (e.g. if distance = 33 cm, then 3300 is the value)
 
+Signal buzzer_clk:	std_logic;
+
 --Signal count_max, count_max2: std_logic_vector (8 downto 0);
 --Signal duty_cycle, duty_cycle2: std_logic_vector(8 downto 0);
 --Signal enable, enab, zero: std_logic;
@@ -243,6 +245,14 @@ Component SevSegmodule is
           );
 end Component;
 
+Component buzzer_downcounter is
+port ( clk     : in  STD_LOGIC; -- clock to be divided
+		 voltage : in  STD_LOGIC_VECTOR (12 downto 0);
+       reset_n : in  STD_LOGIC; -- active-high reset
+       zero    : out STD_LOGIC
+      );
+end Component;
+
 -- Operation ---
 begin
    Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
@@ -257,7 +267,18 @@ begin
 		-- we do a if else statements for each hex display starting with hex 5 then hex4 then hex3 and so on
   	
        
--- instantiations --	
+-- instantiations --
+
+
+buzzer_downcounter_ins: buzzer_downcounter
+	PORT MAP(
+		clk	=> clk,
+		voltage => voltage,
+		reset_n => reset_n,
+		zero => buzzer_clk
+		);
+
+
 BlankZero_ins: BlankZero  
 	PORT MAP(
 		s => s,	-- only activates BlankZero if in state 2 or 3
@@ -282,7 +303,20 @@ SevenSegment_ins: SevenSegment
       DP_in    => DP_in,
 		Blank    => Blank
 		);
-                                     
+       
+
+			
+ PWM_DAC_ins1: PWM_DAC
+  Generic Map (width => 9)
+  Port Map    (reset_n  => reset_n,
+               clk      => buzzer_clk, 
+				   count_max  => "111111111",
+               duty_cycle  => "011111111", 
+				   enable 		=> '1', 
+               pwm_out  => buzzer  
+           );
+
+			  
  
 --LEDR(9 downto 0) <= (others => pwm_out2); 
 --LEDR(9 downto 0) <= (others => LEDout); 
@@ -298,15 +332,15 @@ binary_bcd_ins: binary_bcd
       bcd      => bcd         
       );
 	
-binary2 <= voltage;
-
-binary_bcd_ins2: binary_bcd                       
-   PORT MAP(
-      clk      => clk,                          
-      reset_n  => reset_n,                                 
-      binary   => binary2,    
-      bcd      => bcd2  
-	);
+--binary2 <= voltage;
+--
+--binary_bcd_ins2: binary_bcd                       
+--   PORT MAP(
+--      clk      => clk,                          
+--      reset_n  => reset_n,                                 
+--      binary   => binary2,    
+--      bcd      => bcd2  
+--	);
 
 in1 <= "00000000" & G(7 downto 0); -- Hex output
 in2 <= bcd; -- deciaml distance 
@@ -499,12 +533,7 @@ control3 <= bool;
 in_13 <= pwm;
 in_23 <= '0';
 		
-bitmux_ins2: bitmux 
-port map( in_1  => in_13,
-		 in_2		=> in_23,
-		 control  => control3, 
-		 out_sig  => out_sig3
-      );
+
 		
 --B <= pwm_out2;
 --
@@ -525,7 +554,5 @@ port map( C  => C,
 		 K => K
       );
 		
-		
-buzzer <= out_sig3;
 			  
 end Behavioral;
