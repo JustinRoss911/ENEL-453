@@ -37,10 +37,11 @@ Signal binary2: std_logic_vector (12 downto 0);
 
 Signal G, A:			std_logic_vector(9 downto 0);
 Signal Q, D, C, K:	std_logic_vector(21 downto 0);
-Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
+Signal in_1,in_2, in_3, in_4, out_sig:	std_logic_vector (21 downto 0);
 Signal in_12,in_22, out_sig2:	std_logic;
 Signal in_13,in_23, out_sig3:	std_logic;
-Signal result, EN, factor, bool, control, control2, control3:	std_logic;
+Signal result, EN, factor: std_logic;
+Signal bool, control, control2, control3:	std_logic_vector(1 downto 0);
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
@@ -177,14 +178,16 @@ Component Comparator is
 port ( reset_n    : in  STD_LOGIC;
        clk        : in  STD_LOGIC;
 		 dist_in   	:in std_logic_vector(12 downto 0); 
-		 bool       :out std_logic
+		 bool       :out std_logic_vector(1 downto 0)
     );
 end Component;
 
 Component Mux2 is
 port ( in_1      	:in  std_logic_vector(21 downto 0); 
 		 in_2			:in  std_logic_vector(21 downto 0); 
-		 control    :in  std_logic;
+		 in_3			:in  std_logic_vector(21 downto 0);
+		 in_4			:in  std_logic_vector(21 downto 0);  
+		 control    :in  std_logic_vector(1 downto 0); 
 		 out_sig    :out  std_logic_vector(21 downto 0) 
       );
 end Component;
@@ -464,15 +467,18 @@ port map (reset_n   => reset_n,
 			 bool      => bool 
       );
 
-		
-in_1 <= K; -- flashing
-in_2 <= dp_out & mux_out; --stable 
+in_1 <= "0000000000000000000000";	
+in_2 <= K; -- flashing
+in_4 <= dp_out & mux_out; --stable 
 --in_2 <= (others => '0'); -- all zeros vector 
+in_3 <= "0001000000010001010000"; -- hard coded 4.50cm in bcd with dp of 00100
 control <= bool; 
 		
 Mux2_ins: Mux2
 port map ( in_1    => in_1,
 		 in_2		=> in_2,
+		 in_3   => in_3, 
+		 in_4   => in_4,
 		 control => control, 
 		 out_sig => out_sig 
       );
