@@ -238,10 +238,10 @@ end Component;
 
 -- Operation ---
 begin
-   Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex1 <= Q(7 downto 4);
-   Num_Hex2 <= Q(11 downto 8);
-   Num_Hex3 <= Q(15 downto 12);
+   Num_Hex0 <= out_sig(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex1 <= out_sig(7 downto 4);
+   Num_Hex2 <= out_sig(11 downto 8);
+   Num_Hex3 <= out_sig(15 downto 12);
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
@@ -249,12 +249,12 @@ begin
 		--Jade: by defult i think blank should be set to 1 unless the hex5 has a value other then 1
 		-- we do a if else statements for each hex display starting with hex 5 then hex4 then hex3 and so on
   	
-       
+    
 -- instantiations --	
 BlankZero_ins: BlankZero  
 	PORT MAP(
 		s => s,	-- only activates BlankZero if in state 2 or 3
-		Q => Q(15 downto 0), -- we only care about the numbers going to be displayed
+		Q => out_sig(15 downto 0), -- we only care about the numbers going to be displayed
 		Blank => Blank -- will feed the new output to Sevensegment display
 		);
 		
@@ -318,9 +318,9 @@ MUX4TO1_ins: MUX4TO1
 		mux_out  =>  mux_out
 		);
 
---D_temp <= dp_out & mux_out; 
+D <= dp_out & mux_out; 
 --D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
-D <= out_sig; 
+--D <= out_sig; 
 --D <= K;
 
 
@@ -466,7 +466,8 @@ port map (reset_n   => reset_n,
 
 		
 in_1 <= K; -- flashing
-in_2 <= dp_out & mux_out; --stable 
+--in_2 <= dp_out & mux_out; --stable 
+in_2 <= Q;
 --in_2 <= (others => '0'); -- all zeros vector 
 control <= bool; 
 		
@@ -511,7 +512,8 @@ port map ( in_1    => in_1,
 			
 --factor <= pwm_out;
 factor <= pwm;
-C <= dp_out & mux_out;
+--C <= dp_out & mux_out;
+C <= Q;
 			
 ANDgate_ins: ANDgate
 port map( C  => C,
