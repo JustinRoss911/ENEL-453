@@ -40,7 +40,7 @@ Signal Q, D, C, K:	std_logic_vector(21 downto 0);
 Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
 --Signal in_12,in_22, out_sig2:	std_logic;
 --Signal in_13,in_23, out_sig3:	std_logic;
-Signal result, EN, factor, bool, control:	std_logic;
+Signal result, EN, factor, bool, control, Enable1:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
@@ -208,6 +208,7 @@ end Component;
 Component ANDgate is
 port ( C    : in  STD_LOGIC_vector(21 downto 0);
        factor : in  STD_LOGIC;
+		 Enable1, reset_n, clk : in STD_logic;
 		 K :out std_logic_vector(21 downto 0)
       );
 end Component;
@@ -512,10 +513,14 @@ port map ( in_1    => in_1,
 --factor <= pwm_out;
 factor <= pwm;
 C <= dp_out & mux_out;
+Enable1 <= result;
 			
 ANDgate_ins: ANDgate
 port map( C  => C,
        factor => factor,
+		 clk => clk,
+		 reset_n => reset_n, 
+		 Enable1 => Enable1,
 		 K => K
       );
 		
