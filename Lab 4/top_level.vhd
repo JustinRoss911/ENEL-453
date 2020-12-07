@@ -40,7 +40,7 @@ Signal Q, D, C, K:	std_logic_vector(21 downto 0);
 Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
 --Signal in_12,in_22, out_sig2:	std_logic;
 --Signal in_13,in_23, out_sig3:	std_logic;
-Signal result, EN, factor, bool, control, Enable1:	std_logic;
+Signal result, EN, factor, bool, control, Enable1, Enable2:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts
@@ -176,6 +176,7 @@ end component;
 Component Comparator is
 port ( reset_n    : in  STD_LOGIC;
        clk        : in  STD_LOGIC;
+		 Enable2 	: in  STD_LOGIC;
 		 dist_in   	:in std_logic_vector(12 downto 0); 
 		 bool       :out std_logic
     );
@@ -239,10 +240,10 @@ end Component;
 
 -- Operation ---
 begin
-   Num_Hex0 <= Q(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
-   Num_Hex1 <= Q(7 downto 4);
-   Num_Hex2 <= Q(11 downto 8);
-   Num_Hex3 <= Q(15 downto 12);
+   Num_Hex0 <= out_sig(3 downto 0); --divide up 15 bits into 4 bit groups (easier to conver to hex) 
+   Num_Hex1 <= out_sig(7 downto 4);
+   Num_Hex2 <= out_sig(11 downto 8);
+   Num_Hex3 <= out_sig(15 downto 12);
    Num_Hex4 <= "0000"; -- leave unaltered 
    Num_Hex5 <= "0000";   
    DP_in    <= Q(21 downto 16); -- position of the decimal point in the display (1=LED on,0=LED off)
@@ -255,7 +256,7 @@ begin
 BlankZero_ins: BlankZero  
 	PORT MAP(
 		s => s,	-- only activates BlankZero if in state 2 or 3
-		Q => Q(15 downto 0), -- we only care about the numbers going to be displayed
+		Q => out_sig(15 downto 0), -- we only care about the numbers going to be displayed
 		Blank => Blank -- will feed the new output to Sevensegment display
 		);
 		
@@ -319,9 +320,9 @@ MUX4TO1_ins: MUX4TO1
 		mux_out  =>  mux_out
 		);
 
---D_temp <= dp_out & mux_out; 
+D <= dp_out & mux_out; 
 --D <= D_temp when pwm_out = '1' else (others=>'0'); -- this might be considered behavioural code (need to make into module) 
-D <= out_sig; 
+--D <= out_sig; 
 --D <= K;
 
 
@@ -457,17 +458,21 @@ port map ( clk => clk,
 --               pwm_out  => pwm_out2  
 --           );
 
-dist_in <= distance;				
+dist_in <= distance;	
+Enable2 <= result;	
+		
 Comparator_ins: Comparator 
 port map (reset_n   => reset_n,
 			 clk       => clk,
+			 Enable2   => Enable2,
 			 dist_in   => dist_in,
 			 bool      => bool 
       );
 
 		
 in_1 <= K; -- flashing
-in_2 <= dp_out & mux_out; --stable 
+--in_2 <= dp_out & mux_out; --stable 
+in_2 <= Q;
 --in_2 <= (others => '0'); -- all zeros vector 
 control <= bool; 
 		

@@ -9,6 +9,7 @@ use ieee.numeric_std.all;
 entity Comparator is
 port ( reset_n    : in  STD_LOGIC;
        clk        : in  STD_LOGIC;
+		 Enable2 	: in  STD_LOGIC;
 		 dist_in    	:in std_logic_vector(12 downto 0); 
 		 bool       :out std_logic
       );
@@ -21,10 +22,14 @@ begin
        if(reset_n = '0') then -- reset low
            bool <= '0';
        elsif (rising_edge(clk)) then  
-			 if (unsigned(dist_in) < 2000) then -- distance < 20cm, bool = 1
-				bool <= '1';
-			else 
+			 if (Enable2 = '0') then 			-- button is pressed go with stable output 
 				bool <= '0';
+			 else 
+				if (unsigned(dist_in) < 2000) then -- distance < 20cm, bool = 1
+					bool <= '1';
+				else 
+					bool <= '0';
+				end if; 
 			 end if;
 		end if;
 	end process; 
