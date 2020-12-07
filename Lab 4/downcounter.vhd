@@ -9,7 +9,7 @@ entity downcounter is
               reset_n : in  STD_LOGIC; -- active-high reset
               enab  : in  STD_LOGIC; -- active-high enable (I don't know what the purpose of enable is in this module) 
               zero    : out STD_LOGIC;  -- creates a positive pulse every time current_count hits zero
-              period :in std_logic_vector(15 downto 0)                         -- useful to enable another device, like to slow down a counter
+              period :in std_logic_vector(18 downto 0)                         -- useful to enable another device, like to slow down a counter
               --value  : out STD_LOGIC_VECTOR(integer(ceil(log2(real(period)))) - 1 downto 0) -- outputs the current_count value, if needed
          );
 end downcounter;

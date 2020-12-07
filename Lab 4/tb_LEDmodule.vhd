@@ -10,12 +10,12 @@ architecture tb of tb_LEDmodule is
     Port ( clk                           : in std_logic;
            reset_n                       : in std_logic;
 			  dist	 							  : in std_logic_vector(12 downto 0); 
-           LEDR                          : out std_logic
+           LEDout                          : out std_logic
           );
 	END Component;
 	
 	Signal reset_n: std_logic;
-	Signal LEDR: std_logic; 
+	Signal LEDout: std_logic; 
 	Signal dist: std_logic_vector(12 downto 0);
 	Signal clk : std_logic := '0';
 	constant TbPeriod : time := 20 ns;
@@ -28,7 +28,7 @@ begin
     port map (clk     => clk,
               reset_n => reset_n,
 				  dist     => dist,
-				  LEDR => LEDR);
+				  LEDout => LEDout);
 				  		  
 	 -- Clock generation
     clk <= not clk after TbPeriod/2 when TbSimEnded /= '1' else '0';

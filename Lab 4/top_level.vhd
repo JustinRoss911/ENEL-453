@@ -38,9 +38,9 @@ Signal binary2: std_logic_vector (12 downto 0);
 Signal G, A:			std_logic_vector(9 downto 0);
 Signal Q, D, C, K:	std_logic_vector(21 downto 0);
 Signal in_1,in_2, out_sig:	std_logic_vector (21 downto 0);
-Signal in_12,in_22, out_sig2:	std_logic;
-Signal in_13,in_23, out_sig3:	std_logic;
-Signal result, EN, factor, bool, control, control2, control3:	std_logic;
+--Signal in_12,in_22, out_sig2:	std_logic;
+--Signal in_13,in_23, out_sig3:	std_logic;
+Signal result, EN, factor, bool, control:	std_logic;
 Signal s:				std_logic_vector(1 downto 0);
 
 Signal voltage, distance, dist_in : STD_LOGIC_VECTOR (12 downto 0); -- Voltage in milli-volts

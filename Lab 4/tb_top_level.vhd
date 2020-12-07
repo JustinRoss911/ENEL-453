@@ -74,7 +74,7 @@ begin
 		  
 		  wait for 1_600_000*TbPeriod;
 		  
-		  SW <= "0100110011"; 
+		  SW <= "1000110011"; 
 		
 		  wait for 1_600_000*TbPeriod;
 		  

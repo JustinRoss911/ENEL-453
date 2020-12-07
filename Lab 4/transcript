@@ -25,61 +25,60 @@
 # Compile of tb_Comparator.vhd was successful.
 # Compile of LEDmodule.vhd was successful.
 # Compile of tb_LEDmodule.vhd was successful.
-# Compile of LUT_LED_pkg.vhd was successful.
+# Compile of LUT_LED_pkg.vhd failed with 1 errors.
 # Compile of tb_SevSegmodule.vhd was successful.
 # Compile of LUT_flashing_pkg.vhd was successful.
 # Compile of SevSegmodule.vhd was successful.
 # Compile of tb_downcounter.vhd was successful.
 # Compile of tb_ANDgate.vhd was successful with warnings.
 # Compile of ANDgate.vhd was successful.
-# Compile of Buzzermodule.vhd failed with 3 errors.
+# Compile of Buzzermodule.vhd was successful.
 # Compile of LUT_buzzing_pkg.vhd was successful.
 # Compile of tb_Buzzermodules.vhd was successful.
-# 37 compiles, 2 failed with 3 errors.
+# Compile of LUT_buzzer_pkg.vhd was successful.
+# Compile of buzzer_downcounter.vhd was successful.
+# 39 compiles, 1 failed with 1 error.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# Compile of LEDmodule.vhd was successful.
+# Compile of tb_LEDmodule.vhd was successful.
+# Compile of LUT_LED_pkg.vhd failed with 1 errors.
+# Compile of tb_SevSegmodule.vhd was successful.
+# Compile of LUT_flashing_pkg.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of tb_downcounter.vhd was successful.
+# Compile of tb_ANDgate.vhd was successful with warnings.
+# Compile of ANDgate.vhd was successful.
 # Compile of Buzzermodule.vhd was successful.
-vsim -gui work.tb_buzzermodules
-# vsim -gui work.tb_buzzermodules 
-# Start time: 19:16:57 on Dec 05,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_buzzermodules(tb)
-# Loading ieee.numeric_std(body)
-# Loading work.lut_buzzing_pkg
-# Loading work.buzzermodule(behavioral)
-# Loading ieee.math_real(body)
-# Loading work.downcounter(behavioral)
-# Loading work.pwm_dac(behavioral)
-add wave -position end sim:/tb_buzzermodules/UUT/*
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft9ys0a4".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9ys0a4
-run -all
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
-# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
 # Compile of LUT_buzzing_pkg.vhd was successful.
-vsim -gui work.tb_buzzermodules
-# End time: 19:23:09 on Dec 05,2020, Elapsed time: 0:06:12
-# Errors: 0, Warnings: 11
-# vsim -gui work.tb_buzzermodules 
-# Start time: 19:23:09 on Dec 05,2020
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.tb_buzzermodules(tb)
-# ** Error: (vsim-13) Recompile work.buzzermodule because work.lut_buzzing_pkg has changed.
-# ** Error (suppressible): (vsim-12) Recompile work.buzzermodule(behavioral) after work.buzzermodule is recompiled.
-# ** Error: (vsim-13) Recompile work.buzzermodule(behavioral) because work.lut_buzzing_pkg has changed.
-# Load interrupted
-# Error loading design
-# End time: 19:23:10 on Dec 05,2020, Elapsed time: 0:00:01
-# Errors: 3, Warnings: 1
+# Compile of tb_Buzzermodules.vhd was successful.
+# Compile of LUT_buzzer_pkg.vhd was successful.
+# Compile of buzzer_downcounter.vhd was successful.
+# 39 compiles, 1 failed with 1 error.
+# Compile of LUT_LED_pkg.vhd was successful.
 # Compile of tb_top_level.vhd was successful.
 # Compile of top_level.vhd was successful.
 # Compile of ADC_Data.vhd was successful.
@@ -117,63 +116,809 @@ vsim -gui work.tb_buzzermodules
 # Compile of Buzzermodule.vhd was successful.
 # Compile of LUT_buzzing_pkg.vhd was successful.
 # Compile of tb_Buzzermodules.vhd was successful.
-# 37 compiles, 0 failed with no errors.
-vsim -gui work.tb_buzzermodules
-# vsim -gui work.tb_buzzermodules 
-# Start time: 19:24:56 on Dec 05,2020
+# Compile of LUT_buzzer_pkg.vhd was successful.
+# Compile of buzzer_downcounter.vhd was successful.
+# 39 compiles, 0 failed with no errors.
+vsim -gui work.tb_top_level
+# vsim -gui work.tb_top_level 
+# Start time: 16:09:41 on Dec 06,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_buzzermodules(tb)
+# Loading work.tb_top_level(tb)
 # Loading ieee.numeric_std(body)
-# Loading work.lut_buzzing_pkg
-# Loading work.buzzermodule(behavioral)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
 # Loading ieee.math_real(body)
 # Loading work.downcounter(behavioral)
 # Loading work.pwm_dac(behavioral)
-add wave -position end sim:/tb_buzzermodules/UUT/*
+# Loading work.ledmodule(behavioral)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.andgate(behaviour)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading work.lut_buzzer_pkg
+# Loading work.buzzer_downcounter(behavioral)
+add wave -position end sim:/tb_top_level/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlft2fn5v8".
+#           Attempting to use alternate WLF file "./wlftydea7z".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft2fn5v8
+#           Using alternate file: ./wlftydea7z
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
-# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
-# Compile of LUT_buzzing_pkg.vhd was successful.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32009990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32010990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32011990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32012990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32013990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32014990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32015990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32016990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32017990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32018990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32019990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32020990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32021990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32022990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32023990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32024990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32025990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32026990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32027990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32028990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32029990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32030990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32031990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32032990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32033990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32034990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32035990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32036990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32037990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32038990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32039990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32040990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32041990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32042990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32043990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32044990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32045990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32046990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32047990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32048990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32049990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32050990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32051990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32052990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32053990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32054990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32055990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32056990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32057990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32058990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32059990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32060990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32061990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32062990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32063990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32064990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 32065990 ns  Iteration: 4  Instance: /tb_top_level/UUT/SevSegmodule_ins
+run -all
+# Break key hit
+vsim -gui work.tb_sevsegmodule
+# End time: 16:30:51 on Dec 06,2020, Elapsed time: 0:21:10
+# Errors: 2, Warnings: 74
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:30:51 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftw2k9w2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw2k9w2
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 1000000100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# Compile of tb_SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 16:33:32 on Dec 06,2020, Elapsed time: 0:02:41
+# Errors: 1, Warnings: 8
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:33:32 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftkmig4v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkmig4v
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# Compile of SevSegmodule.vhd failed with 2 errors.
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 16:46:39 on Dec 06,2020, Elapsed time: 0:13:07
+# Errors: 1, Warnings: 13
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:46:39 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfttr5jz2".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttr5jz2
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 16:47:38 on Dec 06,2020, Elapsed time: 0:00:59
+# Errors: 1, Warnings: 11
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:47:38 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftm08a2j".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm08a2j
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd failed with 2 errors.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 16:50:24 on Dec 06,2020, Elapsed time: 0:02:46
+# Errors: 1, Warnings: 13
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:50:24 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftrt1y3x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrt1y3x
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 40100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 80100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD.TO_UNSIGNED: vector truncated
+#    Time: 120100 ns  Iteration: 1  Instance: /tb_sevsegmodule/UUT
+# Compile of SevSegmodule.vhd failed with 6 errors.
+# Compile of SevSegmodule.vhd failed with 3 errors.
+# Compile of SevSegmodule.vhd failed with 1 errors.
+# Compile of SevSegmodule.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# End time: 16:56:51 on Dec 06,2020, Elapsed time: 0:06:27
+# Errors: 2, Warnings: 17
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:56:51 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# ** Fatal: (vsim-3348) Port length (16) does not match actual length (19) for port "/tb_sevsegmodule/UUT/downcounter_ins1/period".
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/downcounter_ins1 File: C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/downcounter.vhd Line: 12
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 16:56:51 on Dec 06,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1
+# Compile of downcounter.vhd was successful.
+vsim -gui work.tb_sevsegmodule
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 16:57:51 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_sevsegmodule(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+add wave -position end sim:/tb_sevsegmodule/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlfthx9kjh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthx9kjh
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+# Compile of PWM_DAC.vhd was successful.
+# Compile of tb_top_level.vhd was successful.
+# Compile of top_level.vhd was successful.
+# Compile of ADC_Data.vhd was successful.
+# Compile of averager256.vhd was successful.
+# Compile of binary_bcd.vhd was successful.
+# Compile of BlankZero.vhd was successful.
+# Compile of Comparator.vhd was successful.
+# Compile of debounce.vhd was successful.
+# Compile of downcounter.vhd was successful.
+# Compile of DPmux.vhd was successful.
+# Compile of DutyControl.vhd was successful.
+# Compile of FreqControl.vhd was successful.
+# Compile of Mux2.vhd was successful.
+# Compile of MUX4To1.vhd was successful.
+# Compile of PWM_DAC.vhd was successful.
+# Compile of SevenSegment.vhd was successful.
+# Compile of SevenSegment_decoder.vhd was successful.
+# Compile of stored_value.vhd was successful.
+# Compile of synchronizer.vhd was successful.
+# Compile of voltage2distance_array2.vhd was successful.
+# Compile of tb_PWM_DAC.vhd was successful.
+# Compile of tb_Inverter.vhd was successful with warnings.
+# Compile of Inverter.vhd was successful.
+# Compile of tb_DutyControl.vhd was successful.
+# Compile of tb_Comparator.vhd was successful.
+# Compile of LEDmodule.vhd was successful.
+# Compile of tb_LEDmodule.vhd was successful.
+# Compile of LUT_LED_pkg.vhd was successful.
+# Compile of tb_SevSegmodule.vhd was successful.
+# Compile of LUT_flashing_pkg.vhd was successful.
+# Compile of SevSegmodule.vhd was successful.
+# Compile of tb_downcounter.vhd was successful.
+# Compile of tb_ANDgate.vhd was successful with warnings.
+# Compile of ANDgate.vhd was successful.
 # Compile of Buzzermodule.vhd was successful.
+# Compile of LUT_buzzing_pkg.vhd was successful.
 # Compile of tb_Buzzermodules.vhd was successful.
-vsim -gui work.tb_buzzermodules
-# End time: 19:35:06 on Dec 05,2020, Elapsed time: 0:10:10
-# Errors: 0, Warnings: 10
-# vsim -gui work.tb_buzzermodules 
-# Start time: 19:35:06 on Dec 05,2020
+# Compile of LUT_buzzer_pkg.vhd was successful.
+# Compile of buzzer_downcounter.vhd was successful.
+# 39 compiles, 0 failed with no errors.
+vsim -gui work.tb_sevsegmodule
+# End time: 17:00:37 on Dec 06,2020, Elapsed time: 0:02:46
+# Errors: 1, Warnings: 9
+# vsim -gui work.tb_sevsegmodule 
+# Start time: 17:00:37 on Dec 06,2020
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
-# Loading work.tb_buzzermodules(tb)
+# Loading work.tb_sevsegmodule(tb)
 # Loading ieee.numeric_std(body)
-# Loading work.lut_buzzing_pkg
-# Loading work.buzzermodule(behavioral)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
 # Loading ieee.math_real(body)
 # Loading work.downcounter(behavioral)
 # Loading work.pwm_dac(behavioral)
-add wave -position end sim:/tb_buzzermodules/UUT/*
+add wave -position end sim:/tb_sevsegmodule/UUT/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
-#           Attempting to use alternate WLF file "./wlftem2sm7".
+#           Attempting to use alternate WLF file "./wlftd810ij".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftem2sm7
+#           Using alternate file: ./wlftd810ij
 run -all
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
-#    Time: 0 ps  Iteration: 0  Instance: /tb_buzzermodules/UUT
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_sevsegmodule/UUT
 # ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 1  Instance: /tb_buzzermodules/UUT/PWM_DAC_ins1
-# End time: 19:38:13 on Dec 05,2020, Elapsed time: 0:03:07
-# Errors: 0, Warnings: 6
+#    Time: 0 ps  Iteration: 1  Instance: /tb_sevsegmodule/UUT/PWM_DAC_ins1
+run -all
+vsim -gui work.tb_top_level
+# End time: 17:07:33 on Dec 06,2020, Elapsed time: 0:06:56
+# Errors: 1, Warnings: 6
+# vsim -gui work.tb_top_level 
+# Start time: 17:07:33 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.ledmodule(behavioral)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.andgate(behaviour)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading work.lut_buzzer_pkg
+# Loading work.buzzer_downcounter(behavioral)
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft8e8b99".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8e8b99
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# Compile of tb_top_level.vhd was successful.
+vsim -gui work.tb_top_level
+# End time: 17:21:16 on Dec 06,2020, Elapsed time: 0:13:43
+# Errors: 2, Warnings: 13
+# vsim -gui work.tb_top_level 
+# Start time: 17:21:16 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.ledmodule(behavioral)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.andgate(behaviour)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading work.lut_buzzer_pkg
+# Loading work.buzzer_downcounter(behavioral)
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlft518679".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft518679
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+add wave -position end sim:/tb_top_level/UUT/*
+vsim -gui work.tb_top_level
+# End time: 17:23:58 on Dec 06,2020, Elapsed time: 0:02:42
+# Errors: 2, Warnings: 12
+# vsim -gui work.tb_top_level 
+# Start time: 17:23:58 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.ledmodule(behavioral)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.andgate(behaviour)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading work.lut_buzzer_pkg
+# Loading work.buzzer_downcounter(behavioral)
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftyk7ws4".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyk7ws4
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+vsim -gui work.tb_top_level
+# End time: 17:27:09 on Dec 06,2020, Elapsed time: 0:03:11
+# Errors: 2, Warnings: 12
+# vsim -gui work.tb_top_level 
+# Start time: 17:27:10 on Dec 06,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_top_level(tb)
+# Loading ieee.numeric_std(body)
+# Loading work.top_level(behavioral)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.blankzero(behaviour)
+# Loading work.sevensegment(behavioral)
+# Loading work.sevensegment_decoder(behavioral)
+# Loading work.binary_bcd(behavior)
+# Loading work.mux4to1(behaviour)
+# Loading work.stored_value(behaviour)
+# Loading work.synchronizer(behaviour)
+# Loading work.debounce(logic)
+# Loading work.adc_data(rtl)
+# Loading work.lut_pkg
+# Loading work.voltage2distance_array2(behavior)
+# Loading work.adc_conversion_wrapper(simulation)
+# Loading work.averager256(rtl)
+# Loading work.dpmux(behaviour)
+# Loading work.lut_flashing_pkg
+# Loading work.sevsegmodule(behavioral)
+# Loading ieee.math_real(body)
+# Loading work.downcounter(behavioral)
+# Loading work.pwm_dac(behavioral)
+# Loading work.ledmodule(behavioral)
+# Loading work.lut_led_pkg
+# Loading work.dutycontrol(behaviour)
+# Loading work.comparator(behaviour)
+# Loading work.mux2(behaviour)
+# Loading work.andgate(behaviour)
+# Loading work.lut_buzzing_pkg
+# Loading work.buzzermodule(behavioral)
+# Loading work.lut_buzzer_pkg
+# Loading work.buzzer_downcounter(behavioral)
+add wave -position end sim:/tb_top_level/UUT/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: rossj  Hostname: DESKTOP-JKDBJ4T  ProcessID: 13308
+#           Attempting to use alternate WLF file "./wlftrf5jtv".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrf5jtv
+run -all
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -7903 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/SevSegmodule_ins
+# ** Error: (vsim-86) Argument value -2147483648 is not in bounds of subtype NATURAL.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/averager
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/BuzzerModule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/SevSegmodule_ins/PWM_DAC_ins1
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 1  Instance: /tb_top_level/UUT/ADC_Data_ins/voltage2distance_ins
+# ** Warning: NUMERIC_STD."<": metavalue detected, returning FALSE
+#    Time: 0 ps  Iteration: 2  Instance: /tb_top_level/UUT/LEDmodule_ins/PWM_DAC_ins2
+run -all
+add wave -position end sim:/tb_top_level/UUT/*
+# Break key hit
+# Break in ForLoop LoopB2 at C:/Users/HREL/Documents/GitHub/ENEL-453/Lab 4/averager256.vhd line 77
+# End time: 18:11:21 on Dec 06,2020, Elapsed time: 0:44:11
+# Errors: 2, Warnings: 13

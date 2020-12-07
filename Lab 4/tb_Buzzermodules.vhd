@@ -6,7 +6,7 @@ end tb_Buzzermodules;
 
 architecture tb of tb_Buzzermodules is
 	Component Buzzermodule is 
-    Port ( clk                           : in std_logic;
+    Port ( clk_in                        : in std_logic;
            reset_n                       : in std_logic;
 			  dist3	 							  : in std_logic_vector(12 downto 0); 
            buzz                         : out std_logic
@@ -16,7 +16,7 @@ architecture tb of tb_Buzzermodules is
 	Signal reset_n: std_logic;
 	Signal buzz: std_logic; 
 	Signal dist3: std_logic_vector(12 downto 0);
-	Signal clk : std_logic := '0';
+	Signal clk_in : std_logic := '0';
 	constant TbPeriod : time := 20 ns;
    signal TbSimEnded : std_logic := '0';
 	
@@ -24,13 +24,13 @@ architecture tb of tb_Buzzermodules is
 begin
 
     UUT : Buzzermodule
-    port map (clk     => clk,
+    port map (clk_in     => clk_in,
               reset_n => reset_n,
 				  dist3     => dist3,
 				  buzz => buzz);
 				  		  
 	 -- Clock generation
-    clk <= not clk after TbPeriod/2 when TbSimEnded /= '1' else '0';
+    clk_in <= not clk_in after TbPeriod/2 when TbSimEnded /= '1' else '0';
 
     stimuli : process
     begin
